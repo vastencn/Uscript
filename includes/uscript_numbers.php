@@ -143,12 +143,12 @@ function gen_uscript_number($num_str_in){
       }
 
     }
-echo "<hr>exp: $exp<hr>";
+
   switch($base){
     case 16:$exp=arb_hexbin($exp);
     case  2:$exp=arb_bindec($exp);
     }
-echo "<hr>exp: $exp<hr>";
+
 
   if($neg){
     $pow=0-$exp;
@@ -159,52 +159,7 @@ echo "<hr>exp: $exp<hr>";
   $num['val']=$new_str;
   $num['base']=$base;
   $num['pow']=$pow;
-  //echo "{{ $new_str exp [neg= $neg] $exp }}";
-ar_dump($num, "num");
+
   return $num;
   }
-
-/*
-
-if(@$_POST['new_num']){
-  
-  $num_str=$_POST['txt_num'];
-
-  //echo "[".preg_replace ("/ a-zA-Z0-9]/", "", $num_str)."]";
-  
-  
-  //echo "$num_str [\"$num_str\"] (".gen_uscript_number($num_str).")";
-  echo "<pre>{";
-  print_r(gen_uscript_number($num_str));
-
-  $bstr="1111222233334";
-  echo "
-
-
-  ";
-
-  print_r(chunk_4bits_left($bstr));
-  echo "
-
-
-  ";
-
-  print_r(chunk_4bits_right($bstr));
-
-  echo "}</pre>";
-
-echo "((".chunk2hex("1010")."))[".dechexc(15)."]";
-  }
-
-
-//echo "###".space_contract("  a  b c    d  e   f  g  i    ")."###";
-
-?>
-
-<form action=uscript_numbers.php method=post>
-<input type=hidden size=100 name=new_num value=1>
-<input type=text size=100 name=txt_num value="<?php echo @$num_str;?>">
-<input type=submit>
-</form>
-*/
 ?>

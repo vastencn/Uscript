@@ -95,12 +95,9 @@ function make_bin_number($num_str,$extra_precision=0){
   $pow_dif=$pow1-$pow2;
   $pow_val=bcpow("0".$base,"0".$pow_dif);
 
-  echo "[pow val=$pow_val, pow1 $pow1, pow2 $pow2]";
-
   //decide how many bits to shift so that the radix it is in the sme magnitude range
   $bin_pow_shift=find_closest_bin_power($pow_val);
 
-  echo "(bin pow shift $bin_pow_shift)";
 
   if($pow_dif>0){
     if($base==10){
