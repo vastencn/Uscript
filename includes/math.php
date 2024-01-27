@@ -259,11 +259,11 @@ function scinote_radix_shift($num,$shiftv){
   }
 
 function find_closest_bin_power($val){
-  if($val<0)return NULL;
+  if($val<=1)return 0;
   $nv=2;
   $lv=1;
   for($i=0;$i<200;$i++){
-    if($nv>$val){
+    if($nv>=$val){
       $dif=abs($nv-$val);
       if($dif>$lv){
         return $i;
@@ -277,11 +277,11 @@ function find_closest_bin_power($val){
   }
 
 function find_closest_dec_power($val){
-  if($val<0)return NULL;
+  if($val<=1)return 0;
   $nv=2;
   $lv=1;
   for($i=0;$i<200;$i++){
-    if($nv>$val){
+    if($nv>=$val){
       $dif=abs($nv-$val);
       if($dif>($nv/2)){
         return $i;

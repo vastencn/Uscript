@@ -58,10 +58,10 @@ function parse_brackets($str){
         $now_depth++;
         $now_chunk++;
         $now_brak=$bv;
-  		$chunks[$now_chunk]['content']="";
-  		$chunks[$now_chunk]['depth']=$now_depth;
-  		$chunks[$now_chunk]['brak']=$bv;
-  		$brak_stak[$now_depth]=$bv;
+  		  $chunks[$now_chunk]['content']="";
+  		  $chunks[$now_chunk]['depth']=$now_depth;
+  		  $chunks[$now_chunk]['brak']=$bv;
+  		  $brak_stak[$now_depth]=$bv;
         }else{
 
         //error check brackets
@@ -80,8 +80,8 @@ function parse_brackets($str){
         $now_depth--;
         $now_chunk++;
         $now_brak=$brak_stak[$now_depth];
-  		$chunks[$now_chunk]['content']="";
-  		$chunks[$now_chunk]['depth']=$now_depth;
+    		$chunks[$now_chunk]['content']="";
+  	  	$chunks[$now_chunk]['depth']=$now_depth;
         }
       }else{
       $chunks[$now_chunk]['content'].=$tchr;

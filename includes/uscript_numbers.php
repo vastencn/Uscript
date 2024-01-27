@@ -119,6 +119,7 @@ function gen_uscript_number($num_str_in){
   $neg=0;
   $exp="";
   //sci note
+  ar_dump($str_ar,"str ar");
   if($i<$arc&&$str_ar[$i]=='s'){
     $i++;
     if($str_ar[$i]=='+'){
@@ -142,6 +143,12 @@ function gen_uscript_number($num_str_in){
       }
 
     }
+echo "<hr>exp: $exp<hr>";
+  switch($base){
+    case 16:$exp=arb_hexbin($exp);
+    case  2:$exp=arb_bindec($exp);
+    }
+echo "<hr>exp: $exp<hr>";
 
   if($neg){
     $pow=0-$exp;
@@ -153,7 +160,7 @@ function gen_uscript_number($num_str_in){
   $num['base']=$base;
   $num['pow']=$pow;
   //echo "{{ $new_str exp [neg= $neg] $exp }}";
-
+ar_dump($num, "num");
   return $num;
   }
 

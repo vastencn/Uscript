@@ -79,6 +79,7 @@ function make_base($snar, $base){
 
 function make_bin_number($num_str,$extra_precision=0){
   $num=gen_uscript_number($num_str);
+  if($num['base']==2)return $num;
 
   //ar_dump($num,"make bin gen_uscript_num out");
 
@@ -94,8 +95,12 @@ function make_bin_number($num_str,$extra_precision=0){
   $pow_dif=$pow1-$pow2;
   $pow_val=bcpow("0".$base,"0".$pow_dif);
 
+  echo "[pow val=$pow_val, pow1 $pow1, pow2 $pow2]";
+
   //decide how many bits to shift so that the radix it is in the sme magnitude range
   $bin_pow_shift=find_closest_bin_power($pow_val);
+
+  echo "(bin pow shift $bin_pow_shift)";
 
   if($pow_dif>0){
     if($base==10){
@@ -107,6 +112,7 @@ function make_bin_number($num_str,$extra_precision=0){
       return NULL;  
       }
     }
+
   if($extra_precision>0){
     $extra_mult=bcpow("2","0".$extra_precision);
     $num['val']=bcmul("0".$num['val'],$extra_mult);
@@ -129,6 +135,7 @@ $duar=NULL;
 function binnum_draw_prep($num_str,&$snar,&$duar,$extrap=0){
   //we have to create a snar and a number draw array
   $snar=make_bin_number($num_str,$extrap);
+  ar_dump($snar,"snar");
   $duar=scinote_2_unum($snar);
  
   return;
