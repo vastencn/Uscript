@@ -1,0 +1,5 @@
+index of charcters in this folder
+rows are only valid if they have 3 csv columns and third column is an integer
+values are "spelling" "svg filename" and "width in px"
+
+0,0,18

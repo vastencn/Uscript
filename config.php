@@ -1,5 +1,6 @@
 <?php
 $includes_dir="C:\\wamp64\\www\\uscript\\includes\\";
+$chars_dir="C:\\wamp64\\www\\uscript\\chars\\";
 
 //level 1
 require_once($includes_dir."debug.php");
@@ -7,6 +8,7 @@ require_once($includes_dir."binhex.php");
 require_once($includes_dir."hexbin.php");
 require_once($includes_dir."uscript_numbers_draw.php");
 require_once($includes_dir."chunk_parse.php");
+require_once($includes_dir."markup_chars.php");
 
 //level 2
 require_once($includes_dir."math.php");

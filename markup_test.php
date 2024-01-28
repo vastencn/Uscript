@@ -3,10 +3,16 @@
 require_once("config.php");
 
 
-$instr="h>b10";
+$instr="d>b8s4";
 $rchunk=draw_symbol($instr);
 print_r($rchunk);
 
+if(load_char_folder("basic")){
+  echo "GOOD FOLDER NAME";
+  }else{
+  echo "BAD FOLDER NAME";
+
+  }
 /*
 echo "<hr>";
 print_r(
@@ -23,6 +29,7 @@ echo "</pre>";
 
 
 <?php
+
 
 if($rchunk){
   echo $rchunk['svg'];
