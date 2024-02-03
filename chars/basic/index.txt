@@ -2,4 +2,20 @@ index of charcters in this folder
 rows are only valid if they have 3 csv columns and third column is an integer
 values are "spelling" "svg filename" and "width in px"
 
+//hex chars
 0,0,18
+1,1,15
+2,2,15
+3,3,15
+4,4,15
+5,5,15
+6,6,15
+7,7,15
+8,8,15
+9,9,15
+a,a,15
+b,b,15
+c,c,15
+d,d,15
+e,e,15
+f,f,15

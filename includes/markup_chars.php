@@ -7,6 +7,8 @@
 //* spelling refers to how a symbol is spelled using alphanumeric chars when using this graphical generator system
 //  spelling has nothing to do with Uscript, Uscript itself has no actual vocalized version
 
+$default_char_height=20;
+
 
 //one time perp of the library
 $uscript_lib=array();
@@ -17,10 +19,12 @@ foreach($index_ar as $ichar){
   }
 
 
+
+
 function load_char_folder($folder_name){
   global $chars_dir,$uscript_lib;
   //only alpha numeric of course, only first level folder in the chars folder
-  //if you subfolders or to reference folders in other locations, then disable this check
+  //if you want to use subfolders or to reference folders in other locations, then disable or modify this check
   if(strlen($folder_name)<1 || preg_match('/[^0-9a-z]/', $folder_name)){
     return NULL;
     }
@@ -51,28 +55,31 @@ function load_char_folder($folder_name){
     }
 
 
-  ar_dump($loaded_chars, "loaded chars");
-  ar_dump($uscript_lib, "loaded chars");
+  //ar_dump($loaded_chars, "loaded chars");
+  //ar_dump($uscript_lib, "loaded chars");
 
   return TRUE;
   }
 
 function load_char_index($fpath){
+  global $default_char_height;
   if(!file_exists($fpath)){
     return NULL;
     }
   
   $records=array();
-  $crec=0;
   $flines=file($fpath);
 
   foreach($flines as $tline){
-    $tar=explode(",",preg_replace("/[^a-z0-9,]/", "", $tline));
-    
+    $tar=explode(",",preg_replace("/[^a-z0-9,]/", "", strtolower($tline)));
+
+    //4th lemenet is optional, height will default to dewfault height
+    if(count($tar)==3)$tar[]="$default_char_height";
+
     //make sure it meets the ciriteria to be a valid record
     if(
-    	//3 elements
-    	count($tar)==3
+    	//4 elements
+    	count($tar)==4
     	&&
 
     	//all not empty
@@ -82,6 +89,8 @@ function load_char_index($fpath){
     	&&
     	strlen($tar[2])>0
     	&&
+    	strlen($tar[3])>0
+    	&&
 
     	//alphanum, alphanum, num
     	ctype_alnum($tar[0])
@@ -89,6 +98,8 @@ function load_char_index($fpath){
     	ctype_alnum($tar[1])
     	&&
     	is_numeric($tar[2])
+    	&&
+    	is_numeric($tar[3])
       ){
       
       //its a good record, add it
@@ -96,11 +107,12 @@ function load_char_index($fpath){
       $nrec['spelling']=$tar[0];
       $nrec['fname']=$tar[1];
       $nrec['width']=$tar[2];
+      $nrec['height']=$tar[3];
       $records[]=$nrec;
       }
     }
 
-  ar_dump($records,"loaded recs");
+  //ar_dump($records,"loaded recs");
 
   return $records;
   }
@@ -112,6 +124,13 @@ function load_char(&$rec,$path){
     }
 
   $svg_str=implode("",file($path));
+
+  //now lets crop out the highest level object group
+  $svg_str=strstr($svg_str,"<g");
+  $svg_str=strrev(strstr(strrev($svg_str),"g/<"));
+  $svg_str=$svg_str.">";
+
+
   $rec['path']=$path;
   $rec['svg']=$svg_str;
   $rec['loaded']=TRUE;  
@@ -123,9 +142,22 @@ function create_char(){
   $nchar['spelling']="";
   $nchar['fname']="";
   $nchar['width']="";
+  $nchar['height']="";
   $nchar['svg']="";
   $nchar['path']="";
   $nchar['loaded']=NULL;
   }
 
+function search_char($search_str){
+  global $uscript_lib;
+  if(strlen($search_str)<1&&$search_str!="0")return NULL;
+  $flet=substr($search_str,0,1);
+  if(!ctype_alnum($flet))return NULL;
+  foreach($uscript_lib[$flet] as $srec){
+    if($srec['spelling']==$search_str){
+      return $srec;
+      }
+    }
+  return NULL;
+  }
 ?>

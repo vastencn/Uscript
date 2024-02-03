@@ -1,8 +1,7 @@
 <?php
-
 // depends on include level 4 (see config.php)
 
-
+$hex_num_char_spacing=3;
 
 function create_chunk($cstr=""){
   $new_chunk=array();
@@ -72,12 +71,13 @@ function parse_is_num($sym){
 
   //if it contains only "0123456789abcedf.s+-" then we assume simple hex in hex out
   //this means words only containing a-f will be seen as numbers
-  //since the english name of a uscript symbolo/structure/etc is rather arbitrary
+  //since the english name of a uscript symbol/structure/etc is rather arbitrary
   //we can just avoid such words, or tweak their spelling
   if(!preg_match('/[^0-9a-fs.+\-]/', $sym)){
     $is_a_num=TRUE;
     $num_str=$sym;
     $base_in=16;
+    $base_out=16;
     }
 
   if($is_a_num){
@@ -115,9 +115,9 @@ function parse_is_num($sym){
 
 
 
-    //if we are drawing a binary symbol
+    //if we are drawing a simple hex symbol string
       }else if($base_out==16){
-      echo "simple base 16 symbol output";
+      $num_struct['chars']=str_split($num_str);
       }
 
 
@@ -135,7 +135,8 @@ function parse_is_num($sym){
   return NULL;
   }
 
-function num_chunk_draw(&$chunk){ 	  
+function num_chunk_draw(&$chunk){ 
+  global $num_scaling_wrapper;	  
   $hpos=2;
   $hspace=2;
   $x=10;
@@ -146,11 +147,37 @@ function num_chunk_draw(&$chunk){
   if($chunk['struct']['snar']['pow']!=0){
     $hpos+=5;
     $exp_str=draw_unum($chunk['struct']['duar']['exp'],$hpos,$y,$fvsize,$fstroke,$hpos);
-    echo "!!!!!!!HELLO!!!!($exp_str)";
     $svg_str.="\n".$exp_str;
     }
+
   $chunk['svg']=$svg_str;
+  $chunk['height']=$fvsize;
+  $chunk['width']=$hpos;
   $chunk['drawn']=TRUE;
+  return TRUE;
+  }
+
+
+function hex_num_draw(&$chunk){
+  global $hex_num_char_spacing;
+  $svg_str="";
+  $xpos=0-$hex_num_char_spacing;
+  $mh=0;
+
+  foreach($chunk['struct']['chars'] as $tchar){
+    if($cdat=search_char($tchar)){
+      $xpos+=$hex_num_char_spacing;
+      $svg_str.="<g transform=\"translate($xpos,0)\">";
+      $svg_str.=$cdat['svg'];
+      $svg_str.="</g>";
+      $xpos+=$cdat['width'];
+      if($cdat['height']>$mh)$mh=$cdat['height'];
+      }
+    }
+
+  $chunk['svg']=$svg_str;
+  $chunk['width']=$svg_str;
+  $chunk['height']=$mh;
   return TRUE;
   }
 
@@ -169,16 +196,31 @@ function draw_symbol($sym){
   $is_a_num=FALSE;
 
   if($chunk=parse_is_num($sym_lower)){
-    echo "YES NUMBER";
-    num_chunk_draw($chunk);
+    if($chunk['opt']['base_out']==2){
+      num_chunk_draw($chunk);
+      }else if($chunk['opt']['base_out']==16){
+      hex_num_draw($chunk);
+      }
     return $chunk;
 
     }
   
-
-  echo "NOT  A NUMBER";
   return NULL;
   }
 
+//just search for word, if not found check for a shortcut
+//not recursive at present, no shortcuts to shortcuts
+function symbol_search($search_str){
+  if($rec=search_char($search_str)){
+    return $rec;
+    }else{
+    if($shortcut=search_shortcut($search_str)){
+      if($rec=search_char($shortcut['target'])){
+        return $rec;
+        }
+      }
+    }
+  return NULL;
+  }
 
 ?>

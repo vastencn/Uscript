@@ -1,0 +1,3 @@
+zero,0
+nada,0
+nil,0

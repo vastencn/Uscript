@@ -56,5 +56,5 @@ if(@$_POST['new_num']){
 if($duar){
   ar_dump($snar,"sci note vals");
   ar_dump($duar,"uscript drawing vals");
-}
+  }
 ?>

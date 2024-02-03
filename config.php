@@ -9,6 +9,8 @@ require_once($includes_dir."hexbin.php");
 require_once($includes_dir."uscript_numbers_draw.php");
 require_once($includes_dir."chunk_parse.php");
 require_once($includes_dir."markup_chars.php");
+require_once($includes_dir."markup_shortcuts.php");
+require_once($includes_dir."svg_drawing.php");
 
 //level 2
 require_once($includes_dir."math.php");
