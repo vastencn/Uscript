@@ -21,7 +21,7 @@ foreach($index_ar as $ichar){
 
 
 
-function load_char_folder($folder_name){
+function load_chars($folder_name){
   global $chars_dir,$uscript_lib;
   //only alpha numeric of course, only first level folder in the chars folder
   //if you want to use subfolders or to reference folders in other locations, then disable or modify this check
@@ -71,7 +71,7 @@ function load_char_index($fpath){
   $flines=file($fpath);
 
   foreach($flines as $tline){
-    $tar=explode(",",preg_replace("/[^a-z0-9,]/", "", strtolower($tline)));
+    $tar=explode(",",preg_replace("/[^a-z0-9,.]/", "", strtolower($tline)));
 
     //4th lemenet is optional, height will default to dewfault height
     if(count($tar)==3)$tar[]="$default_char_height";
@@ -150,6 +150,7 @@ function create_char(){
 
 function search_char($search_str){
   global $uscript_lib;
+
   if(strlen($search_str)<1&&$search_str!="0")return NULL;
   $flet=substr($search_str,0,1);
   if(!ctype_alnum($flet))return NULL;

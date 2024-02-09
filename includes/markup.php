@@ -1,212 +1,75 @@
 <?php
 // depends on include level 4 (see config.php)
 
+//default gap between rendered words
+if(!isset($default_word_spacing))$default_word_spacing=8;
+
 $hex_num_char_spacing=3;
-
-function create_chunk($cstr=""){
-  $new_chunk=array();
-
-  $new_chunk['type']=NULL;
-  $new_chunk['string']=$cstr;
-  $new_chunk['struct']=NULL;
-  $new_chunk['opt']=array();
-  $new_chunk['svg']="";
-  $new_chunk['drawn']=0;
-  $new_chunk['height']=0;
-  $new_chunk['width']=0;
-
-  return $new_chunk;
-  }
+$chunk_spacing=3;
 
 
-
-function basechr2int($bc){
-  $bc=strtolower($bc);
-  switch($bc){
-    case "b":return 2;
-    		 break;
-    case "d":return 10;
-    		 break;
-    case "h":return 16;
-    		 break;
-    }
-  return NULL;
-  }
-
-
-function num_prefix($str,&$bin,&$bout){
-  if(!is_string($str))return NULL;
-  if(strlen($str)!=3)return NULL;
+function draw_word($word){
   
-  $str=strtolower($str);
-  $sar=str_split($str);
-
-  if(!($a=basechr2int($sar[0])))return NULL;
-  if(!($b=basechr2int($sar[2])))return NULL;
-
-  if($sar[1]=='>'){
-    $bin=$a;
-    $bout=$b;
-    return (($b*100)+$a);
-    }else if($sar[1]=='<'){
-    $bin=$b;
-    $bout=$a;
-    return (($a*100)+$b);
-    }
-
-  return NULL;
-  }
-
-function parse_is_num($sym){
-  $is_a_num=FALSE;
-
-  if(strlen($sym)>3){
-    
-    //if first 3 chars are number prefix then its defintely a number
-    if(num_prefix(substr($sym,0,3),$base_in,$base_out)){
-      $is_a_num=TRUE;
-      $num_str=substr($sym,3);
-      }    
-    }
-
-  //if it contains only "0123456789abcedf.s+-" then we assume simple hex in hex out
-  //this means words only containing a-f will be seen as numbers
-  //since the english name of a uscript symbol/structure/etc is rather arbitrary
-  //we can just avoid such words, or tweak their spelling
-  if(!preg_match('/[^0-9a-fs.+\-]/', $sym)){
-    $is_a_num=TRUE;
-    $num_str=$sym;
-    $base_in=16;
-    $base_out=16;
-    }
-
-  if($is_a_num){
-  	//create a gen_uscript_number_string
-  	//some excessive parsing here
-  	//parse marup format, to create a uscript number format then parse that
-  	//the result of pieces of this projects being cobbled together from deifferent dewv periods
-    $gen_str="";
-    switch($base_in){
-      case 16:$gen_str="h";break;
-      case 2:$gen_str="b";break;
-      }
-    $gen_str.=$num_str;
-
-
-    //try to make a number struct from the string
-
-    //if we are drawing a simple styring of hex symbols
-    if($base_out==2){
-
-
-      
-      $snar=NULL;
-      $duar=NULL;
-      binnum_draw_prep($gen_str,$snar,$duar);
-
-      if(!$snar||!$duar){
-      	//prep failed
-      	return NULL;
-        }
-
-      $num_struct=array();
-      $num_struct['snar']=$snar;
-      $num_struct['duar']=$duar;
-
-
-
-    //if we are drawing a simple hex symbol string
-      }else if($base_out==16){
-      $num_struct['chars']=str_split($num_str);
-      }
-
-
-  	$num_chunk=create_chunk($sym);
-  	$num_chunk['type']="num";
-  	$num_chunk['string']=$sym;
-  	$num_chunk['struct']=$num_struct;
-  	$num_chunk['opt']['base_in']=$base_in;
-  	$num_chunk['opt']['base_out']=$base_out;
-
-
-  	return $num_chunk;
-    }
-
-  return NULL;
-  }
-
-function num_chunk_draw(&$chunk){ 
-  global $num_scaling_wrapper;	  
-  $hpos=2;
-  $hspace=2;
-  $x=10;
-  $y=0;
-  $fvsize=20;
-  $fstroke=2;
-  $svg_str=draw_unum($chunk['struct']['duar']['co'],$hpos,$y,$fvsize,$fstroke,$hpos);
-  if($chunk['struct']['snar']['pow']!=0){
-    $hpos+=5;
-    $exp_str=draw_unum($chunk['struct']['duar']['exp'],$hpos,$y,$fvsize,$fstroke,$hpos);
-    $svg_str.="\n".$exp_str;
-    }
-
-  $chunk['svg']=$svg_str;
-  $chunk['height']=$fvsize;
-  $chunk['width']=$hpos;
-  $chunk['drawn']=TRUE;
-  return TRUE;
-  }
-
-
-function hex_num_draw(&$chunk){
-  global $hex_num_char_spacing;
-  $svg_str="";
-  $xpos=0-$hex_num_char_spacing;
-  $mh=0;
-
-  foreach($chunk['struct']['chars'] as $tchar){
-    if($cdat=search_char($tchar)){
-      $xpos+=$hex_num_char_spacing;
-      $svg_str.="<g transform=\"translate($xpos,0)\">";
-      $svg_str.=$cdat['svg'];
-      $svg_str.="</g>";
-      $xpos+=$cdat['width'];
-      if($cdat['height']>$mh)$mh=$cdat['height'];
-      }
-    }
-
-  $chunk['svg']=$svg_str;
-  $chunk['width']=$svg_str;
-  $chunk['height']=$mh;
-  return TRUE;
-  }
-
-function draw_symbol($sym){
-  
-  $sym_lower=strtolower($sym);
+  $word_lower=strtolower($word);
 
   //set default base in/out
   $base_in=10;
   $base_out=16;
 
-  if(!is_string($sym))return NULL;
+  if(!is_string($word))return NULL;
 
 
-  //lets see if its a prefixed number
-  $is_a_num=FALSE;
-
-  if($chunk=parse_is_num($sym_lower)){
+  //try to draw number
+  if($chunk=parse_is_num($word_lower)){
     if($chunk['opt']['base_out']==2){
       num_chunk_draw($chunk);
       }else if($chunk['opt']['base_out']==16){
       hex_num_draw($chunk);
       }
     return $chunk;
+    }
 
+  //the mess in the unum drawing function just got to me
+  //I decided to just import 15 variables(v1-v16) as word symbols
+  //later the entire unum drawing sectgion needs an overhaul
+  //I just don't want to deal with tha mess right now
+  //
+  //try to draw variable
+  //if($chunk=word2var($word_lower)){
+  //  var_chunk_draw($chunk);
+  //  return $chunk;
+  //  }
+
+  //try to draw symbol
+  if($cdat=symbol_search($word_lower)){
+    return char2chunk($cdat);
     }
   
   return NULL;
   }
+
+
+function draw_string($ustr){
+  global $default_word_spacing;
+  $car=array();
+  $sar=explode(" ",$ustr);
+  
+  //try to draw each word
+  foreach($sar as $tword){
+    if($tchunk=draw_word($tword)){
+      $car[]=$tchunk;
+      }
+    }
+
+  //merge the words into a single chunk
+  $rchunk=create_chunk($ustr);
+  foreach($car as $tchunk){
+    chunk_append($rchunk,$tchunk,$default_word_spacing);
+    }
+
+  return $rchunk;
+  }
+
 
 //just search for word, if not found check for a shortcut
 //not recursive at present, no shortcuts to shortcuts

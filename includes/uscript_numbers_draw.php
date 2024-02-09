@@ -73,7 +73,9 @@ function lines_combine($line1,$line2,$space){
 }
 
 function draw_poly($x,$y,$vsize,$stroke,$pts,&$hpos=NULL){
-	$pstr="";
+	global $prepts;
+	$pstr=$prepts;
+	$prepts="";
 	$mx=0;
 	$hsize=$vsize;
 	$vsize-=$stroke;
@@ -164,7 +166,13 @@ function draw_unum_seg($seg,&$lines,&$segoff,$yval,$vlen,$hlen,$pre,$post,$x,$y,
 }
 
 function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
+    global $prepts;
+    $prepts="";
+
 	$nval=$nv;
+	if(substr($nv[1],0,2)=="00"){
+	  $prepts="0,0, 10,0 5,5 ";
+	  }
 //echo "!!!";
 //print_r($nval);
 //echo "!!!";

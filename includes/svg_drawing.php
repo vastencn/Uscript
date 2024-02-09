@@ -3,11 +3,20 @@
 //instead of building a structure for the drawing, just going to have fixed header and footer strings with only x,y size dynamic
 //
 // draw functions have optional x,y values
-// y first then x, because its more often you will want to set y and leave x as 0
-
+// y first then x
 
 $px2mm=1;
 $line_i=1;
+$page_line_spacing=5;
+
+function is_svg_drawable($tobj){
+  //universal function for drawing check
+  //drawble things must at leas have height, width and and svg string
+  if(@$tobj['height']<1)return NULL;
+  if(@$tobj['width']<1)return NULL;
+  if(strlen(@$tobj['height'])<1)return NULL;
+  return TRUE;
+  }
 
 //width and height in px
 function svg_header($width=500, $height=500){
@@ -43,14 +52,29 @@ function create_svg_line(){
   return $sline;
   }
 
+function is_valid_svg_line($sline){
+  if(!$sline)return NULL;
+  if(@count($sline)<3)return NULL;
+  if(@$sline['height']<1)return NULL;
+  if(@$sline['width']<1)return NULL;
+  if(strlen(@$sline['svg'])<1)return NULL;
+  return TRUE;
+  }
+
+function draw_svg_symbol($svg_str,$y=0,$x=0){
+  $rstr="<g transform=\"translate($x,$y)\">";
+  $rstr.=$svg_str;
+  $rstr.="</g>";
+  return $rstr;
+  }
+
 function draw_svg_line($sline,$y=0,$x=0){
   global $line_i;
-
   $rstr="<g
      inkscape:label=\"Line $line_i\"
      inkscape:groupmode=\"layer\"
      id=\"layer L$line_i\"
-     transform=\"translate(0,0)\">";
+     transform=\"translate($x,$y)\">";
   $rstr.=$sline['svg'];
   $rstr.="</g>";
   $line_i++;
@@ -58,13 +82,16 @@ function draw_svg_line($sline,$y=0,$x=0){
   return $rstr;
   }
 
-function draw_svg_page($svg_lines,$y=0,$x=0){
-  global $line_i;
+function draw_svg_page($svg_lines,$y=0,$x=0,$w=500,$h=500){
+  global $line_i,$page_line_spacing;
   $line_i=1;
-  $page_svg=svg_header();
+  $page_svg=svg_header($w,$h);
   foreach($svg_lines as $tline){ 
-    $page_svg.=draw_svg_line($tline,$y,$x);
-    $y+=$tline['height'];
+  	$lh=$tline['height'];
+  	$lhh=$lh/2;
+  	if(!is_valid_svg_line($tline))continue;
+    $page_svg.=draw_svg_line($tline,$y+$lhh,$x);
+    $y+=$lh+$page_line_spacing;
     $line_i++;
     }
   $page_svg.=svg_footer();

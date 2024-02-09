@@ -19,3 +19,23 @@ c,c,15
 d,d,15
 e,e,15
 f,f,15
+
+//dimensions
+1dim,1d,2
+2dim,2d,13
+3dim,3d,13
+4dim,4d,13
+
+//dot/particle
+dot,dot,6.5
+
+//time/entropy
+//t=time e=entropy p=plus m=minus
+tm,tm,11.3
+tp,tp,11.3
+em,em,18
+ep,ep,18
+tm_ep,tm_ep,18
+tm_em,tm_em,18
+tp_ep,tm_ep,18
+tp_em,tm_em,18

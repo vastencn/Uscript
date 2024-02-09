@@ -14,8 +14,9 @@ if(@!$istr=$_POST['istr']){
 <?php
 require_once("config.php");
 
-load_char_folder("basic");
+load_chars("basic");
 load_shortcuts("basic");
+load_brakets("basic");
 
 //ar_dump($uscript_lib,"lib");
 
@@ -23,11 +24,12 @@ load_shortcuts("basic");
 $instr="d>b8s4";
 $instr2="10f0f";
 
-$rchunk=draw_symbol($istr);
+$rchunk=draw_string($istr);
+//$schunk=draw_string("01 01");
 
-//ar_dump($uscript_lib,"uscript_lib");
+//ar_dump($rchunk,"rchunk");
 
-
+echo "<br>";
 
 $plines=array();
 $plines[]=$rchunk;

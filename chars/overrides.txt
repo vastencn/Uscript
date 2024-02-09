@@ -1,0 +1,5 @@
+1d,1dim
+2d,2dim
+3d,3dim
+4d,4dim
+

@@ -45,7 +45,7 @@
        orientation="0,1"
        id="guide3890" />
     <sodipodi:guide
-       position="1.964431,5.2916636"
+       position="4.4194172,19.999997"
        orientation="0,1"
        id="guide3996" />
     <sodipodi:guide
@@ -67,7 +67,7 @@
     <path
        inkscape:connector-curvature="0"
        id="path3355-7-7"
-       d="m 17.018489,301.7084 a 8.018488,8.0185623 0 0 0 -8.0185414,-8.01859 8.018488,8.0185623 0 0 0 -8.01843221,8.01859 8.018488,8.0185623 0 0 0 8.01843221,8.01847 8.018488,8.0185623 0 0 0 8.0185414,-8.01847 z"
+       d="m 17.018485,291.70838 a 8.018488,8.0185623 0 0 0 -8.0185414,-8.01859 8.018488,8.0185623 0 0 0 -8.01843219,8.01859 8.018488,8.0185623 0 0 0 8.01843219,8.01847 8.018488,8.0185623 0 0 0 8.0185414,-8.01847 z"
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.96302;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>

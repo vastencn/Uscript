@@ -1,0 +1,7 @@
+index of brakets
+csv format of spelling / subfolder
+
+
+sub,sub
+subof,subof
+brak,brak
