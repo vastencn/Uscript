@@ -28,7 +28,8 @@ function parse_prep_brak_funks(&$car){
   if($arc<2)return NULL;
   $li=$arc-1;
   for($i=0;$i<$arc;$i++){
-    if($car[$i]['brak_type']){
+    $btype=$car[$i]['brak_type'];
+    if($btype){
       $pi=$i-1;
       $ni=$i+1;
 
@@ -36,18 +37,18 @@ function parse_prep_brak_funks(&$car){
         $lwordi=$car[$pi]['word_count']-1;
         if($lwordi>=0){
           $potential_name=$car[$pi]['words'][$lwordi];
-          if($brak=search_brak($potential_name)){
+          if($brak=search_brak($potential_name,FALSE,$btype)){
             $car[$i]['brak']=$brak;
             unset($car[$pi]['words'][$lwordi]);
             }
           }
         }
-        
+
 
       if($i<$li && !is_array(@$car[$i]['brak'])){
         if($car[$ni]['word_count']>0){
           $potential_name=$car[$ni]['words'][0];
-          if($brak=search_brak($potential_name,TRUE)){
+          if($brak=search_brak($potential_name,TRUE,$btype)){
             $car[$i]['brak']=$brak;
             unset($car[$ni]['words'][0]);
             }

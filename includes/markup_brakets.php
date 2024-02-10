@@ -8,11 +8,16 @@
 //
 //brakets can be 3 types 1:(), 2:[], or 3:{}
 //they are further defined by the word preceeding them, much like a function call
+//these ID numbers are defined in chunk_parse.php
 //
 //first if there is a preceeding word we will attempt to find a "function call format" named braket
 //if no brakets of that name are foud, we will just treat it as simple braketing
 
 $uscript_braks=array();
+$uscript_braks_aliases=array();
+$uscript_braks_aliases[1]=array();
+$uscript_braks_aliases[2]=array();
+$uscript_braks_aliases[3]=array();
 
 //wether to load the text defs into tyhe struct
 //the struct is copied into the parsing array for each instance of usage
@@ -85,7 +90,7 @@ function load_brak($bpath){
 
 
 function load_brak_index($ipath,$fpath){
-  global $dslash;
+  global $dslash,$uscript_braks_aliases;
   if(!file_exists($ipath)){
     return NULL;
     }
@@ -96,42 +101,86 @@ function load_brak_index($ipath,$fpath){
   foreach($flines as $tline){
     $tar=explode(",",preg_replace("/[^a-z0-9,.]/", "", strtolower($tline)));
 
-    //make sure it meets the ciriteria to be a valid record
-    if(
-      //4 elements
-      count($tar)==2
-      &&
 
-      //all not empty
-      strlen($tar[0])>0
-      &&
-      strlen($tar[1])>0
-      &&
+    $tarc=count($tar);
 
-      //alphanum, alphanum, num
-      ctype_alnum($tar[0])
-      &&
-      ctype_alnum($tar[1])
-      ){
+    //if 2 elements
+    //its a brak record
+    if($tarc==2){
+
+      //make sure it meets the ciriteria to be a valid record
+      if(
+
+        //all not empty
+        strlen($tar[0])>0
+        &&
+        strlen($tar[1])>0
+        &&
+
+        //alphanum, alphanum, num
+        ctype_alnum($tar[0])
+        &&
+        ctype_alnum($tar[1])
+        ){
       
-      //its a good record, add it
-      $load_path=$fpath.$tar[1].$dslash."brak.php";
+        //its a good record, add it
+        $load_path=$fpath.$tar[1].$dslash."brak.php";
       
-      if($nrec=load_brak($load_path)){
-        $nrec['spelling']=$tar[0];
-        $nrec['folder']=$tar[1];
-        $records[]=$nrec;
+        if($nrec=load_brak($load_path)){
+          $nrec['spelling']=$tar[0];
+          $nrec['folder']=$tar[1];
+          $records[]=$nrec;
+          }
+
         }
+
+
+    //if 3 elements
+    //its a brak alias
+      }else if($tarc==3){
+      //make sure it meets the ciriteria to be a valid record
+      if(
+
+        //all not empty
+        strlen($tar[0])>0
+        &&
+        strlen($tar[1])>0
+        &&
+        strlen($tar[2])>0
+        &&
+
+        //alphanum, alphanum, num
+        ($tar[0]=="1" || $tar[0]=="2" || $tar[0]=="3")
+        &&
+        ctype_alnum($tar[1])
+        &&
+        ctype_alnum($tar[2])
+        ){
+      
+        //its a good record, add it
+      
+        $nalias=array();
+        $nalias['alias']=$tar[1];
+        $nalias['name']=$tar[2];
+        $uscript_braks_aliases[$tar[0]][]=$nalias;
+        }
+
       }
+
     }
 
   return $records;
   }
 
-function search_brak($bname,$right=FALSE){
-  global $uscript_braks;
-
+function search_brak($bname,$right=FALSE,$type=1){
+  global $uscript_braks,$uscript_braks_aliases;
   if(strlen($bname)<1)return NULL;
+
+  foreach($uscript_braks_aliases[$type] as $alias){
+    if($alias['alias']==$bname){
+      $bname=$alias['name'];
+      }
+    }
 
   foreach($uscript_braks as $tbrak){
     if($tbrak['spelling']==$bname && $tbrak['label_right']==$right){

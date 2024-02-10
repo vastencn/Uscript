@@ -5,3 +5,15 @@ csv format of spelling / subfolder
 sub,sub
 subof,subof
 brak,brak
+subcup,subcup
+subofcup,subofcup
+
+
+Brak aliases
+these allow alternate spelling
+they are braket type specific
+they also allow you to overflow a spelling
+and to differentiate between the types of brakets () [] {}
+
+2,sub,subcup
+2,subof,subofcup

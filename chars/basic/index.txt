@@ -20,6 +20,81 @@ d,d,15
 e,e,15
 f,f,15
 
+//variables
+v1,v1,18
+v2,v2,18
+v3,v3,18
+v4,v4,18
+v5,v5,18
+v6,v6,18
+v7,v7,18
+v8,v8,18
+v9,v9,18
+v10,v10,18
+v11,v11,18
+v12,v12,18
+v13,v13,18
+v14,v14,18
+v15,v15,18
+
+//basic math/operations
+equal,equal,5
+plus,plus,14
+minus,minus,14
+mult,mult,14
+divide,divide,14
+exp,exp,18
+root,root,17
+log,log,15.8
+var,var
+int,int,7
+
+inv(invert) used as boolean NOT and to create negative numbers
+inv,inv,1.8
+absolute,abs,6.2
+
+
+
+//boolean gates.. particle/dot is used for true..there is a mini version  of "space" for false (see shortcuts)
+false,false,2.8
+or,or,18
+nand,nand,18
+xor,xor,18
+and,and,15
+
+//non standard boooleans
+(!a or b)
+naob,naob,18
+
+(a or !b)
+aonb,aonb,18
+
+(a == b)
+bequal,bequal,18
+
+(!b) - a ignored (expresses indifference to a)
+bfalse,bfalse,15
+
+(b) - a ignored (expresses indifference to a)
+btrue,btrue,15
+
+(!a) - b ignored (expresses indifference to b)
+afalse,afalse,18
+
+(a) - b ignored (expresses indifference to b)
+atrue,atrue,18
+
+(a && !b)
+truefalse,truefalse,15
+
+(!a && b)
+falsetrue,falsetrue,15
+
+(!a && !b)
+falsefalse,falsefalse,15
+
+
+
 //dimensions
 1dim,1d,2
 2dim,2d,13
