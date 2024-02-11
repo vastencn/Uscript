@@ -44,7 +44,12 @@ function draw_word($word){
   if($cdat=symbol_search($word_lower)){
     return char2chunk($cdat);
     }
-  
+
+  //try to draw img
+  if($chunk=img_search($word_lower)){
+    return $chunk;
+    }
+
   return NULL;
   }
 

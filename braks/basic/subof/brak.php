@@ -75,7 +75,7 @@ function subof_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$strok
 
 
 
-function subof_brak_draw_close($xoffset,$branch_length=6,$cup_width=10,$cup_depth=5,$stroke_width=2){
+function subof_brak_draw_close ($xoffset,$branch_length=6,$cup_width=10,$cup_depth=5,$stroke_width=2){
   $nsvg="";
 
   $nsvg.=svg_hcup($xoffset,0,$cup_width,$cup_depth,$stroke_width);

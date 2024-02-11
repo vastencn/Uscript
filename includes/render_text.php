@@ -9,7 +9,7 @@
 //if you want to have access to the parsed text used for the rendering, then just supply the second argument, it will be a pointer to the parsed text
 
 //default gap between rendered words
-if(!isset($default_word_spacing))$default_word_spacing=5;
+if(!isset($default_word_spacing))$default_word_spacing=8;
 
 function render_uscript_text($in_str,&$car=NULL){
 

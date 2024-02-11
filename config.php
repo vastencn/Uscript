@@ -2,6 +2,7 @@
 $includes_dir="C:\\wamp64\\www\\uscript\\includes\\";
 $chars_dir="C:\\wamp64\\www\\uscript\\chars\\";
 $braks_dir="C:\\wamp64\\www\\uscript\\braks\\";
+$img_dir="C:\\wamp64\\www\\uscript\\img\\";
 $dslash="\\";
 
 //load optional settings flags
@@ -26,7 +27,7 @@ require_once($includes_dir."strings.php");
 require_once($includes_dir."chunk_funk.php");
 
 //level 3
-
+require_once($includes_dir."markup_img.php");
 require_once($includes_dir."uscript_numbers.php");
 
 //level 4

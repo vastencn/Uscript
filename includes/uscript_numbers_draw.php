@@ -166,8 +166,7 @@ function draw_unum_seg($seg,&$lines,&$segoff,$yval,$vlen,$hlen,$pre,$post,$x,$y,
 }
 
 function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
-    global $prepts;
-    $prepts="";
+    $prefix=array();
 
 	$nval=$nv;
 	if(substr($nv[1],0,2)=="00"){

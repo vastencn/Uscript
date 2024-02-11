@@ -33,28 +33,33 @@ function parse_prep_brak_funks(&$car){
       $pi=$i-1;
       $ni=$i+1;
 
+      //searcvh for pre brak name
       if($i>0){
         $lwordi=$car[$pi]['word_count']-1;
         if($lwordi>=0){
           $potential_name=$car[$pi]['words'][$lwordi];
           if($brak=search_brak($potential_name,FALSE,$btype)){
             $car[$i]['brak']=$brak;
-            unset($car[$pi]['words'][$lwordi]);
+            $car[$pi]['words'][$lwordi]="";
             }
           }
         }
 
-
+      //search for post brak name
       if($i<$li && !is_array(@$car[$i]['brak'])){
         if($car[$ni]['word_count']>0){
           $potential_name=$car[$ni]['words'][0];
           if($brak=search_brak($potential_name,TRUE,$btype)){
             $car[$i]['brak']=$brak;
-            unset($car[$ni]['words'][0]);
+            $car[$ni]['words'][0]="";
             }
           }
         }
 
+      //if no name found, default to brak
+      if(@count($car[$i]['brak'])<2){
+        $car[$i]['brak']=search_brak("brak");
+        }
 
       }
     }  

@@ -99,5 +99,37 @@ function draw_svg_page($svg_lines,$y=0,$x=0,$w=500,$h=500){
   }
 
 
+function import_svg($path){
+  if(!file_exists($path))return NULL;
+
+  $far=file($path);
+  foreach($far as $tline){
+    if($str=strstr(strtolower($tline),"viewbox")){
+      $sar=explode("\"",$str);
+      $nar=explode(" ",$sar[1]);
+      $width=round($nar[2],1);
+      $height=round($nar[3],1);
+      break;
+      }
+    }
+
+  if($width<1||$height<1)return NULL;
+
+  $svg_str=implode("",$far);
+
+  //now lets crop out the highest level object group
+  $svg_str=strstr($svg_str,"<g");
+  $svg_str=strrev(strstr(strrev($svg_str),"g/<"));
+  $svg_str=$svg_str.">";
+
+  $rec=array();
+  $rec['path']=$path;
+  $rec['height']=$height;
+  $rec['width']=$width;
+  $rec['svg']=$svg_str;
+  $rec['loaded']=TRUE;  
+  return $rec;
+  }
+
 
 ?>
