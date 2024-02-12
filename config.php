@@ -20,6 +20,7 @@ require_once($includes_dir."markup_overrides.php");
 require_once($includes_dir."markup_brakets.php");
 require_once($includes_dir."svg_drawing.php");
 require_once($includes_dir."svg_lines.php");
+require_once($includes_dir."defmap.php");
 
 //level 2
 require_once($includes_dir."math.php");

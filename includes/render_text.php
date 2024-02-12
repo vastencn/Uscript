@@ -29,6 +29,7 @@ function render_uscript_text($in_str,&$car=NULL){
     render_elsa($car,$car[$elsa],$elsa);
     }
 
+
   $fds=$fds_copy;
   $flattened=999;
   $flat_car=$car;
@@ -44,6 +45,7 @@ function render_uscript_text($in_str,&$car=NULL){
     @render_brak($flat_car[$elsa]);
     }
 
+  echo defmap_imap($flat_car[0]['defmap'],$flat_car[0]['height']);
   return $flat_car[0];
   }
 
@@ -54,11 +56,24 @@ function render_brak(&$elsa){
   //its a braket, lets render it
   if(is_array($elsa['brak'])&&strlen($elsa['brak']['funk'])>0){
     $braketed=$elsa['brak']['funk'] ($elsa);
+    $xos=@$braketed['brako_xstart'];
+    $xoe=@$braketed['brako_xend'];
+    $xcs=@$braketed['brakc_xstart'];
+    $xce=@$braketed['brakc_xend'];
+    if($xoe&&$xcs&&$xce){
+      $b1=create_dmap(@$elsa['brak']['spelling'],($xoe-$xos),$braketed['height']);
+
+      defmap_direct_append($b1,$elsa['defmap'],$xoe);
+
+      $b2=create_dmap(@$elsa['brak']['spelling'],$xce-$xcs,$braketed['height']);
+
+      defmap_direct_append($b1,$b2,$xcs);
+      $elsa['defmap']=$b1; 
+      }
     $elsa['svg']=$braketed['svg'];
     $elsa['width']=$braketed['width'];
     $elsa['height']=$braketed['height'];
     }
-
   $elsa['depth']--;
 
   return;
@@ -91,9 +106,14 @@ function flatten_parsing(&$par,$depth){
 
 //Iduna is Elsa's mom ( "Append Child to Parent" hehe :D )
 function append_elsa(&$iduna,&$elsa){
-  global $default_word_spacing;
+  global $default_word_spacing,$defmap_on;
 
   $elsa_x=$iduna['width']+$default_word_spacing;
+
+  if($defmap_on){
+    defmap_append($iduna,$elsa,$elsa_x);
+    }
+
   $iduna['svg'].=draw_svg_symbol($elsa['svg'],0,$elsa_x);
   $iduna['width']=$elsa_x+$elsa['width'];
 
@@ -104,7 +124,7 @@ function append_elsa(&$iduna,&$elsa){
   }
 
 function render_elsa(&$car,&$elsa,$elsa_id){
-  
+
   if(is_array(@$elsa['words'])){
   	$txt_str="";
     foreach($elsa['words'] as $tword){
@@ -114,6 +134,7 @@ function render_elsa(&$car,&$elsa,$elsa_id){
     $elsa['svg']=$draw['svg'];
     $elsa['width']=$draw['width'];
     $elsa['height']=$draw['height'];
+    $elsa['defmap']=$draw['defmap'];
     }
   
   return;

@@ -10,6 +10,7 @@ function create_chunk($cstr=""){
   $new_chunk['drawn']=0;
   $new_chunk['height']=0;
   $new_chunk['width']=0;
+  $new_chunk['defmap']=array();
 
   return $new_chunk;
   }
@@ -25,6 +26,7 @@ function char2chunk($cdat){
   $rchunk['drawn']=1;
   $rchunk['height']=$cdat['height'];
   $rchunk['width']=$cdat['width'];
+  $rchunk['defmap']=create_dmap(@$cdat['spelling'],$cdat['width'],$cdat['height']);
   return $rchunk;
   }
 
@@ -38,7 +40,7 @@ function chunk_is_drawable($chunk){
 
 
 function chunk_append(&$parent, $child, $spacing=-1){
-  global $chunk_spacing;
+  global $chunk_spacing,$defmap_on;
   if($spacing>=0){
     $do_space=$spacing;
     }else{
@@ -47,7 +49,11 @@ function chunk_append(&$parent, $child, $spacing=-1){
   if(!chunk_is_drawable($child))return NULL;
 
   $xpos=$parent['width'];
-  if($xpos>0)$xpos+=$chunk_spacing+$do_space;
+  if($xpos>0)$xpos+=$do_space;
+
+  if($defmap_on){
+    defmap_append($parent,$child,$xpos);
+    }
 
   @$parent['svg']=@$parent['svg'].draw_svg_symbol($child['svg'],0,$xpos);
 
