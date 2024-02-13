@@ -18,13 +18,26 @@ function draw_word($word){
 
   if(!is_string($word))return NULL;
 
+  //check for overrides
+  if($override=search_overrides($word)){
+    $word=$override;
+    $word_lower=strtolower($word);
+    }
+
+  //try to draw a space
+  if($len=word_is_space($word)){
+    return gap_chunk($len);
+    }
 
   //try to draw number
   if($chunk=parse_is_num($word_lower)){
+
     if($chunk['opt']['base_out']==2){
       num_chunk_draw($chunk);
+      $chunk['defmap']=create_dmap("binnum",$chunk['width'],$chunk['height']);
       }else if($chunk['opt']['base_out']==16){
       hex_num_draw($chunk);
+      $chunk['defmap']=create_dmap("hexnum",$chunk['width'],$chunk['height']);
       }
     return $chunk;
     }
@@ -51,6 +64,13 @@ function draw_word($word){
     }
 
   return NULL;
+  }
+
+function word_is_space($word){
+  if(substr($word,0,1)!="_")return NULL;
+  $len=substr($word,1);
+  if(!is_numeric($len))return NULL;
+  return $len;
   }
 
 

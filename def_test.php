@@ -22,7 +22,7 @@ if(@!$istr=$_POST['istr']){
 
 
 
-<form action=text_test.php method=post>
+<form action=def_test.php method=post>
 	<input type=text size=40 name=istr value="<?php echo $istr;?>">
 	<input type=submit>
 </form>
@@ -35,9 +35,13 @@ if(@!$istr=$_POST['istr']){
 <?php
 require_once("config.php");
 
-  echo render_line_with_defmap($istr);
-  echo "</td></tr><tr><td>";
-  echo render_line_with_defmap("mult exp absolute");
+
+echo render_def("plus","width=600 border=1");
+
+
+//  echo render_line_with_defmap($istr);
+//  echo "</td></tr><tr><td>";
+//  echo render_line_with_defmap("mult exp absolute");
 
 ?>
 </td></tr></table>

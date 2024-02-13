@@ -88,6 +88,7 @@ function make_bin_number($num_str,$extra_precision=0){
   $num=scinote_remove_radix($num);
   //ar_dump($num,"make bin scinote_remove_radix out");
 
+
   $pow2=$num['pow'];
   if(!$pow2)$pow2=0;
   $base=$num['base'];
@@ -97,7 +98,6 @@ function make_bin_number($num_str,$extra_precision=0){
 
   //decide how many bits to shift so that the radix it is in the sme magnitude range
   $bin_pow_shift=find_closest_bin_power($pow_val);
-
 
   if($pow_dif>0){
     if($base==10){
@@ -110,6 +110,7 @@ function make_bin_number($num_str,$extra_precision=0){
       }
     }
 
+
   if($extra_precision>0){
     $extra_mult=bcpow("2","0".$extra_precision);
     $num['val']=bcmul("0".$num['val'],$extra_mult);
@@ -121,6 +122,7 @@ function make_bin_number($num_str,$extra_precision=0){
     }
   //ar_dump($num,"make bin make_base out");
   
+
   $num=scinote_radix_shift($num,0-$bin_pow_shift);
   return $num;
   }
@@ -129,10 +131,12 @@ $ival="000";
 
 
 $duar=NULL;
+
+
 function binnum_draw_prep($num_str,&$snar,&$duar,$extrap=0){
   //we have to create a snar and a number draw array
+
   $snar=make_bin_number($num_str,$extrap);
-  ar_dump($snar,"snar");
   $duar=scinote_2_unum($snar);
  
   return;

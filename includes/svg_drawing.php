@@ -99,6 +99,18 @@ function draw_svg_page($svg_lines,$y=0,$x=0,$w=500,$h=500){
   }
 
 
+function draw_svg_imgline($line,$mname=""){
+  $lines=array($line);
+  $svg_str=draw_svg_page($lines,0,0,$line['width'],$line['height']);
+  $svg_str=str_replace("#","%23",$svg_str);
+
+  $rstr="<img src='data:image/svg+xml;charset=utf-8,$svg_str' usemap=\"#$mname\"  class=\"mapper showcoords noborder iopacity50 icolorff0000\" />\n";
+  return $rstr;
+  }
+
+
+
+
 function import_svg($path){
   if(!file_exists($path))return NULL;
 

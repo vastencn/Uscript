@@ -14,7 +14,7 @@ function basechr2int($bc){
   }
 
 
-  function num_chunk_draw(&$chunk){ 
+function num_chunk_draw(&$chunk){ 
   global $num_scaling_wrapper;	  
   $hpos=2;
   $hspace=2;
@@ -108,7 +108,7 @@ function parse_is_num($sym){
   if($is_a_num){
   	//create a gen_uscript_number_string
   	//some excessive parsing here
-  	//parse marup format, to create a uscript number format then parse that
+  	//parse markup format, to create a uscript number format then parse that
   	//the result of pieces of this projects being cobbled together from different dev periods
     $gen_str="";
     switch($base_in){
@@ -123,11 +123,11 @@ function parse_is_num($sym){
     //if we are drawing a simple styring of hex symbols
     if($base_out==2){
 
-
       
       $snar=NULL;
       $duar=NULL;
       binnum_draw_prep($gen_str,$snar,$duar);
+
 
       if(!$snar||!$duar){
       	//prep failed

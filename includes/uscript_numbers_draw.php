@@ -9,7 +9,7 @@ function draw_circ($x,$y,$r,$stroke,&$hpos){
 	$cy=$y+$r;
 	$cr=$r-$stroke/2;
 	$hpos+=$r*2;
-	return "<circle cx=$cx cy=$cy r=$cr stroke=black; stroke-width=$stroke fill=none />";
+	return "<circle cx=\"$cx\" cy=\"$cy\" r=\"$cr\" stroke=\"black;\" stroke-width=\"$stroke\" fill=\"none\" />";
 }
 
 function draw_dot($x,$y,$r,&$hpos){
@@ -17,21 +17,21 @@ function draw_dot($x,$y,$r,&$hpos){
 	$cy=$y+$r;
 	$cr=$r;
 	$hpos+=$r*2;
-	return "<circle cx=$cx cy=$cy r=$cr stroke=none fill=black />";
+	return "<circle cx=\"$cx\" cy=\"$cy\" r=\"$cr\" stroke=\"none\" fill=\"black\" />";
 }
 
 function draw_circ_cen($x,$y,$r,$stroke){
 	$cx=$x;
 	$cy=$y;
 	$cr=$r-$stroke/2;
-	return "<circle cx=$cx cy=$cy r=$cr stroke=black; stroke-width=$stroke fill=none />";
+	return "<circle cx=\"$cx\" cy=\"$cy\" r=\"$cr\" stroke=\"black;\" stroke-width=\"$stroke\" fill=\"none\" />";
 }
 
 function draw_dot_cen($x,$y,$r){
 	$cx=$x;
 	$cy=$y;
 	$cr=$r;
-	return "<circle cx=$cx cy=$cy r=$cr stroke=none fill=black />";
+	return "<circle cx=\"$cx\" cy=\"$cy\" r=\"$cr\" stroke=\"none\" fill=\"black\" />";
 }
 
 function draw_semi_circle($x,$y,$r){

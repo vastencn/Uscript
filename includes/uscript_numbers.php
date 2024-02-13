@@ -119,7 +119,7 @@ function gen_uscript_number($num_str_in){
   $neg=0;
   $exp="";
   //sci note
-  ar_dump($str_ar,"str ar");
+  
   if($i<$arc&&$str_ar[$i]=='s'){
     $i++;
     if($str_ar[$i]=='+'){

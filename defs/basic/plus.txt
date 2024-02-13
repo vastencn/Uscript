@@ -1,0 +1,10 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the uscript definition, every non coment line after is text description
+2 + 5 = 7 _20 3 + 1 = 4 _30
+The symbol for addition is defined by examples
+after establishing numbers it is easy to define mathematical operations through examples
+Some may debate whether or not these specific examples are enough..
+an arbitrary number of examples can be added to achieve full clarity.
+Here I am trying to use a bare minimum simply for brevity.
+Please don't "debate whether a symbol IS defined absolutely clearly without ambigity or potential misinterpretation"
+I am only interested in discussions about "arguments for why a symbol is impossible define"

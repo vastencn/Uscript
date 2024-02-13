@@ -8,10 +8,27 @@
 
 //if you want to have access to the parsed text used for the rendering, then just supply the second argument, it will be a pointer to the parsed text
 
+$render_linei=1;
+
 //default gap between rendered words
 if(!isset($default_word_spacing))$default_word_spacing=8;
 
-function render_uscript_text($in_str,&$car=NULL){
+function render_line_with_defmap($istr,$mname=NULL,$href="#"){
+  global $render_linei;
+  $car=array();
+
+  if(!$mname)$mname="rline$render_linei";
+
+  $imap=create_defmap_imap($mname,$href);
+  $elsa=render_uscript_text($istr,$car,$imap);
+  $render_linei++;
+
+  $html_str=draw_svg_imgline($elsa,$mname);
+  $html_str.=$imap['html'];
+  return $html_str;
+  }
+
+function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
 
   //parse the text
   $car=parse_brackets($in_str);
@@ -45,7 +62,7 @@ function render_uscript_text($in_str,&$car=NULL){
     @render_brak($flat_car[$elsa]);
     }
 
-  echo defmap_imap($flat_car[0]['defmap'],$flat_car[0]['height']);
+  if($defmap)$defmap['html']=defmap_imap($flat_car[0]['defmap'],$flat_car[0]['height'],@$defmap['name'],@$defmap['href']);
   return $flat_car[0];
   }
 

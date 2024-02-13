@@ -1,5 +1,10 @@
-1d,1dim
-2d,2dim
-3d,3dim
-4d,4dim
+1-d,1dim
+2-d,2dim
+3-d,3dim
+4-d,4dim
++,plus
+=,equal
+-,minus
+*,mult
+/,divide
 

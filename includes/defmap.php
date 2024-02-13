@@ -1,5 +1,13 @@
 <?php
 
+function create_defmap_imap($name="",$href=""){
+  $imap=array();
+  $imap['name']=$name;
+  $imap['href']=$href;
+  $imap['html']="";
+  return $imap;
+  }
+
 function create_dmap($name="",$w=0,$h=0,$xo=0){
   $dmap=array();
   $dmap[]=create_dmap_entry($name,$w,$h,$xo);
@@ -35,8 +43,10 @@ function defmap_direct_append(&$iduna,$elsa,$xoff){
   return;
   }
 
-function defmap_imap($defmap,$lh=NULL,$mapname="imap"){
-  $rstr="<map name=imap>\n";
+function defmap_imap($defmap,$lh=NULL,$mapname="imap",$href_prefix=NULL){
+
+  if(!$href_prefix)$href_prefix="#";
+  $rstr="<map name=$mapname>\n";
 
   if($lh)$cy=$lh/2;
 
@@ -52,8 +62,8 @@ function defmap_imap($defmap,$lh=NULL,$mapname="imap"){
       $y1-=$voff;
       $y2-=$voff;
       }
-
-    $estr=" <area shape=rect coords=\"$x1,$y1,$x2,$y2\" href=\"#top\" title=\"".$elsa['defname']."\">\n";
+    $href=$href_prefix.$elsa['defname'];
+    $estr=" <area shape=rect coords=\"$x1,$y1,$x2,$y2\" href=\"$href\" title=\"".$elsa['defname']."\">\n";
     $rstr.=$estr;
     }
 
