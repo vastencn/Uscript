@@ -1,0 +1,7 @@
+alias
+boolops
+
+//when the first line is the word alias
+//then the seconds line is the new target file
+//not recursive
+//maybe we shouldn't create the potential for infinite recursive loops ;)
