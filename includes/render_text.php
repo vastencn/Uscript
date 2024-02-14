@@ -28,6 +28,13 @@ function render_line_with_defmap($istr,$mname=NULL,$href="#"){
   return $html_str;
   }
 
+function render_line($istr){
+  $car=array();
+  $elsa=render_uscript_text($istr,$car,$imap);
+  $html_str=draw_svg_imgline($elsa);
+  return $html_str;
+  }
+
 function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
 
   //parse the text
@@ -65,6 +72,8 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
   if($defmap)$defmap['html']=defmap_imap($flat_car[0]['defmap'],$flat_car[0]['height'],@$defmap['name'],@$defmap['href']);
   return $flat_car[0];
   }
+
+
 
 
 function render_brak(&$elsa){

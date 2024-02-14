@@ -1,0 +1,12 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the uscript definition, every non coment line after is text description
+1 + 1 = 2 _20 2 + 3 = 5 _20 5 - 3 = 2 _20 4 - 1 = 3
+1 * 1 = 1 _20 2 * 3 = 6 _20 8 / 2 = 4 _20 6 / 3 = 2
+text
+The symbol for equality is defined by examples
+it is defined alognside basic mathematrical operators
+
+the symbol is just 2 dots on top of each other
+for now it can be seen as simple as "2 dots are equal"
+
+after establishing numbers it is easy to define mathematical operations through examples

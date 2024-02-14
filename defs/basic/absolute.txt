@@ -1,0 +1,13 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the uscript definition, every non coment line after is text description
+absolute v1 = ( v1 exp 2 ) root 2
+text
+The symbol for absolute values is defined by formula
+
+absolute ( x ) = ( x ^ 2 ) root 2
+
+in standard english notation 
+
+abs(x) = square root of (x squared)
+
+this formula reduces and number to its absolute value

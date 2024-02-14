@@ -10,6 +10,7 @@ $dslash="\\";
 require_once($includes_dir."options.php");
 
 //level 1
+require_once($includes_dir."html.php");
 require_once($includes_dir."debug.php");
 require_once($includes_dir."binhex.php");
 require_once($includes_dir."hexbin.php");
@@ -65,6 +66,19 @@ function load_all($load_cat){
 //load basic libs by default
 load_all("basic");
 
-load_overrides("overrides")
+load_overrides("overrides");
+
+
+//html header
+function uscript_head(){
+
+  $hstr="";
+
+  $hstr.="<script type=\"text/javascript\" src=\"js/cvi_tip_lib.js\"></script>\n";
+  $hstr.="<script type=\"text/javascript\" src=\"js/maputil.js\"></script>\n";
+  $hstr.="<script type=\"text/javascript\" src=\"js/mapper.js\"></script>\n";
+
+  return $hstr;
+  }
 
 ?>

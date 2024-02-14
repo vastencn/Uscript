@@ -1,18 +1,21 @@
+<?php
+require_once("config.php");
+?>
+
 <html>
 <head>
- <title>text test</title>
-  
-	<script type="text/javascript" src="js/cvi_tip_lib.js"></script>
-	<script type="text/javascript" src="js/maputil.js"></script>
-	<script type="text/javascript" src="js/mapper.js"></script>
+ <title>def test</title>
+<?php echo uscript_head();?>
 </head>
 <body>
 
 <?php
 
-if(@!$istr=$_POST['istr']){
-  $istr="101 sub(101 sub( 10 01) 10) 111 000 sub ( 110011 )";
-  $istr="010 (101)subof 111 ";
+if(@!$def=$_GET['def']){
+  $def="plus";
+  }
+if(@$_POST['def']){
+  $def=$_POST['def'];
   }
 
 ?>
@@ -23,7 +26,7 @@ if(@!$istr=$_POST['istr']){
 
 
 <form action=def_test.php method=post>
-	<input type=text size=40 name=istr value="<?php echo $istr;?>">
+	<input type=text size=40 name=def value="<?php echo $def;?>">
 	<input type=submit>
 </form>
 
@@ -33,11 +36,11 @@ if(@!$istr=$_POST['istr']){
 
 
 <?php
-require_once("config.php");
 
 
-echo render_def("plus","width=600 border=1");
+$def=render_def($def,"width=600 border=0","http://127.0.0.1/uscript/def_test.php?def=");
 
+echo "<table border=2 bordercolor=black><tr><td>$def</td></tr></table>";
 
 //  echo render_line_with_defmap($istr);
 //  echo "</td></tr><tr><td>";

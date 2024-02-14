@@ -32,31 +32,42 @@ function search_def($word){
 
   $fname=$word.".txt";
   foreach($active_def_dirs as $tdir){
-  	$tpath=$defs_dir.$tdir.$dslash.$fname;
-    if($def=load_def($tpath)){
+    $rpath=$defs_dir.$tdir.$dslash;
+  	$tpath=$rpath.$fname;
+    if($def=load_def($tpath,$rpath)){
       return $def;
       }
     }
   return NULL;
   }
 
-function load_def($fpath){
+function load_def($fpath,$rpath=NULL,$recur=NULL){
   if(!file_exists($fpath))return NULL;
   $lar=file($fpath);
-  $car=array();
+  if($rpath){
+    if(substr($lar[0],0,5)=="alias"){
+      $tar=$rpath.preg_replace("/[^A-Za-z0-9]/", '', @$lar[1]).".txt";
+      if($recur)return NULL; // no recursive depth
+      return load_def($tar,TRUE);
+      }
+    }
+
+  $uar=array();
+  $tar=array();
+  $ptr=&$uar;
   foreach($lar as $line){
     if(substr($line,0,2)=="//")continue;
-    $car[]=$line;
+    if(strtolower(substr($line,0,4))=="text"){
+      $ptr=&$tar;
+      continue;
+      }
+    $ptr[]=$line;
     }
-  
-  if(count($car)<1)return array("","");
 
   $rar=array();
   
-  $rar['uscript']=$car[0];
-  unset($car[0]);
-  
-  $rar['text']=implode("<br>",$car);
+  $rar['uscript']=$uar;  
+  $rar['text']=implode("<br>",$tar);
   return $rar;
   }
 

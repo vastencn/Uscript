@@ -1,0 +1,9 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definitions
+//then there is a line with just the word "text", that indicates all further lines are the text defintion
+imgbasic_hnums
+text
+Hexnums are the first defined number symbols
+Numbers can be very easily defined with simple visual demonstrations
+Here we use dots
+It is doubly clear because the hex number symbols represent the string indivdual bits of the binary version of that number
