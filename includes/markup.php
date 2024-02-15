@@ -7,6 +7,13 @@ if(!isset($default_word_spacing))$default_word_spacing=8;
 $hex_num_char_spacing=3;
 $chunk_spacing=3;
 
+//these replaces are a quick addon
+//perhaps later they will be imported from index files
+//but for now im just malking in a quick static coded layer
+//they are run on the string layer befor it is even broken in words
+$markup_replace=array();
+$markup_replace[]=array("ib","imgbasic_");
+
 
 function draw_word($word){
   
@@ -75,7 +82,12 @@ function word_is_space($word){
 
 
 function draw_string($ustr){
-  global $default_word_spacing;
+  global $default_word_spacing,$markup_replace;
+
+  foreach($markup_replace as $trep){
+    $ustr=str_replace($trep[0],$trep[1],$ustr);
+    }
+
   $car=array();
   $sar=explode(" ",$ustr);
   

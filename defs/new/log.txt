@@ -1,0 +1,14 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the uscript definition, every non coment line after is text description
+8 log 3 = 2 _20 8 log 4 = 1 . 8
+text
+The symbol for logis defined by examples
+
+the symbol looks like paths splittingon the top from a "3D radical"
+pointing downward is split
+in other words it is drawn is a "3D split"
+
+after establishing numbers it is easy to define mathematical operations through examples
+
+exp, root and log can also be further clarified by cross-definition
+eg (x^y=z) = (z root y = x) = (z log x = y)

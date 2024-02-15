@@ -36,4 +36,21 @@ function render_def($word,$topts=NULL,$href=NULL){
   return $html;
   }
 
+function render_defedit($word,$topts=NULL,$href=NULL){
+  if(!$def=search_def($word))$def=empty_def($word);
+
+
+  if(!$topts)$topts="border=0";
+
+  $tdef=@$def['text'];
+
+  $html="<table><tr valign=top><td align=right><form action=\"$href\" method=post>".
+        "<textarea rows=15 cols=100 name=defuptext>".$def['raw']."</textarea><br>".
+        "<input type=submit value=\"update ".$def['word']."\">".
+        "<input type=hidden name=defupword value=\"".$def['word']."\">";
+        "</form></td></tr></table>";
+
+  return $html;
+  }
+
 ?>

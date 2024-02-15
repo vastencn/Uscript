@@ -56,7 +56,7 @@ absolute,abs,6.2
 
 
 //boolean gates.. particle/dot is used for true..there is a mini version  of "space" for false (see shortcuts)
-false,false,2.8
+false,false,10.6
 or,or,18
 nand,nand,18
 xor,xor,18

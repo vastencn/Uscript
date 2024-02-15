@@ -7,4 +7,6 @@
 -,minus
 *,mult
 /,divide
+.,dot
+^,exp
 
