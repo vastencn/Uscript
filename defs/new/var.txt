@@ -1,0 +1,19 @@
+int subcup( 1 _10 2 _10 3 _10 4 _10 5 _10 6 _10 7 _10 8 _10 9 _10 a _10 b _10 c _10 d _10 e _10 f _10 10 _10 11 _10 12 )
+var subcup( v1 _10 v2 _10 v3 _10 v4 _10 v5 _10 v6 _10 v7 _10 v8 _10 v9 _10 v10 _10 v11 _10 v12 _10 v13 _10 v14 _10 v15)
+text
+after establishing basic hexnums and math
+we establish 2 categories of symbols that use the hexnums
+
+one is "numbers" (we have not yet clarified here if they are integers, real numbers, etc..)
+we will call them "ints" for now for the sake of brevity
+
+and a class of symbols that are prefixed with the "wave" radical
+"wave numbers" will be established as "variables"
+the idea being that a "wave number" like "wave number 1" is an unstable or undefined number
+
+you can think of it this way
+the number potion is man ID number, instead of a letter/symbol/word like we use in math or code
+
+"wave-number 1" is like "variable 1" or "a" 
+"wave-number 2" is like "variable 2" or "b" 
+etc..

@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="376.32706"
-   height="225.09018"
-   viewBox="0 0 376.32703 225.09018"
+   width="124.40819"
+   height="25.813156"
+   viewBox="0 0 124.40818 25.813156"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -31,9 +31,9 @@
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="90.863217"
-     inkscape:cy="147.78531"
+     inkscape:zoom="4.0000002"
+     inkscape:cx="-32.124998"
+     inkscape:cy="85.749996"
      inkscape:window-width="1920"
      inkscape:window-height="1137"
      inkscape:window-x="-1928"
@@ -45,19 +45,19 @@
      fit-margin-right="0"
      fit-margin-bottom="0">
     <sodipodi:guide
-       position="22.484245,215.09016"
+       position="22.484245,15.813148"
        orientation="0,1"
        id="guide3890" />
     <sodipodi:guide
-       position="9.0156096,225.09017"
+       position="9.0156094,25.813158"
        orientation="0,1"
        id="guide3996" />
     <sodipodi:guide
-       position="3.2740502,205.09015"
+       position="3.27405,5.8131384"
        orientation="0,1"
        id="guide3998" />
     <sodipodi:guide
-       position="9.974022e-08,208.34082"
+       position="-1.0076861e-07,9.0638084"
        orientation="1,0"
        id="guide4000" />
   </sodipodi:namedview>
@@ -67,7 +67,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-1.3302598e-6,-291.7083)">
+     transform="translate(-1.5307686e-6,-291.7083)">
     <g
        transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
        id="g10351"
@@ -89,23 +89,23 @@
                id="g10367"
                style="stroke-width:2.22033;stroke-miterlimit:4;stroke-dasharray:none">
               <g
-                 id="g3741"
-                 transform="translate(126.72982,104.96064)">
+                 id="g1046"
+                 transform="translate(-56.740175,211.11404)">
                 <path
                    sodipodi:nodetypes="ccc"
                    inkscape:connector-curvature="0"
                    id="path4178-6-3-9"
-                   d="m 556.63792,-1986.2444 c 0.0304,-8.4074 12.83529,-9.9274 13.8784,-1.0782 1.24375,8.8611 13.805,7.8376 14.05708,0"
+                   d="m 740.10792,-2092.3979 c 0.0304,-8.4073 12.83529,-9.9273 13.8784,-1.0782 1.24375,8.8612 13.805,7.8376 14.05708,0"
                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.02959;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
                 <path
                    sodipodi:nodetypes="cccc"
                    inkscape:connector-curvature="0"
                    id="path4176-9-6-9-3-9"
-                   d="m 609.55902,-1971.4358 -1.38923,-20.6208 9.16383,7.1076 -1.02446,-18.6562"
+                   d="m 793.02902,-2077.5892 -1.38923,-20.6208 9.16383,7.1076 -1.02446,-18.6563"
                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.02959;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
                 <g
                    id="g4446-6-9-0-9-1-6-1-37-5-2-4-8-7-4-8-0-8-1"
-                   transform="matrix(1.9997172,0,0,2.0598922,362.73167,-2369.395)">
+                   transform="matrix(1.9997172,0,0,2.0598921,546.20167,-2475.5484)">
                   <g
                      id="g4404-1-2-4-93-7-6-5-3-6-1-3-0-0-0-5-3-7-62"
                      transform="translate(-1.0101525,-6.1240498)">
@@ -129,11 +129,11 @@
                    sodipodi:nodetypes="cccc"
                    inkscape:connector-curvature="0"
                    id="path4176-9-6-9-3-9-5"
-                   d="m 670.68878,-1990.7791 -20.01843,-1.431 6.89998,9.4394 -18.11129,-1.0553"
+                   d="m 854.15878,-2096.9325 -20.01843,-1.4311 6.89998,9.4395 -18.11129,-1.0553"
                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.02959;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
                 <g
                    id="g4446-6-9-0-9-1-6-1-37-5-2-4-8-7-4-8-0-8-1-3"
-                   transform="matrix(1.9997172,0,0,2.0598922,394.47338,-2369.395)">
+                   transform="matrix(1.9997172,0,0,2.0598921,577.94338,-2475.5484)">
                   <g
                      id="g4404-1-2-4-93-7-6-5-3-6-1-3-0-0-0-5-3-7-62-2"
                      transform="translate(-1.0101525,-6.1240498)">
@@ -157,11 +157,11 @@
                    sodipodi:nodetypes="ccc"
                    inkscape:connector-curvature="0"
                    id="path4178-6-3-9-7"
-                   d="m 524.36216,-1974.5463 c -8.16172,-0.031 -9.63731,-13.2215 -1.04668,-14.296 8.60227,-1.2812 7.60862,-14.2205 0,-14.4801"
+                   d="m 707.83216,-2080.6998 c -8.16172,-0.031 -9.63731,-13.2215 -1.04668,-14.296 8.60227,-1.2812 7.60862,-14.2204 0,-14.4801"
                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.02959;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
                 <g
                    id="g4446-6-9-0-9-1-6-1-37-5-2-4-8-7-4-8-0-8-1-6"
-                   transform="matrix(1.9997172,0,0,2.0598922,307.18369,-2369.395)">
+                   transform="matrix(1.9997172,0,0,2.0598921,490.65369,-2475.5484)">
                   <g
                      id="g4404-1-2-4-93-7-6-5-3-6-1-3-0-0-0-5-3-7-62-8"
                      transform="translate(-1.0101525,-6.1240498)">

@@ -42,7 +42,7 @@ function var_chunk_draw(&$chunk){
   $y=0;
   $fvsize=20;
   $fstroke=2;
-  $chunk['struct']['duar']['co'][1]="00".$chunk['struct']['duar']['co'][1];
+  $chunk['struct']['duar']['co'][1]="00".$chunk['struct']['duar']['co'][1];               
   $svg_str=draw_unum($chunk['struct']['duar']['co'],$hpos,$y,$fvsize,$fstroke,$hpos);
   if($chunk['struct']['snar']['pow']!=0){
     $hpos+=5;

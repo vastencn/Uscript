@@ -1,0 +1,14 @@
+ibte
+ibwave
+text
+The wave radical is not immediately established
+"wave" and "particle" and "space" are fundamental radicals in Uscript, especially as you get into higher levels of abstraction
+
+but at first they are not very clearly defined in that sense
+because we first do numbers, math, logic and procedural elements
+
+the "particle/dot" radical is used far more frequently at first because it is also used as TRUE and as a radix point
+
+space is used t represent ZERO and FALSE
+
+wave is less used and less defined at first, but that changes once we hit physics

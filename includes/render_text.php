@@ -53,7 +53,6 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
     render_elsa($car,$car[$elsa],$elsa);
     }
 
-
   $fds=$fds_copy;
   $flattened=999;
   $flat_car=$car;
@@ -65,9 +64,9 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
       flatten_parsing($flat_car,$elsa_depth);
       $flattened=$elsa_depth;
       }
-    
     @render_brak($flat_car[$elsa]);
     }
+
 
   if($defmap)$defmap['html']=defmap_imap($flat_car[0]['defmap'],$flat_car[0]['height'],@$defmap['name'],@$defmap['href']);
   return $flat_car[0];
@@ -107,15 +106,13 @@ function render_brak(&$elsa){
 
 function flatten_parsing(&$par,$depth){
   $first_elsa=-1;
-  $arc=count($par);
-
-  for($i=0;$i<$arc;$i++){
+  $arc=max(array_keys($par));
+  for($i=0;$i<=$arc;$i++){
     $elsa=&$par[$i];
     if(!is_array($elsa))continue;
 
     if($elsa['depth']==$depth){
       if($first_elsa!=-1){
-
         //merge into the first elsa in this straight
         append_elsa($par[$first_elsa],$par[$i]);
         unset($par[$i]);

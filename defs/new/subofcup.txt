@@ -1,0 +1,8 @@
+ibsub
+text
+the sub cup if the first introduced brak
+instead of using an open and a close, it "cups" the full content
+a few visual examples can define it clearly
+we establish the subcup very early in the first page
+so we use just shapes in a circle as the first example
+and dimensions since we have already established dimensions at this point

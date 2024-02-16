@@ -2,6 +2,9 @@ index of charcters in this folder
 rows are only valid if they have 3 csv columns and third column is an integer
 values are "spelling" "svg filename" and "width in px"
 
+//radicals
+wave,wave,6.8
+
 //hex chars
 0,0,18
 1,1,15
@@ -46,7 +49,7 @@ divide,divide,14
 exp,exp,18
 root,root,17
 log,log,15.8
-var,var
+var,var,15
 int,int,7
 
 inv(invert) used as boolean NOT and to create negative numbers

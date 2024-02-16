@@ -1,0 +1,7 @@
+(10 / 2) / (10 / 2) =  (8) / (8) = 1 _20 
+(10 / (2 / 10)) / 2 = ( 10 / 0 . 2 ) / 2 = (80) / 2 = 40
+text
+we first define the simple bracket as soon as we have basic numbers and math ops
+it is easy to define it as controlling order of operation
+
+this easily gives us a very important grouping and sequencing tool

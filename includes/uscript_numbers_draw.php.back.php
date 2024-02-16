@@ -4,10 +4,6 @@
 //the actual drawing function and the data struct need an upgrade, but they work for now and are an isloated subsystem
 //so they have just been slated for upgrade later when the project has been fully fleshed out
 
-$extrah=0;
-$extraw=0;
-
-
 function draw_circ($x,$y,$r,$stroke,&$hpos){
 	$cx=$x+$r;
 	$cy=$y+$r;
@@ -139,7 +135,6 @@ function bin_streak($str){
 			$rar[$l]=array($sar[$i],1);
 		}
 	}
-	//ar_dump($rar);
 	return $rar;
 }
 
@@ -171,15 +166,12 @@ function draw_unum_seg($seg,&$lines,&$segoff,$yval,$vlen,$hlen,$pre,$post,$x,$y,
 }
 
 function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
-	global $extrah,$extraw;
-	$extrah=0;
     $prefix=array();
-    $scineg=FALSE;
+
 	$nval=$nv;
 	if(substr($nv[1],0,2)=="00"){
 	  $prepts="0,0, 10,0 5,5 ";
 	  }
-
 //echo "!!!";
 //print_r($nval);
 //echo "!!!";
@@ -235,8 +227,7 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 //echo "</pre><hr>";
 				// if sci note negative then place it at start
 				if($nval[5]<0){
-					$segs=[];
-					$scineg=TRUE;
+					$segs=[[7,0]];
 				}
 
 
@@ -368,7 +359,6 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 
 //print_r($segs);
 
-					//	ar_dump($segs,"first");
 		//clean up hlens
 	$pprevy=0;
 	$prevy=0;
@@ -547,7 +537,6 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 	$prevy=$yval;
 	}
 
-					//	ar_dump($segs);
 
 	  //  echo "e";print_r($segs);
 
@@ -593,7 +582,6 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 	}
 
 
-				//		ar_dump($segs);
 
 	$vi=0;
 	for($i=0;$i<$c;$i++){
@@ -612,15 +600,11 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 	$segoff=0;
 
 
+						//print_r($segs);
 
 	for($i=0;$i<$c;$i++){
 		$now=$segs[$i];
 		$val=$now[0];
-
-        if($val==7){
-          //continue;
-          }
-
 		$bits=$now[1];
 		$hvals=$now[3];
 		if($val<2){
@@ -688,7 +672,7 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 							$xtras.=draw_dot_cen( $pxpos+($hlen*$fv)/1.5 , ((($y1+$y2)/1.5)*$usable_height)+$fs/2 , 3 );
 							$lines[0][]=[$segoff,$y2];
 							break;
-			case 7:			
+			case 7:
 							$yn=($now[2][1]+1)/2;
 							$pxpos=($segoff*$fv)+$x;
 							$lines[0][]=[$segoff,$yn];
@@ -739,81 +723,6 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 	}
 
 	$lines[0]=$nline;
-
-
-  $xtrasclose="";
-
-	if($scineg){
-      $arm_len=8;
-      $fpoint=&$lines[0][0];
-      $lpoint=&$lines[0][1];
-      $fpoint_back=$fpoint;
-
-      if($fpoint[1]==$lpoint[1]){
-        xbump($lines,.2);
-        }
-
-      $fpoint=$fpoint_back;
-
-      $dx=$lpoint[0]-$fpoint[0];
-      $dy=$lpoint[1]-$fpoint[1];
-      $ang=@atan(@$dy/@$dx);
-      $angle=rad2deg($ang);
-
-      
-      $pv=$fv*0.3;
-      $hfv=(($fv-$fs)*$fpoint[1])+$fs/2;
-      $trx=($fpoint[0]*$fv)+$x;
-
-      //xbump($lines,5/$fv);
-      $fpoint=$fpoint_back;
-
-      $a1=deg2rad($angle+45);
-      $a2=deg2rad($angle-45);
-
-      
-      $p1x=cos($a1)*$arm_len+$trx;      
-      $p1y=sin($a1)*$arm_len+$hfv;
-      $p3x=cos($a2)*$arm_len+$trx;      
-      $p3y=sin($a2)*$arm_len+$hfv;
-
-      
-      $arrow="<polyline points=\"$p1x,$p1y $trx,$hfv $p3x,$p3y\" style=\"fill:none;stroke:black;stroke-width:2\"  transform=\"translate(0,0)\" />";
-      $xtras.=$arrow;
-      
-      $mxpy=$p3y;
-      if($p1y>$p3y)$mxpy=$p1y;
-      $mnpy=$p3y;
-      if($p1y<$p3y)$mnpy=$p1y;
-
-      $extrah=0;
-      if($mnpy<0)$extrah-=$mnpy;
-      if($mxpy>$fv)$extrah+=$mxpy-$fv;
-
-      $mnx=$p1x;
-      if($p3x<$mnx)$mnx=$p3x;
-
-      if($mnx<0){
-        $extraw=0-$mnx;
-        }
-
-      //if($extrah){
-      //  $rsratio=$fv/($extrah+$fv);
-      //  echo "[ratio $rsratio]";
-      //	$xtras="<g>".$xtras;
-      //	$xtrasclose="</g>";
-      //  }
-      }
-
-    $drawn=draw_polys($x,$y,$fv,$fs,$lines,$hpos);
- 	return $xtras.$drawn.$xtrasclose;;
-  }
-
-function xbump(&$lines,$bump){
-  foreach($lines as &$line){
-  	foreach($line as &$pnt){
-      $pnt[0]+=$bump;
-      }
-    }
+	return $xtras.draw_polys($x,$y,$fv,$fs,$lines,$hpos);
   }
 ?>

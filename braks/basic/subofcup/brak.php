@@ -67,7 +67,11 @@ function subofcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$st
   $nchunk['svg']=$svg_str;
   $nchunk['drawn']=TRUE;
   $nchunk['height']=$height+$stroke_width;
-  $nchunk['width']=$inner_space_end+$stroke_width+$branch_length;
+  $nchunk['width']=$inner_space_end+$branch_length;
+  $nchunk['brako_xstart']=0;
+  $nchunk['brako_xend']=$chunk_x_offset;
+  $nchunk['brakc_xstart']=$chunk_x_offset+$chunk['width'];
+  $nchunk['brakc_xend']=$nchunk['width'];
 
   return $nchunk;
   }

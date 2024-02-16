@@ -1,0 +1,10 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the Uscript definition, every non comment line after the line with the word "text" is the text description
+imgbasic_boolgates
+text
+the simple boolean operators are defined as a group
+their operation is a systematic application of a truth table
+The truth symbol itself is a visual representation of the truth table
+the systematic usage is defined by several examples
+We don't need to define each individual symbol
+once the system is defined any permutation usage is clear
