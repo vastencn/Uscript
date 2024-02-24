@@ -1,0 +1,15 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+spacetime is the symbol for the concept of time and space being a 4 dimensional construct
+
+we define it as 
+3dspace * time = spacetime
+4dspace sub(spacetime)
+
+so spacetime is the product of 3d space and time, and it is a sub element of 4dspace (it is a type of 4d space)
+
+it is drawn as a combination of
+the the circle for space/zero/false to mean space
+the + which is represents the time/entropy or temporal/progression element

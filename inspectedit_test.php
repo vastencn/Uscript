@@ -12,7 +12,14 @@ update_def_from_post();
 <body>
 
 <?php
+//echo "!!!";
+//echo pre_render("a a a\n b b b \n c c c ");
+//echo "!!!";
+
 $istr=html_postget("istr");
+echo "{1{$istr}}";
+$istr=insert_pre_renders($istr);
+echo "{2{$istr}}";
 echo selfform("istr");
 ?>
 

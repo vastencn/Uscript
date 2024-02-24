@@ -99,7 +99,7 @@ function load_brak_index($ipath,$fpath){
   $flines=file($ipath);
 
   foreach($flines as $tline){
-    $tar=explode(",",preg_replace("/[^a-z0-9,.]/", "", strtolower($tline)));
+    $tar=explode(",",preg_replace("/[^a-z_0-9,=.]/", "", strtolower($tline)));
 
 
     $tarc=count($tar);
@@ -128,7 +128,7 @@ function load_brak_index($ipath,$fpath){
       
         if($nrec=load_brak($load_path)){
           $nrec['spelling']=$tar[0];
-          $nrec['folder']=$tar[1];
+          $nrec['folder']=$fpath.$tar[1];
           $records[]=$nrec;
           }
 
@@ -154,7 +154,7 @@ function load_brak_index($ipath,$fpath){
         &&
         ctype_alnum($tar[1])
         &&
-        ctype_alnum($tar[2])
+        !preg_match('/[^0-9_,=.a-z]/', $tar[2])
         ){
       
         //its a good record, add it
@@ -168,11 +168,18 @@ function load_brak_index($ipath,$fpath){
       }
 
     }
-
   return $records;
   }
 
+function brak_load_opt_img($img,$brak){
+  global $braks_dir,$dslash;
+  $ipath=$brak['folder'].$dslash."$img.svg";
+  $svg=import_svg($ipath);
+  return $svg;
+  }
+
 function search_brak($bname,$right=FALSE,$type=1){
+  echo "<br><br>[bname $bname]";
   global $uscript_braks,$uscript_braks_aliases;
   if(strlen($bname)<1)return NULL;
 
@@ -182,8 +189,19 @@ function search_brak($bname,$right=FALSE,$type=1){
       }
     }
 
+  $bopts=NULL;
+  $opts=explode("_opt_",$bname);
+  if(count($opts)>1){
+    $bname=$opts[0];
+    $optlines=explode(".",str_replace(" ","",$opts[1]));
+    foreach($optlines as $tline){
+      $bopts[]=explode("=",$tline);
+      }
+    }
+
   foreach($uscript_braks as $tbrak){
     if($tbrak['spelling']==$bname && $tbrak['label_right']==$right){
+      $tbrak['opts']=$bopts;
       return $tbrak;
       }
     }

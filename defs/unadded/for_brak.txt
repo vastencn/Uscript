@@ -1,0 +1,16 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+array element braket
+
+The array element brket is drawn abovbe and below, as opposed to on the sides
+this is arbitrary, any modification distinguisinhes it from standard braks is acceptable
+This is what was chosen and I like it...for now anyways
+
+The identity and meaning of the array brak is established while defining the first basic array functions
+sum and count braks operate on arrays, they can be used on anything
+but count will return 1 or 0 unless there are array elements (because anything else is just "one big statement or formula")
+and sum will just return output/result or a whole statement or formula, or a 1`/0 true false, etc..
+
+unless there are array elements, then array functions dont produce useful results

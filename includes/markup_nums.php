@@ -15,7 +15,7 @@ function basechr2int($bc){
 
 
 function num_chunk_draw(&$chunk){ 
-  global $num_scaling_wrapper,$extrah,$extraw;	  
+  global $num_scaling_wrapper,$extrah,$extrad,$extraw,$extraw2;	  
   $hpos=2;
   $hspace=2;
   $x=10;
@@ -23,23 +23,41 @@ function num_chunk_draw(&$chunk){
   $fvsize=20;
   $fstroke=2;
   $svg_str="";
-  if($chunk['struct']['duar']['co'][1]!="1")$svg_str=draw_unum($chunk['struct']['duar']['co'],$hpos,$y,$fvsize,$fstroke,$hpos);
+  if($chunk['struct']['frac']){
+    $chunk['struct']['duar']['co'][3]=$chunk['struct']['frac']['duar']['co'][1];
+    $chunk['struct']['duar']['co'][4]=$chunk['struct']['frac']['duar']['co'][2];
+    }
+  if($chunk['struct']['duar']['co'][1]!="1"||$chunk['struct']['duar']['co'][2]>0){
+    $slen=strlen($chunk['struct']['duar']['co'][1]);
+    if($slen<2)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];
+    if($slen<3)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];
+    if($slen<4)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];
+    $svg_str=draw_unum($chunk['struct']['duar']['co'],$hpos,$y,$fvsize,$fstroke,$hpos);
+    }
   if($chunk['struct']['snar']['pow']!=0){
+    if($chunk['struct']['frac']){
+      $chunk['struct']['duar']['exp'][3]=$chunk['struct']['frac']['duar']['co'][1];
+      $chunk['struct']['duar']['exp'][4]=$chunk['struct']['frac']['duar']['co'][2];
+      }
     $slen=strlen($chunk['struct']['duar']['exp'][1]);
     if($slen<2)$chunk['struct']['duar']['exp'][1]="0".$chunk['struct']['duar']['exp'][1];
     if($slen<3)$chunk['struct']['duar']['exp'][1]="0".$chunk['struct']['duar']['exp'][1];
     if($slen<4)$chunk['struct']['duar']['exp'][1]="0".$chunk['struct']['duar']['exp'][1];
     if($svg_str)$hpos+=5;
     $exp_str=draw_unum($chunk['struct']['duar']['exp'],$hpos,$y,$fvsize,$fstroke,$hpos);
-    $vshift=$extrah/2;
-    $svg_str.="\n".draw_svg_symbol($exp_str,$vshift,$extraw);
-    $fvsize+=$extrah;
+    $vshift=$extrah;
+    $svg_str.="\n".draw_svg_symbol($exp_str,$vshift);//,$extraw);
+    $fvsize+=$extrah+$extrad;
+    $chunk['type']="scinote";
+    }else{
+    $chunk['type']="binnum";
     }
 
   $chunk['svg']=draw_svg_symbol($svg_str,0-$fvsize/2);
   $chunk['height']=$fvsize;
-  $chunk['width']=$hpos+$extraw;
+  $chunk['width']=$hpos+$extraw+$extraw2;
   $chunk['drawn']=TRUE;
+
   return TRUE;
   }
 
@@ -117,19 +135,33 @@ function parse_is_num($sym){
   	//some excessive parsing here
   	//parse markup format, to create a uscript number format then parse that
   	//the result of pieces of this projects being cobbled together from different dev periods
+
+    $num_str2=NULL;
+    $frac_ar=explode("/",$num_str);
+    if(count($frac_ar)>1){
+      $num_str=$frac_ar[0];
+      $num_str2=$frac_ar[1];
+      }
+
     $gen_str="";
+    $frac_gen_str=NULL;
     switch($base_in){
       case 16:$gen_str="h";break;
       case 2:$gen_str="b";break;
       }
+
+    if($num_str2){
+      $frac_gen_str=$gen_str.$num_str2;
+      }
+
     $gen_str.=$num_str;
+
 
 
     //try to make a number struct from the string
 
     //if we are drawing a simple styring of hex symbols
     if($base_out==2){
-
       
       $snar=NULL;
       $duar=NULL;
@@ -143,6 +175,16 @@ function parse_is_num($sym){
       $num_struct=array();
       $num_struct['snar']=$snar;
       $num_struct['duar']=$duar;
+      $num_struct['frac']=NULL;
+
+      if($frac_gen_str){
+        $snar=NULL;
+        $duar=NULL;
+        binnum_draw_prep($frac_gen_str,$snar,$duar);
+        $num_struct['frac']=array();
+        $num_struct['frac']['snar']=$snar;
+        $num_struct['frac']['duar']=$duar;
+        }
 
 
 

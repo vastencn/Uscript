@@ -1,0 +1,15 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+1 + 1 = 2 _20 2 + 3 = 5 
+text
+The sin brak is defined after we have already establihs the symbols for the angles and sides of right-angle tiangles
+
+We could go into lots of 2d graphical detail defining sin/cos/tan functions
+but it is so much simples to justuse SOH CAH TOA as the defintions
+
+The function braks for sin/cos/tan incorporate a mini graph as thier "iconic element"
+while not necesarry to resemble the actual graph (because defintion comes from formula)
+The iconic elements are the function graph
+
+We defines time flow as downward, so our X/Y axis are inverted in Uscript (compared to what you are used to)
+it does seem intuitve that the "time" axis is the "input" and and the "entropy" axis is the "output"

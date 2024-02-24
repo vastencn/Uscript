@@ -1,0 +1,16 @@
+snd1 _2 snd2 _2 snd3 _2 snd4 _2 snd5 _2 snd6 _2 snd7 _2 snd8 _2 snd9 _2 snd10 _2 snd11 _2 snd12 _2 snd13 _2 snd14 _2 snd15 _2 snd16 _2 snd17 _2
+snd-1 _2 snd-2 _2 snd-3 _2 snd-4 _2 snd-5 _2 snd-6 _2 snd-7 _2 snd-8 _2 snd-9 _2 snd-10 _2 snd-11 _2 snd-12 _2 snd-13 _2 snd-14 _2 snd-15 _2 snd-16 _2 snd-17 _2
+text
+scinote can be written using binary string number notation
+b>b1010s1 = BINARY( 1010 * 10^1 ) = DEC ( 9 * 2^1 )
+b>b11010s101 = BINARY( 11010 * 10^101 )  = DEC ( 25 * 2^5 )
+b>b11010s-101 = BINARY( 11010 / 10^101 )  = DEC ( 25 / 2^5 )
+
+you can use other bases and a shorthand written version of 
+snb (bin)
+snh (hex)
+snd (dec)
+
+"snb1111" = DECIMAL "* 2^15"
+"snd15"   = DECIMAL "* 2^15"
+"snhf"   = DECIMAL  "* 2^15"

@@ -30,9 +30,24 @@ function render_line_with_defmap($istr,$mname=NULL,$href="#"){
 
 function render_line($istr){
   $car=array();
-  $elsa=render_uscript_text($istr,$car,$imap);
+  $elsa=render_uscript_text($istr,$car);
   $html_str=draw_svg_imgline($elsa);
   return $html_str;
+  }
+
+function multi_line_render($str){
+
+  $str_lines=explode("\n",$str);
+  if(count($str_lines)<1)return NULL;
+  
+  $render_lines=array();
+  foreach($str_lines as $line){
+    $elsa=render_uscript_text($line);
+    $render_lines[]=$elsa;
+    }
+
+  $svg_page=draw_svg_page($render_lines,$y=0,$x=0);
+  return $svg_page;
   }
 
 function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
@@ -64,6 +79,7 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
       flatten_parsing($flat_car,$elsa_depth);
       $flattened=$elsa_depth;
       }
+     // ar_dump($flat_car,"fcar");
     @render_brak($flat_car[$elsa]);
     }
 
@@ -80,7 +96,17 @@ function render_brak(&$elsa){
 
   //its a braket, lets render it
   if(is_array($elsa['brak'])&&strlen($elsa['brak']['funk'])>0){
-    $braketed=$elsa['brak']['funk'] ($elsa);
+    $argc=$elsa['brak']['arg_count'];
+    if($argc>1){
+      $args=explode(",",$elsa['content']);
+      $chunks=array();
+      foreach($args as $arg){
+        $chunks[]=pre_render_into_chunk($arg);
+        }
+      $braketed=$elsa['brak']['funk'] ($chunks);
+      }else{
+      $braketed=$elsa['brak']['funk'] ($elsa);
+      }
     $xos=@$braketed['brako_xstart'];
     $xoe=@$braketed['brako_xend'];
     $xcs=@$braketed['brakc_xstart'];
@@ -128,10 +154,14 @@ function flatten_parsing(&$par,$depth){
   } 
 
 //Iduna is Elsa's mom ( "Append Child to Parent" hehe :D )
-function append_elsa(&$iduna,&$elsa){
+function append_elsa(&$iduna,&$elsa,$spacing=9999){
   global $default_word_spacing,$defmap_on;
 
-  $elsa_x=$iduna['width']+$default_word_spacing;
+  if($spacing==9999){
+    $spacing=$default_word_spacing;
+    }
+
+  $elsa_x=$iduna['width']+$spacing;
 
   if($defmap_on){
     defmap_append($iduna,$elsa,$elsa_x);
@@ -139,6 +169,7 @@ function append_elsa(&$iduna,&$elsa){
 
   $iduna['svg'].=draw_svg_symbol($elsa['svg'],0,$elsa_x);
   $iduna['width']=$elsa_x+$elsa['width'];
+  $iduna['content'].=" ".$elsa['content'];
 
   if($elsa['height']>$iduna['height'])$iduna['height']=$elsa['height'];
 

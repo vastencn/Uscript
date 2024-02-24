@@ -1,0 +1,32 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+the return causes an execution brak to reduce to a value
+
+normally exec braks just execute the procedure inside them
+the return symbol acts the same as the return in our standard programming
+
+it sends the current code, when an execution brak hits a return symbol it is halted
+and the value on the right of the return symbol becaoes the "value of the exec brak"
+
+eg
+
+exec( a <-= 5   return a   a<-=6 )=5
+*"<-=" irepresent the Uscript vset_left rymbol 
+
+in the above example the exec brak has a value of 5 because it returns a after it is set to 5 but before it is set to 6
+
+pass arguments into a an exec braket are done by using the "sub" braket
+
+eg function-sub(x=1)
+the format is easy to define by exmaple
+the implied intuitive meaning is..
+"of all possible times/ways this function is/can/will be executed, this is the sub/case/time whe x=1"
+
+create a function with argument in the same way we normally define a function in programming,
+you would just create a new brak and define it 
+
+eg. xxxx(y,z) = exec(return y*z)
+here the xxxx is just a stand in
+in Uscript you would create a new grpahical symbol, aribtrary, or representitive, as long as it is unique

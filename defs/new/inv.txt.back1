@@ -1,0 +1,32 @@
+inv true = false _15 inv false = true _15 0 - 1 = inv 1 _15 3 - 9 inv 6 _15 3 - inv 4 = 7 _15 inv 3 - inv 4 = 1
+2 * inv 4 = inv 8 _15 inv 2 * inv 2 = 4 _15 inv 6 / 2 = inv 3 _15 6 / inv 2 = inv 3 _15 inv 6 / inv 3 = 2
+text
+the invert symbol is first defined quite easily as the prefix for negative numbers
+it will be used later for non numeric inversions as well
+
+the symbol is drawn as a 1D line with a "dot/particle on top" and and a "zero/space" the bottom
+
+our normal direction of increase is "down on the page"
+so placing a "particle/true" on top and "zero/space" below it on a 1D line is the reverse of our established "normal flow"
+the zero should be on top and the 1 below it
+
+up/down correlation to +/- is entirely arbitrary
+
+There is a VERY LONG discussion(or debate/argument depending on your attitude) waiting for anyone who wants to engage the topic of arbitrary associations
+
+there is no fundamental reason why UP should be +, or why down should be -
+
+and because we are reading top to bottom
+our "flow of direction is downward"
+
+The world of the page is the only context that exists in Uscript
+the specifics of the human experience is considered arbitrary
+
+Down=+ up=- is not "better or correct"
+it is also arbitrary with a mild rationalization of "line number increases downward"
+and we establish our time arrow to point down
+
+if anything I chose it to be contrarian so that using Uscript could be a better mental experiment on my own mind and associations
+
+and remember, down on the page doesn't even mean "down in the real world"
+an intelligent being who found a Uscript key may hold the paper rotated 180 and read it bottom->top, right->left

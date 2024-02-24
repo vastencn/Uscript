@@ -1,0 +1,21 @@
+index of charcters in this folder
+rows are only valid if they have 3 csv columns and third column is an integer
+values are "spelling" "svg filename" and "width in px"
+we are assuming all chars speced to height 18-20px
+will probably need to add a height param later
+
+interact,interact,17.8
+charge2p,charge2p,18
+charge,charge,16.8
+hspin,hspin,13
+fspin,fspin,12.2
+spacetime,spacetime,14
+time,time,12
+
+//particles
+
+lepton,lepton,8.7
+quark,quark,17
+
+//bosons
+higgs,higgs,9.5

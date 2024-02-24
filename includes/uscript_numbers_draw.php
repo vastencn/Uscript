@@ -4,8 +4,10 @@
 //the actual drawing function and the data struct need an upgrade, but they work for now and are an isloated subsystem
 //so they have just been slated for upgrade later when the project has been fully fleshed out
 
+$extrad=0;
 $extrah=0;
 $extraw=0;
+$extraw2=0;
 
 
 function draw_circ($x,$y,$r,$stroke,&$hpos){
@@ -39,10 +41,10 @@ function draw_dot_cen($x,$y,$r){
 }
 
 function draw_semi_circle($x,$y,$r){
-	return "<path
-     style=\"fill:none;stroke:#000000;stroke-width:2\"
-     d=\"m 2.1643134,4.1801885 c -2.3129689,0 -4.1880019,-1.875033 -4.1880019,-4.18800182 0,-2.31296918 1.875033,-4.18800138 4.1880019,-4.18800138\"
-     id=path832 transform=\"translate($x,$y) rotate($r)\" />";
+	return "<path ".
+     "fill=\"none\" stroke-width=\"2\" stroke=\"black\" ".
+     "d=\"m 2.1643134,4.1801885 c -2.3129689,0 -4.1880019,-1.875033 -4.1880019,-4.18800182 0,-2.31296918 1.875033,-4.18800138 4.1880019,-4.18800138\" ".
+     "transform=\"translate($x,$y) rotate($r)\" />";
 }
 
 function draw_polys($x,$y,$vsize,$stroke,$pts,&$hpos=NULL){
@@ -171,11 +173,16 @@ function draw_unum_seg($seg,&$lines,&$segoff,$yval,$vlen,$hlen,$pre,$post,$x,$y,
 }
 
 function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
-	global $extrah,$extraw;
+	global $extrah,$extrad,$extraw,$extraw2;
 	$extrah=0;
     $prefix=array();
     $scineg=FALSE;
+    $scipos=FALSE;
 	$nval=$nv;
+      $extrah=0;
+      $extrad=0;
+      $extraw=0;
+      $extraw2=0;
 	if(substr($nv[1],0,2)=="00"){
 	  $prepts="0,0, 10,0 5,5 ";
 	  }
@@ -299,9 +306,10 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
 //echo "<hr>Starting segs7<pre>";
 //print_r($segs);
 //echo "</pre><hr>";
-				//if sci not positive then do sci not symbol at end
+				//if sci note positive then do sci not symbol at end
 				if($nval[5]>0){
-					$segs[]=[8,0];
+					//$segs[]=[8,0];
+					$scipos=TRUE;
 				}
 
 				$c=count($segs);
@@ -787,26 +795,87 @@ function draw_unum($nv,$x,$y,$fv,$fs,&$hpos){
       if($p1y<$p3y)$mnpy=$p1y;
 
       $extrah=0;
-      if($mnpy<0)$extrah-=$mnpy;
-      if($mxpy>$fv)$extrah+=$mxpy-$fv;
+      $extrad=0;
+      $extraw=0;
+      $extraw2=0;
+      if($mnpy<0)$extrah=abs($mnpy);
+      if($mxpy>$fv)$extrad=$mxpy-$fv;
 
       $mnx=$p1x;
       if($p3x<$mnx)$mnx=$p3x;
 
       if($mnx<0){
-        $extraw=0-$mnx;
+        $extraw2=0-$mnx;
+        }
+      }	
+
+      if($scipos){
+      $arm_len=8;
+      $lp=count($lines[0])-1;
+      $fpoint=&$lines[0][$lp];
+      $lpoint=&$lines[0][($lp-1)];
+      $fpoint_back=$fpoint;
+
+      if($fpoint[1]==$lpoint[1]){
+        $fpoint[0]+=0.2;
+        //$lpoint[0]+=10.2;
+        //echo "[mod]";
         }
 
-      //if($extrah){
-      //  $rsratio=$fv/($extrah+$fv);
-      //  echo "[ratio $rsratio]";
-      //	$xtras="<g>".$xtras;
-      //	$xtrasclose="</g>";
-      //  }
+
+      //$fpoint=$fpoint_back;
+
+      $dx=$lpoint[0]-$fpoint[0];
+      $dy=$lpoint[1]-$fpoint[1];
+      $ang=@atan(@$dy/@$dx);
+      $angle=rad2deg($ang);
+      //echo "[$angle]";
+
+      
+      $pv=$fv*0.3;
+      $hfv=(($fv-$fs)*$fpoint[1])+$fs/2;
+      $trx=($fpoint[0]*$fv)+$x;
+
+      //xbump($lines,5/$fv);
+      //$fpoint=$fpoint_back;
+      $amod=225;
+      if(abs($angle)==90)$amod-=180;
+      //echo "[$amod]";
+      $a1=deg2rad($angle-$amod);
+      $a2=deg2rad($angle+$amod);
+
+      
+      $p1x=cos($a1)*$arm_len+$trx;      
+      $p1y=sin($a1)*$arm_len+$hfv;
+      $p3x=cos($a2)*$arm_len+$trx;      
+      $p3y=sin($a2)*$arm_len+$hfv;
+
+      
+      $arrow="<polyline points=\"$p1x,$p1y $trx,$hfv $p3x,$p3y\" style=\"fill:none;stroke:black;stroke-width:2\"  transform=\"translate(0,0)\" />";
+      $xtras.=$arrow;
+      
+      $mxpy=$p3y;
+      if($p1y>$p3y)$mxpy=$p1y;
+      $mnpy=$p3y;
+      if($p1y<$p3y)$mnpy=$p1y;
+
+      $extrah=0;
+      $extrad=0;
+      $extraw=0;
+      $extraw2=0;
+      if($mnpy<0)$extrah=abs($mnpy);
+      if($mxpy>$fv)$extrad=$mxpy-$fv;
+
+      $mnx=$p1x;
+      if($p3x>$mnx)$mnx=$p3x;
+      $ep=$fpoint[0]*$fv;
+      if($mnx>$ep){
+        $extraw=$mnx-$ep;
+        }
       }
 
     $drawn=draw_polys($x,$y,$fv,$fs,$lines,$hpos);
- 	return $xtras.$drawn.$xtrasclose;;
+ 	return $xtras.$drawn.$xtrasclose;
   }
 
 function xbump(&$lines,$bump){

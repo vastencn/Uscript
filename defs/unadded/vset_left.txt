@@ -1,0 +1,21 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+the "vset left" or "variable set" how we set the value of a variable
+the variable is on the left and the value to set on the right
+
+There is also the horizontally flipped "vset right" version where the variable is on right and value on the left
+
+it is drawn as an equal symbol with an arrow through it pointing to the variable
+here we are using the motion/direction meaning of the arrow
+showing that the value is moved into the variable
+
+in normal coding we use = to be a "variable set" and == to be a comparator
+i assume this is because we usually set variables much more frequently than compare them
+so setting varibles got the shorter version
+
+however the original/math usage of the = symbol is not usually the "action" type menaing
+so it feels more natural that the "action of setting a variable" is the one that should be different
+
+with a few examples it is easily defined clearly

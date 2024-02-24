@@ -1,0 +1,11 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the uscript definition, every non coment line after the line "text" is text description
+( v1 aequal v2 ) = ( absolute v1 = absolute v2 ) _20 eval( 3 aequal 3 ) = true _20 eval( inv 3 aequal 3 ) = true _20 eval( 3 aequal 2 ) = false
+text
+the absolute equal symbol compares magnitude equality
+
+the symbol can be seen as hybrid of the absoluite symbol and the equality symbol
+
+it can be defined very simply as "(x abs_equals y) = (abs(x) = abs(y))"
+
+here there are few extra examples

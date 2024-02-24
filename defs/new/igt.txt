@@ -1,0 +1,16 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the uscript definition, every non coment line after the line "text" is text description
+( v1 igt v2 ) = ( eval( v1 > v2 ) = true )
+text
+"is greater than" is a "statement" not a "question"
+
+(x "is greater than" y)
+is defined as 
+("evalute(x>y) = true")
+
+note tha here we are establishing a case where "evalation braks" are used instead of reular braks
+
+regular braks are just order of operation and "grouping"
+eval braks return the true/false of their contents
+
+here eval braks help define a "statement" and will later be expanded to be used for conditional logic

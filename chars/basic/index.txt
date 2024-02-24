@@ -1,6 +1,8 @@
 index of charcters in this folder
 rows are only valid if they have 3 csv columns and third column is an integer
 values are "spelling" "svg filename" and "width in px"
+we are assuming all chars speced to height 18-20px
+will probably need to add a height param later
 
 //radicals
 wave,wave,6.8
@@ -51,9 +53,23 @@ root,root,17
 log,log,15.8
 var,var,15
 int,int,7
+frac,frac,11
+infinity,infinity,21
+inf,inf,15.3
+
+aequal,aequal,7.5
+eul,eul,18.8
+absequal,absequal,6
+gt,gt,20
+lt,lt,20
+islt,islt,20
+isgt,isgt,20
+
+
+
 
 inv(invert) used as boolean NOT and to create negative numbers
-inv,inv,1.8
+inv,inv,7
 absolute,abs,6.2
 
 
@@ -117,3 +133,42 @@ tm_ep,tm_ep,18
 tm_em,tm_em,18
 tp_ep,tm_ep,18
 tp_em,tm_em,18
+
+
+//geometry
+
+angle,angle,19
+ang,ang,16.6
+radian,radian,11.7
+rev,rev,11
+
+//trig
+  //tri general
+    //angles
+triaa,triaa,18.5
+triab,triab,18
+triac,triac,18
+
+  //right tri
+rt,rt,16
+    //right tri angles
+rtav,rtav,18.5
+rtah,rtah,18
+	//right tri sides
+rtsh,rtsh,16
+rtsv,rtsv,16.8
+rthyp,rthyp,19.4
+
+//circles/spheres
+rad,rad,15
+diam,diam,15
+pi,pi,12
+
+circlearea,circlearea,11
+spherevol,spherevol,11
+spheresur,spheresur,11
+
+//procedural
+return,return,14.5
+vsetleft,vsetleft,18
+vsetright,vsetright,18

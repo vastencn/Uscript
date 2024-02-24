@@ -1,0 +1,8 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+the symbol for the mathematical constant "e" or "eulers number"
+it looks like exponential curves as it is most associated with that
+
+the symbol is arbitrary as it is defined by a formula

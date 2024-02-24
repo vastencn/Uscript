@@ -1,0 +1,14 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+the infinity symbol is defined as the "simplest infinity"
+(mathmatecians have complicated the concept of infiity well beyond the layman defintion. some infinities are largers than others, etc..)
+
+we define this uscript symbol (we just call it inifity here, it is not defined by its english translation)
+
+1.while(true){x++;} return x; **increment a number forever, then check the number, it is infintiy
+2.(x+x=x AND x*x=x AND x>0) = (x=infinity) **only infinity fiits the bill for x
+
+The symbol looks like 3 "sub symbols" pointing down, so its actualy (read top to bottom) "sub ( sub( sub( ) ) )"
+or in other words "contains( contains( contains() ) )"

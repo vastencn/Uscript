@@ -68,7 +68,7 @@ function draw_svg_symbol($svg_str,$y=0,$x=0){
   return $rstr;
   }
 
-function draw_svg_line($sline,$y=0,$x=0){
+function draw_svg_line($sline,$y=0,$x=0,&$len){
   global $line_i;
   $rstr="<g
      inkscape:label=\"Line $line_i\"
@@ -82,19 +82,24 @@ function draw_svg_line($sline,$y=0,$x=0){
   return $rstr;
   }
 
-function draw_svg_page($svg_lines,$y=0,$x=0,$w=500,$h=500){
+function draw_svg_page($svg_lines,$y=0,$x=0,$w=NULL,$h=NULL){
   global $line_i,$page_line_spacing;
   $line_i=1;
-  $page_svg=svg_header($w,$h);
+  $mw=0;
+  $page_svg="";
   foreach($svg_lines as $tline){ 
   	$lh=$tline['height'];
+    $lw=$tline['width'];
+    if($lw>$mw)$mw=$lw;
   	$lhh=$lh/2;
   	if(!is_valid_svg_line($tline))continue;
-    $page_svg.=draw_svg_line($tline,$y+$lhh,$x);
+    $page_svg.=draw_svg_line($tline,$y+$lhh,$x,$len);
     $y+=$lh+$page_line_spacing;
     $line_i++;
     }
-  $page_svg.=svg_footer();
+  if(!$h)$h=$y;
+  if(!$w)$w=$mw;
+  $page_svg=svg_header($w,$h).$page_svg.svg_footer();
   return $page_svg;
   }
 
@@ -112,8 +117,9 @@ function draw_svg_imgline($line,$mname=""){
 
 
 function import_svg($path){
+  echo "[import $path]";
   if(!file_exists($path))return NULL;
-
+echo "got ti";
   $far=file($path);
   foreach($far as $tline){
     if($str=strstr(strtolower($tline),"viewbox")){

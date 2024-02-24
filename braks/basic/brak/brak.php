@@ -36,18 +36,51 @@ $brak_text_def = 	"the most fundamental brak\n".
 
 function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   if(!chunk_is_drawable($chunk))return NULL;
-  
+
+  $xstart=0;
+  $cstart=($stroke_width/2);
+  $svg_str="";
+  $minh=NULL;
+
+  $opts=@$chunk['brak']['opts'];
+  if(@count($opts)>0){
+    foreach($opts as $opt){
+      $vname=$opt[0];
+      $vval=$opt[1];
+      switch($vname){
+        case "img":
+                   $img=brak_load_opt_img($vval,$chunk['brak']);
+                   $svg_str.=$img['svg'];
+                   break;
+        case "rshift":
+                   $xstart=$vval;
+                   break;
+        case "irshift":
+                   $cstart=$vval;
+                   break;
+        case "minh":
+                   $minh=$vval;
+                   break;
+        case "def":
+                   $chunk['brak']['spelling']=$vval;
+                   break;
+        }
+      }
+
+    }
+
+
   $ctxt="sub(".@$chunk['string'].")";
   $nchunk=create_chunk($ctxt);
 
   $height=@$chunk['height']+($vpad*2);
-  $svg_str="";
+  if($minh&&$height<$minh)$height=$minh;
 
   //draw open
-  $svg_str.=svg_hcup(0,0,$height,0-$cup_depth,$stroke_width);
+  $svg_str.=svg_hcup($xstart,0,$height,0-$cup_depth,$stroke_width);
 
   //now embed the original chunk svg
-  $chunk_x_offset=($stroke_width/2)+$hpad;
+  $chunk_x_offset=$xstart+$cstart+$hpad;
   $svg_str.=draw_svg_symbol(@$chunk['svg'],0,$chunk_x_offset);
 
   //draw close

@@ -2,6 +2,7 @@ index of brakets
 csv format of spelling / subfolder
 
 
+!!!---1 ARG BRAKS---!!!
 sub,sub
 subof,subof
 brak,brak
@@ -11,11 +12,23 @@ eval,eval
 evalneg,evalneg
 
 
+!!!--- 2 ARG BRAKS---!!!
+
+IF and IFNOT depend on eval evalneg and sub/subcup
+if,if
+
+
+
 Brak aliases
 these allow alternate spelling
 they are braket type specific
 they also allow you to overflow a spelling
 and to differentiate between the types of brakets () [] {}
+these also allow pasing of arguments to existing braks
+this way more complex braks can be built out of more basic braks
+the decision of wherther to build a new brak fresh or by adding features to an existing brak is up to the dev
 
 2,sub,subcup
 2,subof,subofcup
+1,sin,brak_opt_ img=sin . rshift=6 . irshift=6 . minh=30 . def=sin
+1,cos,brak_opt_ img=cos . rshift=6 . irshift=6 . minh=30 . def=cos

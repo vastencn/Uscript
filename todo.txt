@@ -1,3 +1,2 @@
-includes/uscript_numbers.php 		line 15,20		number prefex conflicts 
-
--- moded uscript numbers line 52 swtich preg statement to add \ in fro9nt of -
+fracs of 1
+char auto dims fo scaled canvas

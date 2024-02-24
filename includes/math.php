@@ -18,7 +18,7 @@ function arb_bindec($binv){
 
 
 function arb_decbin($decv){
-
+  $neg=($decv<0);
 	$o='';
 	while($decv!='0'){
 		$c=substr($decv,strlen($decv)-1);
@@ -33,6 +33,7 @@ function arb_decbin($decv){
 	}
 
 	if(strlen($o)<1)$o='0';
+  if($neg)$o.="-";
 	return strrev($o);
 }
 

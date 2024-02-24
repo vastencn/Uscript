@@ -1,0 +1,17 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+The tolerance symbol allows use to start defining tolerances and approximations
+
+the tolerance symbol itself is just an simple +- tolerance
+
+Visually ir a "fork and a split"/"addition and a subtraction"\
+
+defining it is very simple with xamples like "(x=10 tol 1) = (abs(x-10) < 1)"
+
+a tolerance of 1 allows deviation of anuything "less than 1" (.999999 yes, 1 is outside of the tolerance 1)
+
+we call it "tolerance of" in english in this documentation
+but perhaps the exact translation would be "tolerance of less than"
+for brevity we just call it tolerance or tol or +-

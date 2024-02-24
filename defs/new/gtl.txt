@@ -1,0 +1,23 @@
+//prefix line with // to indicate a comment line
+//first non comment line is the uscript definition, every non coment line after the line "text" is text description
+(v1 > v2) : ( b>b1/10 * ( (v1 - v2) + absolute (v1 - v2) ) _20 (v1 < v2 ) : ( b>b1/10 ( (v2 - v1) + absolute( v2 - v1 ) ) )
+1 > 1 = 0 _15 2 > 1 = 1 _15 b>b100.0101 > 3 = 1.0101 _15 1 > 2  0 _15 inv 1 > 1 = 0 _15 1 > inv 1 = 2
+text
+The greater than and less than operations rcan be used as comparators
+they return the absolute value difference but if the difference is in the coresponding "direction"
+if the difference is in the wrong direction it is canceld out by the defined operation
+
+x>y is defined as 1/2 * (x-y + abs(x-y))
+if x-y is negative it cancvles with abs(x-y)
+if x-y is positive the it double with abs(x-y)
+that sum is halved
+
+eg.
+3>2=1  6.5>3.2=3.3 7>3=4 but.. 3>7=0
+
+since we have already defined that any value at all is TRUE and zero is FALSE
+this allows it by used as a binary comparator
+and also as functional operator
+
+The firts line of formula based defintions is enough
+but there are also a few exmales for added clarity

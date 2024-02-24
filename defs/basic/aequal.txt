@@ -1,0 +1,28 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+"approximately equal to" symbol is fist defined strictly as a specific "approximation"
+
+the examples define it as what we normally call a "rounded number"
+The rounding will be the lest signnificant digit written
+we round up with exactly-half
+this msut be defined as it is arbitrary whether exactly half should be up or down
+
+this mqkes it very easy to ddefine min binary
+a number written to any precision
+is rounded up if the next lesser bit (the bit to the right of the last bit written) is 1
+x=10110.110
+can be rounded to be 
+
+x approx-equal 10011
+or
+x approx-equal 10011.0  (10110.1 rounded up(+0.1))
+or
+x approx-equal 10010.11
+or 
+x aprox-equal 1001 * 10^1
+or 
+x aprox-equal 101 * 10^2 
+etc..
+

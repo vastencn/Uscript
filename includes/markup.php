@@ -15,6 +15,16 @@ $markup_replace=array();
 $markup_replace[]=array("ib","imgbasic_");
 
 
+function parse_scinote_shorthand($word){
+  $prefix=substr($word,0,3);
+  switch($prefix){
+    case "snb":return "b>b1s".substr($word,3);
+    case "snh":return "b>b1s".arb_hexbin(substr($word,3));
+    case "snd":return "b>b1s".arb_decbin(substr($word,3));
+    }
+  return $word;
+  }
+
 function draw_word($word){
   
   $word_lower=strtolower($word);
@@ -36,12 +46,14 @@ function draw_word($word){
     return gap_chunk($len);
     }
 
+  $word_lower=parse_scinote_shorthand($word_lower);
+
   //try to draw number
   if($chunk=parse_is_num($word_lower)){
-
     if($chunk['opt']['base_out']==2){
       num_chunk_draw($chunk);
-      $chunk['defmap']=create_dmap("binnum",$chunk['width'],$chunk['height']);
+      $type=
+      $chunk['defmap']=create_dmap($chunk['type'],$chunk['width'],$chunk['height']);
       }else if($chunk['opt']['base_out']==16){
       hex_num_draw($chunk);
       $chunk['defmap']=create_dmap("hexnum",$chunk['width'],$chunk['height']);

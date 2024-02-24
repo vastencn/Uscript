@@ -1,0 +1,20 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+the "while" brak is a 2 argument brak
+
+the first argument is the condition
+the second argument is the action
+
+It is a sumple while loop
+as long as the condition is true it will perform the action
+
+the definition of the while brak is easy to establish
+here we use several exmaples
+
+some just use the while loop and its final state
+This is enought in itself to establish a clear defintion
+
+we also show it broken into time steps each consisting of an IF statment
+This is just for further clarity
