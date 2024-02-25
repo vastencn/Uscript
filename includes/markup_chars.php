@@ -159,6 +159,41 @@ function search_char($search_str){
       return $srec;
       }
     }
+
+
+  $pre=substr($search_str,0,4);
+  $sx=NULL;
+  $sy=NULL;
+
+  switch($pre){
+    case "ant1":
+                $sx=1;
+                $sy=-1;
+                break;
+    case "fpvh":
+    case "ant2":
+                $sx=-1;
+                $sy=-1;
+                break;
+    }
+
+  if(!$sx)return NULL;
+
+  //if it starts with anti
+  $search_str=substr($search_str,4);
+  if(strlen($search_str)<1&&$search_str!="0")return NULL;
+  $flet=substr($search_str,0,1);
+  if(!ctype_alnum($flet))return NULL;
+  foreach($uscript_lib[$flet] as $srec){
+    if($srec['spelling']==$search_str){
+      $srec['svg']="<g transform=\"scale($sx,$sy)\">".$srec['svg']."</g>";
+      if($sx==-1){
+      $srec['svg']="<g transform=\"translate(".$srec['width'].",0)\">".$srec['svg']."</g>";
+        }
+      return $srec;
+      }
+    }
+
   return NULL;
   }
 ?>
