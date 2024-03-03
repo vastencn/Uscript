@@ -1,3 +1,5 @@
- bbb , fff 
- EEE 
- fff
+
+#
+# atom(2 -1 2) subcup(proton proton neutron electron electron electron electron) atom(2 -1 1) subcup(proton proton neutron electron electron electron)
+#
+# atom(2 -1 0) subcup(proton proton neutron electron electron) atom(2 -1 -1) subcup(proton proton neutron electron) atom(2 -1 -2) subcup(proton proton neutron)

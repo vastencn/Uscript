@@ -4,17 +4,6 @@ values are "spelling" "svg filename" and "width in px"
 we are assuming all chars speced to height 18-20px
 will probably need to add a height param later
 
-interact,interact,17.8
-charge2p,charge2p,18
-charge,charge,16.8
-mass,mass,15
-hspin,hspin,13
-fspin,fspin,12.2
-spacetime,spacetime,14
-time,time,12
-spin,spin,14
-spinflip,spinflip,11
-
 //particles
 
 //leptons
@@ -57,3 +46,26 @@ neutron,neutron,23.2
 
 //atoms
 atom,atom,17.5
+
+"verbs"
+absorb,absorb,18.7
+emit,emit,18.7
+spinflip,spinflip,11
+interact,interact,17.8
+
+"nouns"
+charge2p,charge2p,18
+charge,charge,16.8
+mass,mass,15
+hspin,hspin,13
+fspin,fspin,12.2
+spacetime,spacetime,14
+time,time,12
+spin,spin,14
+
+unit,unit,18.8
+timeunit,timeunit,18.8
+spaceunit,spaceunit,18.8
+unitv,unitv,12
+timeunitv,timeunitv,16.9
+spaceunitv,spaceunitv,16.9

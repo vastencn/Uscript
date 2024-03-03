@@ -179,7 +179,6 @@ function brak_load_opt_img($img,$brak){
   }
 
 function search_brak($bname,$right=FALSE,$type=1){
-  echo "<br><br>[bname $bname]";
   global $uscript_braks,$uscript_braks_aliases;
   if(strlen($bname)<1)return NULL;
 

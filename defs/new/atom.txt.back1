@@ -1,0 +1,38 @@
+atom subcup( atom(1) atom(2) atom(52) atom(1 1) atom(1 1 1) atom(1 1 -1) atom(1 -1) atom(1 0 1) atom(1 . 1) atom(1 0 -1) atom(1 . -1)  atom(1 -1 -1) )
+atom(1)subcup(proton neutron electron) atom(2)subcup(proton proton neutron neutron electron electron)  atom(2 1)subcup(proton proton neutron neutron neutron electron electron) atom(2 -1)subcup(proton proton neutron electron electron)
+
+atom(2) subcup( /n
+  atom(2 -1) subcup(atom(2 -1 -2) atom(2 -1 -1) atom(2 -1 0) atom(2 -1 1) atom(2 -1 2) )/n
+  atom(2 0) subcup(atom(2 -1 -2) atom(2 -1 -1) atom(2 -1 0) atom(2 -1 1) atom(2 -1 2) )/n
+/n
+ )
+
+
+atom(2 -1) subcup(|
+ atom(2 -1 2) subcup(proton proton neutron electron electron electron electron) atom(2 -1 1) subcup(proton proton neutron electron electron electron)
+ atom(2 -1 0) subcup(proton proton neutron electron electron) atom(2 -1 -1) subcup(proton proton neutron electron) atom(2 -1 -2) subcup(proton proton neutron)|)/n
+
+atom(2 0) subcup(|
+ atom(2 0 2) subcup(proton proton neutron neutron electron electron electron electron) atom(2 0 1) subcup(proton proton neutron neutron electron electron electron)
+ atom(2 0 0) subcup(proton proton neutron neutron electron electron) atom(2 0 -1) subcup(proton proton neutron neutron electron) atom(2 0 -2) subcup(proton proton neutron neutron)|)/n
+
+atom(3 1) subcup(|
+ atom(2 1 2) subcup(proton proton proton neutron neutron neutron neutron electron electron electron electron) atom(2 1 1) subcup(proton proton proton neutron neutron neutron neutron electron electron electron)
+ atom(2 1 0) subcup(proton proton proton neutron neutron neutron neutron electron electron) atom(2 1 -1) subcup(proton proton proton neutron neutron neutron neutron electron) atom(2 1 -2) subcup(proton proton proton neutron neutron neutron neutron)|)/n
+
+atom(3 . -1) subcup(|
+ atom(3 -2 -1) subcup(proton proton proton neutron electron electron)
+ atom(3 -1 -1) subcup(proton proton proton neutron neutron electron electron)
+ atom(3 0 -1) subcup(proton proton proton neutron neutron neutron electron electron)
+ atom(3 1 -1) subcup(proton proton proton neutron neutron neutron neutron electron electron)
+ atom(3 2 -1) subcup(proton proton proton neutron neutron neutron neutron neutron electron electron)
+|)/n
+atom(3 . 1) subcup(|
+ atom(3 -2 1) subcup(proton proton proton neutron electron electron electron electron)
+ atom(3 -1 1) subcup(proton proton proton neutron neutron electron electron electron electron)
+ atom(3 0 1) subcup(proton proton proton neutron neutron neutron electron electron electron electron)
+ atom(3 1 1) subcup(proton proton proton neutron neutron neutron neutron electron electron electron electron)
+ atom(3 2 1) subcup(proton proton proton neutron neutron neutron neutron neutron electron electron electron electron)
+|)
+
+

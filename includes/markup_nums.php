@@ -27,7 +27,7 @@ function num_chunk_draw(&$chunk){
     $chunk['struct']['duar']['co'][3]=$chunk['struct']['frac']['duar']['co'][1];
     $chunk['struct']['duar']['co'][4]=$chunk['struct']['frac']['duar']['co'][2];
     }
-  if($chunk['struct']['duar']['co'][1]!="1"||$chunk['struct']['duar']['co'][2]>0){
+  if($chunk['struct']['duar']['co'][1]!="1"||$chunk['struct']['duar']['co'][2]>0||$chunk['struct']['frac']){
     $slen=strlen($chunk['struct']['duar']['co'][1]);
     if($slen<2)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];
     if($slen<3)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];

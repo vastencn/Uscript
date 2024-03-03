@@ -1,0 +1,27 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+text
+the quark symbol is a triangle and a dot
+
+we introduce the triangle symbol with quarks
+we use the triangle shape, an isoceles triangle with the base side horizontally flat
+for quarks it poits up, anti-quarks point down
+
+quarks obey chromodynamics, wich is a "trinary force" (if we consider electrodynamics a "binary force" of +/-)
+The corners/sides will be used to represent the particles and charges
+
+unlike other particles, which are composed of previously established radicals,
+the triangle is first introduced with quarks, so its central defintions is that of chromodynamics
+this means a/the primary symbolism of the trinagle the concept trinary forces
+
+If more time was spent on geometery before moving on to physics..
+then perhaps the trinagle would not feel so "centered" on chromodynamics.
+But since we are "racing up the levels" thrpough math and physics towards higher level concepts
+it pops up in physics
+
+"racing up" seems appropriate
+we dont want to first use up to much "unique symbols" on just math/physics
+the goal is to establish a language, not just a mathemtical/scientific notation
+so "racing" through and only establishing the most fundamental and necesarry concepts is the best strategy I think
+This way when we reach higher level concepts we wont be complaining "all the good/simple/elegant symbols and icons are already used up"

@@ -10,6 +10,7 @@ subcup,subcup
 subofcup,subofcup
 eval,eval
 evalneg,evalneg
+atom,atom
 
 
 !!!--- 2 ARG BRAKS---!!!

@@ -44,11 +44,11 @@ function svg_footer(){
   return "</svg>";
   }
 
-function create_svg_line(){
+function create_svg_line($svg="",$w=0,$h=0){
   $sline=array();
-  $sline['width']=0;
-  $sline['height']=0;
-  $sline['svg']="";
+  $sline['width']=$w;
+  $sline['height']=$h;
+  $sline['svg']=$svg;
   return $sline;
   }
 
@@ -63,6 +63,13 @@ function is_valid_svg_line($sline){
 
 function draw_svg_symbol($svg_str,$y=0,$x=0){
   $rstr="<g transform=\"translate($x,$y)\">";
+  $rstr.=$svg_str;
+  $rstr.="</g>";
+  return $rstr;
+  }
+
+function draw_svg_scaled($svg_str,$y=1,$x=1){
+  $rstr="<g transform=\"scale($x,$y)\">";
   $rstr.=$svg_str;
   $rstr.="</g>";
   return $rstr;
@@ -117,9 +124,7 @@ function draw_svg_imgline($line,$mname=""){
 
 
 function import_svg($path){
-  echo "[import $path]";
   if(!file_exists($path))return NULL;
-echo "got ti";
   $far=file($path);
   foreach($far as $tline){
     if($str=strstr(strtolower($tline),"viewbox")){

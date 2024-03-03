@@ -29,6 +29,20 @@ function gap_chunk($len){
   $rchunk['defmap']=NULL;
   return $rchunk;
   }
+function pos_chunk($len){
+  if(!is_numeric($len))return NULL;
+  if($len<=0)return NULL;
+  $rchunk=create_chunk();
+  $rchunk['type']='pos';
+  $rchunk['string']="_$len";
+  $rchunk['struct']=NULL;
+  $rchunk['svg']="<g></g>";
+  $rchunk['drawn']=1;
+  $rchunk['height']=1;
+  $rchunk['width']=$len;
+  $rchunk['defmap']=NULL;
+  return $rchunk;
+  }
 
 function char2chunk($cdat){
   if(!$cdat)return NULL;

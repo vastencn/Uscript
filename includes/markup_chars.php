@@ -166,6 +166,7 @@ function search_char($search_str){
   $sy=NULL;
 
   switch($pre){
+    case "anti":
     case "ant1":
                 $sx=1;
                 $sy=-1;

@@ -1,1 +1,5 @@
-imgrender_rimg37 
+
+#
+# atom(2 0 2) subcup(proton proton neutron neutron electron electron electron electron) atom(2 0 1) subcup(proton proton neutron neutron electron electron electron)
+#
+# atom(2 0 0) subcup(proton proton neutron neutron electron electron) atom(2 0 -1) subcup(proton proton neutron neutron electron) atom(2 0 -2) subcup(proton proton neutron neutron)

@@ -111,6 +111,7 @@ function render_brak(&$elsa){
     $xoe=@$braketed['brako_xend'];
     $xcs=@$braketed['brakc_xstart'];
     $xce=@$braketed['brakc_xend'];
+    if(@$braketed['defmap_reset'])$elsa['defmap']=array();
     if($xoe&&$xcs&&$xce){
       $b1=create_dmap(@$elsa['brak']['spelling'],($xoe-$xos),$braketed['height']);
 

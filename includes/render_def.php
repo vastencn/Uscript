@@ -1,5 +1,19 @@
 <?php
 
+
+function def_preparse($arendelle){
+  //I often use elsa for element, most often for elements that are arrays
+  //anna more often a string like element
+  //elsa is complex with with her components "concealed inside"
+  //anna's content is right on the surface for all to see
+  // :D
+  $arendelle=array_map('nltrim',$arendelle);
+  $anna=implode("#NL#",$arendelle);
+  $anna=str_replace("/n#NL#","",$anna);
+  $arendelle=explode("#NL#",$anna);
+  return $arendelle;
+  }
+
 function render_def($word,$topts=NULL,$href=NULL){
   if(!$def=search_def($word))return NULL;
 
@@ -7,8 +21,12 @@ function render_def($word,$topts=NULL,$href=NULL){
 
   if(!$topts)$topts="border=0";
 
-  $udefs=array();
-  foreach(@$def['uscript'] as $dline){
+  $anna=implode("#NL#",@$def['uscript']);
+  $anna=insert_pre_renders($anna);
+  $arendelle=explode("#NL#",$anna);
+
+  $preparsed=def_preparse($arendelle);
+  foreach(@$preparsed as $dline){
     $udefs[]=render_line_with_defmap($dline,NULL,$href);
     }
   

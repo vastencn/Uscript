@@ -1,3 +1,22 @@
-fracs of 1
-char auto dims fo scaled canvas
-atom brak
+*fracs of 1
+char auto dims for scaled canvas
+*atom brak
+tabbing to abs pos
+predender def inspect
+saveable and loadable def text chunks
+
+
+
+char/graphics work
+arrays
+procedural
+
+
+def work
+
+
+manual work
+step one.. start a manual ;)
+
+ultra low priority(maybe do later when the important core stuff is done)
+chromodynamics generator (symbols of quarks and gluons with charge)

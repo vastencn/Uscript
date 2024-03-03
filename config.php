@@ -11,6 +11,7 @@ $dslash="\\";
 require_once($includes_dir."options.php");
 
 //level 1
+require_once($includes_dir."functional.php");
 require_once($includes_dir."html.php");
 require_once($includes_dir."file_ops.php");
 require_once($includes_dir."debug.php");
@@ -55,6 +56,7 @@ require_once($includes_dir."render_text.php");
 //level 9
 require_once($includes_dir."render_def.php");
 require_once($includes_dir."pre_render.php");
+require_once($includes_dir."markup_tools.php");
 
 
 
