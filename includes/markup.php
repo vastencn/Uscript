@@ -13,6 +13,7 @@ $chunk_spacing=3;
 //they are run on the string layer befor it is even broken in words
 $markup_replace=array();
 $markup_replace[]=array("ib","imgbasic_");
+//$markup_replace[]=array("imgrender","pre");
 
 
 function parse_scinote_shorthand($word){
@@ -45,6 +46,12 @@ function draw_word($word){
   if($len=word_is_space($word)){
     return gap_chunk($len);
     }
+  //try to draw a pre-render save
+  if($id=word_is_prerender($word)){
+    if(!$elsa=load_presave($id))return NULL;
+    $elsa['defmap']=create_dmap($elsa['spelling'],$elsa['width'],$elsa['height']);
+    return $elsa;
+    }
 
   $word_lower=parse_scinote_shorthand($word_lower);
 
@@ -74,12 +81,14 @@ function draw_word($word){
 
   //try to draw symbol
   if($cdat=symbol_search($word_lower)){
-    return char2chunk($cdat);
+    $elsa=char2chunk($cdat);
+    return $elsa;
     }
 
   //try to draw img
-  if($chunk=img_search($word_lower)){
-    return $chunk;
+  if($elsa=img_search($word_lower)){
+    $elsa['defmap']=create_dmap($word_lower,$elsa['width'],$elsa['height']);
+    return $elsa;
     }
 
   return NULL;
@@ -90,6 +99,13 @@ function word_is_space($word){
   $len=substr($word,1);
   if(!is_numeric($len))return NULL;
   return $len;
+  }
+
+function word_is_prerender($word){
+  if(strlen($word)<5)return NULL;
+  if(substr($word,0,4)!="pre_")return NULL;
+  $id=substr($word,4);
+  return $id;
   }
 
 

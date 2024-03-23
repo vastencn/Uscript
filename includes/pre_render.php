@@ -8,6 +8,7 @@ $render_txt_prefix="rtxt";
 function pre_render_into_chunk($str){
   $mkup_str=pre_render_into_mkup($str);
   $elsa=render_uscript_text($mkup_str);
+  $elsa['spelling']="pre_$str";
   return $elsa;
   }
 

@@ -99,7 +99,7 @@ function load_brak_index($ipath,$fpath){
   $flines=file($ipath);
 
   foreach($flines as $tline){
-    $tar=explode(",",preg_replace("/[^a-z_0-9,=.]/", "", strtolower($tline)));
+    $tar=explode(",",preg_replace("/[^a-z_0-9:,=.]/", "", strtolower($tline)));
 
 
     $tarc=count($tar);
@@ -154,7 +154,7 @@ function load_brak_index($ipath,$fpath){
         &&
         ctype_alnum($tar[1])
         &&
-        !preg_match('/[^0-9_,=.a-z]/', $tar[2])
+        !preg_match('/[^0-9_,=.:a-z]/', $tar[2])
         ){
       
         //its a good record, add it
@@ -192,7 +192,7 @@ function search_brak($bname,$right=FALSE,$type=1){
   $opts=explode("_opt_",$bname);
   if(count($opts)>1){
     $bname=$opts[0];
-    $optlines=explode(".",str_replace(" ","",$opts[1]));
+    $optlines=explode(":",str_replace(" ","",$opts[1]));
     foreach($optlines as $tline){
       $bopts[]=explode("=",$tline);
       }

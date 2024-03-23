@@ -4,6 +4,8 @@
 //_ is replace with the folder delim slash
 //only alphanumeric plus _ noithing else
 //and first char must be alphanumeric
+//techicall this does mean that after the str_replace you could have ../../../..etc or ..\..\..\..etc
+//so this should fixed.. check for double dots i guess
 function img_search($oname){
   global $dslash,$img_dir;
 
@@ -23,6 +25,7 @@ function img_search($oname){
 
   $chunk=create_chunk($oname);
   $chunk['type']="img";
+  $chunk['path']=$fname;
   $chunk['svg']=draw_svg_symbol($svg['svg'],0-$svg['height']/2,0);
   $chunk['width']=$svg['width'];
   $chunk['height']=$svg['height'];

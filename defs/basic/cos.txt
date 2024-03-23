@@ -1,0 +1,5 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+uref:sin
+text
+tref:sin

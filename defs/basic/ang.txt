@@ -1,0 +1,13 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+angle = ang _20 ang subcup( rtav rtah triaa triab triac )
+text
+The angle symbol is essentially a cropped zoom on the angles established in the trig symbols
+by first estabglishing the trig symbols for sides and angles, we can easily create a symbol that is a zoomed-in crop of an angle
+
+we create 2 versions of the angle symbol
+
+one is a simple crop
+
+the other is 'simplified', we drop two protruding lines so that the symbol can be drawn more easily and elegantly
+(it can be drawn with a pen without lifting the pen, its one unbroken line, just has 2 corners and an intersection)

@@ -1,11 +1,2 @@
-
-#
-# atom(2 0 2) subcup(proton proton neutron neutron electron electron electron electron)
-#
-# atom(2 0 1) subcup(proton proton neutron neutron electron electron electron)
-#
-# atom(2 0 0) subcup(proton proton neutron neutron electron electron)
-#
-# atom(2 0 -1) subcup(proton proton neutron neutron electron)
-#
-# atom(2 0 -2) subcup(proton proton neutron neutron)
+electron subcup(mass = 1) _20 muon subcup(mass = ce.34) _20 tau subcup(mass = d93.9) 
+  electronneu subcup() 

@@ -29,6 +29,7 @@ function num_chunk_draw(&$chunk){
     }
   if($chunk['struct']['duar']['co'][1]!="1"||$chunk['struct']['duar']['co'][2]>0||$chunk['struct']['frac']){
     $slen=strlen($chunk['struct']['duar']['co'][1]);
+    if($chunk['struct']['frac'])$slen=4;
     if($slen<2)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];
     if($slen<3)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];
     if($slen<4)$chunk['struct']['duar']['co'][1]="0".$chunk['struct']['duar']['co'][1];
@@ -68,8 +69,11 @@ function hex_num_draw(&$chunk){
   $xpos=0-$hex_num_char_spacing;
   $mh=0;
 
+//ar_dump(str_split($chunk['num_str']));
+
   foreach($chunk['struct']['chars'] as $tchar){
-    if($cdat=search_char($tchar)){
+    if($tchar=='.')$tchar="dot";
+    if($cdat=symbol_search($tchar)){
       $xpos+=$hex_num_char_spacing;
       $svg_str.=draw_svg_symbol($cdat['svg'],0,$xpos);
       $xpos+=$cdat['width'];
@@ -191,6 +195,7 @@ function parse_is_num($sym){
     //if we are drawing a simple hex symbol string
       }else if($base_out==16){
       $num_struct['chars']=str_split($num_str);
+      $num_struct['num_str']=$num_str;
       }
 
 
@@ -200,7 +205,6 @@ function parse_is_num($sym){
   	$num_chunk['struct']=$num_struct;
   	$num_chunk['opt']['base_in']=$base_in;
   	$num_chunk['opt']['base_out']=$base_out;
-
 
   	return $num_chunk;
     }

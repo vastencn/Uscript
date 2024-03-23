@@ -1,0 +1,13 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+rad * 2 = diam _15 circ = pi * diam
+text
+the symbol for the mathematical constant "pi"
+it is a circle with a line through it protruding at both ends
+this looks like the symbol for "diamatere" but "poking out both sides"
+i try to draw it so the protrusions could be seen as being about the same length as the circle
+in other words so that the circle is only on third the height
+this can be visually interpreted as "cricle 1D line is about 3x diameter" (circumference = pi * D)
+
+the symbol is arbitrary as it is defined by a formula
+its an irrational number so we just write down several digits and use the "approx equal to" instead of "equal to"

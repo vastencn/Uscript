@@ -47,11 +47,11 @@ function multi_line_render($str){
     }
 
   $svg_page=draw_svg_page($render_lines,$y=0,$x=0);
+
   return $svg_page;
   }
 
 function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
-
   //parse the text
   $car=parse_brackets($in_str);
   parse_prep_words($car);
@@ -79,7 +79,6 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
       flatten_parsing($flat_car,$elsa_depth);
       $flattened=$elsa_depth;
       }
-     // ar_dump($flat_car,"fcar");
     @render_brak($flat_car[$elsa]);
     }
 
@@ -113,7 +112,7 @@ function render_brak(&$elsa){
     $xce=@$braketed['brakc_xend'];
     if(@$braketed['defmap_reset'])$elsa['defmap']=array();
     if($xoe&&$xcs&&$xce){
-      $b1=create_dmap(@$elsa['brak']['spelling'],($xoe-$xos),$braketed['height']);
+      $b1=create_dmap(@$braketed['brak']['spelling'],($xoe-$xos),$braketed['height']);
 
       defmap_direct_append($b1,$elsa['defmap'],$xoe);
 

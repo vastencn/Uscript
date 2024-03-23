@@ -51,8 +51,8 @@ function svg_polyline($pts,$s){
 //bottom center x,y width,depth stroke width
 function svg_vcup($x=0,$y=0,$w=10,$d=10,$s=2){
   $hw=$w/2;
-  $b1=array($x-$hw,$y);
-  $b2=array($x+$hw,$y);
+  $b1=array($x,$y);
+  $b2=array($x+$w,$y);
   $t1=$b1;$t1[1]-=$d;
   $t2=$b2;$t2[1]-=$d;
   $pts=array($t1,$b1,$b2,$t2);

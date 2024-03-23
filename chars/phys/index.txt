@@ -34,6 +34,7 @@ gluon,gluon,12
 wboson,wboson,11.7
 zboson,zboson,11.7
 higgs,higgs,9.5
+photon,photon,14.2
 
 //anti
 //most antis can be drawn by using a prefix on the word anti or ant1,ant2(and1 is just a vflip, ant2 also hflips)

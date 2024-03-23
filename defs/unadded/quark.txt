@@ -21,7 +21,7 @@ But since we are "racing up the levels" thrpough math and physics towards higher
 it pops up in physics
 
 "racing up" seems appropriate
-we dont want to first use up to much "unique symbols" on just math/physics
+we dont want to first use up to much "unique symbolisms" on just math/physics
 the goal is to establish a language, not just a mathemtical/scientific notation
 so "racing" through and only establishing the most fundamental and necesarry concepts is the best strategy I think
 This way when we reach higher level concepts we wont be complaining "all the good/simple/elegant symbols and icons are already used up"

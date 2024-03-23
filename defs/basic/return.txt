@@ -1,0 +1,11 @@
+exe(return 5) = 5 _20 exe(|return 4 NL return 3|) = 4
+text
+the return symbol is a combination of the braket and the emit 
+(emit is a combination of fork and wave, with one branch fo the fork being a wave)
+
+return is only used inside an execution braket
+the Uscript return operats the same as in everyday programming
+
+it ends the current function and returns the value proceeding it
+if the prcedural pro0cess inside an executio braket hits a return. it stops
+and the value of the whole braket becomes the return value

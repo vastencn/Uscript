@@ -1,0 +1,3 @@
+electron sub[mass aequal  1]
+muon sub[mass aequal  ce.c59]
+tau sub[mass aequal d95.1e]

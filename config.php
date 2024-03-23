@@ -5,13 +5,15 @@ $braks_dir="C:\\wamp64\\www\\uscript\\braks\\";
 $img_dir="C:\\wamp64\\www\\uscript\\img\\";
 $defs_dir="C:\\wamp64\\www\\uscript\\defs\\";
 $render_dir="C:\\wamp64\\www\\uscript\\img\\render\\";
+$presave_dir="C:\\wamp64\\www\\uscript\\img\\presave\\";
 $dslash="\\";
+
 
 //load optional settings flags
 require_once($includes_dir."options.php");
 
 //level 1
-require_once($includes_dir."functional.php");
+require_once($includes_dir."notice.php");
 require_once($includes_dir."html.php");
 require_once($includes_dir."file_ops.php");
 require_once($includes_dir."debug.php");
@@ -58,6 +60,9 @@ require_once($includes_dir."render_def.php");
 require_once($includes_dir."pre_render.php");
 require_once($includes_dir."markup_tools.php");
 
+//level 10
+require_once($includes_dir."presave.php");
+
 
 
 function load_all($load_cat){
@@ -71,6 +76,7 @@ function load_all($load_cat){
 //load basic libs by default
 load_all("basic");
 load_chars("phys");
+activate_def_folder("phys");
 
 load_overrides("overrides");
 

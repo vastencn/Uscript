@@ -1,0 +1,21 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+
+lepton subcup(|electron subcup(mass = 1) _20 muon subcup(mass = ce.34) _20 tau subcup(mass = d93.9) NL  electronneu subcup() | )
+
+text
+Leptons are half-integer spin particles that do not undergo strong force interactions
+
+The electron is the most iconic of these partciles
+
+The lepton family of particles is much less massive than quarks
+Leptons can display wave interference properties quite easily(realtively of course)
+So they are assigned a symbol composed of the "wave" + "particle" radicals
+
+leptons "come in 3 sizes"
+the wave portion is repeated to increase the "size"
+
+and 2 "charge types"(charged or neutral)
+and the "particle/true" part becomes a "zero/space/false" to indicate a lack of charge
+
+The symbols are simply inverted vertically to indicate the respective "anti-particle"

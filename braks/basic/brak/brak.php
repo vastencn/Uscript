@@ -88,6 +88,7 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   $svg_str.=svg_hcup($inner_space_end+($stroke_width/2),0,$height,$cup_depth,$stroke_width);
 
   $nchunk['svg']=$svg_str;
+  $nchunk['brak']['spelling']=$chunk['brak']['spelling'];
   $nchunk['drawn']=TRUE;
   $nchunk['height']=$height+$stroke_width;
   $nchunk['width']=$inner_space_end+$stroke_width;

@@ -1,0 +1,18 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+rt subcup( rtav subcup( radian ) + rtah subcup( radian ) = b>b1/10 pi )
+2 pi radian = 0 radian ang subcup(radian) = ang subcup(radian + (2 * pi)) = ang subcup(radian - (2 * pi))
+text
+radians are the unit of measure for angles
+
+easily defined with a couple examples of known angles
+
+justifications quickly...
+
+pretty much all fields agree radians are better than degrees
+
+degrees are based on 365 days in a year (rotation of stars per day)
+radians are based on the arc-length travelled at a radius of 1
+
+radians are based on a unit circle and make calculations easier, rather universal
+degrees are based on arbitrary factors of our planet and solar system, a very NON-universal basis

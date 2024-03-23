@@ -57,12 +57,30 @@ function render_def($word,$topts=NULL,$href=NULL){
 function render_defedit($word,$topts=NULL,$href=NULL){
   if(!$def=search_def($word))$def=empty_def($word);
 
+  $render_html="";
+  if($path=has_prefix("img",$word)){
+    $par=explode("_",$path);
+
+    //if its a pre-render
+    if(@$par[0]=="render"){
+      $render_html.="<form action=\"$href\" method=post>".
+                      "<input type=hidden name=rendersave value=\"1\">".
+                      "<input type=hidden name=oname value=\"".str_replace("rimg","",$par[1])."\">".
+                      "<tr><td align=center>".
+                      "<input type=text name=\"savename\" value=\"".@$par[1]."\">".
+                      "<input type=submit value=\"save this prerender\">".
+                      "</td></tr>".
+                    "</form>";
+      }
+
+
+    } 
 
   if(!$topts)$topts="border=0";
 
   $tdef=@$def['text'];
 
-  $html="<table><tr valign=top><td align=right><form action=\"$href\" method=post>".
+  $html="<table> $render_html <tr valign=top><td align=right><form action=\"$href\" method=post>".
         "<textarea rows=15 cols=100 name=defuptext>".$def['raw']."</textarea><br>".
         "<input type=submit value=\"update ".$def['word']."\">".
         "<input type=hidden name=defupword value=\"".$def['word']."\">";

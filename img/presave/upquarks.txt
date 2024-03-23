@@ -1,0 +1,3 @@
+qup sub[mass aequal 4.4e28]
+qcharm sub[mass aequal 9c8.e6]
+qtop sub[mass aequal 52b3c]

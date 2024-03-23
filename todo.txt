@@ -1,22 +1,53 @@
 *fracs of 1
+
 char auto dims for scaled canvas
 *atom brak
 tabbing to abs pos
-predender def inspect
-saveable and loadable def text chunks
+*predender def inspect
+*saveable and loadable def text chunks
+*def embed def
+def text links to def
+*fracs of 1-7 not full 4 bit symbol
+*creat/edit presave page
+reduce gap between num and scinote
+reduce gap between some hex nums (eg 52 , 4e)
+reduce gap between some hex nums and radix eg(b.d)
+vertical spacer
+def edit by name page (def maintence/editor ui)
+click on presave not working in inpection def editor
+
+LAZY precision on particle masses (used numbers with only 3 decimal digits precision to produce number with 5 digits hex precision)
+
+
+math ops page
+	*rad to hex rad
+	scinote to dec num
+	arb hex mukt
+	arb hex div
+	arb hex rad div
+	arb hex rad mult
+	more unit conversions
+		mass g,kg,ton,...
+		length m,km,...
+		time s, hour,day,year,...
+		charge, weight, force, speed, accel, etc...
 
 
 
-char/graphics work
+
+
+
+-char/graphics work
 arrays
 procedural
+circumference
 
 
-def work
+-def work
 
 
-manual work
+-manual work
 step one.. start a manual ;)
 
-ultra low priority(maybe do later when the important core stuff is done)
+-ultra low priority(maybe do later when the important core stuff is done)
 chromodynamics generator (symbols of quarks and gluons with charge)

@@ -104,6 +104,7 @@ function draw_svg_page($svg_lines,$y=0,$x=0,$w=NULL,$h=NULL){
     $y+=$lh+$page_line_spacing;
     $line_i++;
     }
+  $y-=$page_line_spacing;
   if(!$h)$h=$y;
   if(!$w)$w=$mw;
   $page_svg=svg_header($w,$h).$page_svg.svg_footer();

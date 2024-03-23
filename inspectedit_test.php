@@ -64,6 +64,7 @@ if($defs){
     }
   }
 
+echo display_notices();
 ?>
     </td>
   </tr>

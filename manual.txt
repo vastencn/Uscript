@@ -1,0 +1,12 @@
+lets start by just bullet pointing the things I find I sometimes forget or need to verify
+
+*the notation for pre-reder is "aaa  | xxx | bbb" xxx is pre-rendered
+
+*the notation for nl cancel in defs is /n at the end of the line
+
+*img+....   _ becomes slash.. eg "imgrender_rimg11" becomes render/rimg11.svg
+imgpresave_
+
+def uref:xxx uscript def ref, tref:xxx text def ref
+
+scinote  example h>b1s123

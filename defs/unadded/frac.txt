@@ -1,0 +1,14 @@
+//prefix line with // to indicate a comment line
+//first non comment lines are the uscript definition, every non coment line after the line "text" is text description
+frac subcup( b>b1/10 _10 b>b1/11 _10 b>b1/100 _10 b>b10/11 _10)
+text
+the fraction symbol is first used to classify a symbol, not so much as a 'concept' or 'meaning'
+fraction symbols are rather visually unique, even though they are just an extensions of the binary number symbols
+fractions are a rather fundamental and usefull mathmatically and conceptually
+so we create a symbols to refernce them as a "group"
+
+fractions often produce irrational numbers and in uscript they are a 'solid symbol' 
+so it nice to define them as a group and give them properties like order of operation
+these properties are really just inherited from numbers but it is still nice to clarify
+
+the symbol can also be usefull as a radical producing compund meaning later

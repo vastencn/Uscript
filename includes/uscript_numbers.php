@@ -4,7 +4,6 @@
 
 
 function gen_uscript_number($num_str_in){
-
   //to lower and strip spaces
   $num_str=strtolower($num_str_in);
   //$num_str=str_replace(" ","",$num_str);
@@ -72,7 +71,6 @@ function gen_uscript_number($num_str_in){
   $str = preg_replace( $reg_cmd, '', $num_str);
   $str_ar=str_split($str);
   $arc=count($str_ar);
-
   $new_str="";
 
   if($str_ar[0]=='-'){
@@ -95,7 +93,6 @@ function gen_uscript_number($num_str_in){
       ){
     $new_str.=$str_ar[$i];
     }
-
   //decimal and second chunck of digits
   if($i<$arc&&$str_ar[$i]=='.'){
     $new_str.='.';
@@ -143,18 +140,17 @@ function gen_uscript_number($num_str_in){
       }
 
     }
-
   switch($base){
     case 16:$exp=arb_hexbin($exp);
     case  2:$exp=arb_bindec($exp);
     }
-
 
   if($neg){
     $pow=0-$exp;
     }else{
     $pow=$exp;
     }
+  if($exp)$base=2;
   $num=array();
   $num['val']=$new_str;
   $num['base']=$base;
