@@ -24,20 +24,26 @@ function brak_val($bchr){
   }
 
 function parse_prep_brak_funks(&$car){
+  //ar_dump($car);
   $arc=count(@$car);
   if($arc<2)return NULL;
   $li=$arc-1;
   for($i=0;$i<$arc;$i++){
+//echo "($i)<br>";
     $btype=$car[$i]['brak_type'];
     if($btype){
       $pi=$i-1;
-      $ni=$i+1;
+      //$ni=$i+1;
 
-      //searcvh for pre brak name
+// echo " -btype=$btype<br>";
+
+      //search for pre brak name
       if($i>0){
+ //echo " -pre=true<br>";
         $lwordi=$car[$pi]['word_count']-1;
         if($lwordi>=0){
           $potential_name=$car[$pi]['words'][$lwordi];
+ ///echo " -pre=$potential_name<br>";
           if($brak=search_brak($potential_name,FALSE,$btype)){
             $car[$i]['brak']=$brak;
             $car[$pi]['words'][$lwordi]="";
@@ -45,10 +51,24 @@ function parse_prep_brak_funks(&$car){
           }
         }
 
+      //find next elsa of same depth
+      $ni=NULL;
+      $cdepth=$car[$i]['depth']-1;
+      for($j=$i+1;$j<$arc&&!$ni;$j++){
+        //echo "---1check next $j<br>";
+        if(!is_array(@$car[$j]))continue;
+        //echo "---2check next $j<br>";
+        if($car[$j]['word_count']<1)continue;
+        //echo "---3check next $j (".$car[$j]['depth']." == $cdepth)<br>";
+        if($car[$j]['depth']==$cdepth)$ni=$j;
+        }
+//echo "-NEXT=$ni<br>";
       //search for post brak name
-      if($i<$li && !is_array(@$car[$i]['brak'])){
+      if($ni && is_array(@$car[$ni])){
+ //echo " -post=true<br>";
         if($car[$ni]['word_count']>0){
           $potential_name=$car[$ni]['words'][0];
+ //echo " -post=$potential_name<br>";
           if($brak=search_brak($potential_name,TRUE,$btype)){
             $car[$i]['brak']=$brak;
             $car[$ni]['words'][0]="";

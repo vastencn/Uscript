@@ -6,20 +6,26 @@ tabbing to abs pos
 *predender def inspect
 *saveable and loadable def text chunks
 *def embed def
-def text links to def
 *fracs of 1-7 not full 4 bit symbol
 *creat/edit presave page
+
+
+dynamic char svg loading (option to not load svg on char load, then load svg only when char render is requested)
+
+def text links to def
 reduce gap between num and scinote
 reduce gap between some hex nums (eg 52 , 4e)
 reduce gap between some hex nums and radix eg(b.d)
 vertical spacer
 def edit by name page (def maintence/editor ui)
 click on presave not working in inpection def editor
+particle symbols(modified variable symbol)
+
 
 LAZY precision on particle masses (used numbers with only 3 decimal digits precision to produce number with 5 digits hex precision)
 
 
-math ops page
+math ops page (arb_math.php)
 	*rad to hex rad
 	scinote to dec num
 	arb hex mukt
@@ -31,6 +37,19 @@ math ops page
 		length m,km,...
 		time s, hour,day,year,...
 		charge, weight, force, speed, accel, etc...
+
+
+procedual needed
+   count
+
+atom ambiguity (all isotopes of ionization state) atom(3 0 1)
+  #x atom "0 isotope" y ion  	(specific isotope and ion)
+  too simmilar to
+  #x atom false(neg electron) y ion 	(all isotopes of spoecific ionization) atom(3 . -1)
+
+atom braks dont link to def
+
+
 
 
 

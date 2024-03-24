@@ -1,0 +1,3 @@
+(atom(8) bond atom(6) bond atom(8))subofcup molecule /n
+(atom(1) bond atom(1))subofcup molecule /n
+(water)subofcup molecule

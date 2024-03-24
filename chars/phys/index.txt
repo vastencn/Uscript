@@ -4,7 +4,18 @@ values are "spelling" "svg filename" and "width in px"
 we are assuming all chars speced to height 18-20px
 will probably need to add a height param later
 
+//conceptual
+system,system,16.4
+
 //particles
+molecule,molecule,10.4
+water,water,26.1
+
+
+//forces
+embond,embond,17.6
+sbond,sbond,15.6
+gravity.gravity,18
 
 //leptons
 lepton,lepton,8.7
@@ -53,6 +64,7 @@ absorb,absorb,18.7
 emit,emit,18.7
 spinflip,spinflip,11
 interact,interact,17.8
+bond,bond,12.7
 
 "nouns"
 charge2p,charge2p,18

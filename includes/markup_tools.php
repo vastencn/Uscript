@@ -20,7 +20,7 @@ function scale_to_height(&$elsa,$new_height){
 
 //arendelle = "ar" = "array"
 function hcenter_lines(&$arendelle=NULL){
-  fna($arendelle);
+  //fna($arendelle);
   $max_width=max(array_column($arendelle, 'width'));
 
   foreach($arendelle as &$civ){

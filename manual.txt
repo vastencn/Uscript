@@ -10,3 +10,9 @@ imgpresave_
 def uref:xxx uscript def ref, tref:xxx text def ref
 
 scinote  example h>b1s123
+
+atom (1 1 1) number, isotope, ion
+
+def /n cancel proceeding newline
+
+subarel (array sub "BOX")
