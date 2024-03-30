@@ -46,6 +46,13 @@ function draw_word($word){
   if($len=word_is_space($word)){
     return gap_chunk($len);
     }
+  //try to draw a space
+  if($height=word_is_vspace($word)){
+    return vspace_chunk($height);
+    }
+
+
+
   //try to draw a pre-render save
   if($id=word_is_prerender($word)){
     if(!$elsa=load_presave($id))return NULL;
@@ -97,6 +104,13 @@ function draw_word($word){
 function word_is_space($word){
   if(substr($word,0,1)!="_")return NULL;
   $len=substr($word,1);
+  if(!is_numeric($len))return NULL;
+  return $len;
+  }
+  
+function word_is_vspace($word){
+  if(substr($word,0,2)!="v_")return NULL;
+  $len=substr($word,2);
   if(!is_numeric($len))return NULL;
   return $len;
   }

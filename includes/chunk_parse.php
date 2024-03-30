@@ -78,7 +78,7 @@ function parse_prep_brak_funks(&$car){
 
       //if no name found, default to brak
       if(@count($car[$i]['brak'])<2){
-        $car[$i]['brak']=search_brak("brak");
+        $car[$i]['brak']=search_brak("brak",FALSE,$btype);
         }
 
       }

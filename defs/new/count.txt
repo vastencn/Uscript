@@ -1,0 +1,3 @@
+imgpresave_arrayops
+text
+Arrays have special braks to specific "items/subvalues/components" are "array elements"..

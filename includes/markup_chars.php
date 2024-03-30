@@ -71,7 +71,9 @@ function load_char_index($fpath){
   $flines=file($fpath);
 
   foreach($flines as $tline){
-    $tar=explode(",",preg_replace("/[^a-z0-9,.]/", "", strtolower($tline)));
+    $cline=preg_replace("/[^a-z0-9,.]/", "", strtolower($tline));
+    if($cline=="eof")break;
+    $tar=explode(",",$cline);
 
     //4th lemenet is optional, height will default to dewfault height
     if(count($tar)==3)$tar[]="$default_char_height";

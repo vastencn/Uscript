@@ -1,5 +1,7 @@
-
+/n
 #
-# atom(2 1 2) subcup(proton proton proton neutron neutron neutron neutron electron electron electron electron) atom(2 1 1) subcup(proton proton proton neutron neutron neutron neutron electron electron electron)
+# 2dcartdimbreak sub(a)/n
 #
-# atom(2 1 0) subcup(proton proton proton neutron neutron neutron neutron electron electron) atom(2 1 -1) subcup(proton proton proton neutron neutron neutron neutron electron) atom(2 1 -2) subcup(proton proton proton neutron neutron neutron neutron)
+# 2dcartcornerbreak sub(a = rangle)/n
+#
+# 

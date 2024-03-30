@@ -139,6 +139,7 @@ function do_func(){
     case 1:return $fptr();
     case 2:return $fptr(func_get_arg(1));
     case 3:return $fptr(func_get_arg(1),func_get_arg(2));
+    case 4:return $fptr(func_get_arg(1),func_get_arg(2),func_get_arg(3));
     }
 }
 
@@ -176,7 +177,7 @@ function precision_required($nstr){
 	$nar=explode(".",$nstr);
 	if(count($nar)<2)return 0;
 	$nar[0]=trim(trim($nar[0]),"0");
-	echo "(".$nar[0].")";
+	//echo "(".$nar[0].")";
 	if(strlen($nar[0])>0){
     return 0;
 	  }
@@ -184,14 +185,65 @@ function precision_required($nstr){
   return 1+$lendif;
   }
 
+function unit_convert($val,$prefix,$units,$preccap=NULL){
+  $prenum=pre2num($prefix);
+  $preq=precision_required($prenum)+precision_required($val)+precision_required($units);
+  $fullval=bcmul("".$val, $prenum,$preq+5);
+  if($preccap){
+    $preq=$preccap;
+    }else{
+    $preq+=11;
+    }
+  $new_units=bcdiv($fullval,"".$units,$preq);
+  return $new_units;
+  }
+
+function dec_mult($v1,$v2,$extra_prec=10){
+  $preq=precision_required($v1)+precision_required($v2);
+  return bcmul($v1,$v2,10+3+$extra_prec);
+  }
+
+function dec_div($v1,$v2,$extra_prec=10){
+  $preq=precision_required($v1)+precision_required($v2);
+  return @bcdiv($v1,$v2,10+3+$extra_prec);
+  }
 $num="0.00000111111";
 $nar=create_num($num);
 $nar=gen_scinote($nar);
 echo "$num ( ".$nar['num']." * 10^".$nar['pow'] .")";
+
+function str_rad_shift($nstr,$shift){
+  $num=create_num($nstr,16);
+  $num['pow']=$shift;
+  $num=rm_pow($num);
+  return $num['num'];
+  }
 //dec_to_hex($nar);
 ?>
 <form action=arb_math.php method=post>
 <table border=1>
+	<tr>
+		<td>
+				Dec Mult <input type=text name=decmult1 value="<?php echo fetch_var('decmult1');?>">*<input type=text name=decmult2 value="<?php echo fetch_var('decmult2');?>"><?php 
+       
+        
+				echo do_func("dec_mult",fetch_var('decmult1'),fetch_var('decmult2'),10);
+
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Dec Div <input type=text name=decdiv1 value="<?php echo fetch_var('decdiv1');?>">/<input type=text name=decdiv2 value="<?php echo fetch_var('decdiv2');?>">prec <input type=text name=decdivp value="<?php echo fetch_var('decdivp');?>"><?php 
+
+        
+				echo do_func("dec_div",fetch_var('decdiv1'),fetch_var('decdiv2'),@(0+@fetch_var('decdivp')));
+
+				?>
+				<input type=submit>
+		</td>
+	</tr>
 	<tr>
 		<td>
 				Dec 2 Hex <input type=text name=dechex value="<?php echo fetch_var('dechex');?>"><?php echo do_func("arb_dechex",fetch_var('dechex'));?>
@@ -224,14 +276,124 @@ echo "$num ( ".$nar['num']." * 10^".$nar['pow'] .")";
 	</tr>
 	<tr>
 		<td>
-				EV to Electrons<input type=text name=ev2e value="<?php echo fetch_var('ev2e');?>">* <input type=text name=evpre value="<?php echo fetch_var('evpre');?>" size=2>eV<?php 
-				$prenum=pre2num(fetch_var('evpre'));
-				$evnum=fetch_var('ev2e');
-				$preq=precision_required($prenum)+precision_required($evnum);
-				$evs=bcmul("".$evnum, $prenum,$preq+5);
-				//$elecs=bcdiv(left_operand, right_operand);
-				$elecs=bcdiv($evs,"510998",$preq+11);
-				echo "[$elecs , ".print_num(dec_to_hex(create_num($elecs)))."]";
+				EV to Electrons<input type=text name=ev2e value="<?php echo fetch_var('ev2e');?>"> <input type=text name=evpre value="<?php echo fetch_var('evpre');?>" size=2>eV<?php 
+
+function uunits($uval,$upre,$urat,$pre=NULL){
+	$ucount=unit_convert($uval,$upre,$urat,$pre);
+  return $ucount;
+  }			
+
+function uu_display($uuv,$uname="units"){
+	$duuvar=$helects=dec_to_hex(create_num($uuv));
+	$duuv=$duuvar['num'];
+  $rv="$uname DEC : $uuv<br>";
+  $rv.="$uname HEX : $duuv<br>";
+  $rv.="Mega $uname : ".str_rad_shift($duuv,-16)."<br>";
+  $rv.="Giga $uname : ".str_rad_shift($duuv,-32)."<br>";
+  $rv.="Tera $uname : ".str_rad_shift($duuv,-48)."<br>";
+  return $rv;
+  }
+  
+  $uu=uunits(fetch_var('ev2e'),fetch_var('evpre'),"510998");
+  $utxt=uu_display($uu,"Elects");
+  echo "<hr>".$utxt;
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				grams to Electrons<input type=text name=g2e value="<?php echo fetch_var('g2e');?>"> <input type=text name=gpre value="<?php echo fetch_var('gpre');?>" size=2>g<?php 
+
+  $uu=uunits(fetch_var('g2e'),fetch_var('gpre'),"0.000000000000000000000000000910938356",3);
+  $utxt=uu_display($uu,"Elects");
+  echo "<hr>".$utxt;
+
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				meters to Hlength<input type=text name=m2h value="<?php echo fetch_var('m2h');?>"> <input type=text name=mpre value="<?php echo fetch_var('mpre');?>" size=2>m<?php 
+  $uu=uunits(fetch_var('m2h'),fetch_var('mpre'),"0.21106114");
+
+  $utxt=uu_display($uu,"Hlengths");
+  echo "<hr>".$utxt;
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				AU to Hlength<input type=text name=au2h value="<?php echo fetch_var('au2h');?>"> <input type=text name=aupre value="<?php echo fetch_var('aupre');?>" size=2>AU<?php 
+  $uu=uunits(fetch_var('au2h'),fetch_var('aupre'),"0.000000000001410856578455");
+
+  $utxt=uu_display($uu,"Hlengths");
+  echo "<hr>".$utxt;
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				LY to Hlength<input type=text name=ly2h value="<?php echo fetch_var('ly2h');?>"> <input type=text name=lypre value="<?php echo fetch_var('lypre');?>" size=2>LY<?php 
+  $uu=uunits(fetch_var('ly2h'),fetch_var('lypre'),"0.000000000000000022309180101");
+
+  $utxt=uu_display($uu,"Hlengths");
+  echo "<hr>".$utxt;
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Seconds to Hticks<input type=text name=s2h value="<?php echo fetch_var('s2h');?>"> <input type=text name=spre value="<?php echo fetch_var('spre');?>" size=2>s<?php 
+				if(fetch_var('s2h')){
+  				$uu=uunits(fetch_var('s2h'),fetch_var('spre'),"0.00000000070402418376");
+
+				  $utxt=uu_display($uu,"Hticks");
+  				echo "<hr>".$utxt;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Hours to Hticks<input type=text name=h2h value="<?php echo fetch_var('h2h');?>"> <input type=text name=hpre value="<?php echo fetch_var('hpre');?>" size=2>h<?php 
+				if(fetch_var('h2h')){
+  				$uu=uunits(fetch_var('h2h'),fetch_var('hpre'),"0.00000000000019556227");
+
+				  $utxt=uu_display($uu,"Hticks");
+  				echo "<hr>".$utxt;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Days to Hticks<input type=text name=d2h value="<?php echo fetch_var('d2h');?>"> <input type=text name=dpre value="<?php echo fetch_var('dpre');?>" size=2>d<?php 
+				if(fetch_var('d2h')){
+  				$uu=uunits(fetch_var('d2h'),fetch_var('dpre'),"0.00000000000000814842805");
+
+				  $utxt=uu_display($uu,"Hticks");
+  				echo "<hr>".$utxt;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Years to Hticks<input type=text name=y2h value="<?php echo fetch_var('y2h');?>"> <input type=text name=ypre value="<?php echo fetch_var('ypre');?>" size=2>Y<?php 
+				if(fetch_var('y2h')){
+  				$uu=uunits(fetch_var('y2h'),fetch_var('ypre'),"0.000000000000000022309638261");
+
+				  $utxt=uu_display($uu,"Hticks");
+  				echo "<hr>".$utxt;
+  			}
 				?>
 				<input type=submit>
 		</td>

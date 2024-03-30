@@ -39,6 +39,13 @@ qdown,qdown,19.3
 qstrange,qstrange,18.5
 qbottom,qbottom,18.5
 
+//mesons
+upantiup,upantiup,14.7
+downantidown,downantidown,18.9
+upantidown,upantidown,18.9
+downantiup,downantiup,18.9
+
+
 //bosons
 boson,boson,14
 gluon,gluon,12

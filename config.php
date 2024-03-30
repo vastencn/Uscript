@@ -76,6 +76,7 @@ function load_all($load_cat){
 //load basic libs by default
 load_all("basic");
 load_chars("phys");
+load_chars("geom");
 activate_def_folder("phys");
 
 load_overrides("overrides");

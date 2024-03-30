@@ -1,6 +1,14 @@
 <?php
 
 
+function  def_render_prep($arendelle){
+  $anna=implode("#NL#",$arendelle);
+  $anna=insert_pre_renders($anna);
+  $arendelle=explode("#NL#",$anna);
+  $arendelle=def_preparse($arendelle);
+  return $arendelle;
+  }
+
 function def_preparse($arendelle){
   //I often use elsa for element, most often for elements that are arrays
   //anna more often a string like element
@@ -21,11 +29,12 @@ function render_def($word,$topts=NULL,$href=NULL){
 
   if(!$topts)$topts="border=0";
 
-  $anna=implode("#NL#",@$def['uscript']);
-  $anna=insert_pre_renders($anna);
-  $arendelle=explode("#NL#",$anna);
+  //$anna=implode("#NL#",@$def['uscript']);
+  //$anna=insert_pre_renders($anna);
+  //$arendelle=explode("#NL#",$anna);
 
-  $preparsed=def_preparse($arendelle);
+  //$preparsed=def_preparse($arendelle);
+  $preparsed=def_render_prep(@$def['uscript']);
   foreach(@$preparsed as $dline){
     $udefs[]=render_line_with_defmap($dline,NULL,$href);
     }

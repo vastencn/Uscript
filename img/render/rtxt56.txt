@@ -1,13 +1,13 @@
 
 #
-# atom(3 -2 1) subcup(proton proton proton neutron electron electron electron electron)
+#      v1 + 1 = ([2][7][3][6])
 #
-# atom(3 -1 1) subcup(proton proton proton neutron neutron electron electron electron electron)
+#      v1 * 3 = ([3][12][6][f])
 #
-# atom(3 0 1) subcup(proton proton proton neutron neutron neutron electron electron electron electron)
+#      v1 ^ 2 = ([1][24][4][19])
 #
-# atom(3 1 1) subcup(proton proton proton neutron neutron neutron neutron electron electron electron electron)
+#      sum(v1 ^ 2) = 42
 #
-# atom(3 2 1) subcup(proton proton proton neutron neutron neutron neutron neutron electron electron electron electron)
+#      avg(v1 ^ 2) = 10.8
 #
-#
+#      

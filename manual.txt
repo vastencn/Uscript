@@ -16,3 +16,6 @@ atom (1 1 1) number, isotope, ion
 def /n cancel proceeding newline
 
 subarel (array sub "BOX")
+
+_x space x px
+v_x vertical space x px

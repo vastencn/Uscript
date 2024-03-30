@@ -30,6 +30,21 @@ function gap_chunk($len){
   return $rchunk;
   }
 
+function vspace_chunk($len){
+  if(!is_numeric($len))return NULL;
+  if($len<=0)return NULL;
+  $rchunk=create_chunk();
+  $rchunk['type']='vspace';
+  $rchunk['string']="v_$len";
+  $rchunk['struct']=NULL;
+  $rchunk['svg']="<g></g>";
+  $rchunk['drawn']=1;
+  $rchunk['height']=$len;
+  $rchunk['width']=1;
+  $rchunk['defmap']=NULL;
+  return $rchunk;
+  }
+
 function char2chunk($cdat){
   if(!$cdat)return NULL;
   if(!is_svg_drawable($cdat))return NULL;

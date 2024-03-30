@@ -1,5 +1,13 @@
 
 #
-# atom(2 1 2) subcup(proton proton proton neutron neutron neutron neutron electron electron electron electron) atom(2 1 1) subcup(proton proton proton neutron neutron neutron neutron electron electron electron)
+#      v1 + 1 = ([2][7][4])
 #
-# atom(2 1 0) subcup(proton proton proton neutron neutron neutron neutron electron electron) atom(2 1 -1) subcup(proton proton proton neutron neutron neutron neutron electron) atom(2 1 -2) subcup(proton proton proton neutron neutron neutron neutron)
+#      v1 * 3 = ([3][12][9])
+#
+#      v1 ^ 2 = ([1][24][9])
+#
+#      sum(v1 ^ 2) = 2e
+#
+#      avg(v1) = 
+#
+#      

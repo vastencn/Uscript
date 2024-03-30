@@ -33,11 +33,16 @@ function load_presave($id){
   $anna=implode("",$fc);
 
 
-  if($crown=img_search($royal_throne)){
-    }else{    	
+
+//forcing render each time because added pre renders
+//later can save presave prerenders to exclusive dir with names for permanent saving
+//but for now they will only last until erased from the presave buffer
+//  if($crown=img_search($royal_throne)){
+//    }else{    	
+    $anna=insert_pre_renders($anna);
     $crown['svg']=multi_line_render($anna);
     file_dump($royal_throne,$crown['svg']);
-    }
+ //   }
 
   
   $crown['spelling']=$img_name;
@@ -61,9 +66,13 @@ function render_presave($id){
   if(!$fc=file($royal_chambers)){
     return NULL;
     }
-  $anna=implode("",$fc);
+  $arendelle=def_render_prep($fc);
+  $anna=implode("\n",$arendelle);
+
+  //ar_dump($arendelle);
 
 
+  //$anna=insert_pre_renders($anna);
   $crown['svg']=multi_line_render($anna);
 
   file_dump($throne_room,$crown['svg']);

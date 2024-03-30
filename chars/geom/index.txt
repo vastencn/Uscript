@@ -1,0 +1,58 @@
+
+
+//dimensions
+1dim,1d,2
+2dim,2d,13
+3dim,3d,13
+4dim,4d,13
+
+//cartesian
+2dcartarea,2dcartarea,10.8
+2dcartx,2dcartx,10.8
+2dcarty,2dcarty,10.8
+
+//geometry
+
+angle,angle,19
+ang,ang,16.6
+radian,radian,11.7
+rev,rev,11
+rangle,rangle,16
+
+//special for def
+2dcartdimbreak,2dcartdimbreak,24,24
+2dcartcornerbreak,2dcartcornerbreak,24,24
+
+
+EOF
+
+//trig
+  //tri general
+    //angles
+triaa,triaa,18.5
+triab,triab,18
+triac,triac,18
+
+  //right tri
+rt,rt,16
+    //right tri angles
+rtav,rtav,18.5
+rtah,rtah,18
+	//right tri sides
+rtsh,rtsh,16
+rtsv,rtsv,16.8
+rthyp,rthyp,19.4
+
+//circles/spheres
+rad,rad,15
+diam,diam,15
+pi,pi,12
+
+circlearea,circlearea,11
+spherevol,spherevol,11
+spheresur,spheresur,11
+
+//procedural
+return,return,14.5
+vsetleft,vsetleft,18
+vsetright,vsetright,18

@@ -30,10 +30,16 @@ these also allow pasing of arguments to existing braks
 this way more complex braks can be built out of more basic braks
 the decision of wherther to build a new brak fresh or by adding features to an existing brak is up to the dev
 
+1,ariel,arel
+2,brak,arel
 2,sub,subcup
 2,subof,subofcup
 1,sin,brak_opt_ img=sin : rshift=6 : irshift=6 : minh=30 : def=sin
 1,cos,brak_opt_ img=cos : rshift=6 : irshift=6 : minh=30 : def=cos
+
+1,count,brak_opt_ img=count : rshift=14.5 : irshift=0 : minh=30 : def=count
+1,sum,brak_opt_ img=sum : rshift=12 : irshift=0 : minh=30 : def=sum
+1,avg,brak_opt_ img=avg : rshift=18.6 : irshift=0 : minh=30 : def=avg
 
 1,exe,brak_opt_ img=exe : rshift=2.5 : irshift=2.5 : minh=30 : def=exe
 1,subarel,arel_opt_ sublen=5
