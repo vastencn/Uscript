@@ -1,4 +1,6 @@
-
+//shapes
+cube,cube,19.4
+square,square,13.1
 
 //dimensions
 1dim,1d,2
@@ -11,6 +13,11 @@
 2dcartx,2dcartx,10.8
 2dcarty,2dcarty,10.8
 
+3dcartarea,3dcartarea,10.8
+3dcartx,3dcartx,10.8
+3dcarty,3dcarty,10.8
+3dcartz,3dcartz,10.8
+
 //geometry
 
 angle,angle,19
@@ -19,10 +26,18 @@ radian,radian,11.7
 rev,rev,11
 rangle,rangle,16
 
-//special for def
+//special for dim derivative concepts, eg area, volume etc
 2dcartdimbreak,2dcartdimbreak,24,24
 2dcartcornerbreak,2dcartcornerbreak,24,24
+cartcornertr,cartcornertr,16
+cartcornerbr,cartcornerbr,16
+cartcornertl,cartcornertl,16
+cartcornerbl,cartcornerbl,16
+cartliney,cartliney,2
+cartlinex,cartlinex,15
 
+perim,perim,9.8
+circum,circum,12
 
 EOF
 

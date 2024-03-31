@@ -1,5 +1,1 @@
-/n
-#
-# aa a 
-#
-#/n
+ square subcup perim = 2dcartx + 2dcartx + 2dcarty + 2dcarty 

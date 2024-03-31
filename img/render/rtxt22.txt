@@ -1,2 +1,1 @@
- count(v1) = 6 
- sum(v1)=1a 
+a a 

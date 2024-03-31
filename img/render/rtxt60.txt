@@ -1,15 +1,1 @@
-
-#
-#      v1 + 1 = ([2][7][3][6])
-#
-#      v1 * 3 = ([3][12][6][f])
-#
-#      v1 ^ 2 = ([1][24][4][19])
-#
-#      sum(v1 ^ 2) = 42
-#
-#      count(v1 ^ 2) = 4
-#
-#      avg(v1 ^ 2) = 10.8
-#
-#      
+ square subcup perim = 2dcartx + 2dcartx + 2dcarty + 2dcarty 

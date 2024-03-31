@@ -9,6 +9,7 @@ tabbing to abs pos
 *fracs of 1-7 not full 4 bit symbol
 *creat/edit presave page
 finish migrating geom chars
+shortcut for x/y fractions
 
 *vertical spacer
 
@@ -55,6 +56,8 @@ procedual needed
 
 
 geom
+  rotate
+  perimiter
   area/volume
   start with cartesian, then add circular/spherical
  			defined by corners and angles or angles per radian
@@ -92,3 +95,12 @@ move/copy folder
 
 -ultra low priority(maybe do later when the important core stuff is done)
 chromodynamics generator (symbols of quarks and gluons with charge)
+indentation based rendering groups? (currently presaves allow this, maybe better leave that way so each piece can be reused.. maybe just add better DB and sorting for presaves)
+migate everyuthing to mysql? 
+  (
+		I think I prefer file based... 
+		but.. OOOOOOHHHH how mysql would simplify so much.. 
+		i started dwith files for svg file management and editing convinience
+		and this still has its merits.. i can work locally on svg files and not seen to upload themn to update the db.. just edit the svg file
+		so im torn.. i suppose in the end.. databasde, with an "auto update db from files" tool
+	)

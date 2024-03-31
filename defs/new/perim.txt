@@ -1,0 +1,12 @@
+square subcup(perim = 2dcartx + 2dcartx + 2dcarty + 2dcarty)
+
+perim subcup(circum)
+text
+perimeter is defined (without to much nuance yet) as:
+a rectangle has a perimeter of X plus X plus Y plus Y
+
+we are referencing the already defined X and Y symbols used in 2D Cartesian area definition
+
+also
+
+circumference is a sub element (a kind of) perimeter

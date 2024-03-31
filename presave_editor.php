@@ -58,6 +58,7 @@ if( $ename && safe_fname($ename) && strlen($ename)>1 ){
   	</tr>
   </table>
 </form></form>
+<font size=1>
   <?php
   }
 
@@ -67,7 +68,7 @@ foreach($presaves as $ps){
   $elsa=explode(".",$ps);
   if(count($elsa)!=2)continue;
   if($elsa[1]!="txt")continue;
-  echo "<a href=presave_editor.php?edit=".$elsa[0]."><font color=blue size=1>".$elsa[0]."</font></a><br>";
+  echo "<a href=presave_editor.php?edit=".$elsa[0]."><font color=blue>".$elsa[0]."</font></a> - imgpresave_".$elsa[0]."<br>";
   }
 
 

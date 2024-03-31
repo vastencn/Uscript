@@ -1,0 +1,6 @@
+square subcup(imgpresave_2dcartcorners )
+text
+I named the file square
+but I'll edit it to "rectangle" or just add rectangle as a synonym later because that is what it defines
+
+its just a shape with 4 right angles

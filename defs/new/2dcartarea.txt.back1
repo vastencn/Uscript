@@ -1,4 +1,16 @@
-2dcartarea sub(|/n
- 2dcartdimbreak sub(a)/n
- 2dcartcornerbreak sub(a)/n
- |)
+2dcartarea subcup( imgpresave_2dcartproperties )
+2dcartarea  = 2dcartx * 2dcarty
+text
+We define this symbol to be: 
+-something that has 4 right angle corners
+-has two 1D perpendicular lines that can be referenced (x,y)
+-something that it is equal to its X * Y
+
+   *perpendicular is not implicit
+    it is implied by the proceeding section where all angles are right angles
+
+this clarifies it enough to be "Cartesian area"
+
+with this defined...
+and with circular area defined easily by pi based formula...
+we can abstract a general concept of area
