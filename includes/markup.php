@@ -27,6 +27,7 @@ function parse_scinote_shorthand($word){
   }
 
 function draw_word($word){
+  $word=preparse_fractions($word);
   
   $word_lower=strtolower($word);
 
@@ -35,6 +36,7 @@ function draw_word($word){
   $base_out=16;
 
   if(!is_string($word))return NULL;
+
 
   //check for overrides
   if($override=search_overrides($word)){
@@ -113,6 +115,15 @@ function word_is_vspace($word){
   $len=substr($word,2);
   if(!is_numeric($len))return NULL;
   return $len;
+  }
+
+function preparse_fractions($word){
+  $far=explode("/",$word);
+  if(count($far)<2||!is_numeric($far[0])||!is_numeric($far[1]))return $word;
+  $num=arb_decbin($far[0]);
+  $den=arb_decbin($far[1]);
+  $fstr="b>b$num/$den";
+  return $fstr;
   }
 
 function word_is_prerender($word){

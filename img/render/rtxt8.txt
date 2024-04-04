@@ -1,1 +1,11 @@
-square imgrender_rimg6
+rtav + rtah = 1/2 pi radian
+#
+#  (rtsh ^ 2) + (rtsv ^ 2) = rthyp ^ 2
+#
+#  sin(rtav) = rtsh / rthyp
+#
+#  cos(rtav) = rtsv / rthyp
+#
+#  tan(rtav) = rtsh / rtsv
+#
+#

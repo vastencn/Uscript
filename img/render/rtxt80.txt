@@ -1,1 +1,7 @@
-subcup( imgpresave_2dcartcorners )
+ diam = rad + rad
+#
+# space = pi * rad * rad 
+#
+# perim = circum = pi * diam
+#
+# 

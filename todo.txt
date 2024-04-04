@@ -9,7 +9,12 @@ tabbing to abs pos
 *fracs of 1-7 not full 4 bit symbol
 *creat/edit presave page
 finish migrating geom chars
-shortcut for x/y fractions
+*shortcut for x/y fractions
+tan brak
+exe() bigger dots
+
+bugs:
+	tref:xxx shows the tref line at end.. maybe uref does too
 
 *vertical spacer
 
@@ -102,5 +107,5 @@ migate everyuthing to mysql?
 		but.. OOOOOOHHHH how mysql would simplify so much.. 
 		i started dwith files for svg file management and editing convinience
 		and this still has its merits.. i can work locally on svg files and not seen to upload themn to update the db.. just edit the svg file
-		so im torn.. i suppose in the end.. databasde, with an "auto update db from files" tool
+		so im torn.. i suppose in the end.. database, with an "auto update db from files" tool
 	)

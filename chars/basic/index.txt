@@ -133,36 +133,15 @@ tp_em,tm_em,18
 
 
 
-//trig
-  //tri general
-    //angles
-triaa,triaa,18.5
-triab,triab,18
-triac,triac,18
 
-  //right tri
-rt,rt,16
-    //right tri angles
-rtav,rtav,18.5
-rtah,rtah,18
-	//right tri sides
-rtsh,rtsh,16
-rtsv,rtsv,16.8
-rthyp,rthyp,19.4
 
-//circles/spheres
-rad,rad,15
-diam,diam,15
-pi,pi,12
+
 
 circlearea,circlearea,11
 spherevol,spherevol,11
 spheresur,spheresur,11
 
-//procedural
-return,return,14.5
-vsetleft,vsetleft,18
-vsetright,vsetright,18
+
 
 EOF
 //dimensions
@@ -177,3 +156,32 @@ angle,angle,19
 ang,ang,16.6
 radian,radian,11.7
 rev,rev,11
+
+//circles/spheres
+rad,rad,15
+diam,diam,15
+pi,pi,12
+
+
+//trig
+  //tri general
+    //angles
+triaa,triaa,18.5
+triab,triab,18
+triac,triac,18
+
+
+  //right tri
+rt,rt,16
+    //right tri angles
+rtav,rtav,18.5
+rtah,rtah,18
+  //right tri sides
+rtsh,rtsh,16
+rtsv,rtsv,16.8
+rthyp,rthyp,19.4
+
+//procedural
+return,return,14.5
+vsetleft,vsetleft,18
+vsetright,vsetright,18

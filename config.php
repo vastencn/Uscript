@@ -77,6 +77,7 @@ function load_all($load_cat){
 load_all("basic");
 load_chars("phys");
 load_chars("geom");
+load_chars("proc");
 activate_def_folder("phys");
 
 load_overrides("overrides");

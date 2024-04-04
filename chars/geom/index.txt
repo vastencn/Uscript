@@ -26,6 +26,9 @@ radian,radian,11.7
 rev,rev,11
 rangle,rangle,16
 
+
+//2D
+
 //special for dim derivative concepts, eg area, volume etc
 2dcartdimbreak,2dcartdimbreak,24,24
 2dcartcornerbreak,2dcartcornerbreak,24,24
@@ -37,13 +40,19 @@ cartliney,cartliney,2
 cartlinex,cartlinex,15
 
 perim,perim,9.8
+
+2darea,2darea,10
+
+//circles/spheres
+circlearea,circlearea,12.5
+circle,circle,12.5
 circum,circum,12
+rad,rad,15
+diam,diam,15
+pi,pi,12
 
-EOF
-
-//trig
-  //tri general
-    //angles
+//triangles/trig
+tri,tri,17.5
 triaa,triaa,18.5
 triab,triab,18
 triac,triac,18
@@ -53,15 +62,16 @@ rt,rt,16
     //right tri angles
 rtav,rtav,18.5
 rtah,rtah,18
-	//right tri sides
+  //right tri sides
 rtsh,rtsh,16
 rtsv,rtsv,16.8
 rthyp,rthyp,19.4
 
-//circles/spheres
-rad,rad,15
-diam,diam,15
-pi,pi,12
+
+EOF
+
+
+
 
 circlearea,circlearea,11
 spherevol,spherevol,11

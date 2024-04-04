@@ -1,1 +1,7 @@
-a a 
+rtav + rtah = 1/2 pi radian
+#
+#  (rtsh ^ 2) + (rtsv ^ 2) = rthyp ^ 2
+#
+#  a sin(rtav)
+#
+#
