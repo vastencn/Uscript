@@ -102,6 +102,7 @@ function render_brak(&$elsa){
       foreach($args as $arg){
         $chunks[]=pre_render_into_chunk($arg);
         }
+      $chunks[0]['opts']=$elsa['brak']['opts'];
       $braketed=$elsa['brak']['funk'] ($chunks);
       }else{
       $braketed=$elsa['brak']['funk'] ($elsa);

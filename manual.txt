@@ -19,3 +19,9 @@ subarel (array sub "BOX")
 
 _x space x px
 v_x vertical space x px
+
+ifs
+if true then  = if,ify 
+if false then = iff,iffy
+if true 'else'  = ifn
+if false 'else' = iffn

@@ -1,0 +1,5 @@
+( |v1 = 1 \n v2 = 2 | ) /n
+subcup( | /n
+(v1 <: v2) subcup( v1 = v2 = 2 ) /n
+(v1 :> v2) subcup( v1 = v2 = 1 ) /n
+\n | ) _20 (v1 <: v2) = (v2 :> v1)

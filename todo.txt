@@ -10,8 +10,9 @@ tabbing to abs pos
 *creat/edit presave page
 finish migrating geom chars
 *shortcut for x/y fractions
-tan brak
+*tan brak
 exe() bigger dots
+braks inside of conditionals dont work
 
 bugs:
 	tref:xxx shows the tref line at end.. maybe uref does too
@@ -109,3 +110,5 @@ migate everyuthing to mysql?
 		and this still has its merits.. i can work locally on svg files and not seen to upload themn to update the db.. just edit the svg file
 		so im torn.. i suppose in the end.. database, with an "auto update db from files" tool
 	)
+
+add ability to have if do and else do on one condition (cann just manually make images for now, not high priority)

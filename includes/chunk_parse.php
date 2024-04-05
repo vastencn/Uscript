@@ -50,6 +50,7 @@ function parse_prep_brak_funks(&$car){
             }
           }
         }
+      
 
       //find next elsa of same depth
       $ni=NULL;
@@ -75,6 +76,8 @@ function parse_prep_brak_funks(&$car){
             }
           }
         }
+     
+      
 
       //if no name found, default to brak
       if(@count($car[$i]['brak'])<2){

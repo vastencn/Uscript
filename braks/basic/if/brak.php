@@ -34,12 +34,45 @@ $brak_text_def =  "the IF braket\n";
 
 
 function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
+  $yesno=1;
+  $iff=FALSE;
+  $opts=@$chunks[0]['opts'];
+  if(@count($opts)>0){
+    foreach($opts as $opt){
+      $vname=$opt[0];
+      $vval=$opt[1];
+      switch($vname){
+        case "no":
+                   $yesno=0;
+                   break;
+        case "not":
+                   $iff=TRUE;
+                   break;
+        }
+      }
 
+    }
 
   $ctxt="sub(".@$chunk['string'].")";
   $nchunk=create_chunk($ctxt);
 
-  $condition=eval_brak($chunks[0]);  
+  $subopts=array();
+  if($yesno){
+    $subopts[]=array("yes","1");
+    }else{
+    $subopts[]=array("no","1");
+    }
+  $chunks[1]['brak']['opts']=$subopts;
+
+  $brakopts=array();
+  if($iff){
+    $brakopts[]=array("circ","1");
+    }else{
+    $brakopts[]=array("dot","1");
+    }
+  $chunks[0]['brak']['opts']=$brakopts;
+
+  $condition=brak_brak($chunks[0]);  
   $action=subcup_brak($chunks[1]);
   append_elsa($condition,$action,-0);
 

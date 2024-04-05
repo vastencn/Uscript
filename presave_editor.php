@@ -62,8 +62,12 @@ if( $ename && safe_fname($ename) && strlen($ename)>1 ){
   <?php
   }
 
+
+
+
 $presaves = scandir($presave_dir);
 foreach($presaves as $ps){
+  if($ps=="presave_index.txt")continue;
   if(strlen($ps)<3)continue;
   $elsa=explode(".",$ps);
   if(count($elsa)!=2)continue;
@@ -71,8 +75,61 @@ foreach($presaves as $ps){
   echo "<a href=presave_editor.php?edit=".$elsa[0]."><font color=blue>".$elsa[0]."</font></a> - imgpresave_".$elsa[0]."<br>";
   }
 
+$irecs=array();
+$index=file($presave_dir."presave_index.txt");
+foreach($index as $rec){
+  $recdat=explode(",",$rec);
+  $irecs[]=$recdat;
+  }
 
 
+$istruct=array();
+$index=file($presave_dir."presave_struct.txt");
+
+foreach($index as $rec){
+  $car=str_split($rec);
+  $depth=1;
+  foreach( $car as $ch ){
+    if($ch!=" ")break;
+    $depth++;
+    }
+  $rec=trim($rec);
+  $istruct[]=array(preg_replace("/[^a-zA-Z0-9]/", "", $rec),$depth);
+  }
+
+$depth=0;
+foreach($istruct as $cat){
+  if($cat[1]>$depth){
+    while($cat[1]>$depth){
+      echo "<ul>";
+      $depth++;
+      }
+    }
+  if($cat[1]<$depth){
+    while($cat[1]<$depth){
+      echo "</ul>";
+      $depth--;
+      }
+    }
+  echo "<li>".$cat[0];
+
+  $slist=NULL;
+  foreach($irecs as $item){
+    if($item[0]==$cat[0]){
+      $iname=preg_replace("/[^a-zA-Z0-9_]/", "", $item[1]);
+      $slist.="<li><a href=presave_editor.php?edit=$iname>$iname</a>";
+      }
+    }
+  if($slist){
+    echo "<ol>$slist</ol>";
+    }
+
+  }
+  
+  while($depth>0){
+    echo "</ul>";
+    $depth--;
+    }
 ?>
 
     </td>

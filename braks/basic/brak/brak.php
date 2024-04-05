@@ -41,8 +41,8 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   $cstart=($stroke_width/2);
   $svg_str="";
   $minh=NULL;
-
   $opts=@$chunk['brak']['opts'];
+  $dot=$circ=FALSE;
   if(@count($opts)>0){
     foreach($opts as $opt){
       $vname=$opt[0];
@@ -61,6 +61,14 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
         case "minh":
                    $minh=$vval;
                    break;
+        case "dot":
+                   $dot=TRUE;
+                   $xstart=2;
+                   break;
+        case "circ":
+                   $circ=TRUE;
+                   $xstart=2;
+                   break;
         case "def":
                    $chunk['brak']['spelling']=$vval;
                    break;
@@ -68,6 +76,8 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
       }
 
     }
+
+  
 
 
   $ctxt="sub(".@$chunk['string'].")";
@@ -78,6 +88,12 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
 
   //draw open
   $svg_str.=svg_hcup($xstart,0,$height,0-$cup_depth,$stroke_width);
+  if($dot){
+    $svg_str.=svg_dot($xstart,0,4);
+    }
+  if($circ){
+    $svg_str.=svg_circle($xstart,0,4,2,"white");
+    }
 
   //now embed the original chunk svg
   $chunk_x_offset=$xstart+$cstart+$hpad;

@@ -42,6 +42,26 @@ $brak_text_def = 	"the most fundamental named braket, in a 'cuping form'\n".
 function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   if(!chunk_is_drawable($chunk))return NULL;
   
+
+  $yesdot=NULL;
+  $nodot=NULL;
+  $opts=@$chunk['brak']['opts'];
+  if(@count($opts)>0){
+    foreach($opts as $opt){
+      $vname=$opt[0];
+      $vval=$opt[1];
+      switch($vname){
+        case "yes":
+                   $yesdot=1;
+                   break;
+        case "no":
+                   $nodot=1;
+                   break;
+        }
+      }
+    }
+
+
   $ctxt="sub(".@$chunk['string'].")";
   $nchunk=create_chunk($ctxt);
 
@@ -58,6 +78,12 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
   //now embed the original chunk svg
   $svg_str.=draw_svg_symbol(@$chunk['svg'],0,$chunk_x_offset);
 
+  if($yesdot){
+    $svg_str.=svg_dot($branch_length,0,4);
+    }
+  if($nodot){
+    $svg_str.=svg_circle($branch_length,0,4,2,"white");
+    }
 
   $nchunk['svg']=$svg_str;
   $nchunk['drawn']=TRUE;

@@ -1,5 +1,1 @@
-rtav + rtah = 1/2 pi radian
-#
-#  rhyp ^ 2
-#
-#
+v1 

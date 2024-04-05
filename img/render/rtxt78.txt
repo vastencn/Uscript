@@ -1,5 +1,1 @@
- space = pi * rad * rad 
-#
-# perim
-#
-# 
+ _1 0 

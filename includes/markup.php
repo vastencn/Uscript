@@ -13,6 +13,8 @@ $chunk_spacing=3;
 //they are run on the string layer befor it is even broken in words
 $markup_replace=array();
 $markup_replace[]=array("ib","imgbasic_");
+$markup_replace[]=array("<:"," vsetleft ");
+$markup_replace[]=array(":>"," vsetright ");
 //$markup_replace[]=array("imgrender","pre");
 
 

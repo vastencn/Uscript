@@ -46,3 +46,8 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,exe,brak_opt_ img=exe : rshift=2.5 : irshift=2.5 : minh=30 : def=exe
 1,subarel,arel_opt_ sublen=5
 2,s,arel_opt_ sublen=5
+1,iff,if_opt_ not=1 : sublen=5
+1,ify,if_opt_ yes=1 : sublen=5
+1,ifn,if_opt_ no=1 : sublen=5
+1,iffy,if_opt_ yes=1 : not=1 : sublen=5
+1,iffn,if_opt_ no=1 : not=1 : sublen=5
