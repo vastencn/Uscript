@@ -1,2 +1,37 @@
 leptons,leptons
 leptons,neutrinos
+cartesian,2dcartcorners
+fermions,fermions
+cartesian,2dcartdims
+cartesian,2dcartproperties
+array structure,arraydef
+array ops,arrayops
+bosons,bosonsall
+bosons,emsbosons
+bosons,weakbosons
+variables,vset
+quarks,upquarks
+quarks,quarksall
+quarks,downquarks
+circles and pi,circles
+conditionals,if
+triangles and trig,triangles
+particles,particles
+leptons,leptonsall
+seq example 1,pseq1d
+seq example 1,pseq1c
+seq example 1,pseq1b
+seq example 1,pseq1a
+seq example 1,pseq1
+loop example 1,loopeg1asub
+loop example 1,loopeg1a
+loop example 1,loopeg1b
+loop example 1,loopeg1c
+loop example 1,loopeg1d
+loop example 1,loopeg1e
+loop example 1,loopeg1f
+loop example 1,loopeg1g
+loop example 1,loopeg1
+loop example 1,loopeg1stats
+loop example 1,loopeg1statsvals
+loops,loopdef1

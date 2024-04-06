@@ -1,7 +1,23 @@
 defs
+ geometry
+  2d
+   circles and pi
+   triangles and trig
+   cartesian
  procedural
+  execution
+   sequence
+    seq example 1
+   loops
+    loop example 1
+  variables
   conditionals
+  arrays
+   array structure
+   array ops
  physics
   particles
+   bosons
    fermions
     leptons
+    quarks

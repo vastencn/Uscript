@@ -1,0 +1,1 @@
+(ips_pseq1a) = (ips_pseq1b) = (ips_pseq1c) = (ips_pseq1d)

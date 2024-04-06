@@ -173,7 +173,8 @@ function load_brak_index($ipath,$fpath){
 
 function brak_load_opt_img($img,$brak){
   global $braks_dir,$dslash;
-  $ipath=$brak['folder'].$dslash."$img.svg";
+
+  $ipath=$brak['folder'].$dslash."$img.svg"; 
   $svg=import_svg($ipath);
   return $svg;
   }

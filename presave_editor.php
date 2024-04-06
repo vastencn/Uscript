@@ -1,5 +1,12 @@
 <?php
 require_once("config.php");
+
+
+if(@$_GET['cat_up']&&strlen($_POST['cat_dat'])>10){
+  file_dump($presave_dir."presave_struct.txt",$_POST['cat_dat']);
+  }
+
+
 ?>
 <html>
 <head>
@@ -34,6 +41,11 @@ if( $ename && safe_fname($ename) && strlen($ename)>1 ){
   if(@$_GET['up']){
     $anna=$_POST['econtent'];
     file_dump($tpath,$anna);
+
+    $ncat=@$_POST['ncat'];
+    if($ncat&&strlen($ncat)>2){
+      file_append_line($presave_dir."presave_index.txt",$ncat.",".$ename);
+      }
     }
 
   $path=$presave_dir.$ename;
@@ -53,6 +65,9 @@ if( $ename && safe_fname($ename) && strlen($ename)>1 ){
   			<textarea name=econtent rows=10 cols=50><?php echo $anna;?></textarea>
   		</td>
   	</tr>
+    <tr>
+      <td>Add cat <input type=text name=ncat size=10></td>
+    </tr>
   	<tr>
   		<td><input type=submit></td>
   	</tr>
@@ -63,22 +78,11 @@ if( $ename && safe_fname($ename) && strlen($ename)>1 ){
   }
 
 
-
-
-$presaves = scandir($presave_dir);
-foreach($presaves as $ps){
-  if($ps=="presave_index.txt")continue;
-  if(strlen($ps)<3)continue;
-  $elsa=explode(".",$ps);
-  if(count($elsa)!=2)continue;
-  if($elsa[1]!="txt")continue;
-  echo "<a href=presave_editor.php?edit=".$elsa[0]."><font color=blue>".$elsa[0]."</font></a> - imgpresave_".$elsa[0]."<br>";
-  }
-
 $irecs=array();
 $index=file($presave_dir."presave_index.txt");
 foreach($index as $rec){
   $recdat=explode(",",$rec);
+  $recdat[1]=preg_replace("/[^a-zA-Z0-9_]/", "", @$recdat[1]);
   $irecs[]=$recdat;
   }
 
@@ -94,10 +98,11 @@ foreach($index as $rec){
     $depth++;
     }
   $rec=trim($rec);
-  $istruct[]=array(preg_replace("/[^a-zA-Z0-9]/", "", $rec),$depth);
+  $istruct[]=array(preg_replace("/[^a-zA-Z0-9 ]/", "", $rec),$depth);
   }
 
 $depth=0;
+$cat_chain=array();
 foreach($istruct as $cat){
   if($cat[1]>$depth){
     while($cat[1]>$depth){
@@ -109,7 +114,7 @@ foreach($istruct as $cat){
     while($cat[1]<$depth){
       echo "</ul>";
       $depth--;
-      }
+      }    
     }
   echo "<li>".$cat[0];
 
@@ -117,7 +122,7 @@ foreach($istruct as $cat){
   foreach($irecs as $item){
     if($item[0]==$cat[0]){
       $iname=preg_replace("/[^a-zA-Z0-9_]/", "", $item[1]);
-      $slist.="<li><a href=presave_editor.php?edit=$iname>$iname</a>";
+      $slist.="<font size=1><li><a href=presave_editor.php?edit=$iname>$iname</a> - ips_$iname</font>";
       }
     }
   if($slist){
@@ -130,11 +135,52 @@ foreach($istruct as $cat){
     echo "</ul>";
     $depth--;
     }
+
+
+
+echo "<table border=1 cellpadding=2 cellspacing=0>";
+
+$presaves = scandir($presave_dir);
+foreach($presaves as $ps){
+  if(substr($ps,0,7)=="presave")continue;
+  if(strlen(preg_replace("/[^a-zA-Z0-9_]/", "", $ps))<3)continue;
+  $elsa=explode(".",$ps);
+  if(count($elsa)!=2)continue;
+  if($elsa[1]!="txt")continue;
+
+  $catlist=NULL;
+
+  foreach($irecs as $item){
+    if($item[1]==$elsa[0]){
+      $catlist.="<li><font size=1>".$item[0];
+      }
+    }
+  if($catlist)$catlist="<ul>".$catlist."</ul>";
+
+  echo "<tr valign=top><td><font size=1><a href=presave_editor.php?edit=".$elsa[0]."><font color=blue>".$elsa[0]."</font></a></td><td><font size=1>ips_".$elsa[0]."</td><td>$catlist</td></tr>";
+  }
+
+echo "</table>";
+
 ?>
 
     </td>
   </tr>
 </table>
+
+<?php
+
+
+?>
+<form action=presave_editor.php?cat_up=1 method=post>
+  <textarea rows=8 cols=25 name=cat_dat><?php
+
+echo implode(file($presave_dir."presave_struct.txt"));
+
+?></textarea>
+  <br>
+  <input type=submit>
+</form>
 
 </body>
 </html>

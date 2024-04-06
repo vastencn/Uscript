@@ -15,7 +15,10 @@ $markup_replace=array();
 $markup_replace[]=array("ib","imgbasic_");
 $markup_replace[]=array("<:"," vsetleft ");
 $markup_replace[]=array(":>"," vsetright ");
-//$markup_replace[]=array("imgrender","pre");
+
+$markup_prefix=array();
+$markup_prefix[]=array("ib","imgbasic_");
+$markup_prefix[]=array("ips_","imgpresave_");
 
 
 function parse_scinote_shorthand($word){
@@ -30,6 +33,7 @@ function parse_scinote_shorthand($word){
 
 function draw_word($word){
   $word=preparse_fractions($word);
+  $word=markup_prefixes($word);
   
   $word_lower=strtolower($word);
 
@@ -103,6 +107,14 @@ function draw_word($word){
     }
 
   return NULL;
+  }
+
+function markup_prefixes($word){
+  global $markup_prefix;
+  foreach ($markup_prefix as $tpre){
+    $word=prefix_expand($word,$tpre[0],$tpre[1]);
+    }
+  return $word;
   }
 
 function word_is_space($word){

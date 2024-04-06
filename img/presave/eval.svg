@@ -1,7 +1,7 @@
 <svg
-   width="108"
+   width="100"
    height="32"
-   viewBox="0 0 108 32"
+   viewBox="0 0 100 32"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -13,7 +13,7 @@
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
-     transform="translate(0,16)"><g transform="translate(3,0)"><polyline points="10,-15 0,-15 0,15 10,15 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(4,0)"><g transform="translate(3,0)"><circle cx="5" cy="0" r="5" stroke="black" stroke-width="0" fill="black" /><polyline points="15,-12 5,-12 5,12 15,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(14,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
+     transform="translate(0,16)"><g transform="translate(3,0)"><polyline points="10,-15 0,-15 0,15 10,15 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(4,0)"><g transform="translate(3,0)"><polyline points="12,-12 2,-12 2,12 12,12 " style="fill:none;stroke:black;stroke-width:2" /><circle cx="2" cy="0" r="4" stroke="black" stroke-width="0" fill="black" /><g transform="translate(6,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
@@ -84,7 +84,7 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></g></g></g><polyline points="41,-12 51,-12 51,12 41,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(52,0)"><line x1="0" y1="0" x2="8" y2="0" style="stroke:black;stroke-width:2" /><polyline points="29,-12 8,-12 8,12 29,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(12,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
+  </g></g></g></g></g></g></g><polyline points="33,-12 43,-12 43,12 33,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(44,0)"><line x1="0" y1="0" x2="8" y2="0" style="stroke:black;stroke-width:2" /><polyline points="29,-12 8,-12 8,12 29,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(12,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
@@ -124,4 +124,4 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></g></g></g></g></g><g transform="translate(93,0)"></g></g><polyline points="91,-15 101,-15 101,15 91,15 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(108,0)"></g></g></svg>
+  </g></g></g></g></g></g></g><circle cx="8" cy="0" r="4" stroke="black" stroke-width="0" fill="black" /></g></g><g transform="translate(85,0)"></g></g><polyline points="83,-15 93,-15 93,15 83,15 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(100,0)"></g></g></svg>
