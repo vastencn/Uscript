@@ -112,12 +112,16 @@ function render_brak(&$elsa){
     $xcs=@$braketed['brakc_xstart'];
     $xce=@$braketed['brakc_xend'];
     if(@$braketed['defmap_reset'])$elsa['defmap']=array();
+    if(@$braketed['defmap_set'])$elsa['defmap']=$braketed['defmap_set'];
     if($xoe&&$xcs&&$xce){
       $b1=create_dmap(@$braketed['brak']['spelling'],($xoe-$xos),$braketed['height']);
 
       defmap_direct_append($b1,$elsa['defmap'],$xoe);
+      //ar_dump($elsa,"elsa");
 
-      $b2=create_dmap(@$elsa['brak']['spelling'],$xce-$xcs,$braketed['height']);
+      //changed because looked wrong.. need deeper analysis to be sure
+      //$b2=create_dmap(@$elsa['brak']['spelling'],$xce-$xcs,$braketed['height']);
+      $b2=create_dmap(@$braketed['brak']['spelling'],$xce-$xcs,$braketed['height']);
 
       defmap_direct_append($b1,$b2,$xcs);
       $elsa['defmap']=$b1; 
@@ -165,6 +169,7 @@ function append_elsa(&$iduna,&$elsa,$spacing=9999){
   $elsa_x=$iduna['width']+$spacing;
 
   if($defmap_on){
+    //echo "doing defmap append";
     defmap_append($iduna,$elsa,$elsa_x);
     }
 

@@ -1,5 +1,5 @@
-count(<:) = 8
-count (if( _15 v_10 )) = 4
-count( - ) = 3
-count( * ) = 3
-count( gt ) = 4
+count ( <: ) = 8
+count ( if( _10 v_12 ) ) = 8
+count ( - ) = 3
+count ( * ) = 3
+count ( gt ) = 4

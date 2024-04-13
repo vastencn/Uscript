@@ -1,1 +1,1 @@
- imgrender_rimg32
+ 1 

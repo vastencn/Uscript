@@ -43,6 +43,7 @@ function def_not_found($word){
 
 function search_def($word,$recur=FALSE,$uref=NULL){
   global $defs_dir,$active_def_dirs,$dslash;
+
   $word=strtolower($word);  
   if(@strlen($word)<1)return NULL;
   if(preg_match('/[^0-9a-z_]/',$word))return NULL;
@@ -79,6 +80,18 @@ function load_def($fpath,$rpath=NULL,$recur=NULL,$uref=NULL){
 
   $uar=array();
   $tar=array();
+
+  //if a preseave then load the presave text into the def svg top section
+  echo "(($fpath))";
+  $par=explode("imgpresave_",$fpath);
+  if(count($par)>1){
+    if($ptext=presave_text(strstr($par[1],".",true))){
+      $uar=$ptext;
+      $uar[]="_20 _v1";
+      }
+    }
+
+
   $ptr=&$uar;
   foreach($lar as $line){
     if(!$uref){

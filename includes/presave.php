@@ -1,5 +1,10 @@
 <?php
 
+function presave_text($id){
+  global $presave_dir;
+  return @file($presave_dir.$id.".txt");
+  }
+
 function load_presave($id){
   global $presave_dir,$render_dir;
 

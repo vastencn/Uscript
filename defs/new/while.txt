@@ -1,0 +1,4 @@
+ips_loopeg1
+text
+
+while brak

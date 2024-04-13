@@ -45,23 +45,25 @@ $used=array();
 if($defs){
 	$dar=explode(",",$defs);
 	foreach($dar as $tdef){
-    if(in_array($tdef,$used))continue;
-    if($i++)echo "<hr>";
+      if(in_array($tdef,$used))continue;
+      if($i++)echo "<hr>";
 
-    $vstr.=$tdef;
-    $map_url="http://127.0.0.1/uscript/inspectedit_test.php?istr=".urlencode($istr)."&defs=$vstr";
-    $self_url="http://127.0.0.1/uscript/inspectedit_test.php?istr=".urlencode($istr)."&defs=$defs&defup=1";
-    $vstr.=",";
 
-    $def_html    =render_def($tdef,"width=600 border=0",$map_url);
-    $defedit_html=render_defedit($tdef,"width=600 border=0",$self_url);
 
-    echo "<table border=2 bordercolor=black><tr><td>$def_html <hr> $defedit_html</td></tr></table>";
+      $vstr.=$tdef;
+      $map_url="http://127.0.0.1/uscript/inspectedit_test.php?istr=".urlencode($istr)."&defs=$vstr,";
+      $self_url="http://127.0.0.1/uscript/inspectedit_test.php?istr=".urlencode($istr)."&defs=$defs&defup=1";
+      $vstr.=",";
+
+      $def_html    =render_def($tdef,"width=600 border=0",$map_url);
+      $defedit_html=render_defedit($tdef,"width=600 border=0",$self_url);
+
+     echo "<table border=2 bordercolor=black><tr><td>$def_html <hr> $defedit_html </td></tr></table>";
     
-    $used[]=$tdef;
+     $used[]=$tdef;
 
 		if($i>=10)break; //max ten defs
-    }
+     }
   }
 
 echo display_notices();

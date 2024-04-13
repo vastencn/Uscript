@@ -1,0 +1,3 @@
+sd ( v1 )
+text
+standard deviation

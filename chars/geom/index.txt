@@ -8,6 +8,7 @@ square,square,13.1
 3dim,3d,13
 4dim,4d,13
 
+
 //cartesian
 2dcartarea,2dcartarea,10.8
 2dcartx,2dcartx,10.8
@@ -41,6 +42,7 @@ cartlinex,cartlinex,15
 
 perim,perim,9.8
 
+1dline,1dline,10
 2darea,2darea,10
 
 //circles/spheres

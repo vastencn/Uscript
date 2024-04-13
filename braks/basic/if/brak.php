@@ -38,6 +38,7 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
   $iff=FALSE;
   $opts=@$chunks[0]['opts'];
   $btype="if";
+  $def="unnamed_brak";
   $cond_opts=array();
   $sub_opts=array();
   if(@count($opts)>0){
@@ -50,6 +51,9 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
                    break;
         case "not":
                    $iff=TRUE;
+                   break;
+        case "def":
+                   $def=$vval;
                    break;
         case "while":
                    $btype="while";
@@ -111,9 +115,24 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
 
   $chunks[0]['brak']["opts"]=array_merge($cond_opts,$chunks[0]['brak']["opts"]);
 
-  $condition=brak_brak($chunks[0]);  
+
+  $condition=brak_brak($chunks[0]); 
+//ar_dump($condition,"cond1");
+//ar_dump($chunks[1],"chunk1");
+
   $action=subcup_brak($chunks[1]);
+
   append_elsa($condition,$action,-0);
+  
+
+
+  $nmap=$chunks[0]['defmap'];
+  $action_entry=$chunks[1]['defmap'][0];
+  $action_entry['xoff']=($condition['brakc_xend']-$condition['brako_xend'])+$action['brako_xend'];
+  $nmap[]=$action_entry;
+  $condition['defmap_set']=$nmap;
+  $condition['brak']['spelling']=$def;
+
 
   return $condition;
   }

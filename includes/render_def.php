@@ -23,7 +23,31 @@ function def_preparse($arendelle){
   }
 
 function render_def($word,$topts=NULL,$href=NULL){
-  if(!$def=search_def($word))return NULL;
+
+  $icon=TRUE;
+
+  if(substr($word,0,14)=="imgrender_rimg"){
+    global $render_dir;
+    $iname=substr($word,14);
+    $itxt=@file($render_dir."rtxt".$iname.".txt");
+    $def=array();
+    $def['uscript']=$itxt;
+    $def['text']="  ";
+    $icon=NULL;
+    //return NULL;
+    }elseif(substr($word,0,11)=="imgpresave_"){
+    global $presave_dir;
+    $iname=substr($word,11);
+    $itxt=@file($presave_dir.$iname.".txt");
+    $def=array();
+    $def['uscript']=$itxt;
+    $def['text']="  ";
+    $icon=NULL;
+    }else{
+
+    if(!$def=search_def($word))return NULL;
+
+    }
 
 
 
@@ -44,7 +68,7 @@ function render_def($word,$topts=NULL,$href=NULL){
   $html="<table><tr valign=top><td align=center bgcolor=#eeeeee>";
   $char=render_line($word);
 
-  $html.=$char;
+  if($icon)$html.=$char;
   $html.="<br>$word";
   $html.="</td><td>";
 
@@ -56,9 +80,10 @@ function render_def($word,$topts=NULL,$href=NULL){
     }
   $html.="</td></tr><tr><td>";
   $html.=$tdef;
-  $html."</td></tr></table>";
+  $html.="</td></tr></table>";
 
   $html.="</td></tr></table>";
+  //$html.="</td></tr></table>";
 
   return $html;
   }
@@ -92,7 +117,7 @@ function render_defedit($word,$topts=NULL,$href=NULL){
   $html="<table> $render_html <tr valign=top><td align=right><form action=\"$href\" method=post>".
         "<textarea rows=15 cols=100 name=defuptext>".$def['raw']."</textarea><br>".
         "<input type=submit value=\"update ".$def['word']."\">".
-        "<input type=hidden name=defupword value=\"".$def['word']."\">";
+        "<input type=hidden name=defupword value=\"".$def['word']."\">".
         "</form></td></tr></table>";
 
   return $html;

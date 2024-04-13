@@ -13,6 +13,12 @@ finish migrating geom chars
 *tan brak
 exe() bigger dots
 braks inside of conditionals dont work
+modify pi (like zhong, "3x diam")
+if brak not creating proper defmap, might need to prerender nad click off to sub def map of the brak (this will also apply to while, etc all braks based on the 2 arg if brak structure)
+sd,avg,etc.. icon on def not correct (redering brak name as text word)
+
+array def that includes properties and elements (calling properties like array elements but properties not be countable items.. maybe a separater structure for calling and listing properties.. but this seems unecesarry.. this is not actually a programming markup language.. we dont need to actually allow a procedural call to list properties because we can assume the user knows the properties..
+lerning the properties is equivalant to learning the word or concept.. a learning program could be written to do thgis.. but its something on top of the language itself.. not part of ther language.. so perhaps someone writes a program where words are arrays, each conmtaining 2 elements which are arrays, an array of properties and an array of elements.. as a leaning tool.. not as part of the language itself..., the lnaguage only needs to be able to call up a property value... not loop through properties)
 
 bugs:
 	tref:xxx shows the tref line at end.. maybe uref does too
@@ -27,7 +33,8 @@ reduce gap between some hex nums (eg 52 , 4e)
 reduce gap between some hex nums and radix eg(b.d)
 
 def edit by name page (def maintence/editor ui)
-click on presave not working in inpection def editor
+click on presave not working in inpection def editor**works for first levelpresave.. maybe depeper doesnt work
+Special def for presave (shows breadown clickable render of preseave text{above the def svg/text}
 particle symbols(modified variable symbol)
 
 
