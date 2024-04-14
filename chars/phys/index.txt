@@ -10,12 +10,16 @@ system,system,16.4
 //particles
 molecule,molecule,10.4
 water,water,26.1
+anion,anion,17
 
 
 //forces
 embond,embond,17.6
 sbond,sbond,15.6
-gravity.gravity,18
+gravity,gravity,18.8
+emforce,em,19.5
+strongforce,strong,18.8
+
 
 //leptons
 lepton,lepton,8.7
@@ -89,3 +93,19 @@ spaceunit,spaceunit,18.8
 unitv,unitv,12
 timeunitv,timeunitv,16.9
 spaceunitv,spaceunitv,16.9
+speedunit,speedunit,18.8
+accelunit,accelunit,18.8
+momunit,momunit,18.8
+forceunit,forceunit,18.8
+
+
+//measure for time and space
+//measure t/d(time/dsitance) c/e(center/inner-edge) to c/e(center/inner-edge)
+
+measuredee,measuredee,23.5
+measuredce,measuredce,23.5
+measuredec,measuredec,23.5
+
+measuretee,measuretee,23.5
+measuretce,measuretce,23.5
+measuretec,measuretec,23.5

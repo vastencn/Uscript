@@ -32,7 +32,7 @@
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
      inkscape:zoom="23.5"
-     inkscape:cx="17.553192"
+     inkscape:cx="17.553191"
      inkscape:cy="24.808511"
      inkscape:window-width="1920"
      inkscape:window-height="1137"
@@ -185,20 +185,20 @@
                                    transform="translate(-3.3751107,-0.8234986)">
                                 <g
                                    id="g6221"
-                                   transform="matrix(0.89651548,0,0,1,-25.741838,-0.0376)"
-                                   style="stroke-width:3.52801">
+                                   transform="matrix(0.90099069,0,0,0.88201385,-24.616955,-447.15166)"
+                                   style="stroke-width:3.74724">
                                 <path
                                    sodipodi:nodetypes="csc"
                                    inkscape:connector-curvature="0"
                                    id="path3355-6-3-5-6-2"
                                    d="m -221.78313,-3796.2988 c 0,5.8745 -5.73324,11.3893 -13.08378,11.3893 -7.35086,0 -13.23454,-5.5146 -13.23454,-11.3893"
-                                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.52801;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74724;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
                                 <path
                                    sodipodi:nodetypes="csc"
                                    inkscape:connector-curvature="0"
                                    id="path3355-6-3-5-6-0-1"
                                    d="m -221.55747,-3774.9705 c 0,-5.8747 -5.9589,-10.637 -13.30944,-10.637 -7.35086,0 -13.30976,4.7623 -13.30976,10.637"
-                                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.52801;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74724;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
                                 <ellipse
                                    inkscape:transform-center-y="-1.5705501"
                                    inkscape:transform-center-x="13.642621"
@@ -206,18 +206,18 @@
                                    cy="1633.3137"
                                    cx="3368.2722"
                                    id="path3355-3-5-8-6-3"
-                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.529;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.74828;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                    rx="4.8295808"
                                    ry="4.737257" />
                                 <path
-                                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.52801;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.74724;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                    d="m -247.4971,-3798.3072 15.03025,-5.5618 -3.32061,8.8288 13.64791,-4.8467"
                                    id="path4176-8-1-6-4-8-9-4-9-0"
                                    inkscape:connector-curvature="0"
                                    sodipodi:nodetypes="cccc" />
                                 <ellipse
                                    transform="matrix(0.99671691,0.08096539,-0.07498266,0.99718484,0,0)"
-                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.52804;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.74727;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                    id="path3355-3-80-0-9-6-8-6-25-4-9"
                                    cx="-531.94025"
                                    cy="-3766.4651"
@@ -225,7 +225,7 @@
                                    ry="3.7244911" />
                                 <ellipse
                                    transform="matrix(0.99671691,0.08096539,-0.07498266,0.99718484,0,0)"
-                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.52804;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:3.74727;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                    id="path3355-3-2-5-3-2-8-4-2-5-9"
                                    cx="-506.13229"
                                    cy="-3768.1069"

@@ -51,7 +51,7 @@ circle,circle,12.5
 circum,circum,12
 rad,rad,15
 diam,diam,15
-pi,pi,12
+pi,pi,9.5
 
 //triangles/trig
 tri,tri,17.5

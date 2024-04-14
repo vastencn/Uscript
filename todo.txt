@@ -13,12 +13,25 @@ finish migrating geom chars
 *tan brak
 exe() bigger dots
 braks inside of conditionals dont work
-modify pi (like zhong, "3x diam")
-if brak not creating proper defmap, might need to prerender nad click off to sub def map of the brak (this will also apply to while, etc all braks based on the 2 arg if brak structure)
+*modify pi (like zhong, "3x diam")
+*if brak not creating proper defmap, might need to prerender nad click off to sub def map of the brak (this will also apply to while, etc all braks based on the 2 arg if brak structure)
 sd,avg,etc.. icon on def not correct (redering brak name as text word)
 
 array def that includes properties and elements (calling properties like array elements but properties not be countable items.. maybe a separater structure for calling and listing properties.. but this seems unecesarry.. this is not actually a programming markup language.. we dont need to actually allow a procedural call to list properties because we can assume the user knows the properties..
 lerning the properties is equivalant to learning the word or concept.. a learning program could be written to do thgis.. but its something on top of the language itself.. not part of ther language.. so perhaps someone writes a program where words are arrays, each conmtaining 2 elements which are arrays, an array of properties and an array of elements.. as a leaning tool.. not as part of the language itself..., the lnaguage only needs to be able to call up a property value... not loop through properties)
+
+expand t/d measure symbols - current circle defaults to inside edge - exapnd to allow cricle on insode or outside of each vertical line akin to the shape of "d" and "b" to allow a distintiction between inside and outside edge.. for now we will just have default to inside edge because that is the mots likely to be most relevant for most situations.. especially physical space measu=remrnyt which is p[rioority right now.. empty space bwteen edges/ or distance between centers
+
+emforce-determine if it is necesarry to break into mag force and charge force.. i thionk might not be necesarry.. moving vharge make mag feilds, mag filelds are produced by moving charges, interactions always involved both as far as i know.. and only theorhtical models of early universe(ultra high energy?) have the 2 able to act independly
+
+redo pressure concept defintion (use re4lative force/pressure/area.. eg hydrolic,phematic systems like equalities)
+
+need to establish tha liquids and gasses can also be composed of molecules - (probably jusdt establish some atomic state condition eg. liquuid at, solid at, gas at, plasma at... then also list some moleculs woith same properties)
+
+will ned to exampnd molecule descriotion abiloity.. but dont want to use "list of atoms" style.. honestly that seems silly.. yes breif, but far too ambiguos, if anything something like dchem, or jhust dechem... still ambiguos but at least has minimnal descriptive of structure.. i woudl argue that atom list system is relic of past where we didnty underrtsand structures..were only able to count volumes.. its a relic and an oversmplified notation.. more of a naming system
+
+
+add particle symbols (p1,p2,p3,p4...)
 
 bugs:
 	tref:xxx shows the tref line at end.. maybe uref does too
@@ -62,7 +75,7 @@ procedual needed
    *sum
    *avg
    procedural ariel ref notation(ariel means "array eleement") 
-   SD brak
+   *SD brak
    foreach brak
    new symbols for "break" and "continue" and "goto+label"
    new symbols for butwise ops(extension of logical boolean ops obviously)
@@ -70,7 +83,7 @@ procedual needed
 
 geom
   rotate
-  perimiter
+  *perimiter
   area/volume
   start with cartesian, then add circular/spherical
  			defined by corners and angles or angles per radian
@@ -91,7 +104,7 @@ atom braks dont link to def
 -char/graphics work
 arrays
 procedural
-circumference
+*circumference
 
 
 -def work
