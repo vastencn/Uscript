@@ -10,6 +10,8 @@ defs
     seq example 1
    loops
     loop example 1
+    foreach example 1
+    foreach example 2
   variables
   conditionals
   arrays

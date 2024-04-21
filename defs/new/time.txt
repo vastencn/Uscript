@@ -1,0 +1,66 @@
+text
+Time and entropy are grouped together into a single conceptual symbol of the "+" symbol
+
+It is defined through exmaples which make it clear that Time(from our perspective) flows from top to bottom
+ *I suppose a being experiencing time in in the opposite direction would see it as flowing upwards, ut then all the interections would also flow in reverse fso everything would still "fit"
+
+Entropy in Uscript is not exactly the same as you may understand it. It is not a translation of English, especially not a synonym for "chaos" or "disorder"
+
+Uscript "entropy" is defined with examples simply to mean "high energy state -> low energy state" or "in the direction of heat death"
+
+Entropy can flow backwards within pockets of space at the expense of injected energy from the outside, but as far as we know it, universal entropy always flows in one direction, it only reverses if you narrow your perspective to a region and ignore the injection of energy.
+
+So depening on scope of context the flow of entropy can be seen as not having static direction or rate.
+
+Likewise, Time is not a static in direction or rate as one might believe.
+The rate of time flow is influenced by speed and gravity, so time can flow faster and slower for different observers
+Also it is possible to observe events in reverse order..
+eg.gravitational lensing means that light could bend in a way that we recieve photons emited later before photons that were emited earlier. Ti would be outside our scope of interaction, but it is at least sure that we could observe events in reverse order.
+
+So putting these 2 things together into a single dual axis concept creates a more nuanced concept of "time"
+one axis is "the march of time ticks"
+the other axis is "the march from beginning to end(heat death)"
+
+time ticks can be observed in twisted rates and order but always move forward
+the overall uiniverse is always moving from beginning to end, but pockets can move backwards at the expense of other regions accelerating forward
+
+We can then create a 2D vector
+
+eg 
+time+ entropy+ is the "normal mode" view of "the future"
+time- entropy- is the "normal mode" view of "the past"
+
+time+ entropy- is "increasing energy states increasing forward in time" aka to be absorbing energy to reverse entropy inside a pocket of space
+time- entropy+ is "decrasing energy states looking backwards in time" aka having absorbed energy reach a higher energy state
+
+abstractly this creats something that can be interpreted as "moving through time vs. gaining or loosing time"
+gaining or loosing time refers to that system delaying its heat death
+This is an abstract interpretation, which can only be established though enough usage and context (eg. describing systems whose "life expentancy" is increased or decreased by gaining or loosing energy)
+
+and the fact that irts a 2d vector means it can even be extended to represent rate of entropy vs rate of time
+eg comparing a red dwarf ot a blue supergiant, 
+the red dwarf time entropy vector has a low entropy because it "consumes its fuel" much slower
+so its vector points more toward time+ and less towards entropy+
+
+this can be further exagerated by the fact that the blue supergiant has more gravity, and thus its time will "tick slower"
+
+of course the ticking of time is relative
+we might decide to measure time ticks with a 3rd party observer
+
+In which case we could
+a)just use the 3rd party clock and both stars are "ticking in time" identically
+and only their rate of progress towards entropy is accelerated or decelrated due to relativistic time effects
+or
+b)the observer can adjust their clocks for some or all of the relativistic time effects
+eg. compensate for speed dialiation or gravity dialation or both
+
+not to mention the whole entropy rate changing due to conditions, processes, influences etc..
+eg."absorbing energy can also affect the system and cause it to accelerate/amplify its internal process"
+so absorbing energy may actually accerlate its entropy
+eg. larger stars burn brighter and have shorter lives, whereas black holes are the opposite
+*this relationship between energy absorbtion and time/entropy vector is something that we will add to the lexicon later
+
+In summary, the time/entropy vector can be used to represent a much more nuanced concept of time as it relates to "existence"..
+
+a fun abstract interpretation would be...
+ticks of time and volume of ticks(volume of ticks due to proximity of the crocodile...peter pan reference)

@@ -28,7 +28,7 @@ redo pressure concept defintion (use re4lative force/pressure/area.. eg hydrolic
 
 need to establish tha liquids and gasses can also be composed of molecules - (probably jusdt establish some atomic state condition eg. liquuid at, solid at, gas at, plasma at... then also list some moleculs woith same properties)
 
-will ned to exampnd molecule descriotion abiloity.. but dont want to use "list of atoms" style.. honestly that seems silly.. yes breif, but far too ambiguos, if anything something like dchem, or jhust dechem... still ambiguos but at least has minimnal descriptive of structure.. i woudl argue that atom list system is relic of past where we didnty underrtsand structures..were only able to count volumes.. its a relic and an oversmplified notation.. more of a naming system
+will ned to exampnd molecule descriotion abiloity.. but dont want to use "list of atoms" style.. honestly that seems silly.. yes breif, but far too ambiguos, if anything something like dchem, or jhust dchem... still ambiguos but at least has minimnal descriptive of structure.. i would argue that atom list system is relic of past where we didnt undertsand structures..were only able to count masses and quantities.. its a relic and an oversmplified notation.. more of a naming system
 
 
 add particle symbols (p1,p2,p3,p4...)
@@ -49,6 +49,10 @@ def edit by name page (def maintence/editor ui)
 click on presave not working in inpection def editor**works for first levelpresave.. maybe depeper doesnt work
 Special def for presave (shows breadown clickable render of preseave text{above the def svg/text}
 particle symbols(modified variable symbol)
+
+Tool to produce MICRO,MEGA,etc units from a starting value
+
+add clarification that 0.1 and p1 are different (numbers that starrtt with 0. have the line protruding to the right to show the 0)
 
 
 LAZY precision on particle masses (used numbers with only 3 decimal digits precision to produce number with 5 digits hex precision)

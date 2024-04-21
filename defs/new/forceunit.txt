@@ -1,0 +1,32 @@
+forceunit = mass
+text
+
+the force unit is os defined the same way as a newton, just with different units
+
+a newton is 1kg m/s2 (1kg accelerated at 1 meter per 1 second in 1 second)
+
+the uscript force unit is defined using uscript units
+
+1 mass-unit accelerated to 1 length-unit per 1 time-unit in 1 time-unit 
+
+remeber
+mass unit=1 electron
+length unit=wavelength of Hydrogen line photon
+time unit is frequency of Hydrogen line photon
+speed unit is pseed of light
+   ***since length and time are both photon based, thus speed unit naturally works out to speed of light
+
+
+
+so
+
+newton = 1 kg to 1m/s in 1 s
+
+1 Uscript force unit = 0.00000000000000000000000000091093 grams to speed of light in 0.0000000007040241 seconds
+or
+1 UFU = 1 electron to speed of light in 0.7040241 nano seconds
+
+1 Newton is equal to 2577970160489 UFU
+
+The UFU is much smaller than a newton
+

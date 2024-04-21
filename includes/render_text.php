@@ -54,14 +54,18 @@ function multi_line_render($str){
 function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
   //parse the text
   $car=parse_brackets($in_str);
+
   parse_prep_words($car);
   parse_prep_brak_funks($car);
+
 
   //sort or render sequence by sorting by brak depth
   //we will render from deepest upwards
   $ds=depth_sort($car);
   $fds=flatten_depth_sort($ds);
   $fds_copy=$fds;
+
+
 
   //YES, I did just start adding "sa" to "el"(element) because I love the Frozen franchise :D
   while(($elsa=fetch_next_elsa($fds))>=0){
@@ -97,7 +101,22 @@ function render_brak(&$elsa){
   if(is_array($elsa['brak'])&&strlen($elsa['brak']['funk'])>0){
     $argc=$elsa['brak']['arg_count'];
     if($argc>1){
+
+
       $args=explode(",",$elsa['content']);
+
+      //specific brak custom code awfull practice I know
+      //but we are already at the point where good practice and proper design is going out the window
+      //full revamp is needed and we are getting close to a realtively full feautured system
+      //so I'm gonna cut a few corners on this version and just know that im shorting life
+      //how long this version will last, is how long it takes until a full revamp is in order, and every cut cortner like this will hasten that 
+      switch($elsa['brak']['opts'][0][0]){
+        case "foreach":
+                       $args[0]="arel[".str_replace("as","] arel[",$args[0])."]";
+                       break;
+        }
+      
+
       $chunks=array();
       foreach($args as $arg){
         $chunks[]=pre_render_into_chunk($arg);

@@ -21,6 +21,9 @@ echo "{1{$istr}}";
 $istr=insert_pre_renders($istr);
 echo "{2{$istr}}";
 echo selfform("istr");
+
+
+
 ?>
 
 
@@ -37,6 +40,7 @@ echo render_line_with_defmap($istr,NULL,$href);
 	<tr>
 	  <td>
 <?php
+
 
 $i=0;
 $defs=html_getpost("defs");

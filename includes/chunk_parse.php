@@ -23,6 +23,20 @@ function brak_val($bchr){
   return NULL;
   }
 
+function val_brak($bchr){
+  switch($bchr){
+    case 1:return '(';
+    case -1:return ')';
+
+    case 2:return '[';
+    case -2:return ']';
+
+    case 3:return '{';
+    case -3:return '}';
+    }
+  return NULL;
+  }
+
 function parse_prep_brak_funks(&$car){
   //ar_dump($car);
   $arc=count(@$car);

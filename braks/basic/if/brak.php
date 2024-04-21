@@ -58,6 +58,9 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
         case "while":
                    $btype="while";
                    break;
+        case "foreach":
+                   $btype="foreach";
+                   break;
         default:
                    $tbrak=substr($vname,0,1);
                    $tname=substr($vname,1);
@@ -85,26 +88,27 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
     case "while":
             $brakopts[]=array("img","loop");
             $chunks[0]['brak']['opts']=$brakopts;
-    default:
-            if($yesno){
-              $subopts[]=array("yes","1");
-              }else{
-              $subopts[]=array("no","1");
-              }
-            $chunks[1]['brak']['opts']=$subopts;
-
-            if($btype=="if"){
-              if($iff){
-                $brakopts[]=array("circ","1");
-                }else{
-                $brakopts[]=array("dot","1");
-                }
-              $chunks[0]['brak']['opts']=$brakopts;
-              }
             break;
-
+    case "foreach":
+            $brakopts[]=array("img","foreach");
+            $chunks[0]['brak']['opts']=$brakopts;
+            break;
     }
+  if($yesno){
+    $subopts[]=array("yes","1");
+    }else{
+    $subopts[]=array("no","1");
+    }
+  $chunks[1]['brak']['opts']=$subopts;
 
+  if($btype=="if"){
+    if($iff){
+      $brakopts[]=array("circ","1");
+      }else{
+      $brakopts[]=array("dot","1");
+      }
+    $chunks[0]['brak']['opts']=$brakopts;
+    }
 
 
   $bstruct=search_brak("brak");
@@ -114,7 +118,6 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
   $chunks[1]['brak']['folder']=$bstruct['folder'];
 
   $chunks[0]['brak']["opts"]=array_merge($cond_opts,$chunks[0]['brak']["opts"]);
-
 
   $condition=brak_brak($chunks[0]); 
 //ar_dump($condition,"cond1");

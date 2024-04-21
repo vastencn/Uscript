@@ -1,0 +1,31 @@
+index of charcters in this folder
+rows are only valid if they have 3 csv columns and third column is an integer
+values are "spelling" "svg filename" and "width in px"
+we are assuming all chars speced to height 18-20px
+will probably need to add a height param later
+
+astrobody,astrobody,16.8
+star,star,16.5
+
+
+//astro bodies
+roundabody,roundabody,19
+notroundabody,notroundabody,19
+
+
+//----astro satelites
+
+
+//astro body satellites (astrody body in this symbol implies planet, must be clarified in defintion)
+abodysat,abodysat,22,22.8
+moon,moon,27.3,25.2
+roundmoon,roundmoon,33,30
+notroundmoon,notroundmoon,33,28.6
+
+
+//star satellites
+starsat,starsat,22,22.8
+
+starsatabody,starsatabody,27.3,25.2
+planet,planet,33,30
+asteroid,asteroid,33,28.6

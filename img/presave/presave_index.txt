@@ -35,3 +35,12 @@ loop example 1,loopeg1
 loop example 1,loopeg1stats
 loop example 1,loopeg1statsvals
 loops,loopdef1
+foreach example 1,foreachop
+foreach example 1,foreachcond
+foreach example 1,foreachdef
+foreach example 1,foreacheg1
+foreach example 2,foreachop2
+foreach example 2,foreachcond2
+foreach example 2,foreachdef2
+foreach example 2,foreacheg2
+foreach example 2,foreachexe2

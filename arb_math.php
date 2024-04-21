@@ -1,6 +1,7 @@
 <?php
 require_once("config.php");
 
+$min_prec=NULL;
 
 function fetch_var($vname){
   return @$_POST[$vname];
@@ -160,6 +161,7 @@ function print_num($num){
 
 function pre2num($pre){
 	switch($pre){
+    case "p":return "0.000000000001";
     case "n":return "0.000000001";
     case "u":return "0.000001";
     case "m":return "0.001";
@@ -174,14 +176,18 @@ function pre2num($pre){
   }
 
 function precision_required($nstr){
+	global $min_prec;
+	$rzero=0;
+	if($min_prec)$rzero=$min_prec;
 	$nar=explode(".",$nstr);
-	if(count($nar)<2)return 0;
+	if(count($nar)<2)return $rzero;
 	$nar[0]=trim(trim($nar[0]),"0");
 	//echo "(".$nar[0].")";
 	if(strlen($nar[0])>0){
-    return 0;
+    return $rzero;
 	  }
   $lendif=strlen($nar[1])-strlen(ltrim($nar[1],"0"));
+  if($lendif<$min_prec)return $min_prec;
   return 1+$lendif;
   }
 
@@ -291,6 +297,9 @@ function uu_display($uuv,$uname="units"){
   $rv.="Mega $uname : ".str_rad_shift($duuv,-16)."<br>";
   $rv.="Giga $uname : ".str_rad_shift($duuv,-32)."<br>";
   $rv.="Tera $uname : ".str_rad_shift($duuv,-48)."<br>";
+  $rv.="Micro $uname : ".str_rad_shift($duuv,16)."<br>";
+  $rv.="Nano $uname : ".str_rad_shift($duuv,32)."<br>";
+  $rv.="Pico $uname : ".str_rad_shift($duuv,48)."<br>";
   return $rv;
   }
   
@@ -393,6 +402,102 @@ function uu_display($uuv,$uname="units"){
 
 				  $utxt=uu_display($uu,"Hticks");
   				echo "<hr>".$utxt;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				m/s to LightSpeed<input type=text name=ms2c value="<?php echo fetch_var('ms2c');?>"> <input type=text name=ms2cpre value="<?php echo fetch_var('ms2cpre');?>" size=2>m/s<?php 
+				if(fetch_var('ms2c')){
+					$min_prec=5;
+  				$uu=uunits(fetch_var('ms2c'),fetch_var('ms2cpre'),"299792458.00000000000000");
+
+				  $utxt=uu_display($uu,"c speed");
+  				echo "<hr>".$utxt;
+
+					$min_prec=NULL;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				"1m/s per s" to "LightSpeed per Htick"<input type=text name=ms2cc value="<?php echo fetch_var('ms2cc');?>"> <input type=text name=ms2ccpre value="<?php echo fetch_var('ms2ccpre');?>" size=2>m/s2<?php 
+				if(fetch_var('ms2cc')){
+					$min_prec=10;
+  				$uu=uunits(fetch_var('ms2cc'),fetch_var('ms2ccpre'),"425826931449625958.00000000000000");
+
+				  $utxt=uu_display($uu,"LightSpeed per Htick");
+  				echo "<hr>".$utxt;
+
+					$min_prec=NULL;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				"g m/s2" to "Electron LightSpeed per Htick"<input type=text name=ms2gcc value="<?php echo fetch_var('ms2gcc');?>"> <input type=text name=ms2gccpre value="<?php echo fetch_var('ms2gccpre');?>" size=2>g m/s2<?php 
+				if(fetch_var('ms2gcc')){
+					$min_prec=20;
+  				$uu=uunits(fetch_var('ms2gcc'),fetch_var('ms2gccpre'),"0.00000000038790208487524");
+
+				  $utxt=uu_display($uu,"Electron LightSpeed per Htick");
+  				echo "<hr>".$utxt;
+
+					$min_prec=NULL;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Newtons to "Electron LightSpeed per Htick"<input type=text name=n2gcc value="<?php echo fetch_var('n2gcc');?>"> <input type=text name=n2gccpre value="<?php echo fetch_var('n2gccpre');?>" size=2>N<?php 
+				if(fetch_var('n2gcc')){
+					$min_prec=20;
+  				$uu=uunits(fetch_var('n2gcc'),fetch_var('n2gccpre'),"0.00000000000038790208487524");
+
+				  $utxt=uu_display($uu,"Electron LightSpeed per Htick");
+  				echo "<hr>".$utxt;
+
+					$min_prec=NULL;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Newtons Meters/Joules to "Electron LightSpeed per Htick over 1 Hlength"<input type=text name=j2gcc value="<?php echo fetch_var('j2gcc');?>"> <input type=text name=j2gccpre value="<?php echo fetch_var('j2gccpre');?>" size=2>J<?php 
+				if(fetch_var('j2gcc')){
+					$min_prec=10;
+  				$uu=uunits(fetch_var('j2gcc'),fetch_var('j2gccpre'),"0.00000000000183786596090");
+
+				  $utxt=uu_display($uu,"Electron LightSpeed per Htick over 1 Hlength");
+  				echo "<hr>".$utxt;
+
+					$min_prec=NULL;
+  			}
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Electron Volts to "Electron LightSpeed per Htick over 1 Hlength"<input type=text name=ev2gcc value="<?php echo fetch_var('ev2gcc');?>"> <input type=text name=ev2gccpre value="<?php echo fetch_var('ev2gccpre');?>" size=2>eV<?php 
+				if(fetch_var('ev2gcc')){
+					$min_prec=10;
+  				$uu=uunits(fetch_var('ev2gcc'),fetch_var('ev2gccpre'),"11471057.0725");
+
+				  $utxt=uu_display($uu,"Electron LightSpeed per Htick over 1 Hlength");
+  				echo "<hr>".$utxt;
+
+					$min_prec=NULL;
   			}
 				?>
 				<input type=submit>

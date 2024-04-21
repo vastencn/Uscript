@@ -43,11 +43,15 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,sum,brak_opt_ img=sum : rshift=12 : irshift=0 : minh=30 : def=sum
 1,avg,brak_opt_ img=avg : rshift=18.6 : irshift=0 : minh=30 : def=avg
 1,sd,brak_opt_ img=sd : rshift=17.8 : irshift=0 : minh=30 : def=sd
+1,max,brak_opt_ img=max : rshift=14.5 : irshift=0 : minh=30 : def=max
+1,min,brak_opt_ img=min : rshift=14.5 : irshift=0 : minh=30 : def=min
 
 1,exe,brak_opt_ img=exe : rshift=2.5 : irshift=2.5 : minh=30 : def=exe
-
+1,eval,brak_opt_ dot=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=eval
+1,evalnot,brak_opt_ circ=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=evalnot
 
 // ADD DEFS!!!!!
+
 
 1,subarel,arel_opt_ sublen=5 : def=arel
 2,s,arel_opt_ sublen=5
@@ -61,3 +65,4 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 // prefixing the variable name with c or s targets the condition brak or the sub brak
 1,while,if_opt_ while=1 : crshift=7 : cirshift=11 : def=while
 1,whilef,if_opt_ while=1 : crshift=7 : cirshift=11 : no=1 : def=while
+1,foreach,if_opt_ foreach=1 : crshift=9.3 : cirshift=10 : yes=1 : def=foreach

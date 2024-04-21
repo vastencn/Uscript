@@ -1,0 +1,2 @@
+v4 = 1
+while(ips_foreachcond,ips_foreachop)
