@@ -45,6 +45,27 @@ $brak_text_def =  "the most fundamental named braket, in a 'cuping form'\n".
 function subofcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   if(!chunk_is_drawable($chunk))return NULL;
   
+
+
+
+  $yesdot=NULL;
+  $nodot=NULL;
+  $opts=@$chunk['brak']['opts'];
+  if(@count($opts)>0){
+    foreach($opts as $opt){
+      $vname=$opt[0];
+      $vval=$opt[1];
+      switch($vname){
+        case "yes":
+                   $yesdot=1;
+                   break;
+        case "no":
+                   $nodot=1;
+                   break;
+        }
+      }
+    }
+
   $ctxt="sub(".@$chunk['string'].")";
   $nchunk=create_chunk($ctxt);
 
@@ -57,10 +78,23 @@ function subofcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$st
   $chunk_x_offset=$hpad;
   $svg_str.=draw_svg_symbol(@$chunk['svg'],0,$chunk_x_offset);
 
+
   //draw close
   $inner_space_size=@$chunk['width']+$hpad*2;
   $inner_space_end=$chunk_x_offset+$inner_space_size-$hpad;
+
+  $e_str="";
+  if($yesdot){
+    $inner_space_end+=4;
+    $e_str=svg_dot($inner_space_end,0,4);
+    }
+  if($nodot){
+    $inner_space_end+=4;
+    $e_str=svg_circle($inner_space_end,0,4,2,"white");
+    }
+
   $svg_str.=subofcup_brak_draw_close($inner_space_end,$branch_length,$height,$inner_space_size);
+  $svg_str.=$e_str;
 
   //svg_hcup($inner_space_end+($stroke_width/2),0,$height,$cup_depth,$stroke_width);
 

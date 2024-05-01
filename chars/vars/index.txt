@@ -1,0 +1,46 @@
+index of charcters in this folder
+rows are only valid if they have 3 csv columns and third column is an integer
+values are "spelling" "svg filename" and "width in px"
+we are assuming all chars speced to height 18-20px
+will probably need to add a height param later
+
+//general vars
+//for anything at all, including things that can be other types of vars
+v1,v1,18
+v2,v2,18
+v3,v3,18
+v4,v4,18
+v5,v5,18
+v6,v6,18
+v7,v7,18
+v8,v8,18
+v9,v9,18
+v10,v10,18
+v11,v11,18
+v12,v12,18
+v13,v13,18
+v14,v14,18
+v15,v15,18
+
+//particle vars
+//for things, objects, point locations etc..
+p1
+
+//system vars
+//for functions, system, processes, etc..
+s1,s1,19.3
+
+//time point vars
+
+//time interval vars
+
+//space vars
+//for area locations
+
+//spacetime point vars
+//for point in space at point in time
+
+//spacetime space vars
+//for events in a region of space
+
+

@@ -36,6 +36,7 @@ $brak_text_def =  "the IF braket\n";
 function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   $yesno=1;
   $iff=FALSE;
+  $hastype=NULL;
   $opts=@$chunks[0]['opts'];
   $btype="if";
   $def="unnamed_brak";
@@ -60,6 +61,22 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
                    break;
         case "foreach":
                    $btype="foreach";
+                   break;
+        case "has":
+                   $btype="has";
+                   $hastype=TRUE;
+                   break;
+        case "isin":
+                   $btype="isin";
+                   $hastype=TRUE;
+                   break;
+        case "nhas":
+                   $btype="nhas";
+                   $hastype=TRUE;
+                   break;
+        case "nisin":
+                   $btype="nisin";
+                   $hastype=TRUE;
                    break;
         default:
                    $tbrak=substr($vname,0,1);
@@ -119,10 +136,38 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
 
   $chunks[0]['brak']["opts"]=array_merge($cond_opts,$chunks[0]['brak']["opts"]);
 
-  $condition=brak_brak($chunks[0]); 
+
+  
+  switch($btype){
+    case "has":
+            $cfunc="subofcup_brak";
+            $chunks[1]['brak']['opts']=array(array("yes","1"));
+            $chunks[0]['brak']['opts']=NULL;
+            break;
+    case "isin":
+            $cfunc="subofcup_brak";
+            $chunks[1]['brak']['opts']=NULL;
+            $chunks[0]['brak']['opts']=array(array("yes","1"));
+           break;
+    case "nhas":
+            $cfunc="subofcup_brak";
+            $chunks[1]['brak']['opts']=array(array("no","1"));
+            $chunks[0]['brak']['opts']=NULL;
+            break;
+    case "nisin":
+            $cfunc="subofcup_brak";
+            $chunks[1]['brak']['opts']=NULL;
+            $chunks[0]['brak']['opts']=array(array("no","1"));
+           break;
+    default:$cfunc="brak_brak"; 
+            break;
+    }
+
+
 //ar_dump($condition,"cond1");
 //ar_dump($chunks[1],"chunk1");
 
+  $condition=$cfunc($chunks[0]); 
   $action=subcup_brak($chunks[1]);
 
   append_elsa($condition,$action,-0);

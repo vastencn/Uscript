@@ -5,7 +5,7 @@ we are assuming all chars speced to height 18-20px
 will probably need to add a height param later
 
 //conceptual
-system,system,16.4
+system,system,15
 
 //particles
 molecule,molecule,10.4

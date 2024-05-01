@@ -66,3 +66,8 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,while,if_opt_ while=1 : crshift=7 : cirshift=11 : def=while
 1,whilef,if_opt_ while=1 : crshift=7 : cirshift=11 : no=1 : def=while
 1,foreach,if_opt_ foreach=1 : crshift=9.3 : cirshift=10 : yes=1 : def=foreach
+
+1,has,if_opt_ has=1 : def=has
+1,isin,if_opt_ isin=1 : def=has
+1,nhas,if_opt_ nhas=1 : def=has
+1,nisin,if_opt_ nisin=1 : def=has

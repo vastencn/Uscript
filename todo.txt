@@ -1,3 +1,14 @@
+New Units
+Force/accel have 2 types.. based on frame of reference
+partticle = internal to frame of refernce
+space = acting n freame of refernce
+
+particle units are speed ^2
+space units are linear speed based
+
+Ths sbstracts the cirlce/space symbol to mean "frame of refernce"
+
+
 *fracs of 1
 
 char auto dims for scaled canvas
@@ -117,6 +128,10 @@ finish array ops/element defs (for the parts already added)
 
 -manual work
 keep adding to it
+
+stuff that is "optional" , left out -out but in the original, or seems like a gap but not necesarry to build the high lievel lanugage
+-rogue abodies (rogue planets, etc.. dont see a need to add them again, at leats not at such an early stage.. but probably should later)
+
 
 
 char database management tools
