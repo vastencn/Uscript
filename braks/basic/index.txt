@@ -12,6 +12,7 @@ eval,eval
 evalneg,evalneg
 atom,atom
 arel,arel
+twostack,twostack
 
 
 !!!--- 2 ARG BRAKS---!!!
@@ -41,14 +42,23 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 
 1,count,brak_opt_ img=count : rshift=14.5 : irshift=0 : minh=30 : def=count
 1,sum,brak_opt_ img=sum : rshift=12 : irshift=0 : minh=30 : def=sum
+
+1,prod,brak_opt_ img=prod : rshift=10 : irshift=6 : minh=30 : def=prod
+1,expo,brak_opt_ img=exp : rshift=10 : irshift=8 : minh=30 : def=expo
+
 1,avg,brak_opt_ img=avg : rshift=18.6 : irshift=0 : minh=30 : def=avg
 1,sd,brak_opt_ img=sd : rshift=17.8 : irshift=0 : minh=30 : def=sd
 1,max,brak_opt_ img=max : rshift=14.5 : irshift=0 : minh=30 : def=max
 1,min,brak_opt_ img=min : rshift=14.5 : irshift=0 : minh=30 : def=min
 
+
+
 1,exe,brak_opt_ img=exe : rshift=2.5 : irshift=2.5 : minh=30 : def=exe
 1,eval,brak_opt_ dot=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=eval
 1,evalnot,brak_opt_ circ=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=evalnot
+
+1,all,brak_opt_ img=all : rshift=9 : irshift=6 : minh=30 : def=all
+1,none,brak_opt_ img=none : rshift=6 : irshift=9 : minh=30 : def=none
 
 // ADD DEFS!!!!!
 
@@ -67,7 +77,11 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,whilef,if_opt_ while=1 : crshift=7 : cirshift=11 : no=1 : def=while
 1,foreach,if_opt_ foreach=1 : crshift=9.3 : cirshift=10 : yes=1 : def=foreach
 
+//has, doesnt have, is in, is not in
 1,has,if_opt_ has=1 : def=has
 1,isin,if_opt_ isin=1 : def=has
 1,nhas,if_opt_ nhas=1 : def=has
 1,nisin,if_opt_ nisin=1 : def=has
+
+//interaction
+1,interact,twostack_opt_ interact=1 : def=interact

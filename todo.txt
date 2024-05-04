@@ -1,3 +1,12 @@
+Current;ly working on twostack brak for interaction brack.. need leave no.. so unfnished ofr today
+
+interaction brak allows def of frame of refernce ( a interact(unitphoton, uitphoton) b  )=they exchange unit photon.. if they both recieve unit phtons, then they are in the same frame of refernce
+
+frame of refertnce allows units to be defined including the nuance of rframe()frame of refernce (there ar units for force, energy, etc acting "on" an rframe, vs the standard units of we use for "acting within an rframe".. eg  a car, plane, spaceship, etc.. are things that "apply force to their rframe")
+
+
+
+
 New Units
 Force/accel have 2 types.. based on frame of reference
 partticle = internal to frame of refernce
@@ -6,7 +15,16 @@ space = acting n freame of refernce
 particle units are speed ^2
 space units are linear speed based
 
-Ths sbstracts the cirlce/space symbol to mean "frame of refernce"
+Ths abstracts the cirlce/space symbol to mean "frame of refernce"
+
+In linked defs (uref,tref) addf link in def editor to go to and edit the source def
+
+emit, absorb and interaction/exchange
+
+
+
+
+**product brak, like sum brak (also for div, exp, etc???)
 
 
 *fracs of 1

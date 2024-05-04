@@ -79,7 +79,9 @@ atom,atom,17.5
 
 "verbs"
 absorb,absorb,18.7
+absorbedby,absorbedby,18.7
 emit,emit,18.7
+emitedby,emitedby,18.7
 spinflip,spinflip,11
 interact,interact,17.8
 bond,bond,12.7
@@ -118,3 +120,13 @@ measuredec,measuredec,23.5
 measuretee,measuretee,23.5
 measuretce,measuretce,23.5
 measuretec,measuretec,23.5
+
+
+//abstractions
+a1dspace,a1dspace,10
+a1dspacetime,a1dspacetime,10
+a2dspace,a2dspace,10
+a2dspacetime,a2dspacetime,10
+
+//reference frames
+rframe,rframe,15

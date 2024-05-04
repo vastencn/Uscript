@@ -1,5 +1,7 @@
 defs
  geometry
+  vectors
+   2d vectors
   2d
    circles and pi
    triangles and trig
@@ -18,6 +20,8 @@ defs
    array structure
    array ops
  physics
+  abstractions
+   spacial abstractions
   particles
    bosons
    fermions

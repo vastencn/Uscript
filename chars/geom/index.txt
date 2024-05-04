@@ -45,6 +45,11 @@ perim,perim,9.8
 1dline,1dline,10
 2darea,2darea,10
 
+1dspace,1dspace,10
+2dspace,2dspace,10
+3dspace,3dspace,11.2
+
+
 //circles/spheres
 circlearea,circlearea,12.5
 circle,circle,12.5

@@ -1,0 +1,10 @@
+3dspace s[1dspace] = a1dspace _20 /n
+3dspace s[2dspace] = a2dspace _20 /n
+2dspace s[1dspace] = a1dspace
+
+3dspace s[3dcartx] = a1dspace _20 /n
+3dspace s[3dcarty] = a1dspace _20 /n
+3dspace s[3dcartz] = a1dspace
+
+spacetime s[a1dspace] = a1dspacetime _20 /n
+spacetime s[a2dspace] = a2dspacetime

@@ -28,7 +28,8 @@ p1
 
 //system vars
 //for functions, system, processes, etc..
-s1,s1,19.3
+sys1,s1,19.3
+sys2,s2,20.1
 
 //time point vars
 

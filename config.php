@@ -79,6 +79,7 @@ load_chars("phys");
 load_chars("geom");
 load_chars("proc");
 load_chars("astro");
+load_chars("vars");
 activate_def_folder("phys");
 
 load_overrides("overrides");

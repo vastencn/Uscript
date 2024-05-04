@@ -1,0 +1,3 @@
+all(v1 ) = foreach(v1,1)
+text
+aaa
