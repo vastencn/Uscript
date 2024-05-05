@@ -47,8 +47,17 @@ function twostack_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stro
       $vname=$opt[0];
       $vval=$opt[1];
       switch($vname){
+        case "def":
+                   $def=$vval;
+                   break;
         case "interact":
                    $btype="interact";
+                   break;
+        case "give":
+                   $btype="give";
+                   break;
+        case "get":
+                   $btype="get";
                    break;
         default:
                 break;    
@@ -64,20 +73,59 @@ function twostack_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stro
 
   $new_svg="";
 
+  if($btype=="give"||$btype=="get"){
+
+    $maxheight=$top['height'];
+
+    }
+
 
   //horizontal specs
-  $hstart=4;
+  $diag_len=10;
+  $xtra_width=8;
+  $hgap=3;
+  $hstart=$hgap;
   $maxwidth=$top['width'];
+  if($bot['width']>$maxwidth)$maxwidth=$bot['width'];
+  $total_width=$maxwidth+$hgap*2+$diag_len+$xtra_width;
 
   //vertical spaces
+
+  if($bot['height']<7)$bot['height']=7;
+  if($top['height']<7)$top['height']=7;
   $vspace=4;
   $vcenter=$bot['height']+($vspace/2);
   $total_height=$bot['height']+$top['height']+$vspace;
+  $vcenteroff=($top['height']-$bot['height'])/2;
+  $top_y=($vcenteroff-$vspace/2)-$top['height']/2;
+  $top_x=$hgap+$diag_len;
+  $bot_y=($vcenteroff+$vspace/2)+$bot['height']/2;
+  $bot_x=$total_width-($hgap+$diag_len+$bot['width']);
   
 
-  if($bot['width']>$maxwidth)$mnaxwidth=$bot['width'];
   
-  $new_svg=svg_vline(($total_height/2),1,$total_height,2);
+  $new_svg.=svg_vline(0,(0-$total_height/2),$total_height,2);
+  $new_svg.=svg_vline($total_width,(0-$total_height/2),$total_height,2);
+
+  if($top['width']>3)$new_svg.=svg_polyline(array( array(0,$vcenteroff), array($diag_len,$vcenteroff-$diag_len) ),2);
+  if($bot['width']>3)$new_svg.=svg_polyline(array( array($total_width,$vcenteroff), array($total_width-$diag_len,$vcenteroff+$diag_len) ),2);
+  
+  $new_svg.=svg_hline(0,$vcenteroff,$total_width,2);
+
+  $new_svg.=draw_svg_symbol($top['svg'],$top_y,$top_x);
+  $new_svg.=draw_svg_symbol($bot['svg'],$bot_y,$bot_x);
+
+
+  $nchunk['svg']=$new_svg;
+  $nchunk['drawn']=TRUE;
+  $nchunk['height']=$total_height;
+  $nchunk['width']=$total_width;
+  $nchunk['brako_xstart']=0;
+  $nchunk['brako_xend']=4;
+  $nchunk['brakc_xstart']=$total_width-4;
+  $nchunk['brakc_xend']=$total_width;
+  $nchunk['brak']['spelling']=$def;
+  return $nchunk;
 
   //$topsvg=draw_svg_symbol(@$chunks[0]['svg'],0,0);
   //$botsvg=draw_svg_symbol(@$chunks[1]['svg'],0,0);

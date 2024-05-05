@@ -1,1 +1,11 @@
-1
+
+#
+# p1 emit unit subcup( unitlength )
+#
+# p2 emit unit
+#
+# p1 absorb unit
+#
+# p2 absorb unit
+#
+# 

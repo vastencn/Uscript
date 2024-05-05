@@ -37,7 +37,7 @@ function svg_hexline($x=0,$y=0,$l=5,$s=2){
 
 
 
-function svg_polyline($pts,$s){
+function svg_polyline($pts,$s=2){
   $pstr="";
   foreach($pts as $tpt){
     $pstr.=$tpt['0'].",".$tpt['1']." ";

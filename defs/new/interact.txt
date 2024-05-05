@@ -1,0 +1,20 @@
+(| sys2 emit p1 _20 sys1 absorb p1
+|) = sys1 interact( _1 ,p1) sys2 _10 v_46
+
+(| sys1 emit p1 _20 sys2 absorb p1
+|) = sys1 interact( p1 ,) sys2 _10 v_46
+
+(|sys1 emit p1 _20 p2 emitedby sys2
+ sys1 absorb p2 _20 p1 absorbedby sys2
+|) = sys1 interact(p2,p1) sys2 _10
+
+
+text
+The interaction brak shows an interaction
+it is a transfer or exchange of "something"
+(particles, waves, energy, matter, information, etc..)
+
+unilateral or bilateral
+
+it resembles the bond symbol
+alluding to the fact that bonds are based on interations

@@ -1,4 +1,9 @@
-rframe sub( all( (atom(1) emit unit)) )
+(p1 interact (unit,unit) p2) subcup( |
+ p1 emit unit subcup( lengthunit )
+ p2 emit unit
+ p1 absorb unit
+ p2 absorb unit
+ | )
 
 text
 reference frame

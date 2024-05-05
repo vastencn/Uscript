@@ -13,7 +13,7 @@
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
-     transform="translate(0,10)"><g transform="translate(0,0)"><g transform="translate(0,0)"><g
+     transform="translate(0,10)"><g transform="translate(0,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -31,16 +31,37 @@
            transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
            style="stroke-width:2.00479">
           <g
-             transform="matrix(1.1203706,0,0,1.1204148,-103.27598,239.36978)"
-             id="g10356">
-            <path
-               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               d="m 549.64398,-1871.022 -3.53046,-16.5554 -2.97175,15.8646 h -6.69434"
-               id="path4186-6-7-94-7-8-3-4-9-6-9-9-8-7-3-2"
-               inkscape:connector-curvature="0"
-               sodipodi:nodetypes="cccc" />
+             id="g1224">
+            <g
+               id="g1260">
+              <g
+                 id="g3084"
+                 transform="matrix(1.0111221,0,0,0.99321507,-7.370096,-3.2086335)"
+                 style="stroke-width:2.00053">
+                <path
+                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   d="m 514.14845,-1885.2544 -0.0211,14.5898 H 501.6355"
+                   id="path4186-6-7-94-7-8-3-4-9-4-6-1-9-0"
+                   inkscape:connector-curvature="0"
+                   sodipodi:nodetypes="ccc" />
+                <path
+                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                   d="m 509.29106,-1875.3257 v 9.106"
+                   id="path4186-6-7-94-7-8-3-4-9-4-6-7-7-6-2"
+                   inkscape:connector-curvature="0"
+                   sodipodi:nodetypes="cc" />
+              </g>
+              <ellipse
+                 style="fill:#000000;fill-opacity:1;stroke-width:7.9398"
+                 id="path853"
+                 cx="500.6731"
+                 cy="1861.2063"
+                 transform="scale(1,-1)"
+                 rx="2.9291599"
+                 ry="2.9292758" />
+            </g>
           </g>
         </g>
       </g>
     </g>
-  </g></g></g></g></svg>
+  </g></g></g></svg>
