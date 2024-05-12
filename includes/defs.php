@@ -82,7 +82,7 @@ function load_def($fpath,$rpath=NULL,$recur=NULL,$uref=NULL){
   $tar=array();
 
   //if a preseave then load the presave text into the def svg top section
-  echo "(($fpath))";
+  //echo "(($fpath))";
   $par=explode("imgpresave_",$fpath);
   if(count($par)>1){
     if($ptext=presave_text(strstr($par[1],".",true))){
@@ -105,6 +105,7 @@ function load_def($fpath,$rpath=NULL,$recur=NULL,$uref=NULL){
         $rword=substr(trim($line),5);
         $ref=search_def($rword,NULL,TRUE);
         $ptr[]=$ref['text'];
+        $line="<a href=http://127.0.0.1/uscript/inspectedit_test.php?defs=$rword>$rword def</a>";
         }
       }
 

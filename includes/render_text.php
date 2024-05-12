@@ -114,6 +114,35 @@ function render_brak(&$elsa){
         case "foreach":
                        $args[0]="arel[".str_replace("as","] arel[",$args[0])."]";
                        break;
+        case "rinteract":
+                       $nargs0=array();
+                       $nargs1=array();
+                       if(strstr($args[0],"from")){
+                         $nargs0=explode("from",$args[0]);
+                         }elseif(strstr($args[0],"into")){
+                         $nargs1=explode("into",$args[0]);
+                         }else{
+                         $nargs0[0]=$args[0];
+                         }
+                       if(strstr($args[1],"from")){
+                         $nargs0=explode("from",$args[1]);
+                         }elseif(strstr($args[1],"into")){
+                         $nargs1=explode("into",$args[1]);
+                         }else{
+                         $nargs1[0]=$args[1];
+                         }
+                       //$nargs0=explode("from",$args[0]);
+                       //$nargs1=explode("into",$args[0]);
+                       //$nargs0=explode("from",$args[0]);
+                       //$nargs1=explode("into",$args[1]);
+                       $nargs=array( 
+                                    @$nargs0[0],
+                                    @$nargs0[1],
+                                    @$nargs1[0],
+                                    @$nargs1[1],
+                                   );
+                       $args=$nargs;
+                       break;
         }
       
 

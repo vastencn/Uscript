@@ -1,7 +1,7 @@
 <svg
-   width="0"
-   height="-5"
-   viewBox="0 0 0 -5"
+   width="1"
+   height="1"
+   viewBox="0 0 1 1"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -9,4 +9,8 @@
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   ></svg>
+   ><g
+     inkscape:label="Line 1"
+     inkscape:groupmode="layer"
+     id="layer L1"
+     transform="translate(0,0.5)"><g transform="translate(0,0)"><g></g></g></g></svg>

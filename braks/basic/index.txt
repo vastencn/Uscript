@@ -57,6 +57,8 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,eval,brak_opt_ dot=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=eval
 1,evalnot,brak_opt_ circ=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=evalnot
 
+//right shift   internal right shift.. for the image embeded in the bracket wall
+
 1,all,brak_opt_ img=all : rshift=9 : irshift=6 : minh=30 : def=all
 1,none,brak_opt_ img=none : rshift=6 : irshift=9 : minh=30 : def=none
 
@@ -73,6 +75,7 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,iffn,if_opt_ no=1 : not=1 : sublen=5 : def=if
 
 // prefixing the variable name with c or s targets the condition brak or the sub brak
+//condition r shift  condition internal right shift
 1,while,if_opt_ while=1 : crshift=7 : cirshift=11 : def=while
 1,whilef,if_opt_ while=1 : crshift=7 : cirshift=11 : no=1 : def=while
 1,foreach,if_opt_ foreach=1 : crshift=9.3 : cirshift=10 : yes=1 : def=foreach
@@ -85,3 +88,6 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 
 //interaction
 1,interact,twostack_opt_ interact=1 : def=interact
+1,rinteract,twostack_opt_ rinteract=1 : interact=1 : def=rinteract
+1,give,twostack_opt_ give=1 : def=give
+1,get,twostack_opt_ get=1 : def=get

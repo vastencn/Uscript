@@ -27,3 +27,5 @@ if true 'else'  = ifn
 if false 'else' = iffn
 
 start using s[] to "call up the subvalue" to referenced (same structure as referencing an array element)
+
+Brak execution is in rende_text.php function render_brak(&$elsa){

@@ -6,9 +6,17 @@
 
 Interaction next step
 
-add give/get(x give a to y. y gets b from x) "x | a --> b | y" get is just dir flip, <--)
+*add give/get(x give a to y. y gets b from x) "x | a --> b | y" get is just dir flip, <--)
 
-the add ability to add 2 extra params to interact, same style (2give 2get,)
+*the add ability to add 2 extra params to interact, same style (2give 2get,)
+* --added input x gives a1 y recievs a2, x gets b1, y sends b2 "rinteract(b1 from b2, a1 into a2 )"
+
+Page designer
+twostak, vertical defmap
+substract and addition are sub types of emit and absorb
+
+javascript link function tyo hit current full url with all vars +extra url+str suffix
+   -(temporary hack in defs.php render_def() $line="<a href" needs to be updated to this func when added )
 
 
 
@@ -58,7 +66,7 @@ expand t/d measure symbols - current circle defaults to inside edge - exapnd to 
 
 emforce-determine if it is necesarry to break into mag force and charge force.. i thionk might not be necesarry.. moving vharge make mag feilds, mag filelds are produced by moving charges, interactions always involved both as far as i know.. and only theorhtical models of early universe(ultra high energy?) have the 2 able to act independly
 
-redo pressure concept defintion (use re4lative force/pressure/area.. eg hydrolic,phematic systems like equalities)
+redo pressure concept defintion (use relative force/pressure/area.. eg hydrolic,phematic systems like equalities)
 
 need to establish tha liquids and gasses can also be composed of molecules - (probably jusdt establish some atomic state condition eg. liquuid at, solid at, gas at, plasma at... then also list some moleculs woith same properties)
 
@@ -173,4 +181,9 @@ migate everyuthing to mysql?
 		so im torn.. i suppose in the end.. database, with an "auto update db from files" tool
 	)
 
-add ability to have if do and else do on one condition (cann just manually make images for now, not high priority)
+add ability to have if do and else do on one condition (cann just manually make images for now, not high priority)\
+
+
+synonyms
+
+orign=comefrom (temporal)

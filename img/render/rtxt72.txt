@@ -1,1 +1,3 @@
-unit
+ sys1 emit p1 _20 sys2 absorb p1
+#
+#

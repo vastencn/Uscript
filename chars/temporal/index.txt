@@ -1,0 +1,70 @@
+index of charcters in this folder
+rows are only valid if they have 3 csv columns and third column is an integer
+values are "spelling" "svg filename" and "width in px"
+we are assuming all chars speced to height 18-20px
+will probably need to add a height param later
+
+
+
+before,before,13.1
+after,after,13.1
+
+// --progressions/directions
+
+//time/entropy
+//t=time e=entropy p=plus m=minus
+tm,tm,11.3
+tp,tp,11.3
+em,em,18
+ep,ep,18
+tmep,tmep,18
+tmem,tmem,18
+tpep,tpep,18
+tpem,tpem,18
+
+// --end progressions/directions
+
+
+// times
+
+timepoint,timepoint,15.5
+timeperiod,timeperiod2,15.5
+timeperiod2,timeperiod,15.5
+
+start,start,12.8
+end,end,12.8
+timespan,timespan,12.8
+
+
+
+//
+
+
+
+
+// --transitions
+
+//single transitions
+ //time
+become,become,14.2
+comefrom,comefrom,14.2
+ //entropy
+hotterversionof,hotterversionof,18.75
+colderversionof,colderversionof,18.75
+
+//diagonals
+//these involve loooseing or gaining energy
+//obviously energyis alwaqys conserved
+//so these are relative to a reference frame or system
+
+ //lost energy
+decayedfrom,decayedfrom,16.9
+decayinto,decayinto,16.9
+
+ //gained energy
+givebirthto,givebirthto,16.9 
+bornfrom,bornfrom,16.9 
+
+// --end transitions
+
+EOF
