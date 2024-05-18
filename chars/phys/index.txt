@@ -87,6 +87,8 @@ interact,interact,17.8
 bond,bond,12.7
 fusion,fusion,14.5,23
 fission,fission,14.1,23.4
+convertinto,convertinto,16.5,26.3
+convertedfrom,convertedfrom,16.5,26.3
 
 "nouns"
 charge2p,charge2p,18

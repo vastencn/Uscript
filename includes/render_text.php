@@ -28,6 +28,14 @@ function render_line_with_defmap($istr,$mname=NULL,$href="#"){
   return $html_str;
   }
 
+function render_lines_with_defmap($lines){
+  global $render_linei;
+  $html="";
+  foreach($lines as $line){
+    //$html.=render_line_with_defmap($istr,$mname=NULL,$href="#");
+    }
+  }
+
 function render_line($istr){
   $car=array();
   $elsa=render_uscript_text($istr,$car);
@@ -65,10 +73,20 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
   $fds=flatten_depth_sort($ds);
   $fds_copy=$fds;
 
-
+  brak_words_preparse($car);
 
   //YES, I did just start adding "sa" to "el"(element) because I love the Frozen franchise :D
   while(($elsa=fetch_next_elsa($fds))>=0){
+    if(@$car[$elsa]['brak']['opts'][0][0]=="convert"){
+       // decided to separate args with space and draw on top.. hacky.. yes.. this is becomes mre and more hacky and less and kess maninatable haha
+       // ignoring defmap issues for now
+
+     $car[$elsa]['content']=str_replace(" into ", " _10 ",$car[$elsa]['content']);
+      foreach($car[$elsa]['words'] as &$anna){
+        if($anna == "into")$anna="_10";
+        }
+      }
+    
     render_elsa($car,$car[$elsa],$elsa);
     }
 
@@ -99,11 +117,14 @@ function render_brak(&$elsa){
 
   //its a braket, lets render it
   if(is_array($elsa['brak'])&&strlen($elsa['brak']['funk'])>0){
+    
+    $arg_split=",";
     $argc=$elsa['brak']['arg_count'];
+
     if($argc>1){
 
 
-      $args=explode(",",$elsa['content']);
+      $args=explode($arg_split,$elsa['content']);
 
       //specific brak custom code awfull practice I know
       //but we are already at the point where good practice and proper design is going out the window
@@ -243,6 +264,7 @@ function render_elsa(&$car,&$elsa,$elsa_id){
     $elsa['width']=$draw['width'];
     $elsa['height']=$draw['height'];
     $elsa['defmap']=$draw['defmap'];
+    $elsa['words_x']=$draw['words_x'];
     }
   
   return;

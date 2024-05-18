@@ -29,4 +29,13 @@ function file_append_line($fpath,$fdat){
   file_dump($fpath,$fwdat);
   return;
   }
+
+function array_to_csv($ar){
+  $anna="";
+  foreach($ar as $elsa){
+    ar_dump($elsa);
+    $anna.=implode($elsa,",")."\n";
+    }
+  return $anna;
+  }
 ?>

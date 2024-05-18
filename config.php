@@ -6,6 +6,8 @@ $img_dir="C:\\wamp64\\www\\uscript\\img\\";
 $defs_dir="C:\\wamp64\\www\\uscript\\defs\\";
 $render_dir="C:\\wamp64\\www\\uscript\\img\\render\\";
 $presave_dir="C:\\wamp64\\www\\uscript\\img\\presave\\";
+$pages_dir="C:\\wamp64\\www\\uscript\\pages\\";
+$pages_cells_dir="C:\\wamp64\\www\\uscript\\pages\\cells\\";
 $dslash="\\";
 
 
@@ -62,6 +64,7 @@ require_once($includes_dir."markup_tools.php");
 
 //level 10
 require_once($includes_dir."presave.php");
+require_once($includes_dir."page.php");
 
 
 

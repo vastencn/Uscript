@@ -1,4 +1,4 @@
-forceunit = mass
+forceunit = mass * accelunit
 text
 
 the force unit is os defined the same way as a newton, just with different units

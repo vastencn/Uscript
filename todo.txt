@@ -4,7 +4,7 @@
 *
 *frame of refertnce allows units to be defined including the nuance of rframe()frame of refernce (there ar units for force, energy, etc acting "on" an rframe, vs the standard units of we use *for "acting within an rframe".. eg  a car, plane, spaceship, etc.. are things that "apply force to their rframe")
 
-Interaction next step
+*Interaction next step
 
 *add give/get(x give a to y. y gets b from x) "x | a --> b | y" get is just dir flip, <--)
 
@@ -34,6 +34,12 @@ In linked defs (uref,tref) addf link in def editor to go to and edit the source 
 
 emit, absorb and interaction/exchange
 
+...conversion brak.. in markup.php in draw_string() method just ski9sp words, need to be redone to identify proper "into"
+...for now I just quickly assume "word into word into word into etc..." mlyi word elements wont work yet
+!!now go back and redo again haaha
+!!go back t importaing array of chu7nks split by "into"
+//render the array of chunks.. forget about defmaping for now
+//im at the point where I have to prioritize my time.. defmapping is a luxury for now.. where it works, good, wheere it doesnt.. so be it for now
 
 
 

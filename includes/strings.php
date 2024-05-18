@@ -67,6 +67,10 @@ function string_delim_shift($delim,$string,$shift=1,$empty=""){
 function rm_nl($str){
   return str_replace("\n","",str_replace("\r","",$str));
   }
+function rm_nl_ptr(&$str){
+  $str=str_replace("\n","",str_replace("\r","",$str));
+  return;
+  }
 
 function prefix_expand($word,$prefix,$expanded){
   $plen=strlen($prefix);

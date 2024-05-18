@@ -41,7 +41,7 @@ function render_def($word,$topts=NULL,$href=NULL){
     $itxt=@file($presave_dir.$iname.".txt");
     $def=array();
     $def['uscript']=$itxt;
-    $def['text']="  ";
+    $def['text']=" ";
     $icon=NULL;
     }else{
 

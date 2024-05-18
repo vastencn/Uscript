@@ -167,10 +167,12 @@ function draw_string($ustr){
 
   //merge the words into a single chunk
   $rchunk=create_chunk($ustr);
+  $rchunk['words_x']=array("0");
   foreach($car as $tchunk){
-    chunk_append($rchunk,$tchunk,$default_word_spacing);
+    if($xpos=chunk_append($rchunk,$tchunk,$default_word_spacing)){
+      $rchunk['words_x'][]=$xpos;
+      }
     }
-
   return $rchunk;
   }
 

@@ -9,6 +9,8 @@
 
 $default_char_height=20;
 
+$vocab_list=array();
+
 
 //one time perp of the library
 $uscript_lib=array();
@@ -22,7 +24,7 @@ foreach($index_ar as $ichar){
 
 
 function load_chars($folder_name){
-  global $chars_dir,$uscript_lib;
+  global $chars_dir,$uscript_lib,$build_vocab_list,$vocab_list;
   //only alpha numeric of course, only first level folder in the chars folder
   //if you want to use subfolders or to reference folders in other locations, then disable or modify this check
   if(strlen($folder_name)<1 || preg_match('/[^0-9a-z]/', $folder_name)){
@@ -47,13 +49,18 @@ function load_chars($folder_name){
     if(load_char($tchar,$fpath))$loaded_chars[]=$tchar;
     }
 
+  $new_words=array();
   //inject loaded chars into global library
   foreach($loaded_chars as $tchar){
     //no dupicate entry check(yet)-----------------------------------
     $flet=substr($tchar['spelling'],0,1);
     $uscript_lib[$flet][]=$tchar;
+    $new_words[]=$tchar['spelling'];
     }
 
+  if($build_vocab_list){
+    $vocab_list[$folder_name]=$new_words;
+    }
 
   //ar_dump($loaded_chars, "loaded chars");
   //ar_dump($uscript_lib, "loaded chars");

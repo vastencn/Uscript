@@ -1,0 +1,107 @@
+<?php
+require_once("config.php");
+
+
+
+update_def_from_post();
+
+?>
+<html>
+<head>
+ <title>def test</title>
+ <?php echo uscript_head();?>
+</head>
+<body>
+
+<?php
+//echo "!!!";
+//echo pre_render("a a a\n b b b \n c c c ");
+//echo "!!!";
+
+$istr=html_postget("istr");
+$istr=insert_pre_renders($istr);
+echo selfform("istr");
+
+
+
+
+?>
+
+
+
+<?php
+if(strlen($istr)>0)echo "<a href=vocab.php><font color=blue>clear</font></a><br><hr>";
+?>
+<table>
+	<tr>
+	  <td>
+<?php
+$href="vocab.php?istr=".urlencode($istr)."&defs=";
+echo render_line_with_defmap($istr,NULL,$href);
+?>
+
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+<?php
+
+
+$i=0;
+$defs=html_getpost("defs");
+$vstr="";
+$used=array();
+if($defs){
+	$dar=explode(",",$defs);
+	foreach($dar as $tdef){
+      if(in_array($tdef,$used))continue;
+      if($i++)echo "<hr>";
+
+
+
+      $vstr.=$tdef;
+      $map_url="http://127.0.0.1/uscript/vocab.php?istr=".urlencode($istr)."&defs=$vstr,";
+      $self_url="http://127.0.0.1/uscript/vocab.php?istr=".urlencode($istr)."&defs=$defs&defup=1";
+      $vstr.=",";
+
+      $def_html    =render_def($tdef,"width=600 border=0",$map_url);
+      $defedit_html=render_defedit($tdef,"width=600 border=0",$self_url);
+
+     echo "<table border=2 bordercolor=black><tr><td>$def_html <hr> $defedit_html </td></tr></table>";
+    
+     $used[]=$tdef;
+
+		if($i>=10)break; //max ten defs
+     }
+  }
+
+echo display_notices();
+?>
+    </td>
+  </tr>
+</table>
+
+<table>
+ <tr>
+  <?php
+
+   foreach($vocab_list as $key => $value){
+     echo "<td>".$key."</td>";
+     }
+  ?>   
+ </tr>
+ <tr valign=top>
+  <?php
+
+   foreach($vocab_list as $vlist){
+     echo "<td>";
+     foreach($vlist as $word){
+       echo "<a href=vocab.php?istr=$word><font color=blue>$word</font></a><br>";
+       }
+     echo "</td>";
+     }
+  ?>    
+</table>
+
+</body>
+</html>

@@ -12,13 +12,17 @@ eval,eval
 evalneg,evalneg
 atom,atom
 arel,arel
-twostack,twostack
+
+!!!---Chain braks are a subtype of 1 arg braks---!!!
+chain,chain
 
 
 !!!--- 2 ARG BRAKS---!!!
 
 IF and IFNOT depend on eval evalneg and sub/subcup
 if,if
+twostack,twostack
+
 
 
 
@@ -91,3 +95,6 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,rinteract,twostack_opt_ rinteract=1 : interact=1 : def=rinteract
 1,give,twostack_opt_ give=1 : def=give
 1,get,twostack_opt_ get=1 : def=get
+
+//conversion
+1,convert,chain_opt_ convert=1 : def=convert

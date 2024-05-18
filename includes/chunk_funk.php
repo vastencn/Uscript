@@ -91,6 +91,6 @@ function chunk_append(&$parent, $child, $spacing=-1){
   if(@$parent['height']<$child['height']){
     $parent['height']=$child['height'];
     }
-  return TRUE;
+  return $xpos;
   }
 ?>

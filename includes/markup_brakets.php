@@ -212,4 +212,18 @@ function search_brak($bname,$right=FALSE,$type=1){
   return NULL;
   }
 
+
+function brak_words_preparse(&$car){
+
+  foreach($car as &$elsa){
+    if(@$elsa['brak']['opts'][0][0]=="convert"){
+      $elsa['content']=str_replace(" into ", " _10 ",$elsa['content']);     
+      foreach($elsa['words'] as &$anna){
+        if($anna == "into")$anna="_10";
+        }
+      }
+    }
+  return;
+  }
+
 ?>
