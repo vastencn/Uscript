@@ -20,6 +20,8 @@ defs
    array structure
    array ops
  physics
+  processes
+   conversion
   abstractions
    spacial abstractions
   particles

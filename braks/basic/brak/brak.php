@@ -43,14 +43,14 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   $minh=NULL;
   $opts=@$chunk['brak']['opts'];
   $dot=$circ=FALSE;
+  $img=NULL;
   if(@count($opts)>0){
     foreach($opts as $opt){
       $vname=$opt[0];
       $vval=$opt[1];
       switch($vname){
         case "img":
-                   $img=brak_load_opt_img($vval,$chunk['brak']);
-                   $svg_str.=$img['svg'];
+                   $img=brak_load_opt_img($vval,$chunk['brak']);                   
                    break;
         case "rshift":
                    $xstart=$vval;
@@ -102,6 +102,8 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   //draw close
   $inner_space_end=$chunk_x_offset+@$chunk['width']+$hpad;
   $svg_str.=svg_hcup($inner_space_end+($stroke_width/2),0,$height,$cup_depth,$stroke_width);
+
+  if($img)$svg_str.=$img['svg'];
 
   $nchunk['svg']=$svg_str;
   $nchunk['brak']['spelling']=$chunk['brak']['spelling'];

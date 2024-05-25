@@ -12,18 +12,26 @@ function svg_dot($x,$y,$r){
   return svg_circle($x,$y,$r,0,"black");
   }
 
-function svg_hzigzag($x,$y,$w,$h,$w2=.3,$s=2){
+function svg_hzigzag($x,$y,$w,$h,$w2=5,$xtra=0,$s=2){
   $pts=array();
 
 
   $center=$w/2;
-  $coff=($w2/2)*$center;
   $pts[]=array($x,$y);
-  $pts[]=array($x+$center+$coff,$y);
-  $pts[]=array($x+$center-$coff,$y+$h);
+  $pts[]=array($x+$center+$w2,$y);
+  $pts[]=array($x+$center-$w2,$y+$h);
   $pts[]=array($x+$w,$y+$h);
 
   return svg_polyline($pts,$s);
+  }
+
+function svg_arc($x1,$y1,$xdir,$ydir,$size=5,$flip=0){
+  $x2=$x1+$xdir*$size;
+  $y2=$y1+$ydir*$size;
+  $str="  <path d=\"M $x1 $y1
+           A $size $size 0 0 $flip $x2 $y2\"
+           stroke=\"black\" fill=\"none\" stroke-width=\"2\"/>";
+  return $str;
   }
 
 

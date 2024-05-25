@@ -1,5 +1,1 @@
-sys1 emit p1 _20 p2 emitedby sys2
-#
-# sys1 absorb p2 _20 p1 absorbedby sys2
-#
-#
+1

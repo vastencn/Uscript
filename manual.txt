@@ -29,3 +29,17 @@ if false 'else' = iffn
 start using s[] to "call up the subvalue" to referenced (same structure as referencing an array element)
 
 Brak execution is in rende_text.php function render_brak(&$elsa){
+
+rinteract (1 into a ,1 from 99999)
+
+convert (a into b int c)
+convert (a into b retained c consumed d expelled e into f)
+  1.a input
+  2.b retained in system, c absorbed and used in conversion, d expelled as byproduct, e put ninto next step
+  3.f output
+
+  causal chars are in temporal folder, causal relationships imply a temporal nature
+
+  I think all causal relationships will need to be cause on left, effect bon right
+  unless time/entropy axis is used to define a new stype of symbol that does not portray entropy axis
+  perhaps causailty should not be linked to entropy, 

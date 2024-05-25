@@ -84,6 +84,8 @@ load_chars("proc");
 load_chars("astro");
 load_chars("vars");
 load_chars("temporal");
+load_chars("life");
+load_chars("quantum");
 activate_def_folder("phys");
 
 load_overrides("overrides");

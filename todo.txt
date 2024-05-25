@@ -18,7 +18,20 @@ substract and addition are sub types of emit and absorb
 javascript link function tyo hit current full url with all vars +extra url+str suffix
    -(temporary hack in defs.php render_def() $line="<a href" needs to be updated to this func when added )
 
+pos/impos braks use basic brak[].. need fix this
+	should instead use subcup/subofcup
+	brak types should be better categorized and applied in more standar5d method
+	sub -[  is more often used for statements like possibility
+	brak[] is more often used for functions
 
+cause effect
+  entropy represents that systems wil tend towards x
+  so entropy axis is for increasing probabilty
+  while time axis is for guranteed chain reaction
+	a +:  b b increases probabilty nof a 
+	a :+  b a increases probabilty of b
+	a '+' b a causes b
+	a .+. b a is result of b
 
 New Units
 Force/accel have 2 types.. based on frame of reference

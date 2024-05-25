@@ -15,9 +15,9 @@ function html_postget($vname,$def=NULL){
   return $def;
   }
 
-function selfform($vars,$method="post"){
+function selfform($vars,$method="post",$len=20){
   global $_SERVER;
-  
+  echo "(($len)))";
   $self=htmlentities($_SERVER['PHP_SELF']);
   if(!is_array($vars))$vars=array($vars);
 
@@ -29,7 +29,7 @@ function selfform($vars,$method="post"){
   foreach($vars as $var){
   	$vval=html_postget($var);
     $rstr.="        <td>$var</td>\n";
-    $rstr.="        <td><input type=text size=20 name=$var value=\"$vval\"></td>\n";
+    $rstr.="        <td><input type=text size=$len name=$var value=\"$vval\"></td>\n";
     }  
   $rstr.="      </tr>\n".
          "      <tr>\n".

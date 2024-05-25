@@ -20,7 +20,7 @@ $istr=html_postget("istr");
 echo "{1{$istr}}";
 $istr=insert_pre_renders($istr);
 echo "{2{$istr}}";
-echo selfform("istr");
+echo selfform("istr","post",100);
 
 
 

@@ -9,6 +9,9 @@ will probably need to add a height param later
 before,before,13.1
 after,after,13.1
 
+change,change,17.7
+nochange,nochange,13.7
+
 // --progressions/directions
 
 //time/entropy

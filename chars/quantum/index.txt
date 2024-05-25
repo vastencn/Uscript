@@ -1,0 +1,11 @@
+index of charcters in this folder
+rows are only valid if they have 3 csv columns and third column is an integer
+values are "spelling" "svg filename" and "width in px"
+we are assuming all chars speced to height 18-20px
+will probably need to add a height param later
+
+
+poss,poss,11.3
+imposs,imposs,11.9
+
+EOF

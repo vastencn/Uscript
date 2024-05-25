@@ -1,0 +1,4 @@
+ convert ( a into b into c into d)
+convert (a into /n
+  b.1 _5 retained _5 c.1 consumed b.2 _5 expelled _10 c into/n
+ d e)

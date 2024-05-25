@@ -1,7 +1,7 @@
 <svg
-   width="17"
+   width="15"
    height="20"
-   viewBox="0 0 17 20"
+   viewBox="0 0 15 20"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -13,7 +13,7 @@
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
-     transform="translate(0,10)"><g transform="translate(0,0)"><g
+     transform="translate(0,10)"><g transform="translate(0,0)"><g transform="translate(0,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -31,7 +31,7 @@
            transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
            style="stroke-width:2.00479">
           <g
-             transform="matrix(1.1203706,0,0,1.1204148,-101.17529,239.36978)"
+             transform="matrix(-1.1203706,0,0,-1.1204148,1114.5195,-3971.8091)"
              id="g10356">
             <path
                style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -40,15 +40,7 @@
                inkscape:connector-curvature="0"
                sodipodi:nodetypes="cccc" />
           </g>
-          <ellipse
-             style="fill:#000000;fill-opacity:1;stroke-width:7.9398;stroke-miterlimit:4;stroke-dasharray:none"
-             id="path853"
-             cx="500.6731"
-             cy="1857.6434"
-             transform="scale(1,-1)"
-             rx="2.9291599"
-             ry="2.9292758" />
         </g>
       </g>
     </g>
-  </g></g></g></svg>
+  </g></g></g></g></svg>

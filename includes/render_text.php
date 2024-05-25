@@ -73,10 +73,12 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
   $fds=flatten_depth_sort($ds);
   $fds_copy=$fds;
 
-  brak_words_preparse($car);
+  //brak_words_preparse($car);
+
 
   //YES, I did just start adding "sa" to "el"(element) because I love the Frozen franchise :D
   while(($elsa=fetch_next_elsa($fds))>=0){
+    /*
     if(@$car[$elsa]['brak']['opts'][0][0]=="convert"){
        // decided to separate args with space and draw on top.. hacky.. yes.. this is becomes mre and more hacky and less and kess maninatable haha
        // ignoring defmap issues for now
@@ -85,10 +87,11 @@ function render_uscript_text($in_str,&$car=NULL,&$defmap=NULL){
       foreach($car[$elsa]['words'] as &$anna){
         if($anna == "into")$anna="_10";
         }
-      }
+      }*/
     
     render_elsa($car,$car[$elsa],$elsa);
     }
+    
 
   $fds=$fds_copy;
   $flattened=999;
@@ -121,6 +124,13 @@ function render_brak(&$elsa){
     $arg_split=",";
     $argc=$elsa['brak']['arg_count'];
 
+/*
+    switch($elsa['brak']['opts'][0][0]){
+      case "convert":$arg_split=" into ";
+            $argc=2;
+            break;
+      }
+*/
     if($argc>1){
 
 
