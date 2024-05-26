@@ -1,0 +1,5 @@
+a probwill b _30 a = ep b
+a probwass b _30 b ep = a
+text
+a probwill b - a increases the probably of b, a tends towards b
+a probwas b - a increases probably that b was previous state, a tends to imply coming from b

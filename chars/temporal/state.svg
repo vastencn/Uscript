@@ -8,7 +8,7 @@
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="timepoint.svg"
+   sodipodi:docname="state.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +136,7 @@
                                    id="g1521">
                                 <g
                                    id="g1707"
-                                   transform="translate(-8.82903,1.5110178e-5)">
+                                   transform="matrix(0,-0.91000051,1.0989005,0,4164.1696,-2558.4326)">
                                 <ellipse
                                    style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.22361;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                    id="path3355-3-8-2-7-5-9-7"

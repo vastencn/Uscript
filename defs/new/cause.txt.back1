@@ -1,0 +1,2 @@
+cause _30 a cause b = (a = tp b)
+effectof_30 a effectof b = (b tp = a)

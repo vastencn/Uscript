@@ -31,15 +31,15 @@
      inkscape:bbox-nodes="true"
      inkscape:snap-bbox-edge-midpoints="true"
      inkscape:snap-bbox-midpoints="true"
-     inkscape:zoom="11.313709"
-     inkscape:cx="-7.115262"
-     inkscape:cy="21.566757"
+     inkscape:zoom="22.627417"
+     inkscape:cx="-1.8782524"
+     inkscape:cy="23.909048"
      inkscape:window-width="1920"
      inkscape:window-height="1137"
      inkscape:window-x="-1928"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1521"
+     inkscape:current-layer="g2287"
      inkscape:snap-global="true">
     <sodipodi:guide
        position="22.484246,10.000012"
@@ -131,38 +131,33 @@
                                    id="g1111"
                                    transform="translate(-2.7547344e-8,0.14358823)">
                                 <g
-                                   id="g1117">
+                                   id="g1791">
                                 <g
-                                   id="g1521">
+                                   id="g2025"
+                                   transform="matrix(0.70710678,-0.64346753,0.77703998,0.70710678,2658.2754,-524.59211)">
                                 <g
-                                   id="g1707"
-                                   transform="translate(-8.82903,1.5110178e-5)">
-                                <ellipse
-                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.22361;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   id="path3355-3-8-2-7-5-9-7"
-                                   cx="3179.9751"
-                                   cy="-683.01337"
-                                   rx="4.2353053"
-                                   ry="4.6541786"
-                                   transform="matrix(0,-1,-1,0,0,0)" />
+                                   id="g2287">
+                                <g
+                                   id="g2733"
+                                   transform="translate(0.72489571,0.65959406)">
                                 <path
                                    style="fill:none;stroke:#000000;stroke-width:2.60548;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="m 683.01334,-3167.8539 v -24.2424"
-                                   id="path2462"
-                                   sodipodi:nodetypes="cc" />
-                                <g
-                                   id="g1700"
-                                   transform="translate(0,-0.46108489)">
-                                <path
-                                   style="fill:none;stroke:#000000;stroke-width:2.60548;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="m 674.18433,-3171.9422 h 17.65806"
+                                   d="m 650.1857,-3163.6092 15.61594,14.2105"
                                    id="path2462-4"
                                    sodipodi:nodetypes="cc" />
                                 <path
                                    style="fill:none;stroke:#000000;stroke-width:2.60548;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="m 674.18433,-3187.0858 h 17.65806"
-                                   id="path2462-4-7"
+                                   d="m 650.18574,-3149.3987 15.61594,-14.2105"
+                                   id="path2462-4-1"
                                    sodipodi:nodetypes="cc" />
+                                <ellipse
+                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2.22361;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                                   id="path3355-3-8-2-7-5-9-7-9"
+                                   cx="-3156.5039"
+                                   cy="-657.99371"
+                                   rx="4.7251663"
+                                   ry="5.1924877"
+                                   transform="rotate(90)" />
                                 </g>
                                 </g>
                                 </g>

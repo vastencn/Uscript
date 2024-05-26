@@ -43,7 +43,6 @@ v14,v14,18
 v15,v15,18
 
 //basic math/operations
-equal,equal,5
 plus,plus,14
 minus,minus,14
 mult,mult,14
@@ -57,9 +56,13 @@ frac,frac,11
 infinity,infinity,21
 inf,inf,15.3
 
-aequal,aequal,7.5
-eul,eul,18.8
+equal,equal,5
+notequal,notequal,6
 absequal,absequal,6
+aequal,aequal,7.5
+  //aequal is approx-equal
+
+eul,eul,18.8
 gt,gt,20
 lt,lt,20
 islt,islt,20

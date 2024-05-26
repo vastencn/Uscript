@@ -1,0 +1,8 @@
+ spacetimepoint
+ spacetimeperiod
+ timepoint
+ timerange
+ timeprobs
+ state
+ staterange
+ stateprobs

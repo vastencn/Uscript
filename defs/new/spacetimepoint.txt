@@ -1,0 +1,15 @@
+text
+spacetime points and periods 
+they are coordinates in both space and time..
+
+time axis items are moments and periods
+entropy axis items are states
+
+identifying a time means you will probably discuss states and events at the time, preceding causes or effects to follow
+ 
+identifying a state means you will probably discuss its properties and past/present states which follow or have causal relationships, relationships with other states and things, etc..
+
+identifying a time and a state makes less sense, unless you include spacial location, then it is a declaration that state x exists at location y at time z, that's why space in include in the time-state combo
+
+The only way time-state make sense alone is if you assume the context of a state changes based on time... yes the universe is changing, the laws of physics of the early universe were arguably "different"... so perhaps a state at that time is much different contextually than the same state at our present time.... but that feels like an exception to the rule, relative to the broader scope of everything we wish to express and discuss of course...  we will build upon the premise that the contextual laws of physics are constant
+ 

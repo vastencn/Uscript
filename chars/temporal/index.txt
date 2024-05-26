@@ -12,6 +12,11 @@ after,after,13.1
 change,change,17.7
 nochange,nochange,13.7
 
+cause,cause,14
+effectof,effectof,14
+probwill,probwill,14.6
+probwas,probwas,14.6
+
 // --progressions/directions
 
 //time/entropy
@@ -30,13 +35,22 @@ tpem,tpem,18
 
 // times
 
-timepoint,timepoint,15.5
-timeperiod,timeperiod2,15.5
-timeperiod2,timeperiod,15.5
+spacetimepoint,spacetimepoint,15.5
+spacetimeperiod,spacetimeperiod2,15.5
+spacetimeperiod2,spacetimeperiod,15.5
+
+timepoint,timepoint,12.2
+timerange,timerange,12.2
+timeprobs,timeprobs,12.2
+state,state,18.5
+staterange,staterange,18.5
+stateprobs,stateprobs,18.7
 
 start,start,12.8
 end,end,12.8
 timespan,timespan,12.8
+
+timeline,timeline,11.3
 
 
 

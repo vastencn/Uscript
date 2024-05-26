@@ -11,6 +11,10 @@
 *the add ability to add 2 extra params to interact, same style (2give 2get,)
 * --added input x gives a1 y recievs a2, x gets b1, y sends b2 "rinteract(b1 from b2, a1 into a2 )"
 
+vertical subcup... flexible like basic brak with image option,so it can become things like prob(x) in a nice neat single symbol style
+eg._S_
+	|0.5|
+
 Page designer
 twostak, vertical defmap
 substract and addition are sub types of emit and absorb
@@ -24,19 +28,19 @@ pos/impos braks use basic brak[].. need fix this
 	sub -[  is more often used for statements like possibility
 	brak[] is more often used for functions
 
-cause effect
-  entropy represents that systems wil tend towards x
-  so entropy axis is for increasing probabilty
-  while time axis is for guranteed chain reaction
-	a +:  b b increases probabilty nof a 
-	a :+  b a increases probabilty of b
-	a '+' b a causes b
-	a .+. b a is result of b
+*cause effect
+*  entropy represents that systems wil tend towards x
+*  so entropy axis is for increasing probabilty
+*  while time axis is for guaranteed chain reaction
+*	a +:  b b increases probabilty of a 
+*	a :+  b a increases probabilty of b
+*	a '+' b a causes b
+*	a .+. b a is result of b
 
 New Units
 Force/accel have 2 types.. based on frame of reference
-partticle = internal to frame of refernce
-space = acting n freame of refernce
+particle = internal to frame of refernce
+space = acting on frame of refernce
 
 particle units are speed ^2
 space units are linear speed based

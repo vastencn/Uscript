@@ -8,4 +8,7 @@ will probably need to add a height param later
 poss,poss,11.3
 imposs,imposs,11.9
 
+cohere,cohere,8.8
+decohere,decohere,8.8
+
 EOF
