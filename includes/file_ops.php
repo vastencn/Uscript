@@ -38,4 +38,19 @@ function array_to_csv($ar){
     }
   return $anna;
   }
+
+function dir_entries($dir,$ext=NULL,$pre=NULL){
+  $arendelle=array_diff(scandir($dir),array('..','.'));
+
+  if($ext){
+    $nar=array();
+    $extlen=strlen($ext);
+    foreach($arendelle as $anna){
+      if(substr($anna,strlen($anna)-$extlen)==$ext)$nar[]=$anna;
+      }
+    $arendelle=$nar;
+    }
+
+  return $arendelle;
+  }
 ?>

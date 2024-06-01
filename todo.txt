@@ -16,6 +16,9 @@ eg._S_
 	|0.5|
 
 Page designer
+		-page designer  render_page_edit() recursive page embeding infintie loop risk, add depth limit
+		-http://127.0.0.1/uscript/page_test.php?page=page1ops1&page_edit=1&cell_edit=page1ops1_0_0
+				-allow embeding of a def (this does mean a def could change and deform a page layout, maybe add button to extract and inject def markup text then delete ref)
 twostak, vertical defmap
 substract and addition are sub types of emit and absorb
 
@@ -45,18 +48,18 @@ space = acting on frame of refernce
 particle units are speed ^2
 space units are linear speed based
 
-Ths abstracts the cirlce/space symbol to mean "frame of refernce"
+This abstracts the cirlce/space symbol to mean "frame of refernce"
 
 In linked defs (uref,tref) addf link in def editor to go to and edit the source def
 
 emit, absorb and interaction/exchange
 
-...conversion brak.. in markup.php in draw_string() method just ski9sp words, need to be redone to identify proper "into"
-...for now I just quickly assume "word into word into word into etc..." mlyi word elements wont work yet
-!!now go back and redo again haaha
-!!go back t importaing array of chu7nks split by "into"
-//render the array of chunks.. forget about defmaping for now
-//im at the point where I have to prioritize my time.. defmapping is a luxury for now.. where it works, good, wheere it doesnt.. so be it for now
+*...conversion brak.. in markup.php in draw_string() method just ski9sp words, need to be redone to identify proper "into"
+*...for now I just quickly assume "word into word into word into etc..." mlyi word elements wont work yet
+*!!now go back and redo again haaha
+*!!go back t importaing array of chu7nks split by "into"
+*//render the array of chunks.. forget about defmaping for now
+*//im at the point where I have to prioritize my time.. defmapping is a luxury for now.. where it works, good, wheere it doesnt.. so be it for now
 
 
 
