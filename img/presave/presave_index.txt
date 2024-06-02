@@ -48,3 +48,6 @@ foreach example 2,foreachexe2
 spacial abstractions,aspacetime
 conversion,converteg1
 spacetimes,spacetimes
+fourops,pmtdops
+fourops,pmtdops2
+numsvars,intvars
