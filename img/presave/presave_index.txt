@@ -51,3 +51,5 @@ spacetimes,spacetimes
 fourops,pmtdops
 fourops,pmtdops2
 numsvars,intvars
+numsvars,intsbins
+numsvars,binsfracs

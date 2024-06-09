@@ -10,6 +10,11 @@ imgpresave_
 def uref:xxx uscript def ref, tref:xxx text def ref
 
 scinote  example h>b1s123
+scinote shortcuts 
+ sci+ dec schi note (sci+123 = d>b1s123)
+ sci- (sci-123 = d>b1s-123)
+ scih+ hex sci note (scih+123 = h>b1s123)
+ scih- (scih-123 = h>b1s-123)
 
 atom (1 1 1) number, isotope, ion
 

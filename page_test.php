@@ -33,20 +33,22 @@ if($page_name)$page=load_page_struct($page_name);
 
 if($page){
 
+  //ar_dump($page);
+
   if(html_postget("update")){
     $nrows=html_postget("rows");
     $ncols=html_postget("cols");
-    echo "(($nrows,$ncols))";
+    $desc=html_postget("desc");
     if($nrows>0&&$ncols>0&&$nrows<50&&$ncols<50){
       $page['row_count']=$nrows;
       $page['col_count']=$ncols;
+      $page['desc']=$desc;
       page_fill_missing($page);
       page_save_struct($page);
       }
     }
 
 
-//ar_dump($page);
     if($cell_edit){
       
       $cell_split=explode("_",$cell_edit);
@@ -84,6 +86,7 @@ if($page){
 <form action=<?php echo $_SERVER['PHP_SELF'];?>?update=1&page=<?php echo $page_name;?> method=post>
   rows: <input type=text name=rows size=4 value=<?php echo $page['row_count'];?>><br>
   cols: <input type=text name=cols size=4 value=<?php echo $page['col_count'];?>><br>
+  desc: <textarea name=desc rows=6 cols=40><?php echo $page['desc'];?></textarea>
   <input type=submit value="update page table"></form>
 
     <?php

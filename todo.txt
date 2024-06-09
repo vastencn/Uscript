@@ -19,9 +19,15 @@
 			the only thing available at the current stage is really m"x op constant = constant" = "x = constant"
 
 
-!!!!!
-scinote shortcut
-!!!!!
+*!!!!!
+*scinote shortcut
+*!!!!!
+
+Page word lists
+	-saved in a global files, word->page records
+		list types (defined, used in defintion, etc..)
+		so that a page defintion can found (as opposed to just the word defintion which is a spearte thing.. page deidfntions are language self deinfing style, word defs are a refernce doc with individual word text defintion for human rteaders/learning nthe language)
+
 
 vertical subcup... flexible like basic brak with image option,so it can become things like prob(x) in a nice neat single symbol style
 eg._S_

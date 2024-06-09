@@ -18,8 +18,16 @@ function page_fill_missing(&$page){
   return;
   }
 
+function page_desc($page){
+	global $pages_dir;
+	if(!$page||!@$page['name'])return NULL;
+	if(!safe_fname(@$page['name']))return NULL;
+  if(!$fdat=@file($pages_dir.$page['name']."_desc.txt"))return "";
+  $anna=implode($fdat);
+  return $anna;
+  }
+
 function new_page_struct($name,$rows,$cols){
-	echo "($name,$rows,$cols)";
 	if(!safe_fname($name))return NULL;
 	if($rows<1||$cols<1||$rows>50||$cols>50)return NULL;
   $elsa=array();
@@ -59,8 +67,12 @@ function page_struct_gen_savefile($page){
 function page_save_struct($page){
 	global $pages_dir;
   $fname=$pages_dir.$page['name'].".txt";
-  if(!$struct_dat=page_struct_gen_savefile($page))return NULL;;
+  if(!$struct_dat=page_struct_gen_savefile($page))return NULL;
   file_dump($fname,$struct_dat);
+  //ar_dump($page);
+  if(!@$page['desc'])return;
+  $fname=$pages_dir.$page['name']."_desc.txt";
+  file_dump($fname,$page['desc']);
   return;
   }
 
@@ -77,6 +89,7 @@ function load_page_struct($pname){
   $page['row_count']=$hline[0];
   $page['col_count']=$hline[1];
   $page['rows']=array();
+  $page['desc']=page_desc($page);
   $fdat[0]=NULL;
 
   $row=-1;
