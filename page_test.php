@@ -56,6 +56,13 @@ if($page){
       $cell_vars['name']=$cell_split[0];
       $cell_vars['row']=$cell_split[1];
       $cell_vars['col']=$cell_split[2];
+      $cell_desc=html_postget("celldesc_up");
+
+      echo "((cell desc : $cell_desc))";
+      if($cell_desc){
+        echo "(($cell_edit : $cell_desc))";
+        save_cell_desc($cell_edit,$cell_desc);
+        }
 
       $row_op=html_postget("row");
       switch($row_op){

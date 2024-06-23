@@ -1,0 +1,5 @@
+ int subcup( inv a28 _10 inv 3 _10 inv 2 _10 inv 1 _10 0 _10 1 _10 2 _10 3 _10 b35  _10 h>b123 _10 h>b5af _10 h>b7342  )
+
+rnum subcup( h>b1/2 _10 h>b1/3 _10 h>b2/7 _10 h>b11/34 _10 h>bd3/12 _10 h>b225/fa _10 h>b1.4 _10 h>b2a.b5 ) _10 rnum subcup(int)
+
+var subcup( v1 _10 v2 _10 v3 _10 v4 _10 v5 _10 v6 _10 v7 _10 v8 _10 v9 _10 v10 _10 v11 _10 v12 _10 v13 _10 v14 _10 v15 _10  )

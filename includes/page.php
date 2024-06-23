@@ -27,6 +27,7 @@ function page_desc($page){
   return $anna;
   }
 
+
 function new_page_struct($name,$rows,$cols){
 	if(!safe_fname($name))return NULL;
 	if($rows<1||$cols<1||$rows>50||$cols>50)return NULL;
@@ -134,6 +135,7 @@ function render_page_edit($page,$edit_link=NULL,$cell_edit=NULL,$border=1,$paddi
 
       $html.="<td$rcspan>";
       if($edit_link){
+
         $html.="<a href=$edit_link$cell_name><font size=1 color=blue>edit cell</font></a><br>";
         $html.="rowspan<a href=$edit_link$cell_name&row=p><font size=1 color=blue>++</font></a> <a href=$edit_link$cell_name&row=m><font size=1 color=blue>--</font></a> ($rowspan)<br>";
         $html.="colspan<a href=$edit_link$cell_name&col=p><font size=1 color=blue>++</font></a> <a href=$edit_link$cell_name&col=m><font size=1 color=blue>--</font></a> ($colspan)<br>";
@@ -150,8 +152,9 @@ function render_page_edit($page,$edit_link=NULL,$cell_edit=NULL,$border=1,$paddi
       $html.=multi_line_render($cell_dat);
       if($cell_edit==$cell_name){
         $html.="<form action=$edit_link$cell_name&up=1 method=post>";
-        $html.="<textarea name=cell_content rows=10 cols=40>$cell_dat</textarea>";
-        $html.="<input type=submit>";        
+        $html.="Cell content<hr><textarea name=cell_content rows=10 cols=40>$cell_dat</textarea><hr><hr>";
+      	$html.="Cell description<hr><textarea name=celldesc_up rows=5 cols=40>".load_cell_desc($cell_name)."</textarea>";
+        $html.="<input type=submit value=\"Update cell\">";        
         $html.="</form>";
         }
 
@@ -171,6 +174,27 @@ function page_cell_update($cell_name,$cell_content){
   $fname=$pages_cells_dir.$cell_name.".txt";
   file_dump($fname,$cell_content);
 	return;
+  }
+
+
+function load_cell_desc($cell){
+	global $pages_cells_dir;
+	if(!$cell)return NULL;
+  if(!$fdat=@file($pages_cells_dir.$cell."_desc.txt"))return "";
+  $anna=implode($fdat);
+  return $anna;
+  }
+
+
+function save_cell_desc($cell,$desc){
+	echo "!!(($cell,$desc))!";
+	global $pages_cells_dir;
+	//if(!safe_fname(@$cell))return NULL;
+  if(!$desc)return NULL;
+	echo "!!((aaa))!";
+  $fname=$pages_cells_dir.$cell."_desc.txt";
+  file_dump($fname,$desc);
+  return;
   }
 
 ?>

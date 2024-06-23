@@ -11,4 +11,21 @@ round,round,15.8
 mod,mod,15.8
 
 
+
 2dround,2dround,15.8
+
+
+
+ten,10,13.4
+tene,10e,14.8
+tenth,01,13.4
+tenthe,01e,14.8
+
+hun,100,21.2
+hune,100e,24.4
+hunth,001,21.2
+hunthe,001e,24.4
+
+int,int,7
+inum,inum,7
+rnum,rnum,14

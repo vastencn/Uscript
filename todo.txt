@@ -11,23 +11,31 @@
 *the add ability to add 2 extra params to interact, same style (2give 2get,)
 * --added input x gives a1 y recievs a2, x gets b1, y sends b2 "rinteract(b1 from b2, a1 into a2 )"
 
-!!PAGE 1!!!!
-	-variables should be shifted down in the def order
-			they are not as critical in first layers, and they propabbly just distract from laying critical layers
-			they are better addeed later when the idea of variables can be better difined
-			cvurrently they are estalished before there is even greater/less than, not equal to, etc.. so its hard to give enough examples showing clearlywhat a variable is
-			the only thing available at the current stage is really m"x op constant = constant" = "x = constant"
+*!!PAGE 1!!!!
+
+*	-variables should be shifted down in the def order
+*			they are not as critical in first layers, and they propabbly just distract from laying critical layers
+*			they are better addeed later when the idea of variables can be better difined
+*			cvurrently they are estalished before there is even greater/less than, not equal to, etc.. so its hard to give enough examples showing clearlywhat a variable is
+*			the only thing available at the current stage is really m"x op constant = constant" = "x = constant"
 
 
 *!!!!!
 *scinote shortcut
 *!!!!!
 
+
+<-------- current top, everything above just artifacts of finished stuff
+
 Page word lists
 	-saved in a global files, word->page records
 		list types (defined, used in defintion, etc..)
 		so that a page defintion can found (as opposed to just the word defintion which is a spearte thing.. page deidfntions are language self deinfing style, word defs are a refernce doc with individual word text defintion for human rteaders/learning nthe language)
-
+  -- each page should have 3 categories
+  		words defined roughly (sometimes I consider it "good enough" until later calrification is needed)
+  		words fully defined
+  		words not defined here but used in these defintions
+  -- each page should also have an aggregate list of all words defined previously, sorted by word and sorted by page
 
 vertical subcup... flexible like basic brak with image option,so it can become things like prob(x) in a nice neat single symbol style
 eg._S_
@@ -38,7 +46,9 @@ Page designer
 		-http://127.0.0.1/uscript/page_test.php?page=page1ops1&page_edit=1&cell_edit=page1ops1_0_0
 				-allow embeding of a def (this does mean a def could change and deform a page layout, maybe add button to extract and inject def markup text then delete ref)
 		- click on cell, break out into inpect edit view embeded above the page
-		-pages and cells need text summary
+		*-pages and cells need text summary
+
+		
 twostak, vertical defmap
 substract and addition are sub types of emit and absorb
 

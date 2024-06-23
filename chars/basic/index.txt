@@ -51,7 +51,6 @@ exp,exp,18
 root,root,17
 log,log,15.8
 var,var,15
-int,int,7
 frac,frac,11
 infinity,infinity,21
 inf,inf,15.3
@@ -190,3 +189,6 @@ tm_ep,tm_ep,18
 tm_em,tm_em,18
 tp_ep,tm_ep,18
 tp_em,tm_em,18
+
+
+int,int,7

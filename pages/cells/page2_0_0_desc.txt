@@ -1,0 +1,2 @@
+ negative numbers introduced via the 4 basic math ops
+they use the "inv" symbol
