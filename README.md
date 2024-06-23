@@ -5,6 +5,8 @@
 
 if you want to check it out...
 
+page_test.php - page building tool, where I'm building the new Uscript and developing the tool to layout pages with info and descriptiong of the language establishing steps and process
+
 vocab.php will list words
 
 inspectedit_test.php allows you to input text using the vocab and see it rendered and explore the existing definitions (alot of vocab and braks don't have defs yet)
