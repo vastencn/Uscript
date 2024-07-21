@@ -77,6 +77,13 @@ function page_save_struct($page){
   return;
   }
 
+function load_page_word_list($fname){
+	global $pages_words_dir;
+	$fpath=$pages_words_dir.$fname;
+  echo "((Loading page word list $fpath))";
+  return NULL;
+  }
+
 
 function load_page_struct($pname){
 	global $pages_dir;
@@ -107,6 +114,8 @@ function load_page_struct($pname){
     	$col++;
       }
     }
+
+  $wlist=load_page_word_list($pname."_fully.txt");
 
   return $page;
   }

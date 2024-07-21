@@ -27,6 +27,8 @@
 
 <-------- current top, everything above just artifacts of finished stuff
 
+bin num string leading zeros.. delete? option to turn off?
+
 Page word lists
 	-saved in a global files, word->page records
 		list types (defined, used in defintion, etc..)

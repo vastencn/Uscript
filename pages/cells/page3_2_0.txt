@@ -1,0 +1,2 @@
+eval(_1 true _1) = true _15 eval(_1 false _1) = false _15 eval(1) = true _15 eval(0) = false _15 eval(inv 1) = true _15 eval( 1 = 1 ) = true _15 eval( 1 = 0 ) = false
+

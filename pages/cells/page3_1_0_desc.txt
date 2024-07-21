@@ -1,0 +1,1 @@
+establish inversions of bools and that non-zero is true and zero is false

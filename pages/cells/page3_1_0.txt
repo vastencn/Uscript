@@ -1,0 +1,1 @@
+inv true = false _20 inv false = true _20 true and 5 = true _20 7 or 0 = true _20 true xor h>b0.1 = false _20 true and inv 1 = true _10

@@ -1,0 +1,2 @@
+ibbools
+true and false = false _20 true or false = true _20 true or true = true _20 false or false = false _20 true xor true = false _20 false truefalse false = false _20 true truefalse false = true _10

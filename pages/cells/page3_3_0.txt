@@ -1,0 +1,1 @@
+evalneg(true) = false _15 evalneg(false) = true _15 evalneg(1) = inv eval(1) _15 

@@ -93,7 +93,10 @@ if($page){
 <form action=<?php echo $_SERVER['PHP_SELF'];?>?update=1&page=<?php echo $page_name;?> method=post>
   rows: <input type=text name=rows size=4 value=<?php echo $page['row_count'];?>><br>
   cols: <input type=text name=cols size=4 value=<?php echo $page['col_count'];?>><br>
-  desc: <textarea name=desc rows=6 cols=40><?php echo $page['desc'];?></textarea>
+  desc: <textarea name=desc rows=6 cols=40><?php echo @$page['desc'];?></textarea><br>
+  Fully defined: <textarea name=fully rows=6 cols=20><?php echo @$page['fully'];?></textarea><br>
+  Rougly defined: <textarea name=roughly rows=6 cols=20><?php echo @$page['roughly'];?></textarea><br>
+  Used, Not defined here: <textarea name=used rows=6 cols=20><?php echo @$page['used'];?></textarea>
   <input type=submit value="update page table"></form>
 
     <?php

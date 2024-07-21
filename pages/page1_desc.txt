@@ -1,1 +1,4 @@
-fdsfdsfdsffdsfdsfsd
+some intro vague conceptuals like arrow and subset, time/entropy, dimensions
+
+
+numbers(hex, bin-string,tens,fractions),+-/*,exp,root,log,scinote

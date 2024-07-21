@@ -7,7 +7,8 @@ will probably need to add a height param later
 
 
 //rounding/modulo
-round,round,15.8
+floor,floor,15.8
+round,round,16.3
 mod,mod,15.8
 
 
