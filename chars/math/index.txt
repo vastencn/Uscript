@@ -30,3 +30,7 @@ hunthe,001e,24.4
 int,int,7
 inum,inum,7
 rnum,rnum,14
+
+nan,nan,6
+nan0,nan0,6.2
+nanneg,nanneg,6.2

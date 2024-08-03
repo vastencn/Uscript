@@ -1,0 +1,1 @@
+ips_multivar1a sub ( v3 / v2 = 2 ) sub ( | v1 = 2 \n v2 = 4 \n v3 = 8 | ) subcup ( ips_multivarstate )

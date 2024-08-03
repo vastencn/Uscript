@@ -3,6 +3,8 @@ defs
   space time state
    spacetimes 
  math
+  variables
+   multivar
   basicmath
    fourops
  geometry
@@ -36,3 +38,4 @@ defs
     leptons
     quarks
  numsvars
+format

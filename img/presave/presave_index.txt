@@ -53,3 +53,9 @@ fourops,pmtdops2
 numsvars,intvars
 numsvars,intsbins
 numsvars,binsfracs
+multivar,multivar1
+multivar,multivar1a
+multivar,multivar1set
+multivar,multivarinit
+multivar,multivarstate
+format,linecont1

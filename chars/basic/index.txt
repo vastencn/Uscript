@@ -4,6 +4,10 @@ values are "spelling" "svg filename" and "width in px"
 we are assuming all chars speced to height 18-20px
 will probably need to add a height param later
 
+
+//formatting
+nlcon,nlcon,18.1
+
 //radicals
 wave,wave,6.8
 

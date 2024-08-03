@@ -3,4 +3,4 @@
  v1 s[2] = 5 \n/n
  v1 s[3] = c |) _20  /n
 ( |v1 = ( [6][5][c] ) \n v2 = v1 s[1] + v1 s[2]| ) /n
-subcup( v2 = b )
+subcup( v2 = 6 + 5 )

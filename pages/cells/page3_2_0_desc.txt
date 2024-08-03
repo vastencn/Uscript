@@ -1,1 +1,3 @@
 Establish the first properties of the eval braket. The eval bracket reduces to a single boolean return, false values are false, non-false are true
+
+negative-eval brak establish and inverted eval brak. true in math is 1 false is 0

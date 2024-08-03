@@ -24,8 +24,19 @@
 *scinote shortcut
 *!!!!!
 
+<------------------- decided not to do yet
+
+
+### no.. not adding this. at leats not yet. function to extract sign -1,+1
+
+
+///
+
 
 <-------- current top, everything above just artifacts of finished stuff
+
+overide for brak name, current oiverrides dont work on brak.. i think
+
 
 bin num string leading zeros.. delete? option to turn off?
 

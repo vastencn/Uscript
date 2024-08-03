@@ -9,4 +9,6 @@
 /,divide
 .,dot
 ^,exp
-
+abs,absolute
+!=,notequal
+!ev,evalneg

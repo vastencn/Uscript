@@ -1,0 +1,1 @@
+this example shows if conditionals, variables and operations in unison and demonstrates that operations are applied sequentially top to bottom

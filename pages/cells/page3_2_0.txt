@@ -1,2 +1,4 @@
-eval(_1 true _1) = true _15 eval(_1 false _1) = false _15 eval(1) = true _15 eval(0) = false _15 eval(inv 1) = true _15 eval( 1 = 1 ) = true _15 eval( 1 = 0 ) = false
+eval(_1 true _1) = true _15 eval(_1 false _1) = false _15 eval(1) = true _15 eval(0) = false _15 eval(inv 1) = true _15 eval( 5 = 5 ) = true _15 eval( 5 = 4 ) = false
+
+evalneg(true) = false _15 evalneg(false) = true _15 evalneg(1) = inv eval(1) _15 true * 5 = 5 _15 false * 3 = 0 _15 true + true + false = 2 
 

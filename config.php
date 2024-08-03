@@ -8,6 +8,7 @@ $render_dir="C:\\wamp64\\www\\uscript\\img\\render\\";
 $presave_dir="C:\\wamp64\\www\\uscript\\img\\presave\\";
 $pages_dir="C:\\wamp64\\www\\uscript\\pages\\";
 $pages_cells_dir="C:\\wamp64\\www\\uscript\\pages\\cells\\";
+$pages_words_dir="C:\\wamp64\\www\\uscript\\pages\\words\\";
 $dslash="\\";
 
 

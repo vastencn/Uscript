@@ -1,0 +1,2 @@
+abs v1 = (v1 ^ 2) root 2  _15 abs 1 = 1 _10 abs (inv 1) = 1 _10 abs inv v1 = v1 _10
+eval ( v1 absequal v2  ) = eval( abs v1 = abs v2 ) _10 1 absequal inv 1 _15 eval ( 2 absequal (2 - 4)  ) = true _15 eval (3 absequal 4 ) = false

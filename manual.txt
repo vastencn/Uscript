@@ -45,6 +45,6 @@ convert (a into b retained c consumed d expelled e into f)
 
   causal chars are in temporal folder, causal relationships imply a temporal nature
 
-  I think all causal relationships will need to be cause on left, effect bon right
+  I think all causal relationships will need to be cause on left, effect on right
   unless time/entropy axis is used to define a new stype of symbol that does not portray entropy axis
   perhaps causailty should not be linked to entropy, 
