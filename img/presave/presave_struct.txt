@@ -16,6 +16,8 @@ defs
    cartesian
  procedural
   execution
+   exebrak
+    execlines
    sequence
     seq example 1
    loops

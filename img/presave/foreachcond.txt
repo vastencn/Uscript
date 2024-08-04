@@ -1,1 +1,1 @@
-eval(v4 lt count(v1))
+evalneg(v4 gt count(v1))

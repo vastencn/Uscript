@@ -37,6 +37,12 @@
 
 overide for brak name, current oiverrides dont work on brak.. i think
 
+exec brak dots too small
+
+function deinftion xbrak() = exe()
+  -ability to define arbitrary brak as an execution brak, incoming vars as array elements, bvecome v1, v2 ,v3, etc... respecitvely
+
+define counting non-array as=1, sum and avg = value, 
 
 bin num string leading zeros.. delete? option to turn off?
 

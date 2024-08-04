@@ -1,1 +1,1 @@
-foreach(v1 as v2, v3) = (ips_foreachdef)
+foreach(v1 as v2, v3 <: v3 + 1) = (ips_foreachdef)
