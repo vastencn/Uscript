@@ -60,3 +60,7 @@ multivar,multivarinit
 multivar,multivarstate
 format,linecont1
 exebrak,exebrakeg1
+execlines,exebrakeg2
+execlines,ebeg2a
+execlines,ebeg2b
+execlines,ebeg2c
