@@ -7,3 +7,9 @@ no bedmas, just left to right, except for scinote
 could add 2d drawing style like upper exp, division stacks, root sign, etc.. not getting into that stuff now.. strictly linear bracketed for now 
 
 will establish ints, rationals, and later irrationals.. probably stop there for 1d numbers to start, can use clauses to establish subsets of those when needed, or establish a symbol later on if actually necessary or needed for convenience
+
+*show*
+
+inv :: negative numbers
+floor mod round :: floor mod round
+( ( _15 v_20 ) ( _15 v_20 )) :: braks and op order (left to right. no priority based on operations type)

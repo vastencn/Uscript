@@ -1,1 +1,2 @@
-ips_foreachcond2
+ 5 + 
+ nlcon 1 = 5  

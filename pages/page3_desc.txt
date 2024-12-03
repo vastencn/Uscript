@@ -1,3 +1,8 @@
 Procedural basics
 
 booleans and gates
+
+*show*
+true false :: true false,and or xor :: bool ops (and/or/xor/etc..)
+eval( _10 v_24 ) :: eval, evalneg( _10 v_24 ) :: evalneg, inv true = false :: invert bool
+_1 :: in math like +/-/*/etc..  true=1 false=0

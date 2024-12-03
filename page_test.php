@@ -91,12 +91,42 @@ if($page){
     //$page['rows'][1]=$trow;
     ?>
 <form action=<?php echo $_SERVER['PHP_SELF'];?>?update=1&page=<?php echo $page_name;?> method=post>
+  <table border=0>
+    <tr valign=top>
+      <td>
   rows: <input type=text name=rows size=4 value=<?php echo $page['row_count'];?>><br>
   cols: <input type=text name=cols size=4 value=<?php echo $page['col_count'];?>><br>
   desc: <textarea name=desc rows=6 cols=40><?php echo @$page['desc'];?></textarea><br>
   Fully defined: <textarea name=fully rows=6 cols=20><?php echo @$page['fully'];?></textarea><br>
   Rougly defined: <textarea name=roughly rows=6 cols=20><?php echo @$page['roughly'];?></textarea><br>
   Used, Not defined here: <textarea name=used rows=6 cols=20><?php echo @$page['used'];?></textarea>
+ </td>
+  <td>
+    <?php
+
+    $showar=explode("*show*",@$page['desc']);
+    if(count($showar)>1){
+      $sar_lines=explode("\n",$showar[1]);
+      foreach($sar_lines as $tline){
+        $tln=trim($tline);
+        if(strlen($tln)>0){
+          $ln_els=explode(",",$tln);
+          echo "<table border=1 bordercolor=black bgcolor=black cellpadding=4s><tr>";
+          foreach($ln_els as $tel){
+            $tel=trim($tel);
+            $elar=explode(" :: ",$tel);
+            echo "<td bgcolor=white>".render_line($elar[0])."  ".@$elar[1]."</td>";
+            }
+          echo "</tr></table><br>";
+          }
+        }
+
+      }
+
+    ?>
+  </td>
+ </tr>
+</table>
   <input type=submit value="update page table"></form>
 
     <?php

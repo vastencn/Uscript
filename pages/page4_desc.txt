@@ -3,3 +3,10 @@ next do approx equal to!
 introducing real numbers, fraction and variables as categories of "numbers"
 
 variables, or "wave-numbers" are like using a,b,c,...x,y,z as variables, except that that are wave-1, wave-2, wave-3, etc..
+
+*show*
+int frac var :: int frac and var types
+wave :: wave/undefined/uncertain how vars work
+
+absolute :: absolute, absequal :: absolute equal, != :: !=
+gt lt :: > < how much, not just bool

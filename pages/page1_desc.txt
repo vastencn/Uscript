@@ -1,4 +1,12 @@
 some intro vague conceptuals like arrow and subset, time/entropy, dimensions
 
 
-numbers(hex, bin-string,tens,fractions),+-/*,exp,root,log,scinote
+numbers(hex, bin-string,tens,fractions),+-/*,exp,root,log
+
+
+*show*
+1dim 2dim 3dim 4dim :: dims , 0 1 2 :: ... numbers
+b>b11/101 b>b1/10 :: fractions, sci-5 sci+11 :: sci-note
+ten hun thou :: ten hun thou
+= :: =, + - * / :: + - * /, exp root log :: exp root log
+sub ( _14 v_20 ) :: sub()

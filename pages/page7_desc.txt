@@ -1,0 +1,1 @@
+define line connector. It allows be linked to be an extension of the previous, essentially saying .ignore previous carriage return.
