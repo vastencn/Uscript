@@ -1,2 +1,9 @@
 procedural intro
 variable setting, if conditionals, sequential operations
+
+*show*
+:> <: :: varset  :> <:
+if( _20 v_25 .. _10 v_25  ) :: if( ){ }
+ifn( _20 v_25 .. _10 v_25  ) :: ifn( ){ }
+iff( _20 v_25 .. _10 v_25  ) :: iff( ){ }
+iffn( _20 v_25 .. _10 v_25  ) :: iffn( ){ }

@@ -1,1 +1,6 @@
-define line connector. It allows be linked to be an extension of the previous, essentially saying .ignore previous carriage return.
+define line connector. It allows be linked to be an extension of the previous, essentially saying ignore previous carriage return.
+
+while loop definition
+*show*
+nlcon :: nlcon connect to preceding line
+while( . . . .. _5 . . . )

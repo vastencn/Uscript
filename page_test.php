@@ -115,7 +115,7 @@ if($page){
           foreach($ln_els as $tel){
             $tel=trim($tel);
             $elar=explode(" :: ",$tel);
-            echo "<td bgcolor=white>".render_line($elar[0])."  ".@$elar[1]."</td>";
+            echo "<td bgcolor=white>".render_line(str_replace("..",",",$elar[0]))."  ".@$elar[1]."</td>";
             }
           echo "</tr></table><br>";
           }

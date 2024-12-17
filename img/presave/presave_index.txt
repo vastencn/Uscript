@@ -64,3 +64,10 @@ execlines,exebrakeg2
 execlines,ebeg2a
 execlines,ebeg2b
 execlines,ebeg2c
+array subsets,arraysubset
+array subsets,arraysubseteg1
+array subsets,arraysubsetdef1
+array subsets,arraysubsetdefif1
+array subsets,arraysubsetdefifcond1
+array combine,arraycombine1
+array combine,arraycombine2

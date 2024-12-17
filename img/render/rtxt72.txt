@@ -1,1 +1,3 @@
-ips_foreachcond
+ v1 = 5 
+#
+# v1 = 

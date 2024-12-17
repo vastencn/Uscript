@@ -29,6 +29,8 @@ defs
   arrays
    array structure
    array ops
+   array subsets
+   array combine
  physics
   processes
    conversion

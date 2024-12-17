@@ -1,0 +1,5 @@
+foreach and execution brak
+
+*show*
+foreach( . . . .. . . .) ::  foreach( ...  ) { ... }
+exe( . . . ) :: exe( ... ), return :: return

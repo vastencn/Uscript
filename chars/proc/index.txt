@@ -9,6 +9,9 @@ will probably need to add a height param later
 return,return,14.5
 vsetleft,vsetleft,18
 vsetright,vsetright,18
+dotp,dotp,14.3
+ddotp,ddotp,24.1
+brakp,brakp,16
 
 EOF
 

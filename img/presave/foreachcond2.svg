@@ -51,12 +51,19 @@
                     <g
                        id="g10364-8-3"
                        transform="matrix(1,0,0,-1,-48.161211,-5051.0491)" />
-                    <path
-                       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                       d="m 555.56341,-3178.2013 5.47656,0.023 -2.79195,3.831 3.90814,-0.034 2.91021,9.3701 2.92613,-9.2443 4.43788,0.022"
-                       id="path4176-9-6-97-2-7-8"
-                       inkscape:connector-curvature="0"
-                       sodipodi:nodetypes="ccccccc" />
+                    <g
+                       transform="translate(-27.1658,1.5491)"
+                       id="g14427">
+                      <g
+                         id="g10367-880-7"
+                         transform="matrix(1,0,0,-1,-48.161211,-5051.0491)" />
+                      <path
+                         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                         d="m 582.78542,-3179.6523 5.50361,-0.01 -3.06677,3.5918 4.10378,-0.064 2.14666,9.7122 3.82318,-8.1794 3.40348,10.5293"
+                         id="path4176-9-6-97-2-7-8-6-0"
+                         inkscape:connector-curvature="0"
+                         sodipodi:nodetypes="ccccccc" />
+                    </g>
                   </g>
                 </g>
               </g>

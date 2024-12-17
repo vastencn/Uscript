@@ -1,1 +1,9 @@
 arrays
+
+*show*
+v1 = ( [1][2][3] . . . ) :: array def ([][][]...)
+v1 s[1] :: array ref v1 s[1]
+([v_20][v_20][v_20]) + 1 :: ops across all elements of array
+sum( _20 v_25 ) :: sum(), count( _20 v_25 ) :: count(), avg( _20 v_25 ) :: avg()
+prod([1][2][3]) :: prod([1][2][3])
+expo([1][2][3]) :: expo([1][2][3])

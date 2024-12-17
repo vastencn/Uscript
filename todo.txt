@@ -29,6 +29,9 @@
 
 ### no.. not adding this. at leats not yet. function to extract sign -1,+1
 
+v[] = xxx, or v[0]=xx (arays in uscript start at element 1, so adding something to [0] would be prepending)
+  not adding for not, can just do v= "v append x" or "x append v" (just like i havent added ++ yet, onmstead its like python v=v+1)
+
 
 ///
 

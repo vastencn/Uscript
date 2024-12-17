@@ -2,6 +2,9 @@
 2-d,2dim
 3-d,3dim
 4-d,4dim
+.++,brakp
+.+,dotp
+..+,ddotp
 +,plus
 =,equal
 -,minus

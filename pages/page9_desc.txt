@@ -1,0 +1,5 @@
+array combine
+array append
+array subset
+
+**could do so many more array ops, but drawing the line for now
