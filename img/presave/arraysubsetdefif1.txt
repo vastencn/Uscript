@@ -1,1 +1,1 @@
- if( ips_arraysubsetdefifcond1 , aaa)
+ if( ips_arraysubsetdefifcond1 , v1 .+ v5 )

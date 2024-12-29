@@ -1,2 +1,1 @@
- 5 + 1 
- nlcon = 5 
+arel[ v2 ] arel[ v5 ]

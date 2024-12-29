@@ -71,3 +71,14 @@ array subsets,arraysubsetdefif1
 array subsets,arraysubsetdefifcond1
 array combine,arraycombine1
 array combine,arraycombine2
+array subsets,arraysubsetdefifop1
+array subsets,arraysubseteg2
+array subsets,arraysubsetdef2
+array subsets,arraysubsetdef3
+array subsets,arraysubsetdefif2
+array subsets,arraysubsetdefif3
+array subsets,arraysubsetdefifcond2
+array subsets,arraysubsetdefifcond3
+array subsets,arraysubsetdefifop2
+array subsets,arraysubsetdefifop3
+array subsets,arraysubseteg3

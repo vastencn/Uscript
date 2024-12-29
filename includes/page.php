@@ -80,7 +80,7 @@ function page_save_struct($page){
 function load_page_word_list($fname){
 	global $pages_words_dir;
 	$fpath=$pages_words_dir.$fname;
-  echo "((Loading page word list $fpath))";
+  //echo "((Loading page word list $fpath))";
   return NULL;
   }
 
@@ -204,6 +204,30 @@ function save_cell_desc($cell,$desc){
   $fname=$pages_cells_dir.$cell."_desc.txt";
   file_dump($fname,$desc);
   return;
+  }
+
+  function page_defs($pname){
+
+   if($pname)$page=load_page_struct($pname);
+   if(!@$page['desc'])return NULL;
+
+    $showar=explode("*show*",@$page['desc']);
+    if(count($showar)>1){
+      $sar_lines=explode("\n",$showar[1]);
+      foreach($sar_lines as $tline){
+        $tln=trim($tline);
+        if(strlen($tln)>0){
+          $ln_els=explode(",",$tln);
+          echo "<table border=1 bordercolor=black bgcolor=black cellpadding=4s><tr>";
+          foreach($ln_els as $tel){
+            $tel=trim($tel);
+            $elar=explode(" :: ",$tel);
+            echo "<td bgcolor=white>".render_line(str_replace("..",",",$elar[0]))."  ".@$elar[1]."</td>";
+            }
+          echo "</tr></table><br>";
+          }
+        }
+      }
   }
 
 ?>

@@ -103,7 +103,24 @@ if($page){
  </td>
   <td>
     <?php
+    $pnum=explode("page",$page_name);
+    if(count($pnum)>1&&is_numeric($pnum[1])){
+      echo "<a href=".$_SERVER['PHP_SELF']."?show_prev=".$pnum[1]."&page=$page_name>Show all preceeding</a>";
+      }
+    ?>
+    
+    <?php
+    $prev_pages=html_postget("show_prev");
+    if($prev_pages){
+      for($i=1;$i<$prev_pages;$i++){
+        page_defs("page".$i);
+        echo "<hr>";
+        }
 
+    }
+
+    page_defs($page_name);
+/*
     $showar=explode("*show*",@$page['desc']);
     if(count($showar)>1){
       $sar_lines=explode("\n",$showar[1]);
@@ -122,7 +139,7 @@ if($page){
         }
 
       }
-
+*/
     ?>
   </td>
  </tr>

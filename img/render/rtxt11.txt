@@ -1,1 +1,1 @@
-v5 s  v2   = v3 
+arel[ v2 ] arel[ v5 ]

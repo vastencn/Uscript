@@ -1,7 +1,7 @@
 <svg
-   width="82"
-   height="26"
-   viewBox="0 0 82 26"
+   width="47"
+   height="20"
+   viewBox="0 0 47 20"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -13,7 +13,7 @@
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
-     transform="translate(0,13)"><g transform="translate(0,0)"><g
+     transform="translate(0,10)"><g transform="translate(0,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -72,46 +72,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(21,0)"><line x1="0" y1="0" x2="5" y2="0" style="stroke:black;stroke-width:2" /><g transform="translate(9,0)"><g transform="translate(0,0)"><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-291.70832)">
-    <g
-       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
-       id="g10351"
-       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
-      <g
-         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
-         id="g10351-0"
-         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
-        <g
-           id="g2601"
-           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
-           style="stroke-width:2.00479">
-          <g
-             transform="matrix(0.91610322,0,0,-0.9078513,101.99688,-4745.4106)"
-             id="g14246"
-             style="stroke-width:2.17655;stroke-miterlimit:4;stroke-dasharray:none">
-            <g
-               transform="matrix(1.2229742,0,0,1.2341392,-146.3597,738.26482)"
-               id="g14253">
-              <g
-                 id="g10356-8-4"
-                 transform="matrix(1,0,0,-1,-52.774861,-5050.7991)">
-                <path
-                   sodipodi:nodetypes="cccccc"
-                   inkscape:connector-curvature="0"
-                   id="path4186-6-7-94-7-8-3-4-9-6-9-9-8-7-3-2-2-8"
-                   d="m 541.70887,-1878.6112 -2.8241,-9.5074 -2.39934,9.0703 -7.74208,-0.055 3.24445,3.7447 -6.30397,-0.038"
-                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g></g></g><polyline points="5,-12 5,12 30,12 30,-12 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="5,12 5,-12 30,-12 30,12 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(56,0)"><g transform="translate(0,0)"><g
+  </g></g><g transform="translate(21,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -220,7 +181,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(8,0)"><g
+  </g></g><g transform="translate(29,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -252,12 +213,19 @@
                    id="g10359-10-8"
                    transform="matrix(1,0,0,-1,-52.733429,-5050.882)"
                    style="stroke-width:1.77165;stroke-miterlimit:4;stroke-dasharray:none">
-                  <path
-                     sodipodi:nodetypes="cccccc"
-                     inkscape:connector-curvature="0"
-                     id="path4186-6-7-94-7-8-3-4-0-7-9-3-9-6-6-0-7"
-                     d="m 581.88824,-1888.4928 h -6.33999 l 0.0776,10.9888 -7.20895,0.039 3.43922,4.0736 -6.84189,-0.01"
-                     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+                  <g
+                     transform="matrix(0.99999998,0,0,-0.99999997,9.4533754,-5051.5094)"
+                     id="g14371">
+                    <g
+                       id="g10364-8-3"
+                       transform="matrix(1,0,0,-1,-48.161211,-5051.0491)" />
+                    <path
+                       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                       d="m 555.56341,-3178.2013 5.47656,0.023 -2.79195,3.831 3.90814,-0.034 2.91021,9.3701 2.92613,-9.2443 4.43788,0.022"
+                       id="path4176-9-6-97-2-7-8"
+                       inkscape:connector-curvature="0"
+                       sodipodi:nodetypes="ccccccc" />
+                  </g>
                 </g>
               </g>
             </g>
@@ -265,4 +233,4 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></svg>
+  </g></g></g></svg>

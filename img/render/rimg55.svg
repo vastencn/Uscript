@@ -1,7 +1,7 @@
 <svg
-   width="152"
-   height="32"
-   viewBox="0 0 152 32"
+   width="66"
+   height="26"
+   viewBox="0 0 66 26"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -13,19 +13,46 @@
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
-     transform="translate(0,16)"><g transform="translate(0,0)"><g transform="translate(0,-16)"><g
-     inkscape:label="Line 1"
+     transform="translate(0,13)"><g transform="translate(3,0)"><g transform="translate(4,0)"><g transform="translate(0,0)"><g
+     inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer L1"
-     transform="translate(0,16)"><g transform="translate(3,0)"><polyline points="12,-15 2,-15 2,15 12,15 " style="fill:none;stroke:black;stroke-width:2" /><circle cx="2" cy="0" r="4" stroke="black" stroke-width="0" fill="black" /><g transform="translate(6,0)"><g transform="translate(0,0)"><g transform="translate(0,-13)"><g
-     inkscape:label="Line 1"
-     inkscape:groupmode="layer"
-     id="layer L1"
-     transform="translate(0,13)"><g transform="translate(0,0)"><g transform="translate(0,-13)"><g
-     inkscape:label="Line 1"
-     inkscape:groupmode="layer"
-     id="layer L1"
-     transform="translate(0,13)"><g transform="translate(0,0)"><g
+     id="layer1"
+     transform="translate(0,-291.70832)">
+    <g
+       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
+       id="g10351"
+       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
+      <g
+         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
+         id="g10351-0"
+         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
+        <g
+           id="g2601"
+           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
+           style="stroke-width:2.00479">
+          <g
+             transform="matrix(0.91610322,0,0,-0.9078513,101.99688,-4745.4106)"
+             id="g14246"
+             style="stroke-width:2.17655;stroke-miterlimit:4;stroke-dasharray:none">
+            <g
+               transform="matrix(1.2229742,0,0,1.2341392,-146.3597,738.26482)"
+               id="g14253">
+              <g
+                 id="g10356-8-4"
+                 transform="matrix(1,0,0,-1,-52.774861,-5050.7991)">
+                <path
+                   sodipodi:nodetypes="cccccc"
+                   inkscape:connector-curvature="0"
+                   id="path4186-6-7-94-7-8-3-4-9-6-9-9-8-7-3-2-2-8"
+                   d="m 541.70887,-1878.6112 -2.8241,-9.5074 -2.39934,9.0703 -7.74208,-0.055 3.24445,3.7447 -6.30397,-0.038"
+                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g></g></g><polyline points="0,6 0,12 25,12 25,6 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="0,-6 0,-12 25,-12 25,-6 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(33,0)"></g><g transform="translate(36,0)"><g transform="translate(4,0)"><g transform="translate(0,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -84,273 +111,4 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(21,0)"><line x1="0" y1="0" x2="5" y2="0" style="stroke:black;stroke-width:2" /><g transform="translate(9,0)"><g transform="translate(0,0)"><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-291.70832)">
-    <g
-       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
-       id="g10351"
-       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
-      <g
-         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
-         id="g10351-0"
-         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
-        <g
-           id="g2601"
-           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
-           style="stroke-width:2.00479">
-          <g
-             transform="matrix(0.91610322,0,0,-0.9078513,101.99688,-4745.4106)"
-             id="g14246"
-             style="stroke-width:2.17655;stroke-miterlimit:4;stroke-dasharray:none">
-            <g
-               transform="matrix(1.2229742,0,0,1.2341392,-146.3597,738.26482)"
-               id="g14253">
-              <g
-                 id="g10356-8-4"
-                 transform="matrix(1,0,0,-1,-52.774861,-5050.7991)">
-                <path
-                   sodipodi:nodetypes="cccccc"
-                   inkscape:connector-curvature="0"
-                   id="path4186-6-7-94-7-8-3-4-9-6-9-9-8-7-3-2-2-8"
-                   d="m 541.70887,-1878.6112 -2.8241,-9.5074 -2.39934,9.0703 -7.74208,-0.055 3.24445,3.7447 -6.30397,-0.038"
-                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g></g></g><polyline points="5,-12 5,12 30,12 30,-12 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="5,12 5,-12 30,-12 30,12 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(56,0)"><g transform="translate(0,0)"><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-291.70832)">
-    <g
-       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
-       id="g10351"
-       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
-      <g
-         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
-         id="g10351-0"
-         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
-        <g
-           id="g2601"
-           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
-           style="stroke-width:2.00479">
-          <g
-             transform="matrix(0.91610322,0,0,-0.9078513,101.99688,-4745.4106)"
-             id="g14246"
-             style="stroke-width:2.17655;stroke-miterlimit:4;stroke-dasharray:none">
-            <g
-               transform="matrix(1.2229742,0,0,1.2341392,-146.3597,738.26482)"
-               id="g14253">
-              <g
-                 transform="translate(-39.3611,1.9848)"
-                 id="g14264"
-                 style="stroke-width:1.77165345;stroke-miterlimit:4;stroke-dasharray:none">
-                <g
-                   id="g10359-10-8"
-                   transform="matrix(1,0,0,-1,-52.733429,-5050.882)"
-                   style="stroke-width:1.77165;stroke-miterlimit:4;stroke-dasharray:none">
-                  <g
-                     transform="matrix(0.99999998,0,0,-0.99999997,9.4533754,-5051.5094)"
-                     id="g14371">
-                    <g
-                       id="g10364-8-3"
-                       transform="matrix(1,0,0,-1,-48.161211,-5051.0491)" />
-                    <g
-                       transform="translate(-27.1658,1.5491)"
-                       id="g14427">
-                      <g
-                         id="g10367-880-7"
-                         transform="matrix(1,0,0,-1,-48.161211,-5051.0491)" />
-                      <g
-                         transform="translate(-45.4538,2.7243)"
-                         id="g14438">
-                        <g
-                           id="g10370-7-5"
-                           transform="matrix(1,0,0,-1,-48.161211,-5051.0491)" />
-                        <g
-                           transform="translate(-30.4313,0.6037)"
-                           id="g14451">
-                          <g
-                             id="g12601"
-                             style="stroke-width:2.60548;stroke-miterlimit:4;stroke-dasharray:none"
-                             transform="matrix(0.64865161,0,0,0.71280357,230.90358,-908.85019)">
-                            <g
-                               inkscape:label="Layer 1"
-                               id="layer1-6-3-56-3-8-9"
-                               transform="matrix(1.0600542,0,0,0.96464974,1319.467,-2988.3146)"
-                               style="stroke-width:3.7892">
-                              <g
-                                 transform="matrix(5.8207122,0,0,5.8207122,-711.35689,-666.89318)"
-                                 id="g5414-3-0-2-5-3-2"
-                                 style="stroke-width:3.7892">
-                                <g
-                                   transform="matrix(0.25976069,0,0,0.25976069,12.185579,38.760697)"
-                                   id="g4442-6-1-3-9-93-5-0"
-                                   style="stroke-width:3.7892">
-                                <g
-                                   transform="rotate(180,65.802556,172.96685)"
-                                   id="g4446-6-9-0-0-1-4-6-2"
-                                   style="stroke-width:3.7892">
-                                <g
-                                   transform="translate(-1.0101525,-6.1240498)"
-                                   id="g4404-1-2-4-9-2-1-5-3"
-                                   style="stroke-width:3.7892">
-                                <circle
-                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.45432;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   id="path3355-3-8-2-7-5-9-7"
-                                   cx="-118.64533"
-                                   cy="-195.52156"
-                                   r="2.2543542"
-                                   transform="scale(-1)" />
-                                <circle
-                                   style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.45432;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   id="path3355-3-8-9-5-0-0-9-5"
-                                   cx="-118.64533"
-                                   cy="-187.50444"
-                                   r="2.2543542"
-                                   transform="scale(-1)" />
-                                </g>
-                                </g>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g></g><g transform="translate(8,0)"><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-291.70832)">
-    <g
-       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
-       id="g10351"
-       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
-      <g
-         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
-         id="g10351-0"
-         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
-        <g
-           id="g2601"
-           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
-           style="stroke-width:2.00479">
-          <g
-             transform="matrix(0.91610322,0,0,-0.9078513,101.99688,-4745.4106)"
-             id="g14246"
-             style="stroke-width:2.17655;stroke-miterlimit:4;stroke-dasharray:none">
-            <g
-               transform="matrix(1.2229742,0,0,1.2341392,-146.3597,738.26482)"
-               id="g14253">
-              <g
-                 transform="translate(-39.3611,1.9848)"
-                 id="g14264"
-                 style="stroke-width:1.77165345;stroke-miterlimit:4;stroke-dasharray:none">
-                <g
-                   id="g10359-10-8"
-                   transform="matrix(1,0,0,-1,-52.733429,-5050.882)"
-                   style="stroke-width:1.77165;stroke-miterlimit:4;stroke-dasharray:none">
-                  <path
-                     sodipodi:nodetypes="cccccc"
-                     inkscape:connector-curvature="0"
-                     id="path4186-6-7-94-7-8-3-4-0-7-9-3-9-6-6-0-7"
-                     d="m 581.88824,-1888.4928 h -6.33999 l 0.0776,10.9888 -7.20895,0.039 3.43922,4.0736 -6.84189,-0.01"
-                     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-                </g>
-              </g>
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g></g></g></g></g></g></g></g></g></g><polyline points="82,-15 92,-15 92,15 82,15 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(93,0)"><line x1="0" y1="0" x2="8" y2="0" style="stroke:black;stroke-width:2" /><polyline points="47,-12 8,-12 8,12 47,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(12,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
-     inkscape:label="Line 1"
-     inkscape:groupmode="layer"
-     id="layer L1"
-     transform="translate(0,10)"><g transform="translate(0,0)"><g transform="translate(0,0)"><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-291.70832)">
-    <g
-       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
-       id="g10351"
-       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
-      <g
-         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
-         id="g10351-0"
-         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
-        <g
-           id="g2601"
-           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
-           style="stroke-width:2.00479">
-          <g
-             id="g3084"
-             transform="matrix(1.0111221,0,0,0.99321507,-7.370096,-13.712524)"
-             style="stroke-width:2.00053">
-            <g
-               transform="matrix(0.8377975,0,0,0.82801959,-39.343581,-319.74061)"
-               id="g10367"
-               style="stroke-width:2.22033;stroke-miterlimit:4;stroke-dasharray:none">
-              <path
-                 style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.37814;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                 d="m 660.6853,-1855.5549 -4.76889,-18.4569 -5.86342,15.4575 -5.67985,-18.588"
-                 id="path4186-6-7-94-7-8-3-4-9-6-9-9-0-1-3"
-                 inkscape:connector-curvature="0"
-                 sodipodi:nodetypes="cccc" />
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g></g><g transform="translate(18,0)"><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-291.70832)">
-    <g
-       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
-       id="g10351"
-       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
-      <g
-         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
-         id="g10351-0"
-         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
-        <g
-           id="g2601"
-           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
-           style="stroke-width:2.00479">
-          <g
-             id="g3084"
-             transform="matrix(1.0111221,0,0,0.99321507,-7.370096,-13.712524)"
-             style="stroke-width:2.00053">
-            <g
-               transform="matrix(0.8377975,0,0,0.82801959,-39.343581,-319.74061)"
-               id="g10367"
-               style="stroke-width:2.22033;stroke-miterlimit:4;stroke-dasharray:none">
-              <path
-                 style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.37814;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                 d="m 660.6853,-1855.5549 -4.76889,-18.4569 -5.86342,15.4575 -5.67985,-18.588"
-                 id="path4186-6-7-94-7-8-3-4-9-6-9-9-0-1-3"
-                 inkscape:connector-curvature="0"
-                 sodipodi:nodetypes="cccc" />
-            </g>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g></g></g></g></g></g></g><circle cx="8" cy="0" r="4" stroke="black" stroke-width="0" fill="black" /></g></g><g transform="translate(152,0)"></g></g></g></g></g></svg>
+  </g></g></g><polyline points="0,6 0,12 25,12 25,6 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="0,-6 0,-12 25,-12 25,-6 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(66,0)"></g></g></svg>
