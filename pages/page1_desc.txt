@@ -1,7 +1,23 @@
 some intro vague conceptuals like arrow and subset, time/entropy, dimensions
 
+*string bin digits is all high or all low should include mark to show high/low if not clear
 
-numbers(hex, bin-string,tens,fractions),+-/*,exp,root,log
+*maybe fill in arrow triangle to add-mass to tip
+
+*sub example maybe clarify that all can be sub or any permutation
+
+
+*numbers(hex, bin-string,tens,fractions),+-/*,exp,root,log
+
+*maybe rotate number dots so they follow reading dir l-r t-b
+
+*maybe modify string numbers so that the digits around the decminal are infered form position 
+1_._1 = 11.11
+0-.-0 = 00.00
+0-\_.1= 01.11
+0-.-\_= 00.01
+0-\(dot in line)_1 = 00.11
+etc...
 
 
 *show*

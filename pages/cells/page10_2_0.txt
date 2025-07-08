@@ -1,0 +1,4 @@
+v1 = ([2][3][4]) _20 v2 = ( [a] [b] ) _20 v3 = ([1][2][3])
+
+count (v1) = 4 _20 count (v2) = 2 _20 count (v3) = 3
+popa v1 = 2 _20 count (v1) = 3 _20 popa v1 = 3 _20 count(v1) = 1 _20 popa v1 = 4 _20 count(v1) = 0

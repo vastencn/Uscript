@@ -113,6 +113,7 @@ if($page){
     $prev_pages=html_postget("show_prev");
     if($prev_pages){
       for($i=1;$i<$prev_pages;$i++){
+        echo "Page $i<br>";
         page_defs("page".$i);
         echo "<hr>";
         }

@@ -13,6 +13,9 @@ dotp,dotp,14.3
 ddotp,ddotp,24.1
 brakp,brakp,16
 
+apop,apop,24.7
+popa,popa,24.7
+
 EOF
 
 

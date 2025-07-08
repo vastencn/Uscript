@@ -1,0 +1,3 @@
+ v9 = popa v1
+ foreach( v1 as v8 ,  )
+ return 0

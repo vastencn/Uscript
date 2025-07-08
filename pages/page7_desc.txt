@@ -1,6 +1,13 @@
 define line connector. It allows be linked to be an extension of the previous, essentially saying ignore previous carriage return.
 
 while loop definition
+
+while-false is not fully defined yet
+it will mean "execute once at the end when the loop breaks. This allows both the loop and an exit condition to be draw as a single unit
+it also creates a single symbol for "wait until a condition, then do this"
+yes you can just ass code underneath a while loop. Uscript will use these in more abstract linguistic environments, so codifying these things connected units is useful
+
 *show*
 nlcon :: nlcon connect to preceding line
-while( . . . .. _5 . . . )
+while( . . . .. _5 . . . ) :: while ( ... ) { ... }
+whilef( . . . .. _5 . . . ) :: while-false loop end op

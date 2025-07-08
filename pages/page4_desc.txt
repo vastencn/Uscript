@@ -9,4 +9,4 @@ int frac var :: int frac and var types
 wave :: wave/undefined/uncertain how vars work
 
 absolute :: absolute, absequal :: absolute equal, != :: !=
-gt lt :: > < how much, not just bool
+gt lt :: > < gt/lt.by how much. not just bool

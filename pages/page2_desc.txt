@@ -8,6 +8,8 @@ could add 2d drawing style like upper exp, division stacks, root sign, etc.. not
 
 will establish ints, rationals, and later irrationals.. probably stop there for 1d numbers to start, can use clauses to establish subsets of those when needed, or establish a symbol later on if actually necessary or needed for convenience
 
+*maybe start floor round, remainder with a few examples that use simple hex number format
+
 *show*
 
 inv :: negative numbers

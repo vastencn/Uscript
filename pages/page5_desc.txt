@@ -1,6 +1,17 @@
 procedural intro
 variable setting, if conditionals, sequential operations
 
+IF evaluates the raw result of conditional
+
+IFF (if false) inverts the conditional evaluation
+yes, there is redundancy
+it is a byproduct lower level design
+
+it allows us to connect multiple outputs to a single conditional (can connect both result cases , it allows adding an else)
+
+you can also consider it as optional ways to offer different contextual emphasis
+if and iffn both do the same
+
 *show*
 :> <: :: varset  :> <:
 if( _20 v_25 .. _10 v_25  ) :: if( ){ }

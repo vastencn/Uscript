@@ -5,7 +5,6 @@
 *frame of refertnce allows units to be defined including the nuance of rframe()frame of refernce (there ar units for force, energy, etc acting "on" an rframe, vs the standard units of we use *for "acting within an rframe".. eg  a car, plane, spaceship, etc.. are things that "apply force to their rframe")
 
 *Interaction next step
-
 *add give/get(x give a to y. y gets b from x) "x | a --> b | y" get is just dir flip, <--)
 
 *the add ability to add 2 extra params to interact, same style (2give 2get,)

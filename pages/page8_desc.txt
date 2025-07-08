@@ -1,5 +1,5 @@
 foreach and execution brak
 
 *show*
-foreach( . . . .. . . .) ::  foreach( ...  ) { ... }
+foreach( . . . as . . . .. . . .) ::  foreach( ...  ) { ... }
 exe( . . . ) :: exe( ... ), return :: return

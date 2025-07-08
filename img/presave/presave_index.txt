@@ -82,3 +82,6 @@ array subsets,arraysubsetdefifcond3
 array subsets,arraysubsetdefifop2
 array subsets,arraysubsetdefifop3
 array subsets,arraysubseteg3
+array has,has1
+array allnone,arrayallnone
+array allnone,arrayallnoneloop1
