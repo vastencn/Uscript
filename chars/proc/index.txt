@@ -16,6 +16,32 @@ brakp,brakp,16
 apop,apop,24.7
 popa,popa,24.7
 
+swap,swap,22.9
+addleft,addleft,27.6
+addright,addright,27.6
+subleft,subleft,27.6
+subright,subright,27.6
+
+
+subleftaddright,subleftaddright,42.9
+addleftsubsubright,addleftsubsubright,55.1
+addleftsubmultright,addleftsubmultright,55.1
+
+moveleft,moveleft,26.1
+moveright,moveright,26.1
+
+moveintoleft,moveintoleft,36.2
+moveintoright,moveintoright,36.2
+removefromleft,removefromleft,36.2
+removefromright,removefromright,36.2
+
+addleftmoveright,addleftmoveright,32.6
+subleftmoveright,subleftmoveright,32.6
+
+
+addleftsubright,addleftsubright,55.1
+
+
 EOF
 
 

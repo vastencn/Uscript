@@ -1,5 +1,13 @@
+!!!todo 
+more examples of variable setters
+add a version of varset where there is a center braketed or bin sring. that means the the center value is applied to both sides (eg "v1 < sub : 3 : add > v2" = "sub 3 from v1 and add 3 to v2"  )
+add expression vars
+maybe add examples where more than 2 vars are involved, a center expression that can be applied in different ways to many variable (eg value 3 can applied in different ways to many different variables with many varset arrows all originating form the same central bracket each with different operators.) *not sure if i will include that in this version
+
 procedural intro
 variable setting, if conditionals, sequential operations
+
+We now have varset so we can distinguish between statements of x is equal to y and instructions of set x to be y. so we don't need to rely on bracketing and subsets to show the results of variable actions.
 
 IF evaluates the raw result of conditional
 
@@ -12,9 +20,30 @@ it allows us to connect multiple outputs to a single conditional (can connect bo
 you can also consider it as optional ways to offer different contextual emphasis
 if and iffn both do the same
 
+****
+add expression vars at end
+
 *show*
-:> <: :: varset  :> <:
-if( _20 v_25 .. _10 v_25  ) :: if( ){ }
-ifn( _20 v_25 .. _10 v_25  ) :: ifn( ){ }
-iff( _20 v_25 .. _10 v_25  ) :: iff( ){ }
-iffn( _20 v_25 .. _10 v_25  ) :: iffn( ){ }
+:> <: :: varset  :> <: , swap :: swap var values
+addleft :: add right to left , addright :: add left to right 
+subleft :: subtract right from left , subright :: subtract left from right 
+
+moveleft :: set left to right value. then zero the right value
+moveright :: set right to left value. then zero the left value
+
+moveintoleft :: Move-left. add right value into left var. then zero right var
+moveintoright :: Move-right. subtract left value from right var. then zero left var
+removefromleft :: Remove-left. subtract right value from left var. then zero right var
+removefromright :: Remove-right. move left value into right var. then zero left var
+
+
+subleftaddright :: sub right from left and add left to right. Simultaneous actions.
+addleftsubright :: sub right from left and add left to right. Simultaneous actions.
+
+addleftsubsubright :: add R to L. subtract L from R twice. simultaneous
+addleftsubmultright :: add R to L. subtract L from R. then multiply R by L. All ops use the original var values
+
+
+
+if( _20 v_25 .. _10 v_25  ) :: if( ){ } , ifn( _20 v_25 .. _10 v_25  ) :: ifn( ){ }
+iff( _20 v_25 .. _10 v_25  ) :: iff( ){ } , iffn( _20 v_25 .. _10 v_25  ) :: iffn( ){ }

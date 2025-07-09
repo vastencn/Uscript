@@ -1,1 +1,7 @@
 ips_vset
+v1 = 5 _20 v2 = 2 _20 v3 = f _20 v3 <: v1 * v2  _20 v3 = a
+eval (v3 = 8) = false _20 v3 != 8 _20 v3 = a _20 v3 <: v3 - v2 _20 v3 = 8
+
+(v1 addleft 1) = (v1 <: v1 + 1) _20 (2 addright v1 ) = (v1 + 2 :> v1)
+
+(v1 subleft 3) = (v1 <: v1 - 3) _20 (5 subright v1 ) = (v1 - 5 :> v1)

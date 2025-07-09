@@ -9,6 +9,8 @@ tolerance here means "deviation must be less than" not "deviation acceptable up 
 
 pops will serve well as the idea of "taking from" later
 
+**should probably add invert-array symbol(rotate-array)
+
 5 tolerance 2 include 3.0000001 but does not include 3 or 7
 
 all/non/etc... these benefit more form expression variables which come later
