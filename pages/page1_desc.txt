@@ -1,5 +1,7 @@
 some intro vague conceptuals like arrow and subset, time/entropy, dimensions
 
+!! considering....mirror versions of math ops that invert non-commutative ops. visually the flow from top to bottom the U is merge/combine at top, split/for at bottom( A/B the hook points at A because it will flow into the symbol and get split) (subtract needs a horizontal version) (exp. the hook points to the power, the dimensional corner show the dimensions being added... root, the fork points to the number of dimensions to fracture into... log the dimensional corner hook points at the length of dimensions the the value will fracture into )
+
 *string bin digits is all high or all low should include mark to show high/low if not clear
 
 *maybe fill in arrow triangle to add-mass to tip
@@ -11,7 +13,7 @@ some intro vague conceptuals like arrow and subset, time/entropy, dimensions
 
 *maybe rotate number dots so they follow reading dir l-r t-b
 
-*maybe modify string numbers so that the digits around the decminal are infered form position 
+*maybe modify string numbers so that the digits around the radix point are inferred form position 
 1_._1 = 11.11
 0-.-0 = 00.00
 0-\_.1= 01.11
@@ -23,6 +25,6 @@ etc...
 *show*
 1dim 2dim 3dim 4dim :: dims , 0 1 2 :: ... numbers
 b>b11/101 b>b1/10 :: fractions, sci-5 sci+11 :: sci-note
-ten hun thou :: ten hun thou
-= :: =, + - * / :: + - * /, exp root log :: exp root log
+ten hun thou :: ten hun thou , = :: =
++ - * / :: + - * /, exp2 root log :: exp root log , exp :: alt exp
 sub ( _14 v_20 ) :: sub()

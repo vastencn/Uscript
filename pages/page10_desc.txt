@@ -9,6 +9,11 @@ tolerance here means "deviation must be less than" not "deviation acceptable up 
 
 pops will serve well as the idea of "taking from" later
 
+establish that a unilateral varset operation can be evaluated and check. its value is equal to resulting new value of the variable.
+
+bool ops can be used with varset the op using the establish patterns
+might need more examples, but the patter is clear i think
+
 **should probably add invert-array symbol(rotate-array)
 
 5 tolerance 2 include 3.0000001 but does not include 3 or 7
@@ -20,3 +25,5 @@ tol :: tolerance
 has( true true true  .. _5 false ) :: ... has o , isin (false .. true true true ) :: o is in ...
 nhas( true true true  .. _5 false ) :: ... doesn't have o , nisin (false .. true true true ) :: o is not in ...
 popa :: pop first array element, apop :: pop last array element
+
+andleft :: and left. L = L and R, orleft :: or left . L = L or R 

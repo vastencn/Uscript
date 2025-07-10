@@ -51,7 +51,8 @@ plus,plus,14
 minus,minus,14
 mult,mult,14
 divide,divide,14
-exp,exp,18
+exp2,exp2,18
+exp,exp,14
 root,root,17
 log,log,15.8
 var,var,15

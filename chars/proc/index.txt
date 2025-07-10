@@ -39,8 +39,12 @@ addleftmoveright,addleftmoveright,32.6
 subleftmoveright,subleftmoveright,32.6
 
 
-addleftsubright,addleftsubright,55.1
+addleftmultsubright,addleftmultsubright,55.1
+expdivaddleftmultsubright,expdivaddleftmultsubright,78.9
 
+
+orleft,orleft,32.2
+andleft,andleft,32.2
 
 EOF
 

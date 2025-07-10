@@ -4,6 +4,8 @@ add a version of varset where there is a center braketed or bin sring. that mean
 add expression vars
 maybe add examples where more than 2 vars are involved, a center expression that can be applied in different ways to many variable (eg value 3 can applied in different ways to many different variables with many varset arrows all originating form the same central bracket each with different operators.) *not sure if i will include that in this version
 
+!!! should establish that ops run right to left on the left side of the ':' so values 'flow through' the op-line
+
 procedural intro
 variable setting, if conditionals, sequential operations
 
@@ -41,7 +43,9 @@ subleftaddright :: sub right from left and add left to right. Simultaneous actio
 addleftsubright :: sub right from left and add left to right. Simultaneous actions.
 
 addleftsubsubright :: add R to L. subtract L from R twice. simultaneous
-addleftsubmultright :: add R to L. subtract L from R. then multiply R by L. All ops use the original var values
+addleftmultsubright :: add R to L. subtract L from R. then multiply R by L. All ops use the original var values
+expdivaddleftmultsubright :: L = L exp R / R + R. R = R * L - L
+_1 :: ops are 'loaded with values then pushed into the vars' so they go from 'outside inwards' 
 
 
 

@@ -1,0 +1,3 @@
+( | v1 = 2 
+ v2 = 3 | ) sub((v1 expdivaddleftmultsubright v2) = ( | v1 = v1 ^ 3 / 3 + 3 
+ v2 = v2 * 2 - 2| ) )

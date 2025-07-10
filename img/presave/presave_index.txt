@@ -85,3 +85,4 @@ array subsets,arraysubseteg3
 array has,has1
 array allnone,arrayallnone
 array allnone,arrayallnoneloop1
+variables,vsetcomplex
