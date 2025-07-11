@@ -2,9 +2,11 @@ array combine
 array append
 array subset
 
+<todo>
 **could do so many more array ops, but drawing the line for now 
 
-**add count/sum/avg onto array extract for quick ops(just add small icon prefix to the box protrusion)
+**add count/sum/avg onto array extract for quick ops(just add small icon prefix to the box protrusion). that way you can ask "how many meet this conditon" etc..
+</todo>
 
 *show*
 .+ :: array append 

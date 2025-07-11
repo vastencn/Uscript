@@ -1,7 +1,7 @@
 <svg
-   width="35.9"
+   width="33.9"
    height="20"
-   viewBox="0 0 35.9 20"
+   viewBox="0 0 33.9 20"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -13,7 +13,7 @@
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
-     transform="translate(0,10)"><g transform="translate(0,0)"><g></g></g><g transform="translate(8,0)"><g
+     transform="translate(0,10)"><g transform="translate(0,0)"><g></g></g><g transform="translate(6,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -53,7 +53,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(18.3,0)"><g
+  </g></g><g transform="translate(16.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -93,7 +93,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(28.6,0)"><g
+  </g></g><g transform="translate(26.6,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"

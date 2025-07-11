@@ -1,9 +1,8 @@
-has/contains
 tolerance
-min/max
 array pop
-all/any/none/any-dont
-those which
+bool varsets
+
+
 
 tolerance here means "deviation must be less than" not "deviation acceptable up to".
 
@@ -14,7 +13,13 @@ establish that a unilateral varset operation can be evaluated and check. its val
 bool ops can be used with varset the op using the establish patterns
 might need more examples, but the patter is clear i think
 
+<todo>
 **should probably add invert-array symbol(rotate-array)
+
+**add other form of tolerance deviation up to and including)
+
+**add examples of tolerance where numbers are drawn above or below to manipulate the upper and lower bounds independently
+</todo>
 
 5 tolerance 2 include 3.0000001 but does not include 3 or 7
 

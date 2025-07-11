@@ -59,6 +59,12 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
         case "while":
                    $btype="while";
                    break;
+        case "popa":
+                   $btype="popa";
+                   break;
+        case "apop":
+                   $btype="apop";
+                   break;
         case "foreach":
                    $btype="foreach";
                    break;
@@ -104,6 +110,18 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
   switch($btype){
     case "while":
             $brakopts[]=array("img","loop");
+            $chunks[0]['brak']['opts']=$brakopts;
+            break;
+    case "popa":
+            $brakopts[]=array("img","popa");
+            $brakopts[]=array("rshift","6.8");
+            $brakopts[]=array("irshift","21");
+            $chunks[0]['brak']['opts']=$brakopts;
+            break;
+    case "apop":
+            $brakopts[]=array("img","apop");
+            $brakopts[]=array("rshift","18");
+            $brakopts[]=array("irshift","10");
             $chunks[0]['brak']['opts']=$brakopts;
             break;
     case "foreach":

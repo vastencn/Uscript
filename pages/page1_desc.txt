@@ -1,6 +1,6 @@
 some intro vague conceptuals like arrow and subset, time/entropy, dimensions
 
-!! considering....mirror versions of math ops that invert non-commutative ops. visually the flow from top to bottom the U is merge/combine at top, split/for at bottom( A/B the hook points at A because it will flow into the symbol and get split) (subtract needs a horizontal version) (exp. the hook points to the power, the dimensional corner show the dimensions being added... root, the fork points to the number of dimensions to fracture into... log the dimensional corner hook points at the length of dimensions the the value will fracture into )
+<todo> considering....mirror versions of math ops that invert non-commutative ops. visually the flow from top to bottom the U is merge/combine at top, split/for at bottom( A/B the hook points at A because it will flow into the symbol and get split) (subtract needs a horizontal version) (exp. the hook points to the power, the dimensional corner show the dimensions being added... root, the fork points to the number of dimensions to fracture into... log the dimensional corner hook points at the length of dimensions the the value will fracture into )
 
 *string bin digits is all high or all low should include mark to show high/low if not clear
 
@@ -20,6 +20,7 @@ some intro vague conceptuals like arrow and subset, time/entropy, dimensions
 0-.-\_= 00.01
 0-\(dot in line)_1 = 00.11
 etc...
+</todo>
 
 
 *show*

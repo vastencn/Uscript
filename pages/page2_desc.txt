@@ -4,11 +4,19 @@ floor, mod, round, aprox equal(a rounded number)
 
 no bedmas, just left to right, except for scinote
 
+I admit bedmas helps hide brackets.. just like root and fraction symbols help hide brackets, or how the expression in a power is calculated before the power to hide brackets. Uscript doesn't use bedmas as a 'braket-hiding-tool', because that is a very human, historical, and culture specific system.
+
+admittedly the hidden brackets in roots, powers, and division are visually elegant, but that's not true for bedmas in general.
+
+Uscript sticks with sequential operations and brackets... we will find other ways to "hide brackets" (more visual and intuitive ones, akin to division, powers and roots in our current system), This will also provoke more divergence from our current systems, representation, and thinking.
+
+<todo>
 could add 2d drawing style like upper exp, division stacks, root sign, etc.. not getting into that stuff now.. strictly linear bracketed for now 
 
 will establish ints, rationals, and later irrationals.. probably stop there for 1d numbers to start, can use clauses to establish subsets of those when needed, or establish a symbol later on if actually necessary or needed for convenience
 
-*maybe start floor round, remainder with a few examples that use simple hex number format
+</todo>
+
 
 *show*
 

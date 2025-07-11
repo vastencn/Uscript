@@ -1,2 +1,35 @@
 expression vars
 use all/non as example for complex expressions
+has/contains
+all/any/none/any-dont
+those which
+min/max
+
+expression vars hold expressions,
+
+
+we ONLY define simple usage here
+
+we do NOT address expressions containing expressions vars, or any other complex applications
+
+Yes! introducing expression vars opens the door to a lot of questions... "how do I put the value from a variable into an expression as a fixed value instead of variable reference?" how do I build a dynamic expression then lock it down so I can now change the vars used to create it? etc..
+
+the answer is "Those are questions for another day.. those behaviors are undefined for today"
+
+
+pop loops - they popall elements and handle each. There is still a 'if true dot' on the sub brak becaus ethsi way we can add a false one to run at the end.
+
+Pop loops are different from foreach loops, pop loops empty the original array, this means they can better represent situation when things are handle or processed. Many physical process of "take all of X and process them" convert or destroy the original source material.So this is actually a useful distinction for abstracting into language.
+
+<todo>
+The varset arrow can connect to the bracket, can add that later
+
+then some cool 2D webs of expression building can be constructed. even skipping the expression variables ad just pointing to where the expressions should be inserted.
+</todo>
+
+*show*
+x1 x2 x3 x4 x5 :: expression vars hold expressions
+exp (_60 v_20 ) :: expression holding braket
+
+allpop( . . . .. _3 . . . ) :: allpop last to first. A foreach that empties as it goes
+popall ( . . . .. _3 . . . ) :: popall first to last. A foreach that empties as it goes

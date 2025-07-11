@@ -2,7 +2,9 @@ Procedural basics
 
 booleans and gates
 
+<todo>
 *maybe clarify that eval mode is supplemented by gt / lt cooperators which can perform actual comparisons like > < == etc.. if they return 0 then things are equal
+</todo>
 
 *show*
 true false :: true false,and or xor :: bool ops (and/or/xor/etc..)

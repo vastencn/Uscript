@@ -23,6 +23,7 @@ subleft,subleft,27.6
 subright,subright,27.6
 
 
+addleftsubright,addleftsubright,42.9
 subleftaddright,subleftaddright,42.9
 addleftsubsubright,addleftsubsubright,55.1
 addleftsubmultright,addleftsubmultright,55.1
@@ -45,6 +46,12 @@ expdivaddleftmultsubright,expdivaddleftmultsubright,78.9
 
 orleft,orleft,32.2
 andleft,andleft,32.2
+
+x1,x1,18.8
+x2,x2,16.8
+x3,x3,17.5
+x4,x4,21.3
+x5,x5,20.5
 
 EOF
 

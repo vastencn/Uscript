@@ -15,6 +15,16 @@ $cell_edit=html_postget("cell_edit");
 </head>
 <body>
 
+
+Yes.. there are <b>still</b> , even after so so so many passes, additions, edits, and revision happening as this is made.
+<br><br>
+The flow of definitions shows it, there are still, even now, definitions that come after 'their group' and other definitions that would benefit from being shifted backwards so they can use other definitions that exist later.
+<br><br>
+But I am finally satisfied and confident that this version and these tools can come together into a solid enough framework that I can move on to the 'expansion plug-in' I have been holding onto.
+I have been getting impatient, I don't want to start adding plugins to a framework that hasn't even been well defined itself. But I think this version will be able to flesh out the math, procedural, and physics base solidly... plus move on to more communicative and abstracted layers and define them all with a strong enough base to justify adding 'plug-ins'. Now I just need to keep picking at it until it gets there.... big project, must not rush or get impatient hehe.
+<br><br>
+
+
 <?php
 $istr=html_postget("istr");
 $istr=insert_pre_renders($istr);
@@ -211,6 +221,12 @@ if($defs){
 </table>
 
 <table>
+  <tr>
+    <td bgcolor=#000000><font color=#fffffff>Page</font></td>
+    <td bgcolor=#000000><font color=#fffffff>defs</font></td>
+    <td bgcolor=#000000><font color=#fffffff>desc</font></td>
+    <td bgcolor=#000000><font color=#fffffff>todo</font></td>
+  </tr>
 <?php
 
 $arendelle=dir_entries($pages_dir,".txt");
@@ -232,8 +248,22 @@ while($found){
       echo "<td>";
       page_defs($pagename);
       echo "</td>";
-      echo "<td width=300><font size=1>";
-      echo str_replace("\n", "<br>",htmlspecialchars( $page['desc']));
+      $todo="";
+      $desc=strstr($page['desc'],"*show*",true);
+
+      $dsplit=explode("<todo>", $desc);
+      if(count($dsplit)>1){
+        $desc=$dsplit[0];
+        for($i=1;$i<count($dsplit);$i++){
+          $nsplit=explode("</todo>",$dsplit[$i]);
+          $todo.=$nsplit[0];
+          $desc.=$nsplit[1];
+          }
+        }
+      $desc=str_replace("\n", "<br>",htmlspecialchars( $desc));
+      $todo=str_replace("\n", "<br>",htmlspecialchars( $todo));
+      echo "<td width=300><font size=1>$desc</font></td>";
+      echo "<td width=300><font size=1>$todo</font></td>";
       echo "</tr>";
       $found=true;
       }

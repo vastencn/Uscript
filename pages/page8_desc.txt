@@ -1,5 +1,11 @@
 foreach and execution brak
 
+<todo>
+Foreach loops would benefit from a default special symbol to represent the element for the current iterations. that way it can be called with only the array element (would not need the "as .." part). plus a special symbol would highlight the current value in the code.
+
+Seeing as I added reverse pop all loops, should probably add reverse foreach loop
+</todo>
+
 *show*
 foreach( . . . as . . . .. . . .) ::  foreach( ...  ) { ... }
 exe( . . . ) :: exe( ... ), return :: return
