@@ -1,2 +1,4 @@
 ips_foreacheg1
 ips_foreacheg2
+
+foreach(v1 as v2, v3 <: v3 + v2) = foreach (v1 , v3 <: v3 + loopvar) 

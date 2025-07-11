@@ -1,6 +1,14 @@
 some intro vague conceptuals like arrow and subset, time/entropy, dimensions
 
-<todo> considering....mirror versions of math ops that invert non-commutative ops. visually the flow from top to bottom the U is merge/combine at top, split/for at bottom( A/B the hook points at A because it will flow into the symbol and get split) (subtract needs a horizontal version) (exp. the hook points to the power, the dimensional corner show the dimensions being added... root, the fork points to the number of dimensions to fracture into... log the dimensional corner hook points at the length of dimensions the the value will fracture into )
+There are mirror versions of non-commutative operations
+
+the reverse the operation direction
+
+Operation direction is arbitrary anyways. For example in Chinese the normal way of expressing fractions is inverted. 1/3 on third is 三分之一 (3 split of-that 1), 三分之二 is 2/3, etc..
+
+This will also help with design expressions and 'hiding brackets' later.
+
+<todo>Add examples of inverted non-commutative operations
 
 *string bin digits is all high or all low should include mark to show high/low if not clear
 
@@ -29,3 +37,14 @@ b>b11/101 b>b1/10 :: fractions, sci-5 sci+11 :: sci-note
 ten hun thou :: ten hun thou , = :: =
 + - * / :: + - * /, exp2 root log :: exp root log , exp :: alt exp
 sub ( _14 v_20 ) :: sub()
+
+. . . subtract . = . . :: subtract ( 3 subtract 1 = 2 ) , . subtracts . . . = . . :: subtracts ( 1 subtracts 3 = 2  )
+ _1 :: the dot in the subtract symbol represents the side kept / measured
+
+divide :: x divide-by y , divides :: x divides y , _2 :: the hook shows which side flows into the split/fork
+
+pow :: x to-the-power-of y , pows :: x powers-of y , _2 :: dimension corner points to power
+
+root :: x rooted-by y , roots :: x roots y , _2 :: dims/split points at number of dimensions to fracture into
+
+log :: x logged-by y , logs :: x logs y , _2 :: dims corner points at dimensional length to fracture into

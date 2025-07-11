@@ -1,11 +1,18 @@
 foreach and execution brak
 
 <todo>
-Foreach loops would benefit from a default special symbol to represent the element for the current iterations. that way it can be called with only the array element (would not need the "as .." part). plus a special symbol would highlight the current value in the code.
-
 Seeing as I added reverse pop all loops, should probably add reverse foreach loop
+
+loopvar symbol doesnt address nested loops, maybe give it a way to reference levels
+
+I think for nested looping, the loop var can be an array, if referenced as an array then it grabs the relevant level according to array id used... otherwise, if it is referenced as a non-array then it defaults to the current deepest level...
+
+or maybe symbol modifiers..or maybe nothing... maybe for complex nesting just use the "foreach as"
+
+but the nice visual elegance of ths is tempting me to start creating a bunch of visually appealing variable symbols that are graphical as opposed to numerical based naming. (must resist.. keep design option open for the higher level for now.. don't lock down to many symbol now and later be wanting more room to grow for higher level language.)
 </todo>
 
 *show*
 foreach( . . . as . . . .. . . .) ::  foreach( ...  ) { ... }
 exe( . . . ) :: exe( ... ), return :: return
+loopvar :: a symbol to stand in for 

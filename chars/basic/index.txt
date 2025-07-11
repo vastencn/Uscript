@@ -46,15 +46,24 @@ v13,v13,18
 v14,v14,18
 v15,v15,18
 
+loopvar,loopvar,15.6
+
 //basic math/operations
 plus,plus,14
 minus,minus,14
+subtract,subtract,15.3
+subtracts,subtracts,15.3
 mult,mult,14
 divide,divide,14
+divides,divides,14
 exp2,exp2,18
 exp,exp,14
+pow,exp,14
+pows,pows,14
 root,root,17
+roots,roots,17
 log,log,15.8
+logs,logs,15.8
 var,var,15
 frac,frac,11
 infinity,infinity,21

@@ -1,1 +1,1 @@
- aaa
+ v3 <: v3 + loopvar

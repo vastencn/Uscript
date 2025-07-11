@@ -35,8 +35,8 @@
      inkscape:cx="11.276596"
      inkscape:cy="26.297872"
      inkscape:window-width="1920"
-     inkscape:window-height="1137"
-     inkscape:window-x="-1928"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g4404-1-2-4-1-7-8-3-5-3-2-6"
@@ -167,7 +167,7 @@
                                    style="stroke-width:1.41996;stroke-miterlimit:4;stroke-dasharray:none">
                                 <g
                                    id="g21823"
-                                   transform="translate(-8.0332141e-5,-2.4719091e-4)">
+                                   transform="matrix(-1,0,0,1,367.82735,-2.4719091e-4)">
                                 <path
                                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.41996;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                    d="m 188.09348,93.73206 c 0,2.59709 -2.10536,4.70245 -4.70244,4.70245 -2.59709,0 -4.70244,-2.10536 -4.70244,-4.70245"

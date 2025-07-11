@@ -25,6 +25,11 @@ might need more examples, but the patter is clear i think
 
 all/non/etc... these benefit more form expression variables which come later
 
+<todo>
+Add defintion that declare "a larger number contains a smaller number" using has. this is the behavior if the checked input is not an array. this way it can be abstracted better into linguistic usage.
+</todo> 
+
+
 *show*
 tol :: tolerance
 has( true true true  .. _5 false ) :: ... has o , isin (false .. true true true ) :: o is in ...
