@@ -1,9 +1,4 @@
 expression vars
-use all/non as example for complex expressions
-has/contains
-all/any/none/any-dont
-those which
-min/max
 
 expression vars hold expressions,
 
@@ -21,10 +16,26 @@ pop loops - they popall elements and handle each. There is still a 'if true dot'
 
 Pop loops are different from foreach loops, pop loops empty the original array, this means they can better represent situation when things are handle or processed. Many physical process of "take all of X and process them" convert or destroy the original source material.So this is actually a useful distinction for abstracting into language.
 
+array sorts simple value sorts on simple 1d arrays for now
+later can add bracketing and nuance to sorting
+
+
 <todo>
+array pair loop examples
+
+array sort exmaples
+
 The varset arrow can connect to the bracket, can add that later
 
 then some cool 2D webs of expression building can be constructed. even skipping the expression variables ad just pointing to where the expressions should be inserted.
+
+add  inner-array-loop ... runs between all all the elemenst instead of on each element. loopvar will be empty but loopnext and loop prev will have values.
+
+define that when inside a loop, or anything,  varset 'into-nothing' has the function of setting a return value for the loop, or if, etc..
+
+eg 
+foreach ( (1,2,3)  as x ) { = x } == 3
+foreach ( (1,2,3)  as x ) { += x } == 6
 </todo>
 
 *show*
@@ -33,3 +44,10 @@ exp (_60 v_20 ) :: expression holding braket
 
 allpop( . . . .. _3 . . . ) :: allpop last to first. A foreach that empties as it goes
 popall ( . . . .. _3 . . . ) :: popall first to last. A foreach that empties as it goes
+
+apair( . . . .. _3 . . . ) :: apair. array pairs. first to last.
+paira ( . . . .. _3 . . . ) :: paira. array paris last to first
+ _1 :: arraypair runs for 'gap between elements' <BR> there's no current loopvar just prev and next
+
+sort :: array sort. large -> small , sortr :: reverse sort. small -> large
+

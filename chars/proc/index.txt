@@ -16,6 +16,9 @@ brakp,brakp,16
 apop,apop,24.7
 popa,popa,24.7
 
+sort,sort,35.8
+sortr,sortr,35.8
+
 swap,swap,22.9
 addleft,addleft,27.6
 addright,addright,27.6

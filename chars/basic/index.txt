@@ -54,7 +54,7 @@ loopprev3,loopprev3,29.2
 loopprev4,loopprev4,26.4
 loopprev5,loopprev5,30.9
 
-loopnext,loopnext,18.1
+loopnext,loopnext,18.2
 loopnext2,loopnext2,28.4
 loopnext3,loopnext3,29.4
 loopnext4,loopnext4,33.6
@@ -70,7 +70,7 @@ oloopprev2,oloopprev2,25.9
 oloopprev3,oloopprev3,29.2
 oloopprev4,oloopprev4,26.4
 
-oloopnext,oloopnext,18.1
+oloopnext,oloopnext,21.6
 oloopnext2,oloopnext2,28.4
 oloopnext3,oloopnext3,29.4
 oloopnext4,oloopnext4,33.6

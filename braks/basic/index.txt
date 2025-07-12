@@ -89,6 +89,11 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,foreach,if_opt_ foreach=1 : crshift=9.3 : cirshift=10 : yes=1 : def=foreach
 1,popall,if_opt_ popa=1 : crshift=7 : cirshift=11 : def=popall
 1,allpop,if_opt_ apop=1 : crshift=7 : cirshift=11 : def=allpop
+1,apair,if_opt_ apair=1 : crshift=7 : cirshift=11 : def=apair
+1,paira,if_opt_ paira=1 : crshift=7 : cirshift=11 : def=paira
+
+//function braket
+1,func,if_opt_ func=1 : crshift=7 : cirshift=11 : def=func
 
 //has, doesnt have, is in, is not in
 1,has,if_opt_ has=1 : def=has

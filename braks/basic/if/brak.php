@@ -65,6 +65,15 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
         case "apop":
                    $btype="apop";
                    break;
+        case "paira":
+                   $btype="paira";
+                   break;
+        case "apair":
+                   $btype="apair";
+                   break;
+        case "func":
+                   $btype="func";
+                   break;
         case "foreach":
                    $btype="foreach";
                    break;
@@ -123,6 +132,36 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
             $brakopts[]=array("rshift","18");
             $brakopts[]=array("irshift","10");
             $chunks[0]['brak']['opts']=$brakopts;
+            break;
+    case "paira":
+            $brakopts[]=array("img","paira");
+            $brakopts[]=array("rshift","6.8");
+            $brakopts[]=array("irshift","21");
+            $chunks[0]['brak']['opts']=$brakopts;
+            break;
+    case "apair":
+            $brakopts[]=array("img","apair");
+            $brakopts[]=array("rshift","18");
+            $brakopts[]=array("irshift","10");
+            $chunks[0]['brak']['opts']=$brakopts;
+            break;
+    case "func":
+            $newstr="";
+            if(count($chunks)>2){
+              for($i=1;$i<count($chunks);$i++){
+                $newstr.="[".$chunks[$i]['first_word']."]";
+                }
+              $funcchunk=pre_render_into_chunk($newstr);
+              $chunks[1]=$funcchunk;
+             } 
+            $chunks[1]['fchunk']=$chunks[0];
+
+            $brakopts[]=array("rshift","10");
+            $brakopts[]=array("irshift","100");
+            $brakopts[]=array("func","1");
+            $chunks[0]['brak']['opts']=$brakopts;
+
+            return $action=brak_brak($chunks[1]);
             break;
     case "foreach":
             $brakopts[]=array("img","foreach");
@@ -183,7 +222,7 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
 
 
 //ar_dump($condition,"cond1");
-//ar_dump($chunks[1],"chunk1");
+//ar_dump($chunks[0],"chunk1");
 
   $condition=$cfunc($chunks[0]); 
   $action=subcup_brak($chunks[1]);

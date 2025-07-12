@@ -1,1 +1,1 @@
- v3 <: v3 + loopvar
+[imgrender_rimg1][imgrender_rimg2]

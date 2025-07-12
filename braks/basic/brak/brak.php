@@ -36,7 +36,6 @@ $brak_text_def = 	"the most fundamental brak\n".
 
 function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   if(!chunk_is_drawable($chunk))return NULL;
-
   $xstart=0;
   $cstart=($stroke_width/2);
   $svg_str="";
@@ -78,7 +77,26 @@ function brak_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
     }
 
   
+  if($chunk['fchunk']){
+    //ar_dump($chunk['fchunk'],"fchunk");
 
+    $dashlen=-10;
+    switch($chunk['fchunk']['otext']){
+      case "2":
+      case "5":
+               $dashlen-=4;
+               break;
+
+      case "3":
+      case "4":
+               $dashlen-=8;
+               break;
+      }
+
+    $svg_str.=$chunk['fchunk']['svg'];
+    $xstart+=$chunk['fchunk']['width']+10;
+    $svg_str.=svg_hline($xstart,0,$dashlen,$stroke_width);
+    }
 
   $ctxt="sub(".@$chunk['string'].")";
   $nchunk=create_chunk($ctxt);
