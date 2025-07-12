@@ -3,16 +3,24 @@ foreach and execution brak
 <todo>
 Seeing as I added reverse pop all loops, should probably add reverse foreach loop
 
-loopvar symbol doesnt address nested loops, maybe give it a way to reference levels
+loopvar symbols dont address nested loops, maybe give it a way to reference levels
+I think just allow the loopvar to be treated as an array, but make a special call were you reference an array element using sci-note
+eg loopvar[scinote+1] = up one nested loop level
 
-I think for nested looping, the loop var can be an array, if referenced as an array then it grabs the relevant level according to array id used... otherwise, if it is referenced as a non-array then it defaults to the current deepest level...
 
-or maybe symbol modifiers..or maybe nothing... maybe for complex nesting just use the "foreach as"
+need to add example of all the extra loopvars (next,prev,original,etc..)
 
-but the nice visual elegance of ths is tempting me to start creating a bunch of visually appealing variable symbols that are graphical as opposed to numerical based naming. (must resist.. keep design option open for the higher level for now.. don't lock down to many symbol now and later be wanting more room to grow for higher level language.)
+
 </todo>
+
 
 *show*
 foreach( . . . as . . . .. . . .) ::  foreach( ...  ) { ... }
 exe( . . . ) :: exe( ... ), return :: return
-loopvar :: a symbol to stand in for 
+loopvar :: a symbol to stand in for variable of the current iteration
+loopnext :: next loopval ,loopprev :: prev loopval
+loopnext2 loopnext3 loopnext4 loopnext5 :: loopval 2 loops ahead. 3 loops ahead. 4. 5. etc..
+loopprev2 loopprev3 loopprev4 loopprev5 :: loopval 2 loops back. 3 loops back. 4. 5. etc.
+
+oloopvar _10 oloopnext oloopprev _20 oloopnext2 oloopnext3 oloopprev2 oloopprev3 :: original loop vals before the loop executed
+ _2 :: original loop vals are for reference only. constant values during loop

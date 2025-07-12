@@ -21,6 +21,8 @@ addleft,addleft,27.6
 addright,addright,27.6
 subleft,subleft,27.6
 subright,subright,27.6
+divright,divright,27.6
+divsright,divsright,27.6
 
 
 addleftsubright,addleftsubright,42.9

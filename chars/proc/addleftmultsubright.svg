@@ -8,7 +8,7 @@
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="addleftsubmultright.svg"
+   sodipodi:docname="addleftmultsubright.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -232,13 +232,13 @@
                                    sodipodi:nodetypes="cc" />
                                 <path
                                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="m 98.291023,220.05471 c 0,-2.18783 -1.72549,-3.96142 -3.85399,-3.96142 -2.12849,0 -3.85398,1.77359 -3.85398,3.96142"
+                                   d="m 93.167017,220.05471 c 0,-2.18783 1.72549,-3.96142 3.85399,-3.96142 2.12849,0 3.853983,1.77359 3.853983,3.96142"
                                    id="path3355-7-7-8-27-0-4"
                                    inkscape:connector-curvature="0"
                                    sodipodi:nodetypes="csc" />
                                 <path
                                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.70407;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="m 99.27051,207.46484 -4.833472,-0.004 v 8.47118"
+                                   d="m 92.18753,207.46484 4.833472,-0.004 v 8.47118"
                                    id="path4186-6-7-5-4-9-2-8-8"
                                    inkscape:connector-curvature="0"
                                    sodipodi:nodetypes="ccc" />

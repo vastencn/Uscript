@@ -1,1 +1,1 @@
-arel[ v1 v2 ]
+arel[ . . . ] arel[ . . . ]

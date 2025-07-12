@@ -8,7 +8,7 @@
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="divides.svg"
+   sodipodi:docname="divide.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -35,8 +35,8 @@
      inkscape:cx="-19.1875"
      inkscape:cy="8.5"
      inkscape:window-width="1920"
-     inkscape:window-height="1017"
-     inkscape:window-x="-8"
+     inkscape:window-height="1137"
+     inkscape:window-x="-1928"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:current-layer="g20314"
@@ -134,8 +134,7 @@
                                    transform="matrix(0.9998634,0,0,-1,0.00611664,131.9087)"
                                    style="stroke-width:1.82404">
                                 <g
-                                   id="g20627"
-                                   transform="matrix(-1,0,0,1,90.498683,0)">
+                                   id="g20627">
                                 <path
                                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.82403;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                                    d="m 39.312179,74.612206 c 0,-3.279368 2.658453,-5.937822 5.937821,-5.937822 3.279368,0 5.937821,2.658454 5.937821,5.937822"

@@ -10,6 +10,8 @@ This will also help with design expressions and 'hiding brackets' later.
 
 <todo>Add examples of inverted non-commutative operations
 
+add example of scinote left shift (only added right shifting so far)
+
 *string bin digits is all high or all low should include mark to show high/low if not clear
 
 *maybe fill in arrow triangle to add-mass to tip
@@ -41,7 +43,7 @@ sub ( _14 v_20 ) :: sub()
 . . . subtract . = . . :: subtract ( 3 subtract 1 = 2 ) , . subtracts . . . = . . :: subtracts ( 1 subtracts 3 = 2  )
  _1 :: the dot in the subtract symbol represents the side kept / measured
 
-divide :: x divide-by y , divides :: x divides y , _2 :: the hook shows which side flows into the split/fork
+divide :: x / (divide-by) y , divides :: x \ (divides) y , _2 :: dim corner points to the 'segment length to divide into'
 
 pow :: x to-the-power-of y , pows :: x powers-of y , _2 :: dimension corner points to power
 
