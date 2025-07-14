@@ -1,1 +1,25 @@
- true true true 
+ 
+#
+# loopreturn = wave _20 loopcount = 1
+#
+# loopreturn addleft loopcount 
+#
+# v_5
+#
+# loopreturn = 1 _20 loopcount = 2
+#
+# loopreturn addleft loopcount 
+#
+# v_5
+#
+# loopreturn = 3 _20  loopcount = 3
+#
+# loopreturn addleft loopcount 
+#
+# v_5
+#
+# loopreturn = 6
+#
+# return loopreturn
+#
+# 

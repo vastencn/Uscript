@@ -29,9 +29,7 @@ The varset arrow can connect to the bracket, can add that later
 
 then some cool 2D webs of expression building can be constructed. even skipping the expression variables ad just pointing to where the expressions should be inserted.
 
-add  inner-array-loop ... runs between all all the elemenst instead of on each element. loopvar will be empty but loopnext and loop prev will have values.
-
-define that when inside a loop, or anything,  varset 'into-nothing' has the function of setting a return value for the loop, or if, etc..
+add  inner-array-loop ... runs between all all the elements instead of on each element. loopvar will be empty but loopnext and loop prev will have values.
 
 eg 
 foreach ( (1,2,3)  as x ) { = x } == 3
@@ -49,5 +47,5 @@ apair( . . . .. _3 . . . ) :: apair. array pairs. first to last.
 paira ( . . . .. _3 . . . ) :: paira. array paris last to first
  _1 :: arraypair runs for 'gap between elements' <BR> there's no current loopvar just prev and next
 
-sort :: array sort. large -> small , sortr :: reverse sort. small -> large
+sort :: array sort. small -> large , sortr :: reverse sort. large -> small
 

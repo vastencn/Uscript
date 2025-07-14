@@ -20,6 +20,7 @@ sort,sort,35.8
 sortr,sortr,35.8
 
 loopcount,loopcount,15.8
+loopreturn,loopreturn,16.6
 
 swap,swap,22.9
 addleft,addleft,27.6

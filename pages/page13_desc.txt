@@ -1,9 +1,12 @@
 all/any/none/any-dont
-those which
 min/max
+
+establish that reg brackets don't add depth to arrays. they are only used to wrap them for assignments. double or triple wrapping them does do anything different than single wrapping.
 
 *show*
 all( v_20 _10 ) :: all - uses boolean op between all array elements <BR> all( array(a .. b .. c|) ) = a & b & c
 none( v_20 _10 ) :: none - uses falsefalse between all array elements <br> falseflase returns true is both are false
 
 any( v_20 _10 ) :: any - uses the OR between all array elements
+min ( . . . ) :: min - returns the smallest value in the array
+max ( . . . ) :: max - returns the largest value in the array

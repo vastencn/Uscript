@@ -1,1 +1,1 @@
-[imgrender_rimg17][imgrender_rimg18]
+ loopreturn addleft loopvar 

@@ -1,6 +1,9 @@
 foreach and execution brak
 
 <todo>
+
+define that when inside a loop, or anything,  varset 'into-nothing' has the function of setting a return value for the loop, or if, etc..
+
 Seeing as I added reverse pop all loops, should probably add reverse foreach loop
 
 loopvar symbols dont address nested loops, maybe give it a way to reference levels
@@ -26,4 +29,6 @@ oloopvar _10 oloopnext oloopprev _20 oloopnext2 oloopnext3 oloopprev2 oloopprev3
  _2 :: original loop vals are for reference only. constant values during loop
 
 
-loopcount :: loop-counter starts at one increments each loop
+loopcount :: loop-counter starts at one increments after each cycle
+
+loopreturn :: the return value which can be modified when inside the loop. <br> setting this does not break the loop.<br> the return is the final value after the loop finishes.

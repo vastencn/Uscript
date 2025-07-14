@@ -3,8 +3,7 @@
  v1 addleft 1
  v1 addleft 1
  v1 addleft 1
- | ) 
-( | v1 <: 0 
+ | ) _25 ( | v1 <: 0 
 while( loopcount lt 5 , v1 addleft loopcount ) | ) = ( | v1 :< 0
  v1 addleft 1
  v1 addleft 2

@@ -30,6 +30,9 @@ add example of scinote left shift (only added right shifting so far)
 0-.-\_= 00.01
 0-\(dot in line)_1 = 00.11
 etc...
+
+
+!! not satisfied with ten and hun symbols.. maybe change them or delete them 
 </todo>
 
 
