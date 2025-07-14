@@ -5,4 +5,7 @@
  timeprobs
  state
  staterange
- stateprobs
+ stateprobs(| 
+ a
+ a a
+ a |)

@@ -23,6 +23,16 @@ The flow of definitions shows it, there are still, even now, definitions that co
 But I am finally satisfied and confident that this version and these tools can come together into a solid enough framework that I can move on to the 'expansion plug-in' I have been holding onto.
 I have been getting impatient, I don't want to start adding plugins to a framework that hasn't even been well defined itself. But I think this version will be able to flesh out the math, procedural, and physics base solidly... plus move on to more communicative and abstracted layers and define them all with a strong enough base to justify adding 'plug-ins'. Now I just need to keep picking at it until it gets there.... big project, must not rush or get impatient hehe.
 <br><br>
+General flow is
+<ol>
+  <li>math
+  <li>procedural
+  <li>geometry/calculus
+  <li>physics
+  <li>astronomy
+  <li>communication and abstraction
+  <li>plug-ins
+</ol>
 
 
 <?php

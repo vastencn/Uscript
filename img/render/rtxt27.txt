@@ -1,1 +1,1 @@
-[imgrender_rimg25][imgrender_rimg26]
+ _2 falsefalseleft loopvar 

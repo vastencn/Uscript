@@ -1,7 +1,7 @@
 <svg
-   width="60"
-   height="26"
-   viewBox="0 0 60 26"
+   width="15"
+   height="20"
+   viewBox="0 0 15 20"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -10,10 +10,6 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    ><g
-     inkscape:label="Line 1"
-     inkscape:groupmode="layer"
-     id="layer L1"
-     transform="translate(0,13)"><g transform="translate(3,0)"><g transform="translate(4,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
@@ -54,39 +50,4 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></g></g></g><polyline points="0,6 0,12 22,12 22,6 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="0,-6 0,-12 22,-12 22,-6 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(30,0)"></g><g transform="translate(33,0)"><g transform="translate(4,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
-     inkscape:label="Line 1"
-     inkscape:groupmode="layer"
-     id="layer L1"
-     transform="translate(0,10)"><g transform="translate(0,0)"><g transform="translate(0,0)"><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(0,-291.70832)">
-    <g
-       transform="matrix(1.1729315,0,0,-0.95202835,-583.81956,-1486.0695)"
-       id="g10351"
-       style="stroke-width:1.78832;stroke-miterlimit:4;stroke-dasharray:none">
-      <g
-         transform="matrix(0.90940238,0,0,1.1204148,45.09442,226.12232)"
-         id="g10351-0"
-         style="stroke-width:1.78937007;stroke-miterlimit:4;stroke-dasharray:none">
-        <g
-           id="g2601"
-           transform="matrix(0.89256182,0,0,0.89252659,53.476707,-202.83623)"
-           style="stroke-width:2.00479">
-          <g
-             transform="matrix(-0.96260057,0,0,1.2086867,1064.0187,394.45877)"
-             id="g10359"
-             style="stroke-width:1.84021;stroke-miterlimit:4;stroke-dasharray:none">
-            <path
-               style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.84021;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-               d="m 571.90972,-1877.2494 8.20965,-0.01 -0.11668,13.8013 h 8.27325"
-               id="path4186-6-7-94-7-8-3-4-0-7-9-3-9-6-6"
-               inkscape:connector-curvature="0"
-               sodipodi:nodetypes="cccc" />
-          </g>
-        </g>
-      </g>
-    </g>
-  </g></g></g></g></g></g></g><polyline points="0,6 0,12 22,12 22,6 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="0,-6 0,-12 22,-12 22,-6 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(60,0)"></g></g></svg>
+  </g></g></g></g></svg>

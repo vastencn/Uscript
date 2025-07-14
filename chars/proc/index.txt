@@ -19,6 +19,8 @@ popa,popa,24.7
 sort,sort,35.8
 sortr,sortr,35.8
 
+loopcount,loopcount,15.8
+
 swap,swap,22.9
 addleft,addleft,27.6
 addright,addright,27.6
@@ -51,6 +53,7 @@ expdivaddleftmultsubright,expdivaddleftmultsubright,78.9
 
 orleft,orleft,32.2
 andleft,andleft,32.2
+falsefalseleft,falsefalseleft,32.2
 
 x1,x1,18.8
 x2,x2,16.8

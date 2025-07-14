@@ -1,0 +1,11 @@
+exe(v1 <: 2 _15 v2 <: v1 * v3 ) = exe( v1 <: 2 _15 v2 <: v1 * wave ) = exe( v1 <: 2 _15 v2 <: v1  )
+
+exe(v1 <: 2 _15 v2 <: v1 + v3 ) = exe( v1 <: 2 _15 v2 <: v1 + wave ) = exe( v1 <: 2 _15 v2 <: v1  )
+
+exe(v1 <: true _15 v2 <: v1 and v3 ) = exe( v1 <: true _15 v2 <: v1 and wave ) = exe( v1 <: true _15 v2 <: v1
+
+exe(v1 <: true _15 v2 <: v1 xor v3 ) = exe( v1 <: true _15 v2 <: v1 xor wave ) = exe( v1 <: true _15 v2 <: v1  )
+
+exe(v1 <: 2 _15 v2 <: v11 + v12 ) = exe( v1 <: 2 _15 v11 <: wave + wave ) = exe( v1 <: 2 _15 v2 <: wave  )
+
+exe(v1 <: true _15 v2 <: v11 and v12 ) = exe( v1 <: true _15 v2 <: wave and wave ) = exe( v1 <: true _15 v2 <: wave

@@ -24,6 +24,7 @@ defs
     loop example 1
     foreach example 1
     foreach example 2
+    foreach misc
   variables
   conditionals
   arrays
@@ -45,3 +46,4 @@ defs
     quarks
  numsvars
 format
+deprecated examples

@@ -61,7 +61,7 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 
 
 
-1,exe,brak_opt_ img=exe : rshift=2.5 : irshift=2.5 : minh=30 : def=exe
+1,exe,brak_opt_ img=exe : rshift=3.3 : irshift=2.5 : minh=30 : def=exe
 1,eval,brak_opt_ dot=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=eval
 1,evalnot,brak_opt_ circ=1 : rshift=2.5 : irshift=2.5 : minh=30 : def=evalnot
 
@@ -69,6 +69,7 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 
 1,all,brak_opt_ img=all : rshift=9 : irshift=6 : minh=30 : def=all
 1,none,brak_opt_ img=none : rshift=6 : irshift=9 : minh=30 : def=none
+1,any,brak_opt_ img=any : rshift=9 : irshift=9 : minh=30 : def=any
 
 // ADD DEFS!!!!!
 

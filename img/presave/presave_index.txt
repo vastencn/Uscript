@@ -86,3 +86,5 @@ array has,has1
 array allnone,arrayallnone
 array allnone,arrayallnoneloop1
 variables,vsetcomplex
+foreach misc,foreachmisc001
+deprecated examples,undefinedvars

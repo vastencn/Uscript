@@ -1,0 +1,2 @@
+v1 <: ([true][true][false][true])
+paira ( v1 , _2 .+ loopprev and loopnext  ) = _5  true and true .+ true and false .+ false and true _5 = _5 ([true][false][false])

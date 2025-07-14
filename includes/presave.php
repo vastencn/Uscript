@@ -43,7 +43,7 @@ function load_presave($id){
 //later can save presave prerenders to exclusive dir with names for permanent saving
 //but for now they will only last until erased from the presave buffer
 //  if($crown=img_search($royal_throne)){
-//    }else{    	
+//    }else{   
     $anna=insert_pre_renders($anna);
     $crown['svg']=multi_line_render($anna);
     file_dump($royal_throne,$crown['svg']);

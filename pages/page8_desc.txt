@@ -24,3 +24,6 @@ loopprev2 loopprev3 loopprev4 loopprev5 :: loopval 2 loops back. 3 loops back. 4
 
 oloopvar _10 oloopnext oloopprev _20 oloopnext2 oloopnext3 oloopprev2 oloopprev3 :: original loop vals before the loop executed
  _2 :: original loop vals are for reference only. constant values during loop
+
+
+loopcount :: loop-counter starts at one increments each loop

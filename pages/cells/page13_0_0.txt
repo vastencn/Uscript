@@ -1,0 +1,14 @@
+v1 = ( [true][true][true] ) _20 v2 = ( [true][true][false][true] ) _20 v3 = ( [false][false][false][false] )
+all ( v1 ) = foreach ( v1 , _2 andleft loopvar ) = _5 wave and true and true and true _5 = _5 true and true and true _5  =_5  = _5 true
+
+all ( v2 ) = foreach ( v2 , _2 andleft loopvar ) = _5 wave and true and true and false and true _5 = _5 true and true and false and true _5  =_5  = _5 false
+
+none ( v2 ) = foreach ( v2 , _2 falsefalseleft loopvar ) = _5 wave falsefalse true falsefalse true falsefalse false falsefalse true _5 = _5 true falsefalse true falsefalse false falsefalse true _5  =_5  = _5 false
+
+none ( v2 ) = foreach ( v3 , _2 falsefalseleft loopvar ) = _5 wave falsefalse false falsefalse false falsefalse false falsefalse false _5 = _5 false falsefalse false falsefalse false falsefalse false _5  =_5  = _5 true
+
+
+
+
+
+any ( v2 ) = paira ( v2 , _2 .+ loopprev and loopnext  ) = _5 true and true .+ true and false .+ false and true _5 = _5 ([true][false][false])

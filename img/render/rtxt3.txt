@@ -1,1 +1,1 @@
-[imgrender_rimg1][imgrender_rimg2]
+ true true true 

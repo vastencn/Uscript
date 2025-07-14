@@ -2,11 +2,30 @@ all/any/none/any-dont
 those which
 min/max
 
+Custom function
+Define loop return values and how to manipulate them
+default return is number of loops executed. but setting it at any point overrides that behavior
+<todo> should add more loop return behavior examples</todo>
+
+establish that undefined variables have no effect in equations. an undefined variable acts as 0 in additions and subtraction. as 1 in * / ^,  in 'x divides y' an undefined y acts as x^2  etc.. 
+1.if one of the values is defined then you get the defined value as a result
+2.with 2 undefiuned values the result is an undefined value. 
+
 For custom functions you can use any symbol as the brac symbol. but I have only added custom alignment for number 1 to 6
 
 I simple number might be best,.
 
 of course custom symbols can be designed and drawn. but for general purpose function definition and usage, I think just labeling them the same everything is given an ID is the simplest solution for now
 
+there now alot of what is needed for calculus
+we can even draw the procedural logic quite elegantly
+function, array pair loops can draw trapezoidal areas under iterated functions
+...debating the order and sequence of how to add calculus and geometry before moving on physics and astronmy
+
+
 *show*
 func(1..1) func(2..1..3) :: f1(1) f2(1 .. 3) custom functions
+ _2 :: establish behavior of undefined variables in equations
+ _2 :: if one value is undefined then return the defined value unchanged
+ _2 :: if both are undefined then return an undefined value
+

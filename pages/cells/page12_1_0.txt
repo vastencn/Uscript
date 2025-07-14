@@ -1,0 +1,6 @@
+v1 <: ([1][3][5]) _20 v2 = ([1][2][3][4][5]) _20 v3 = ( v_20 _12 ) _20 v3 <: 0
+foreach ( v1 , v4 addleft v1 ) = 3 _20 foreach ( v2 , v4 addleft v1 ) = 5 _20 v4 = sum( v1 ) + sum (v2)
+foreach( v1 , addleft loopvar ) = exe( | v9 <: 0 
+  foreach( v1 , v9 addleft loopvar )
+ return v9 | ) = sum( v1 ) = 9
+

@@ -5,8 +5,14 @@ function fecth_cell($cell_name){
 	global $pages_cells_dir;
 
   $fname=$pages_cells_dir.$cell_name.".txt";
-  if(!$cell_dat=@file($fname))return "empty";
-  return implode($cell_dat);
+  if(!$anna=@file($fname))return array("empty","empty");
+
+
+  $elsa=def_render_prep($anna);
+  $sisters=array();
+  $sisters['raw']=implode($anna);
+  $sisters['draw']=implode("\n",$elsa);
+  return $sisters;
   }
 
 function page_fill_missing(&$page){
@@ -150,18 +156,20 @@ function render_page_edit($page,$edit_link=NULL,$cell_edit=NULL,$border=1,$paddi
         $html.="colspan<a href=$edit_link$cell_name&col=p><font size=1 color=blue>++</font></a> <a href=$edit_link$cell_name&col=m><font size=1 color=blue>--</font></a> ($colspan)<br>";
         $html.="$cell_name<hr>";
         }
-      if(substr($cell_dat,0,5)=="page:"){
-        if($embed_page=load_page_struct(substr($cell_dat,5))){
+      if(substr(@$cell_dat['raw'],0,5)=="page:"){
+        if($embed_page=load_page_struct(substr(@$cell_dat['raw'],5))){
           if($rendered=render_page_edit($embed_page)){
             $html.=$rendered;
             }
           }
         }
 
-      $html.=multi_line_render($cell_dat);
+
+
+      $html.=multi_line_render(@$cell_dat['draw']);
       if($cell_edit==$cell_name){
         $html.="<form action=$edit_link$cell_name&up=1 method=post>";
-        $html.="Cell content<hr><textarea name=cell_content rows=10 cols=40>$cell_dat</textarea><hr><hr>";
+        $html.="Cell content<hr><textarea name=cell_content rows=10 cols=40>".@$cell_dat['raw']."</textarea><hr><hr>";
       	$html.="Cell description<hr><textarea name=celldesc_up rows=5 cols=40>".load_cell_desc($cell_name)."</textarea>";
         $html.="<input type=submit value=\"Update cell\">";        
         $html.="</form>";

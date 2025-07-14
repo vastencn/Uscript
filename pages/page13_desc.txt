@@ -1,0 +1,9 @@
+all/any/none/any-dont
+those which
+min/max
+
+*show*
+all( v_20 _10 ) :: all - uses boolean op between all array elements <BR> all( array(a .. b .. c|) ) = a & b & c
+none( v_20 _10 ) :: none - uses falsefalse between all array elements <br> falseflase returns true is both are false
+
+any( v_20 _10 ) :: any - uses the OR between all array elements
