@@ -1,0 +1,8 @@
+geometry
+
+a simple thing like pi, defined by the value, using basic math expressions we can build up so much.
+
+a quick define that strings of solid symbols (like bin string numbers, variable, fractions) are multiplication by default.
+
+*show*
+pi :: pi , rad :: radius , diam :: diameter , circum :: circumference

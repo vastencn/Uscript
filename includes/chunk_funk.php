@@ -17,7 +17,7 @@ function create_chunk($cstr=""){
 
 function gap_chunk($len){
   if(!is_numeric($len))return NULL;
-  if($len<=0)return NULL;
+  //if($len<=0)return NULL;
   $rchunk=create_chunk();
   $rchunk['type']='space';
   $rchunk['string']="_$len";
@@ -62,7 +62,7 @@ function char2chunk($cdat){
 
 function chunk_is_drawable($chunk){
   if(!$chunk)return NULL;
-  if(@$chunk['width']<1)return NULL;
+  //if(@$chunk['width']<1)return NULL;
   if(@$chunk['height']<1)return NULL;
   if(strlen(@$chunk['svg'])<1)return NULL;
   return TRUE;

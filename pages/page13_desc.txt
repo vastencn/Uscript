@@ -3,8 +3,13 @@ min/max
 
 establish that reg brackets don't add depth to arrays. they are only used to wrap them for assignments. double or triple wrapping them does do anything different than single wrapping.
 
+<todo>
+add bit wise bool ops
+I have not added them yet because they don't have immediate use, but considering procedural is such a fundamental layer, and numbers are bit constructed, it feels obvious that bit-wise operators should be included in Uscript.
+</todo>
+
 *show*
-all( v_20 _10 ) :: all - uses boolean op between all array elements <BR> all( array(a .. b .. c|) ) = a & b & c
+all( v_20 _10 ) :: all - the and bool array brak<br>Bool array braks use boolean op between all array elements <BR> all( array(a .. b .. c) ) = a && b && c
 none( v_20 _10 ) :: none - uses falsefalse between all array elements <br> falseflase returns true is both are false
 
 any( v_20 _10 ) :: any - uses the OR between all array elements

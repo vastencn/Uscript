@@ -1,3 +1,1 @@
- v1 <: 0 
-#
-#while( loopcount lt 5 , v1 addleft loopcount ) 
+3

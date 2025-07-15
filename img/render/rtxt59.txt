@@ -1,1 +1,1 @@
- v4 addleft v1 
+ v2 leftadd 1 

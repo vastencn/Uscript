@@ -1,1 +1,1 @@
- v3 <: v3 + v2
+ _2 andleft loopvar 

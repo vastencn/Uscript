@@ -1,9 +1,1 @@
- v1 <: 0
-#
-# v1 addleft 1
-#
-# v1 addleft 1
-#
-# v1 addleft 1
-#
-# 
+ _2 falsefalseleft loopvar 

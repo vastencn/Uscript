@@ -3,6 +3,9 @@ require_once("config.php");
 
 update_def_from_post();
 
+$vall=@$_GET['all'];
+
+
 
 $page_name=html_postget("page");
 $cell_edit=html_postget("cell_edit");
@@ -25,13 +28,23 @@ I have been getting impatient, I don't want to start adding plugins to a framewo
 <br><br>
 General flow is
 <ol>
-  <li>math
-  <li>procedural
-  <li>geometry/calculus
-  <li>physics
-  <li>astronomy
-  <li>communication and abstraction
-  <li>plug-ins
+<li><b>Math</b><br>
+  Obvious first step. numbers and basic arithmetic are super easy to define visually from scratch
+  <li><b>Procedural</b><br>
+  With math it is then easy to define sequence of operations, loops, brackets, arrays, etc..
+  <li><b>Geometry</b><br>
+  Geometry is easily defined using some constants like pi, equations like a²+b²=c², functions like sin(), cos(), etc..
+  <li><b>Calculus</b><br>
+  Using functions and arrays we can use geometric concepts to define slopes, areas under curves, etc..
+  <li><b>Physics</b><br>
+   Starting with fundamental particles, a table of mass values is universal (not in unit values, units are arbitrary... but ratios between the particles is universal). With particles we can then define units like distance, time, forces etc.. as well as molecules, interactions, etc..
+  <li><b>Astronomy</b><br>
+    Using physics we can define the other side of the universal spectrum. The very small is universal (particles, forces, etc...) and the very large is also universal (Astronomy). So we can define stars, planets, blackholes, galaxies, etc... (funnily, what is not universal is all the things that seem most significant in our lives, the human scale is not universal.  I suppose we find ourselves in this range precisely because this is where permutations and possibilities are so vast.)
+  <li><b>Communication and Abstraction</b><br>
+  At this point move on to building communication tools for exchanging ideas, asking questions, etc... The building blocks established in previous layers can be used directly, or as abstractions. Establish ways to abstract with metaphor, analogy, etc... We can create things akin to 'x is like y', 'x is y-ish' etc...
+  <li><b>Plug-ins</b><br>
+  Plug in other universal definition from visual example. Add other methods fo defining from scratch.
+
 </ol>
 
 
@@ -271,10 +284,17 @@ while($found){
           }
         }
       $desc=str_replace("\n", "<br>",htmlspecialchars( $desc));
-      $todo=str_replace("\n", "<br>",htmlspecialchars( $todo));
+      $todo=str_replace(" img_","\">",str_replace("_img ","<img src=\"img/",str_replace("\n", "<br>",htmlspecialchars( $todo))));
       echo "<td width=300><font size=1>$desc</font></td>";
       echo "<td width=300><font size=1>$todo</font></td>";
       echo "</tr>";
+
+
+      if($vall){
+        echo "<td colspan=3>";
+        echo render_page_edit($page,"","");
+        echo "</td>";}
+
       $found=true;
       }
     }

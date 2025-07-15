@@ -11,6 +11,8 @@ $pages_cells_dir="C:\\wamp64\\www\\uscript\\pages\\cells\\";
 $pages_words_dir="C:\\wamp64\\www\\uscript\\pages\\words\\";
 $dslash="\\";
 
+$http_base="http://127.0.0.1/uscript/";
+
 
 //load optional settings flags
 require_once($includes_dir."options.php");

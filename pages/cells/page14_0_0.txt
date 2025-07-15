@@ -1,0 +1,7 @@
+v1 v2 v3 = v1 * v2 * v3 _20 v1 v2 / v3 = v1 * v2 / 3 _20 d>b1/2 v1 = d>b1/2 * v1
+
+_-9 d>b21.12 56 v1 2 d>b1/6 = _-9 d>b21.12 * 56 * v1 * 2 * d>b1/6
+
+v_10
+
+pi aequal 3.243F7 _20 rad + rad = diam _20 circum = pi * diam = pi diam

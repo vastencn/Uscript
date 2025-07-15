@@ -44,7 +44,6 @@ function draw_word($word){
   //set default base in/out
   $base_in=10;
   $base_out=16;
-
   if(!is_string($word))return NULL;
 
 

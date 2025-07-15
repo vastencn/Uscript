@@ -1,1 +1,1 @@
- loopcount lt 4 
+arel[ v2 ]
