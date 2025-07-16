@@ -6,3 +6,13 @@ a quick define that strings of solid symbols (like bin string numbers, variable,
 
 *show*
 pi :: pi , rad :: radius , diam :: diameter , circum :: circumference
+circle :: circle , circlearea :: circle area
+
+2dcartx :: 2D cartesian X , 2dcarty :: 2D cartesian  Y 
+
+ang :: angle , radian :: radian
+tri :: triangle , triaa triab triac :: tringle corners
+
+rt :: right triangle , rtsh rtsv rthyp :: right tri sides , rtav rtah :: right tri corners
+
+ sin( v_20 _8 ) :: sin ,  cos( v_20 _8 ) :: cos,  tan( v_20 _8 ) :: tan

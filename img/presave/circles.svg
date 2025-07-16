@@ -1,7 +1,7 @@
 <svg
-   width="163"
+   width="161.3"
    height="101"
-   viewBox="0 0 163 101"
+   viewBox="0 0 161.3 101"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -89,9 +89,12 @@
                                 <g
                                    id="g1430"
                                    transform="translate(2.3996063e-6,2.9608548)">
+                                <g
+                                   id="g1025"
+                                   transform="translate(-2.385111,0.93424854)">
                                 <path
                                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.76901;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="M 40.482112,47.032743 A 10.001943,10.109179 0 0 0 50.48412,57.141986 10.001943,10.109179 0 0 0 60.485992,47.032743 10.001943,10.109179 0 0 0 50.48412,36.923635 10.001943,10.109179 0 0 0 40.482112,47.032743 Z"
+                                   d="m 42.867223,40.289069 a 7.6169,7.4597889 0 0 0 7.616949,7.459836 7.6169,7.4597889 0 0 0 7.616846,-7.459836 7.6169,7.4597889 0 0 0 -7.616846,-7.459736 7.6169,7.4597889 0 0 0 -7.616949,7.459736 z"
                                    id="path3355-6-3-5-0-0-81"
                                    inkscape:connector-curvature="0" />
                                 <path
@@ -100,6 +103,7 @@
                                    id="path4186-6-7-94-7-8-3-4-9-67-3-99-3-2"
                                    inkscape:connector-curvature="0"
                                    sodipodi:nodetypes="cc" />
+                                </g>
                                 </g>
                                 </g>
                                 </g>
@@ -117,7 +121,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(15,0)"><g
+  </g></g><g transform="translate(12.5,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -221,7 +225,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(25.5,0)"><g transform="translate(0,0)"><g
+  </g></g><g transform="translate(23,0)"><g transform="translate(0,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -292,7 +296,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(27.5,0)"><g
+  </g></g><g transform="translate(28.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -322,7 +326,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(45.5,0)"><g
+  </g></g><g transform="translate(46.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -352,7 +356,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(63.5,0)"><g
+  </g></g><g transform="translate(64.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -383,7 +387,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(81.5,0)"><g
+  </g></g><g transform="translate(82.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -435,7 +439,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(99.5,0)"><g
+  </g></g><g transform="translate(100.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -457,26 +461,26 @@
              transform="matrix(1.0111221,0,0,0.99321507,-7.370096,-13.712524)"
              style="stroke-width:2.00053">
             <g
-               transform="matrix(0.8377975,0,0,0.82801959,-39.343581,-319.74061)"
-               id="g10367"
-               style="stroke-width:2.22033;stroke-miterlimit:4;stroke-dasharray:none">
-              <g
-                 transform="matrix(1.3225711,0,0,1.3623696,-261.95992,693.07775)"
-                 id="g10370"
-                 style="stroke-width:1.77165;stroke-miterlimit:4;stroke-dasharray:none">
-                <path
-                   style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                   d="m 697.55859,-1870.2655 0.0371,-15.9866 H 685.3075 l -3.3e-4,15.9866"
-                   id="path4186-6-7-94-7-8-3-4-9-4-2-5-4-1"
-                   inkscape:connector-curvature="0"
-                   sodipodi:nodetypes="cccc" />
-              </g>
+               id="g7305"
+               transform="rotate(180,507.35331,-1870.45)">
+              <path
+                 style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 514.14845,-1885.2544 -0.0211,14.5898 h -14.56944"
+                 id="path4186-6-7-94-7-8-3-4-9-4-6-1-9-0"
+                 inkscape:connector-curvature="0"
+                 sodipodi:nodetypes="ccc" />
+              <path
+                 style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:2.00053;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+                 d="m 507.21347,-1875.3257 v 9.106"
+                 id="path4186-6-7-94-7-8-3-4-9-4-6-7-7-6-2"
+                 inkscape:connector-curvature="0"
+                 sodipodi:nodetypes="cc" />
             </g>
           </g>
         </g>
       </g>
     </g>
-  </g></g></g><g transform="translate(143,0)"><g></g></g></g><g
+  </g></g></g><g transform="translate(141.3,0)"><g></g></g></g><g
      inkscape:label="Line 3"
      inkscape:groupmode="layer"
      id="layer L3"
@@ -596,7 +600,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(15.5,0)"><line x1="0" y1="0" x2="8" y2="0" style="stroke:black;stroke-width:2" /><polyline points="125,-37 8,-37 8,37 125,37 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(12,0)"><g transform="translate(0,0)"><g transform="translate(0,-35)"><g
+  </g></g><g transform="translate(15.5,0)"><line x1="0" y1="0" x2="8" y2="0" style="stroke:black;stroke-width:2" /><polyline points="122.5,-37 8,-37 8,37 122.5,37 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(12,0)"><g transform="translate(0,0)"><g transform="translate(0,-35)"><g
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
@@ -1304,9 +1308,12 @@
                                 <g
                                    id="g1430"
                                    transform="translate(2.3996063e-6,2.9608548)">
+                                <g
+                                   id="g1025"
+                                   transform="translate(-2.385111,0.93424854)">
                                 <path
                                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.76901;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="M 40.482112,47.032743 A 10.001943,10.109179 0 0 0 50.48412,57.141986 10.001943,10.109179 0 0 0 60.485992,47.032743 10.001943,10.109179 0 0 0 50.48412,36.923635 10.001943,10.109179 0 0 0 40.482112,47.032743 Z"
+                                   d="m 42.867223,40.289069 a 7.6169,7.4597889 0 0 0 7.616949,7.459836 7.6169,7.4597889 0 0 0 7.616846,-7.459836 7.6169,7.4597889 0 0 0 -7.616846,-7.459736 7.6169,7.4597889 0 0 0 -7.616949,7.459736 z"
                                    id="path3355-6-3-5-0-0-81"
                                    inkscape:connector-curvature="0" />
                                 <path
@@ -1315,6 +1322,7 @@
                                    id="path4186-6-7-94-7-8-3-4-9-67-3-99-3-2"
                                    inkscape:connector-curvature="0"
                                    sodipodi:nodetypes="cc" />
+                                </g>
                                 </g>
                                 </g>
                                 </g>
@@ -1332,7 +1340,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(44,0)"><g
+  </g></g><g transform="translate(41.5,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -1432,7 +1440,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(61,0)"><g
+  </g></g><g transform="translate(58.5,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -1532,7 +1540,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(79,0)"><g
+  </g></g><g transform="translate(76.5,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -1632,7 +1640,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(96,0)"><g
+  </g></g><g transform="translate(93.5,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -2267,9 +2275,12 @@
                                 <g
                                    id="g1430"
                                    transform="translate(2.3996063e-6,2.9608548)">
+                                <g
+                                   id="g1025"
+                                   transform="translate(-2.385111,0.93424854)">
                                 <path
                                    style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:3.76901;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-                                   d="M 40.482112,47.032743 A 10.001943,10.109179 0 0 0 50.48412,57.141986 10.001943,10.109179 0 0 0 60.485992,47.032743 10.001943,10.109179 0 0 0 50.48412,36.923635 10.001943,10.109179 0 0 0 40.482112,47.032743 Z"
+                                   d="m 42.867223,40.289069 a 7.6169,7.4597889 0 0 0 7.616949,7.459836 7.6169,7.4597889 0 0 0 7.616846,-7.459836 7.6169,7.4597889 0 0 0 -7.616846,-7.459736 7.6169,7.4597889 0 0 0 -7.616949,7.459736 z"
                                    id="path3355-6-3-5-0-0-81"
                                    inkscape:connector-curvature="0" />
                                 <path
@@ -2278,6 +2289,7 @@
                                    id="path4186-6-7-94-7-8-3-4-9-67-3-99-3-2"
                                    inkscape:connector-curvature="0"
                                    sodipodi:nodetypes="cc" />
+                                </g>
                                 </g>
                                 </g>
                                 </g>
@@ -2295,7 +2307,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(58.8,0)"><g
+  </g></g><g transform="translate(56.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -2395,7 +2407,7 @@
         </g>
       </g>
     </g>
-  </g></g><g transform="translate(75.8,0)"><g
+  </g></g><g transform="translate(73.3,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -2495,4 +2507,4 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></g></g></g><g transform="translate(149.5,0)"></g></g></svg>
+  </g></g></g></g></g></g></g><g transform="translate(147,0)"></g></g></svg>

@@ -44,9 +44,7 @@ General flow is
   At this point move on to building communication tools for exchanging ideas, asking questions, etc... The building blocks established in previous layers can be used directly, or as abstractions. Establish ways to abstract with metaphor, analogy, etc... We can create things akin to 'x is like y', 'x is y-ish' etc...
   <li><b>Plug-ins</b><br>
   Plug in other universal definition from visual example. Add other methods fo defining from scratch.
-
 </ol>
-
 
 <?php
 $istr=html_postget("istr");

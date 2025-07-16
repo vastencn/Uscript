@@ -1,1 +1,7 @@
-1 
+ diam = rad + rad
+#
+# space = pi * rad * rad 
+#
+# perim = circum = pi * diam
+#
+# 

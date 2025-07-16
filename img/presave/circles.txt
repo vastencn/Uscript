@@ -1,4 +1,4 @@
-pi aequal 3.243F6 _20
+pi aequal 3.243F7 _20
 
 circle subcup( | diam = rad + rad
  space = pi * rad * rad 

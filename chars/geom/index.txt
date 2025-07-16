@@ -23,7 +23,7 @@ square,square,13.1
 
 angle,angle,19
 ang,ang,16.6
-radian,radian,11.7
+radian,radian,13.3
 rev,rev,11
 rangle,rangle,16
 

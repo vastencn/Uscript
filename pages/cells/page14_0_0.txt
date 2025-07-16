@@ -4,4 +4,8 @@ _-9 d>b21.12 56 v1 2 d>b1/6 = _-9 d>b21.12 * 56 * v1 * 2 * d>b1/6
 
 v_10
 
-pi aequal 3.243F7 _20 rad + rad = diam _20 circum = pi * diam = pi diam
+pi aequal 3.243F7 _20 rad + rad = diam _20 circum = pi * diam = pi diam _20 circlearea = pi rad rad
+
+2dcartarea = 2dcartx 2dcarty _20 perim = 2dcartx + 2dcartx + 2dcarty + 2dcarty 
+
+ips_circles ips_triangles ips_2dcartproperties  
