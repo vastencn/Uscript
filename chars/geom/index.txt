@@ -28,6 +28,7 @@ rev,rev,11
 rangle,rangle,16
 
 
+
 //2D
 
 //special for dim derivative concepts, eg area, volume etc
@@ -64,6 +65,11 @@ triaa,triaa,18.5
 triab,triab,18
 triac,triac,18
 
+
+trisa,trisa,16
+trisc,trisc,16.8
+trisb,trisb,19.4
+
   //right tri
 rt,rt,16
     //right tri angles
@@ -73,6 +79,10 @@ rtah,rtah,18
 rtsh,rtsh,16
 rtsv,rtsv,16.8
 rthyp,rthyp,19.4
+
+//triangle areas
+triarea,triarea,16.6
+rtarea,rtarea,14.8
 
 
 EOF

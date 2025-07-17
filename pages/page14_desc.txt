@@ -4,15 +4,29 @@ a simple thing like pi, defined by the value, using basic math expressions we ca
 
 a quick define that strings of solid symbols (like bin string numbers, variable, fractions) are multiplication by default.
 
+Things left out
+triangle perimeters. yes, things like herons formula can use perimeter of a triangle usefully.. but for now I'm keeping it simple and only restricting myself to the most function or fundamental. I was even reluctant to include Cartesian perimeter.
+
+<todo>
+
+add symbol for 'other shapes/spaces'.. just define it as 'all spaces/shapes that don't fit into any of the established categories.
+
+also, add symbols for ellipses, etc... the geometry rabbit hole is deep and I don't want to loose myself in it right now.
+maybe take the has/hasnot/isin/isnotin ops and bring them to page-1 with visual examples?</todo>
+
 *show*
 pi :: pi , rad :: radius , diam :: diameter , circum :: circumference
 circle :: circle , circlearea :: circle area
 
-2dcartx :: 2D cartesian X , 2dcarty :: 2D cartesian  Y 
+2dcartx :: 2D cartesian X , 2dcarty :: 2D cartesian  Y , perim :: 2D cart perimeter
 
 ang :: angle , radian :: radian
-tri :: triangle , triaa triab triac :: tringle corners
+tri :: triangle , triaa triab triac :: tringle corners , trisc trisa trisb :: triangle sides
 
 rt :: right triangle , rtsh rtsv rthyp :: right tri sides , rtav rtah :: right tri corners
 
  sin( v_20 _8 ) :: sin ,  cos( v_20 _8 ) :: cos,  tan( v_20 _8 ) :: tan
+
+2dspace :: general 2d space , circlearea :: circle area , 2dcartarea :: 2d cart area
+
+triarea :: triangle area , rtarea :: right triangle area

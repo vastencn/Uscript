@@ -1,7 +1,13 @@
-v1 = ( [1][3][5] ) _20 v2 = ( [a][aa][aaa] )
+v1 = ( [1][3][5] ) _20 v2 = ( [a][aa][aaa] ) _20 v3 = ( ( [1][3] )([5][7]) )
 
 has(v1 _2 , 1) = true _15 has(v1 _2 , 3) = true _15 has(v1 _2 , 2) = false _15 has(v1 _2 , _2 9) = false
 
 has(v1 _2 , aa ) = isin( aa , v1 _2 ) = true _15 has(v1 _2 , 11 ) = isin( 11 , v1 _2 ) = false
 
 nhas(v1 _2 , 51 ) = evalnot(has(v1 _2 , 51 )) = true _10 isin( aaa , v1 _2 ) = evalnot(nisin(aaa , v1 _2)) = true
+
+has( v1 _2 , | [1][3] | ) = (has( v1 _2 , [1] ) and has( v1 _2 , [3] )) = true _15  
+
+has( v3 _2 , | [1][3] | ) = false _20 has( v3 _2 , | ([1][3]) | ) = true
+
+

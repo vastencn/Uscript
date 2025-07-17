@@ -1,1 +1,1 @@
- _5 . . . 
+ [circlearea] [2dcartarea] [triarea] [rtarea]

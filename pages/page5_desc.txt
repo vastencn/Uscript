@@ -4,12 +4,15 @@ we only define the case of a single varset per expression, and it causes both si
 weird cases are undefined for now. like multiple varsets per expression, or varsets inside of brackets. 
 
 
-!!!todo 
+<todo>
+Now that we have varset to contrast with equals, should add examples to clarify that using equals alone outside for execution is "a description/statement/explanation, not an action". it is kind of implied from this point on by the way they are used. but should probably try to establish it strongly and explicitly at this point in the flow.
+
+todo 
 more examples of variable setters
 add a version of varset where there is a center braketed or bin sring. that means the the center value is applied to both sides (eg "v1 < sub : 3 : add > v2" = "sub 3 from v1 and add 3 to v2"  )
 add expression vars
 
-<todo>add examples where more than 2 vars are involved, a center expression that can be applied in different ways to many variable (eg value 3 can applied in different ways to many different variables with many varset arrows all originating form the same central bracket each with different operators.) *not sure if i will include that in this version
+add examples where more than 2 vars are involved, a center expression that can be applied in different ways to many variable (eg value 3 can applied in different ways to many different variables with many varset arrows all originating form the same central bracket each with different operators.) *not sure if i will include that in this version
 
 _img webs_001.jpg img_
 _img webs_002.jpg img_

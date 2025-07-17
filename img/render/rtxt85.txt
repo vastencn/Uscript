@@ -1,11 +1,1 @@
-
-#
-# cartcornertr subcup( ang = b>b1/10 radian )
-#
-# cartcornertl subcup( ang = b>b1/10 radian )
-#
-# cartcornerbl subcup( ang = b>b1/10 radian )
-#
-# cartcornerbr subcup( ang = b>b1/10 radian )
-#
-#
+ [circlearea] [2dcartarea] 

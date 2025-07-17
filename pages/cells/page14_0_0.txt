@@ -6,6 +6,12 @@ v_10
 
 pi aequal 3.243F7 _20 rad + rad = diam _20 circum = pi * diam = pi diam _20 circlearea = pi rad rad
 
-2dcartarea = 2dcartx 2dcarty _20 perim = 2dcartx + 2dcartx + 2dcarty + 2dcarty 
 
 ips_circles ips_triangles ips_2dcartproperties  
+
+
+2dcartarea = 2dcartx 2dcarty _20 perim = 2dcartx + 2dcartx + 2dcarty + 2dcarty _20  
+
+rtarea = b>b1/10 rtsh rtsv _20 triarea = b>b1/10 trisc trisa sin( triab ) = b>b1/10 trisb trisa sin( triac ) = b>b1/10 trisc trisb sin( triaa ) _20 has( triarea , rtarea)
+
+has( 2dspace , | [circlearea] [2dcartarea] [triarea] [rtarea]| )
