@@ -16,6 +16,8 @@ brakp,brakp,16
 apop,apop,24.7
 popa,popa,24.7
 
+apair,apair,11.6
+
 sort,sort,35.8
 sortr,sortr,35.8
 

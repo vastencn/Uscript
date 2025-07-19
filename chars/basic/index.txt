@@ -95,7 +95,7 @@ logs,logs,15.8
 var,var,15
 frac,frac,11
 infinity,infinity,21
-inf,inf,15.3
+inf,inf,16.4
 
 equal,equal,5
 notequal,notequal,6

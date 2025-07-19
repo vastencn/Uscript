@@ -1,0 +1,19 @@
+infinity
+
+array pairing
+
+<todo>
+_img graph.svg img_
+Arbitrary!
+dont rant at me about why these choices are not universal.. they are NOT universal.
+right vs left = completely arbitrary
+up down has a bit of physical and abstract intuition. but you could easily find equally valid intuitions to argue for the opposite.
+</todo>
+*show*
+inf :: infinity<br> a fused number 1 and plus symbol<br>output is looped back into an input<br>defined as { while(true){x+=1;} return x;} = infinity
+
+apair :: apair array pairing op<br> {1 .. 2 .. 3} apair {a .. b .. c} = { {1 .. a} .. {2 .. b} .. {3 .. c} }<br> we define its behaviour "enough for now". <br>Enough to use it for basic calculus.
+
+x :: X , y :: Y ,dx :: dx , dy :: dy
+dxdy :: dx/dy. <br>change/slope of X  (vertical)<br>from perspective of one Y (horizontal) unit
+dydx :: dy/dx. <br>change/slope of Y(horizontal)<br>from perspective of one X (vertical) unit

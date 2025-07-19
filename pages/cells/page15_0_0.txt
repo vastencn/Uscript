@@ -1,0 +1,2 @@
+exe( | while(true, v1 addleft 1 ) 
+ return v1| ) = inf

@@ -35,6 +35,12 @@ etc...
 !! not satisfied with ten and hun symbols.. maybe change them or delete them 
 </todo>
 
+<todo>
+
+add some root braks?
+_img roots.jpg img_
+</todo>
+
 
 *show*
 1dim 2dim 3dim 4dim :: dims , 0 1 2 :: ... numbers

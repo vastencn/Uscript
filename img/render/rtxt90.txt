@@ -1,1 +1,1 @@
- rtarea
+([loopvar][ loopvar + 1 ])

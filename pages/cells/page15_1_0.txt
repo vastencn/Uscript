@@ -1,0 +1,9 @@
+v1 <: ( [1][2][3] ) _20 v2 <: ([5][6][7]) _20 v3 <: ([a][b][c][d])
+
+v1 apair v2 = ( [ [1][5] ] [ [2][6] ] [ [3][7] ]  )
+
+v1 apair v2 apair v3 = ( [ [[1][5]][a] ] [ [[2][6]][b] ] [ [[3][7]][c] ] [[[wave][wave]][d]]  )
+
+v1 apair v2 apair .++ v3 = ( [ [1][5][a] ] [ [2][6][b] ] [ [3][7][c] ] [[wave][wave][d]]  )
+
+v1 apair exp( loopvar + 1 ) = foreach( v1 , loopreturn .+ |([loopvar][ loopvar + 1 ])| ) = ( [[1][2]] [[2][3]] [[3][4]] )
