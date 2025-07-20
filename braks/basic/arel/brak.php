@@ -37,6 +37,8 @@ $brak_text_def = 	"array element brak\n".
 function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
   if(!chunk_is_drawable($chunk))return NULL;
 
+  //ar_dump($chunk);
+
   $xstart=0;
   $cstart=($stroke_width/2);
   $svg_str="";
@@ -75,6 +77,16 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
 
     }
 
+  $subtype=NULL;
+
+      if($chunk['words'][0]==","){
+        $subtype="pre";
+        }
+      if($chunk['words'][count($chunk['words'])-1]==","){
+        $subtype="post";
+        }
+
+
 
   $ctxt="sub(".@$chunk['string'].")";
   $nchunk=create_chunk($ctxt);
@@ -93,14 +105,30 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
   $inner_space_end=$chunk_x_offset+@$chunk['width']+$hpad;
   $inner_space_width=$inner_space_end-$xstart;
   if($closed)$cup_depth=$height;
+
+
+
   $svg_str.=svg_vcup($xstart,$height/2,$inner_space_width,$cup_depth,$stroke_width);
   $svg_str.=svg_vcup($xstart,0-$height/2,$inner_space_width,0-$cup_depth,$stroke_width);
 
-  $nchunk['svg']=$svg_str;
+
+
   $nchunk['brak']['spelling']=$chunk['brak']['spelling'];
   $nchunk['drawn']=TRUE;
   $nchunk['height']=$height+$stroke_width;
-  $nchunk['width']=$inner_space_end+$stroke_width;
+
+  if($subtype=="pre"){
+    $svg_str.=svg_vline($xstart,($height/2)+8,$l=0-($height+16),$s=2);
+    $nchunk['height']+=16;
+    }
+  if($subtype=="post"){
+    $svg_str.=svg_vline($xstart+$inner_space_width,($height/2)+8,$l=0-($height+16),$s=2);
+    $nchunk['height']+=16;
+    }
+
+
+  $nchunk['svg']=$svg_str;
+  $nchunk['width']=$inner_space_end+$stroke_width+1;
   $nchunk['brako_xstart']=0;
   $nchunk['brako_xend']=$chunk_x_offset;
   $nchunk['brakc_xstart']=$chunk_x_offset+$chunk['width'];

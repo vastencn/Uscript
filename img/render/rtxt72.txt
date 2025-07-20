@@ -1,1 +1,1 @@
- v1 addleft 1 
+ loopvar 

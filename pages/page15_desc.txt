@@ -17,3 +17,6 @@ apair :: apair array pairing op<br> {1 .. 2 .. 3} apair {a .. b .. c} = { {1 .. 
 x :: X , y :: Y ,dx :: dx , dy :: dy
 dxdy :: dx/dy. <br>change/slope of X  (vertical)<br>from perspective of one Y (horizontal) unit
 dydx :: dy/dx. <br>change/slope of Y(horizontal)<br>from perspective of one X (vertical) unit
+
+ s[ .. v1] :: the array interval gap before an element
+ s[v1 .. ] :: the array interval gap after an element

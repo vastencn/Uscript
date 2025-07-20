@@ -1,1 +1,5 @@
-[imgrender_rimg34][imgrender_rimg35]
+ x = 3
+#
+# y = 6
+#
+# 
