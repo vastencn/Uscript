@@ -78,12 +78,34 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
     }
 
   $subtype=NULL;
-
+  //ar_dump($chunk);
+      
       if($chunk['words'][0]==","){
         $subtype="pre";
-        }
-      if($chunk['words'][count($chunk['words'])-1]==","){
+        }else if($chunk['words'][count($chunk['words'])-1]==","){
         $subtype="post";
+        } elseif(count($chunk['words'])>2) {
+        for($i=1;$i<count($chunk['words'])-1;$i++){
+          $wordar1=array($chunk['words'][0]);
+          if($chunk['words'][$i] == ","){
+            $wordar2=array("_4");
+            for($j=$i+1;$j<count($chunk['words']);$j++){
+              $wordar2[]=$chunk['words'][$j];
+              $wstr1=implode(" ",$wordar1);
+              $wstr2=implode(" ",$wordar2);
+              $line1=render_uscript_text($wstr1);
+              $line2=render_uscript_text($wstr2);
+              $l1end=$line1['width'];
+              append_elsa($line1,$line2);
+              $chunk=$line1;
+              $subtype="iline";
+              $iline=$l1end+5;
+              }
+            break;
+            }  
+          $wordar1[]=$chunk['words'][$i];
+
+          }  
         }
 
 
@@ -123,6 +145,10 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
     }
   if($subtype=="post"){
     $svg_str.=svg_vline($xstart+$inner_space_width,($height/2)+8,$l=0-($height+16),$s=2);
+    $nchunk['height']+=16;
+    }
+  if($subtype=="iline"){
+    $svg_str.=svg_vline($chunk_x_offset+$iline,($height/2)+8,$l=0-($height+16),$s=2);
     $nchunk['height']+=16;
     }
 

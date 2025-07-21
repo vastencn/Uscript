@@ -8,6 +8,9 @@ Arbitrary!
 dont rant at me about why these choices are not universal.. they are NOT universal.
 right vs left = completely arbitrary
 up down has a bit of physical and abstract intuition. but you could easily find equally valid intuitions to argue for the opposite.
+
+
+show expand on the definition of 'reverse' gaps, which look at an interval backwards invertingthe x1,x2 sequence and thus inverting the sign
 </todo>
 *show*
 inf :: infinity<br> a fused number 1 and plus symbol<br>output is looped back into an input<br>defined as { while(true){x+=1;} return x;} = infinity
@@ -20,3 +23,7 @@ dydx :: dy/dx. <br>change/slope of Y(horizontal)<br>from perspective of one X (v
 
  s[ .. v1] :: the array interval gap before an element
  s[v1 .. ] :: the array interval gap after an element
+ s[v1 .. v2] :: the array interval gap between two elements
+
+x1 :: x1. first x in an interval, x2 :: x2. second x in an interval
+y1 :: y1. first y in an interval, y2 :: y2. second y in an interval

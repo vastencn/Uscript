@@ -1,1 +1,1 @@
- loopvar 
+([loopvar][ loopvar + 1 ])

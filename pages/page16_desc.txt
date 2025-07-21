@@ -1,0 +1,4 @@
+1
+
+*show*
+v1 agen( v2 ) v3 :: array generator. <br>first value to last value<br>center op value is number of intervals<br>1 agen(1) 3 = {1 .. 3} <br>1 agen(2) 3 = {1 .. 2 .. 3} <br>a agen(x) b = { (b-a)*1/x .. (b-a)*2/x .. etc... b }

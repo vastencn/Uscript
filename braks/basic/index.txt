@@ -13,6 +13,7 @@ evalneg,evalneg
 atom,atom
 arel,arel
 exp,exp
+agen,agen
 
 !!!---Chain braks are a subtype of 1 arg braks---!!!
 chain,chain

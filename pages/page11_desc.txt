@@ -21,6 +21,7 @@ later can add bracketing and nuance to sorting
 
 
 <todo>
+aflip def 
 array pair loop examples
 
 array sort exmaples
@@ -49,3 +50,4 @@ stepsa ( . . . .. _3 . . . ) :: stepsa. array steps last to first
 
 sort :: array sort. small -> large , sortr :: reverse sort. large -> small
 
+aflip :: array flip. flips order forward/backwards
