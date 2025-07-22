@@ -12,18 +12,28 @@ up down has a bit of physical and abstract intuition. but you could easily find 
 
 show expand on the definition of 'reverse' gaps, which look at an interval backwards invertingthe x1,x2 sequence and thus inverting the sign
 </todo>
+
+<todo>
+change the example so that it is offset from origin (like just a +1) so that way the xarea and y area are different in the examples
+</todo>
+
+
 *show*
 inf :: infinity<br> a fused number 1 and plus symbol<br>output is looped back into an input<br>defined as { while(true){x+=1;} return x;} = infinity
 
 apair :: apair array pairing op<br> {1 .. 2 .. 3} apair {a .. b .. c} = { {1 .. a} .. {2 .. b} .. {3 .. c} }<br> we define its behaviour "enough for now". <br>Enough to use it for basic calculus.
 
 x :: X , y :: Y ,dx :: dx , dy :: dy
+
+x1 :: x1. first x in an interval, x2 :: x2. second x in an interval
+y1 :: y1. first y in an interval, y2 :: y2. second y in an interval
+
 dxdy :: dx/dy. <br>change/slope of X  (vertical)<br>from perspective of one Y (horizontal) unit
 dydx :: dy/dx. <br>change/slope of Y(horizontal)<br>from perspective of one X (vertical) unit
+
+xarea :: area with respect to X (under curve)
+yarea :: area with respect to Y
 
  s[ .. v1] :: the array interval gap before an element
  s[v1 .. ] :: the array interval gap after an element
  s[v1 .. v2] :: the array interval gap between two elements
-
-x1 :: x1. first x in an interval, x2 :: x2. second x in an interval
-y1 :: y1. first y in an interval, y2 :: y2. second y in an interval

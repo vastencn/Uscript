@@ -88,3 +88,4 @@ array allnone,arrayallnoneloop1
 variables,vsetcomplex
 foreach misc,foreachmisc001
 deprecated examples,undefinedvars
+array generator,arraygen01

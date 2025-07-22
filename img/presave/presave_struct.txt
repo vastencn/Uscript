@@ -34,6 +34,7 @@ defs
    array combine
    array has
    array allnone
+   array generator
  physics
   processes
    conversion

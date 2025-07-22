@@ -48,5 +48,15 @@ y2,y2,15.7
 dx,dx,18
 dy,dy,18
 
-dydx,dydx,17.8
+dydx,dydx,18.8
 dxdy,dxdy,18
+
+slope,slope,15.7
+slopex,slope,15.7
+slopey,slopey,15.7
+
+xarea,xarea,15
+yarea,yarea,15.9
+
+integratex,integratex,16.5
+integratey,integratey,20.7

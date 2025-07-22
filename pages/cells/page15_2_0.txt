@@ -22,6 +22,9 @@ v1 s[1 ,] sub( | x = wave
  dy = y2 - y1 = 2
  dxdy = dx / dy = b>b1/10
  dydx = dy / dx = 2
+
+ xarea = y1 + y2 * dx / 2 = 3
+ yarea = x1 + x2 * dy / 2 = 3
  | ) _10 v1 s[ 1 , 3 ] sub( | x = wave 
  y = wave
  x1 = v1 s[1] _-8 s[x] = 1
@@ -33,5 +36,8 @@ v1 s[1 ,] sub( | x = wave
  dy = y2 - y1 = 4
  dxdy = dx / dy = b>b1/10
  dydx = dy / dx = 2
+
+ xarea = y1 + y2 * dx / 2 = 8
+ yarea = x1 + x2 * dy / 2 = 8
  | ) _10 
 v1 s[, 1] = wave  _20 v1 s[3 ,] = wave _20 v1 s[1 ,] = v1 s[1 , 2] _20 v1 s[, 2] = v1 s[2 , 1]

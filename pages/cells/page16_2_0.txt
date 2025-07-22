@@ -1,0 +1,5 @@
+func(1 , v_8 ) <: exp( <: loopvar ^ 2 ) _20 v1 <: 1 agen(2) 3  apair func(1 , loopvar ) 
+v1 = ( [[1][1]] _10 [[2][4]] _10 [[3][9]]  )
+
+v1 integratex = stepsa(v1 , addleft xarea) = b>b10.101 + b>b110.101 = 9
+v1 integratey = stepsa(v1 , addleft yarea) = b>b100.101 + b>b1100.101 = 12 = h>b12
