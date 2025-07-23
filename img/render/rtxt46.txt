@@ -1,1 +1,1 @@
- addleft xarea
+ true true true 

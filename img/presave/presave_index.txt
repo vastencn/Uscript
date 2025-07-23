@@ -89,3 +89,6 @@ variables,vsetcomplex
 foreach misc,foreachmisc001
 deprecated examples,undefinedvars
 array generator,arraygen01
+calculus premakes,fx
+calculus premakes,fxxarea
+calculus premakes,fxyarea

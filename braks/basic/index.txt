@@ -46,6 +46,9 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,cos,brak_opt_ img=cos : rshift=6 : irshift=6 : minh=30 : def=cos
 1,tan,brak_opt_ img=tan : rshift=6 : irshift=6 : minh=30 : def=tan
 
+1,xint,agen_opt_ : rshift=1 : irshift=1 : minh=30 : def=xint : xint=1
+1,yint,agen_opt_ : rshift=1 : irshift=1 : minh=30 : def=yint : yint=1
+
 1,pos,brak_opt_ img=pos : rshift=17 : irshift=6 : minh=30 : def=pos
 1,impos,brak_opt_ img=impos : rshift=17 : irshift=6 : minh=30 : def=impos
 

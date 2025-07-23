@@ -1,10 +1,24 @@
-here build an array generator
+Successfully defined basic calculus without resorting to drawing pictographic graphs as example.
+
+Used some visual elements in the symbols, but the symbols are defined by explicitly defined processes, formulas, and examples here build an array generator
 
 the array generator can generate an array of bounded input values
 
 those values can be paired to a function and used for Riemann sums  and stuff. 
 
 I will focus on trapezoidal integration so that we don't start inferring data beyond the range bounding points  
+<todo>
+will add more notation formats. eg rotating the integration notation vertically.
+
+also design in implied nesting, as opposed to requiring explicit bracketing, will need to use spacial layout to imply bracketing, like standard notation systems.
+
+but this is enough for function any current needs. doubt ill even need multidimensional calculus at the moment. can nest, and there are way to represent anything you need, just might be a bit bulky without some implied bracketing optimizations.
+
+What is here seem like a reasonable place to move on for now. Later come back and flesh it out more.
+</todo>
+<todo>
+Clearly need to touch up the number string generator. keeps adding 4 bits for zero before radix
+</todo>
 
 *show*
 v1 agen( v2 ) v3 :: array generator. <br>first value to last value<br>center op value is number of intervals<br>1 agen(1) 3 = {1 .. 3} <br>1 agen(2) 3 = {1 .. 2 .. 3} <br>a agen(x) b = { (b-a)*1/x .. (b-a)*2/x .. etc... b }
@@ -14,3 +28,6 @@ slopey :: inverted point slope (dx/dy lim inf)
 
 integratex :: trapezoidal integration with respect to X
 integratey :: trapezoidal integration with respect to Y
+
+v1 xint( ips_fx ) v2 :: xint braket<br>integrate f1(x) on x from v1 to v2
+v1 yint( ips_fx ) v2 :: yint braket<br>integrate f1(x) on y from v1 to v2

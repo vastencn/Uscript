@@ -96,6 +96,7 @@ var,var,15
 frac,frac,11
 infinity,infinity,21
 inf,inf,16.4
+divinf,divinf,21.7
 
 equal,equal,5
 notequal,notequal,6

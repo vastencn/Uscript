@@ -1,2 +1,2 @@
 exe( | while(true, v1 addleft 1 ) 
- return v1| ) = inf
+ return v1| ) = inf _20 1 / inf = divinf

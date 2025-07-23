@@ -42,6 +42,7 @@ function agen_brak($chunk,$cup_depth=13,$hpad=3,$vpad=2,$stroke_width=2){
   $svg_str="";
   $minh=NULL;
   $closed=NULL;
+  $integrate=NULL;
 
   $opts=@$chunk['brak']['opts'];
   if(@count($opts)>0){
@@ -69,6 +70,16 @@ function agen_brak($chunk,$cup_depth=13,$hpad=3,$vpad=2,$stroke_width=2){
                    break;
         case "def":
                    $chunk['brak']['spelling']=$vval;
+                   break;
+        case "xint":
+                   $img=brak_load_opt_img("xint",$chunk['brak']);
+                   $xstart=14;
+                   $integrate="x";
+                   break;
+        case "yint":
+                   $img=brak_load_opt_img("yint",$chunk['brak']);
+                   $xstart=18;
+                   $integrate="y";
                    break;
         }
       }
@@ -102,13 +113,19 @@ function agen_brak($chunk,$cup_depth=13,$hpad=3,$vpad=2,$stroke_width=2){
   $bvline2=$inner_space_width/2;
   $bvline3=($inner_space_width/4)*3;
 
-  $svg_str.=svg_vcup($xstart,$btopline,$inner_space_width,0-($cup_depth+$bboxoff),$stroke_width);
-  $svg_str.=svg_hline($xstart,$bbotline,$inner_space_width);
-  $svg_str.=svg_vline($bvline1,$btopline,$bboxheight);
-  $svg_str.=svg_vline($bvline2,$btopline,$bboxheight);
-  $svg_str.=svg_vline($bvline3,$btopline,$bboxheight);
-  //$svg_str.=svg_vcup($xstart,0-$height/2,$inner_space_width,0-$cup_depth,$stroke_width);
-
+  if(!$integrate){
+    $svg_str.=svg_vcup($xstart,$btopline,$inner_space_width,0-($cup_depth+$bboxoff),$stroke_width);
+    $svg_str.=svg_vcup($xstart,$btopline,$inner_space_width,0-($cup_depth+$bboxoff),$stroke_width);
+    $svg_str.=svg_hline($xstart,$bbotline,$inner_space_width);
+    $svg_str.=svg_vline($bvline1,$btopline,$bboxheight);
+    $svg_str.=svg_vline($bvline2,$btopline,$bboxheight);
+    $svg_str.=svg_vline($bvline3,$btopline,$bboxheight);
+    //$svg_str.=svg_vcup($xstart,0-$height/2,$inner_space_width,0-$cup_depth,$stroke_width);
+  }else{
+  $svg_str.=svg_vcup($xstart,0-$height/2,$inner_space_width,0-$cup_depth,$stroke_width);
+  if($img)$svg_str.=draw_svg_symbol(@$img['svg'],0-$height/2,1);
+  }
+  
   $nchunk['svg']=$svg_str;
   $nchunk['brak']['spelling']=$chunk['brak']['spelling'];
   $nchunk['drawn']=TRUE;

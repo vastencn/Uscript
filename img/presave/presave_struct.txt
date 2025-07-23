@@ -47,4 +47,6 @@ defs
     quarks
  numsvars
 format
+premakes
+ calculus premakes
 deprecated examples
