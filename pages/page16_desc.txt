@@ -29,5 +29,5 @@ slopey :: inverted point slope (dx/dy lim inf)
 integratex :: trapezoidal integration with respect to X
 integratey :: trapezoidal integration with respect to Y
 
-v1 xint( ips_fx ) v2 :: xint braket<br>integrate f1(x) on x from v1 to v2
+v1 xint( ips_fx ) v2 :: xint braket<br>integrate f1(x) on x from v1 to v2<br>defined as trapezoidal integration with infinite resolution
 v1 yint( ips_fx ) v2 :: yint braket<br>integrate f1(x) on y from v1 to v2

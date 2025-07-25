@@ -1,0 +1,17 @@
+electron sub[mass aequal  1] _118 electronneu sub[mass lt 2.0d5 h>b1s-5]
+
+muon sub[mass aequal  ce.c59] _30 muonneu sub[mass lt 0.552aa]
+
+tau sub[mass aequal d95.1e] _30 tauneu sub[mass lt 23.9dd]
+
+qup sub[mass aequal 4.4e28] _20 qdown sub[mass aequal 9.329b]
+
+qcharm sub[mass aequal 9c8.e6] _20 qstrange sub[mass aequal bb.de1]
+
+qtop sub[mass aequal 52b3c] _32 qbottom sub[mass aequal 1ff4.1] 
+
+photon sub[mass aequal 0] _20 wboson sub[mass aequal 2664c]
+
+gluon sub[mass aequal 0] _24 zboson sub[mass aequal 2b916]
+
+higgs sub[mass aequal 3bc62]

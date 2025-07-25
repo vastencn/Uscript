@@ -10,11 +10,11 @@ v1 integratey = stepsa(v1 , addleft yarea) = b>b100.101 + b>b1100.101 = 12 = h>b
 0 xint( | func(1 , loopvar ) _-6 s[xarea] | ) 2 _5 = _5 0 agen(inf) 2  apair func(1 , loopvar ) integratex _5 = _5  7 / 3 _5 = _5  b>b0111/11
 0 yint( | func(1 , loopvar ) _-6 s[xarea] | ) 2 _5 = _5 0 agen(inf) 2  apair func(1 , loopvar ) integratey _5 = _5 e / 3 _5 = _5 h>be/3 
 
-func(1, 2) _-6 s[slope] _5 = _5 func(1, 2 + divinf ) - func(1, 2 ) * inf _5 = _5 4
+func(1, 2) _-6 s[slope] _5 = _5 func(1, 2 + divinf ) - func(1, 2 ) / divinf _5 = _5 4
 
-func(1, 1) _-6 s[slope] _5 = _5 func(1, 1 + divinf ) - func(1, 1 ) * inf _5 = _5 2
+func(1, 1) _-6 s[slope] _5 = _5 func(1, 1 + divinf ) - func(1, 1 ) / divinf _5 = _5 2
 
-func(1, 1) _-6 s[slopey] _5 = _5 func(1, 1 ) - func(1, 1 + divinf ) * inf _5 = _5 1 / 2 _5 =_5 b>b0.1
+func(1, 1) _-6 s[slopey] _5 = _5 func(1, 1 ) - func(1, 1 + divinf ) divides divinf _5 = _5 1 / 2 _5 = _5 b>b0.1
 
 func(1, b>b1/100 ) _-6 s[slopex] = b>b1/10 _20 func(1, b>b1/100 ) _-6 s[slopey] = 1 / func(1, b>b1/100 ) _-6 s[slopex] = 2
 

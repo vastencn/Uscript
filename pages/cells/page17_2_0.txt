@@ -1,0 +1,7 @@
+inv electron = antielectron _38 inv muon = antimuon _31 inv tau = antitau _31 inv electronneu = antielectronneu _41 inv muonneu = antimuonneu _31 inv tauneu = antitauneu
+
+inv qtop = antiqtop _15 inv qcharm = antiqcharm _15 inv qbottom = antiqbottom _15 inv qup = antiqup _15 inv qstrange = antiqstrange _15 inv qdown = antiqdown
+
+inv photon = photon _24 inv wboson = antiwboson _28 inv hspin = antihspin _26 inv fspin = antifspin _29 in lepton = antilepton _45 inv quark = antiquark
+
+inv zboson = zboson _30 inv photon = photon _21 inv higgs = higgs

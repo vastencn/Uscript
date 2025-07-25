@@ -1,6 +1,9 @@
 arrays
 <todo>
-Some of these definitions would be easier if I add array pop here first, instead of later</todo>
+Some of these definitions would be easier if I add array pop here first, instead of later
+
+add standard deviation brak
+</todo>
 
 *show*
 v1 = ( [1][2][3] . . . ) :: array def ([][][]...)

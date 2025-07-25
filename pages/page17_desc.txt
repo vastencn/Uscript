@@ -1,0 +1,78 @@
+particles are defined by a chart of masses
+mass units are not universal... 
+... But the ratios are
+UP quarks ≈ 4.3  electrons in mass*
+So the chart as a whole is universal
+
+*many particles have some tolerances on mass certainty. electron mass is known to high order of precision and the mass units used IS electrons, everything is stated in terms of 'this ≈  x electrons of mass'.
+
+particle symbols are composed of uscript radicals
+The symbol design tries to be representative
+but the definition is the mass chart
+
+Don't confuse an attempt to make the symbol descriptive . . .
+with the actual definition . . .
+See this page for the chart
+
+Leptons are wave radical combined with dot or circle
+dot : true .. particle .. charge
+circle : zero .. space .. false .. no charge
+so charge leptons use a dot and neutral leptons use a circle.
+more wave zig-zags imply 'more'(mass)
+
+Quarks use a triangle combine with particle
+The triangle shapes is used for color charge representations
+The number of particles on the triangle represents charge thirds
+
+photon is a particle inside a wave. both because a photon is more wave than particle (compared to other particles) and because antiparticles are made by flipping the particle symbol upside-down, and this way the photon doesn't change, 'because a photon is it own antiparticle'
+
+gluon are 2 triangles connect by a wave, representing color charge interaction. the 2 triangles can be used to make color charges ( done with lines in the corners)
+
+W and Z bosons. W boson is charge so it has a dot, Z boson neutral so it has a circle. Their most iconic interactions involve quarks, so a triangle is used. (Yes, they also interact with leptons, bur remember, these symbols are just symbols only try to representative, the definition is the mass chart and later formulas/expressions)
+
+higgs uses a later defined symbol of 'spacetime' + wave(interaction) + circle(neutral)
+
+Within the defintion of symbols dots mean charge and circles mean neutral
+
+But outside of particles those symbols have broader scopes. 
+
+Dot can me particle in general, or true, whole unit, etc..
+
+Circle can be space, area, zero, empty, etc..
+
+antiparticles are just described as '-' or 'invert' of a particle.
+
+This is NOT a full proper definition of antiparticles
+
+I just split it into the next page because this page info/ description is getting big due to the "massive symbol dump" of particles.
+
+*show*
+electron :: electron ,  muon :: muon , tau :: tau
+electronneu :: electron neutrino ,  muonneu :: muon neutrino , tauneu :: tau neutrino
+
+qup :: up quark , qcharm :: charm quark , qtop :: top quark 
+qdown :: down quark , qstrange :: strange quark , qbottom :: bottom quark
+
+photon :: photon , gluon :: gluon , wboson :: wboson , zboson :: zboson , higgs :: higgs
+
+hspin :: fermion , lepton :: lepton, quark :: quark
+boson :: boson , fspin :: gauge boson
+
+
+
+
+ _1 :: . <br> anti particles are just vertically inverted symbols <br> .
+
+electron   muon tau :: elec muon tau , antielectron  antimuon antitau :: anti elec muon tau
+
+electronneu muonneu tauneu :: elec muon tau neutrinos , antielectronneu antimuonneu antitauneu :: anti elec muon tau neutrinos
+
+qup  qcharm  qtop :: up charm top quark , antiqup  antiqcharm  antiqtop :: anti up charm top quark
+
+qdown qstrange qbottom :: down strange bot, antiqdown antiqstrange antiqbottom :: anti down strange bot
+
+wboson :: w boson , antiwboson :: anti w boson
+
+antihspin :: anti fermion ,hspin :: fermion , _2 , fspin :: gauge boson ,  antifspin :: anti gauge boson
+
+lepton :: lepton , antilepton :: anti lepton , _2 , quark :: quark , antiquark :: antiquark

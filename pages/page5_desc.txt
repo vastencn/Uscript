@@ -18,7 +18,7 @@ _img webs_001.jpg img_
 _img webs_002.jpg img_
 
 but this is definitely something to flesh out later. time time time.. so much to do, so little time.
-might need to redefine the way non-commutative operators are written into the operator line. Probably need 'top-bottom' orientation of the operator symbol to become relative to reading direction. (place your perspective inside the line at the midpoint (:) then flow to each side and treat left and right as absolute 'up/down'
+might need to redefine the way operators are written into the operator line. Probably need 'top-bottom' orientation of the operator symbol to become relative to reading direction. (place your perspective inside the line at the midpoint (:) then flow to each side and treat left and right as absolute 'up/down'
 </todo>
 
 procedural intro

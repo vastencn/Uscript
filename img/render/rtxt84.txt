@@ -1,1 +1,1 @@
- loopvar 
+ true true true  

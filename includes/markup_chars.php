@@ -177,7 +177,7 @@ function search_char($search_str){
   switch($pre){
     case "anti":
     case "ant1":
-                $sx=1;
+                $sx=-1;
                 $sy=-1;
                 break;
     case "fpvh":

@@ -60,11 +60,11 @@ orleft,orleft,32.2
 andleft,andleft,32.2
 falsefalseleft,falsefalseleft,32.2
 
-x1,x1,18.8
-x2,x2,16.8
-x3,x3,17.5
-x4,x4,21.3
-x5,x5,20.5
+ex1,ex1,18.8
+ex2,ex2,16.8
+ex3,ex3,17.5
+ex4,ex4,21.3
+ex5,ex5,20.5
 
 EOF
 

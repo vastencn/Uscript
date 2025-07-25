@@ -42,11 +42,11 @@ tauneu,tauneu,10
 //quarks
 quark,quark,17
 
-qup,qup,18
+qup,qup,19.3
 qcharm,qcharm,18.5
 qtop,qtop,18.5
 
-qdown,qdown,19.3
+qdown,qdown,18
 qstrange,qstrange,18.5
 qbottom,qbottom,18.5
 
@@ -67,7 +67,7 @@ photon,photon,14.2
 
 //anti
 //most antis can be drawn by using a prefix on the word anti or ant1,ant2(and1 is just a vflip, ant2 also hflips)
-//here are the exceptions whose graphics can be simply flipped
+//here are the exceptions whose graphics cany be simply flipped
 antifermion,antifermion,13.2
 
 //hardons
@@ -96,6 +96,8 @@ charge,charge,16.8
 mass,mass,15
 hspin,hspin,13
 fspin,fspin,12.2
+rhspin,rhspin,13
+rfspin,rfspin,12.2
 spacetime,spacetime,14
 time,time,12
 spin,spin,14
