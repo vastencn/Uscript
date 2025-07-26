@@ -1,1 +1,1 @@
-arel[ . . . ] arel[ . . . ]
+ .+ loopvar s[1] 

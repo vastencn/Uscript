@@ -44,6 +44,8 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
   $svg_str="";
   $minh=NULL;
   $closed=NULL;
+  $subar=NULL;
+
 
   $opts=@$chunk['brak']['opts'];
   if(@count($opts)>0){
@@ -53,7 +55,7 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
       switch($vname){
         case "img":
                    $img=brak_load_opt_img($vval,$chunk['brak']);
-                   $svg_str.=$img['svg'];
+                   $svg_str.=draw_svg_symbol(@$img['svg'],0,3);
                    break;
         case "rshift":
                    $xstart=$vval;
@@ -68,6 +70,9 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
                    break;
         case "minh":
                    $minh=$vval;
+                   break;
+        case "subar":
+                   $subar=$vval;
                    break;
         case "def":
                    $chunk['brak']['spelling']=$vval;
@@ -132,6 +137,9 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
 
   $svg_str.=svg_vcup($xstart,$height/2,$inner_space_width,$cup_depth,$stroke_width);
   $svg_str.=svg_vcup($xstart,0-$height/2,$inner_space_width,0-$cup_depth,$stroke_width);
+  if($subar){
+    $svg_str.=svg_vline($xstart+6,($height/2),$l=0-$height,$s=2);
+    }
 
 
 

@@ -1,7 +1,7 @@
 <svg
-   width="15"
-   height="20"
-   viewBox="0 0 15 20"
+   width="36"
+   height="26"
+   viewBox="0 0 36 26"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -13,7 +13,7 @@
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
-     transform="translate(0,10)"><g transform="translate(0,0)"><g transform="translate(0,0)"><g
+     transform="translate(0,13)"><g transform="translate(3,0)"><line x1="0" y1="0" x2="5" y2="0" style="stroke:black;stroke-width:2" /><g transform="translate(9,0)"><g transform="translate(0,0)"><g transform="translate(0,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -50,4 +50,4 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></svg>
+  </g></g></g></g><polyline points="5,-12 5,12 27,12 27,-12 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="5,12 5,-12 27,-12 27,12 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(36,0)"></g></g></svg>

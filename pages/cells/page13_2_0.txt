@@ -1,2 +1,5 @@
+v1 <: ([true][true][false][true])
+ stepsa ( v1 , _2 .+ loopprev and loopnext  ) = _5  true and true .+ true and false .+ false and true _5 = _5 ([true][false][false])
+
 count([1][2][3]) _5 =  _5 count(([1][2][3])) _5  = _5  count((([1][2][3]))) _5  = _5  3
 ([5][6][7])s[2] _5 = _5 (([5][6][7])) s[2] _5 = _5 6

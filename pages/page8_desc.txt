@@ -2,6 +2,10 @@ foreach and execution brak
 
 <todo>
 
+more examples of loopvar
+
+foreach doesn't need to braket input when no "as x" is used
+
 define that when inside a loop, or anything,  varset 'into-nothing' has the function of setting a return value for the loop, or if, etc..
 
 Seeing as I added reverse pop all loops, should probably add reverse foreach loop

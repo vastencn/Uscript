@@ -10,8 +10,14 @@ I have not added them yet because they don't have immediate use, but considering
 
 *show*
 all( v_20 _10 ) :: all - the and bool array brak<br>Bool array braks use boolean op between all array elements <BR> all( array(a .. b .. c) ) = a && b && c
-none( v_20 _10 ) :: none - uses falsefalse between all array elements <br> falseflase returns true is both are false
+none( v_20 _10 ) :: none - uses nor between all array elements <br> nor returns true is both are false
 
 any( v_20 _10 ) :: any - uses the OR between all array elements
-min ( . . . ) :: min - returns the smallest value in the array
-max ( . . . ) :: max - returns the largest value in the array
+min ( v_20 _16 ) :: min - returns the smallest value in the array
+max ( v_20 _16 ) :: max - returns the largest value in the array
+
+_1 :: introduce array conditional bool loops<br>easy way to discuss arrays and groups<br> "all of x meet condition y"<br> "non of x have element y"<br> "at least some of x have property y" .. etc..
+
+v1 all[ . . . ] :: all meet condition<br>uses the and loop on an array conditional
+v1 any[ . . . ] :: any meet condition<br>uses the or loop on an array conditional
+v1 none[ . . . ] :: none meet condition<br>uses the nor loop on an array conditional 

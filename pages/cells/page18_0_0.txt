@@ -1,0 +1,3 @@
+quark all[mass gt 1] = true _20 quark s[ mass gt 1 ] = ( [qup] [qcharm] [qtop] [qdown] [qstange] _-6 [qbottom] _-2 ) = qup qcharm qtop qdown qstange qbottom
+
+quark s[charge = _-8 b>b10/11] = qup qcharm qtop _25 quark s[charge = inv b>b1/11] = qdown qstrange qbottom

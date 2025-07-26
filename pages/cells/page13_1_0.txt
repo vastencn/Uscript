@@ -1,2 +1,11 @@
-v1 <: ([true][true][false][true])
-paira ( v1 , _2 .+ loopprev and loopnext  ) = _5  true and true .+ true and false .+ false and true _5 = _5 ([true][false][false])
+v2 <: ( [3][6][9] ) _20 v3 <: ( [6][9][a] ) = true _20 
+v2 all[ gt 2 ] _5 = _5  foreach( v2 , andleft loopvar ) _5 = _5 wave and (3 gt 2) and (6 gt 2) and (9 t 2) _5 = _5 true _1
+v2 all[ gt 4 ] _5 = _5 wave and false and true and true = false _25 v2 all[mod 3 = 0] = v2 all[|eval(loopvar mod 3 = 0)|]true
+
+v3 all[mod 3 = 0] = false _15 v3 any[mod 3 = 1] = true _15 v3 all[gt f] = false _15  v3 all[* 2 gt f] = true
+
+v4 <: ( [[3][3]] _5 [[6][2]] _5 [[5][4]] _5 [[7][1]]  )
+
+
+v4 all[ | s[1] | gt 2 ] = wave and (3 gt 2) and (6 gt 2) and (5 gt 2) and (7 gt 2) = true
+v4 all[ |count(loopvar)| = 2 ] = true _25 v4 all[ |sum(loopvar)| gt 5 ] = true _25 v4 all[ |sum(loopvar)| gt 8 ] = false

@@ -156,6 +156,7 @@ falsetrue,falsetrue,15
 
 (!a && !b)
 falsefalse,falsefalse,15
+nor,falsefalse,15
 
 
 

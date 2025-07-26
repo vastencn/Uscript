@@ -3,6 +3,8 @@ array append
 array subset
 
 <todo>
+**add clearer examples here of appending to loop return to give an array result from a loop
+
 **could do so many more array ops, but drawing the line for now 
 
 **add count/sum/avg onto array extract for quick ops(just add small icon prefix to the box protrusion). that way you can ask "how many meet this conditon" etc..
@@ -12,3 +14,5 @@ array subset
 .+ :: array append 
 .++ :: array combine (array of arrays)
 v5 s[ . . . ] :: ... = Condition to check elements. <br>Qualifying elements are included in output array
+
+v1 subar[ 1 ] :: extract sub-array . <br>pulls out a sub element as a standalone array

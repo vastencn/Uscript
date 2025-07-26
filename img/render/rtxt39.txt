@@ -1,1 +1,25 @@
- _5 . . . 
+ 
+#
+# loopreturn = wave _20  loopcount = 1
+#
+# loopreturn addleft 1 
+#
+# v_5
+#
+# loopreturn = 1 _20 loopcount = 2
+#
+# loopreturn addleft 2 
+#
+# v_5
+#
+# loopreturn = 3 _20 loopcount = 3
+#
+# loopreturn addleft 3 
+#
+# v_5
+#
+# v_20
+#
+# return 6
+#
+# 
