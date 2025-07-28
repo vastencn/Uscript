@@ -1,5 +1,7 @@
- 
+ v1 <: ( [1] )
 #
-# loopreturn addleft loopcount 
+# v1 s[3] <: 3
 #
+# v1 s[2] <: 2
 #
+# 

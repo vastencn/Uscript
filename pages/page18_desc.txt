@@ -1,5 +1,7 @@
 introduce more properties like charge and spin
 
+add some refinements to array descriptive and handling tools
+
 instead of just listing the properties of each particle, we will take this opportunity to start "talking about things". using some of the tools for arrays we can say things like 
 
 "all quarks have mass greater than 1"
@@ -8,7 +10,7 @@ to do this we use
 "quark array-condition-all[mass > 1] = true"
 
 which is a structure already defined to translate into procedural code
-"foreach(quark) { last-result && (this-quark[mass] > 1); return chained result; }
+"{ foreach(quark) { last-result && (this-quark[mass] > 1); } return chained result; }
 
 *show*
 charge :: charge , spin :: spin

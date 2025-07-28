@@ -1,9 +1,7 @@
- v1 <: 0
+ mass aequal 4.4e28
 #
-# v1 addleft 1
+# charge = b>b10/11
 #
-# v1 addleft 1
-#
-# v1 addleft 1
+# spin = b>b1/10 
 #
 # 

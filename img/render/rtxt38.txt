@@ -1,25 +1,9 @@
- 
+ v1 <: ( _2 v_20 )
 #
-# loopreturn = wave _20 loopcount = 1
+# v1 s[1] <: 1
 #
-# loopreturn addleft loopcount 
+# v1 s[2] <: aequal 2
 #
-# v_5
-#
-# loopreturn = 1 _20 loopcount = 2
-#
-# loopreturn addleft loopcount 
-#
-# v_5
-#
-# loopreturn = 3 _20  loopcount = 3
-#
-# loopreturn addleft loopcount 
-#
-# v_5
-#
-# loopreturn = 6
-#
-# return loopreturn
+# v1 s[3] <: 3
 #
 # 

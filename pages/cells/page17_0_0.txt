@@ -1,17 +1,19 @@
-electron sub[mass aequal  1] _118 electronneu sub[mass lt 2.0d5 h>b1s-5]
+electron sub[mass aequal  1] _148 electronneu sub[mass lt 2.0d5 h>b1s-5]
 
-muon sub[mass aequal  ce.c59] _30 muonneu sub[mass lt 0.552aa]
+muon sub[mass aequal  ce.c59] _60 muonneu sub[mass lt 0.552aa]
 
-tau sub[mass aequal d95.1e] _30 tauneu sub[mass lt 23.9dd]
+tau sub[mass aequal d95.1e] _60 tauneu sub[mass lt 23.9dd]
 
-qup sub[mass aequal 4.4e28] _20 qdown sub[mass aequal 9.329b]
+proton sub[mass aequal 72C.26 ] _40 neutron sub[mass aequal 72E.AF]
 
-qcharm sub[mass aequal 9c8.e6] _20 qstrange sub[mass aequal bb.de1]
+qup sub[mass aequal 4.4e tol 1] _50 qdown sub[mass aequal 9.32 tol 1]
 
-qtop sub[mass aequal 52b3c] _32 qbottom sub[mass aequal 1ff4.1] 
+qcharm sub[mass aequal 9c8 tol b>b100000] _56 qstrange sub[mass aequal bb.d tol b>b10000]
 
-photon sub[mass aequal 0] _20 wboson sub[mass aequal 2664c]
+qtop sub[mass aequal 22 h>b1s+3 tol b>b100000000000 ] _25 qbottom sub[mass aequal 1ff4 tol b>b1000000 ] 
 
-gluon sub[mass aequal 0] _24 zboson sub[mass aequal 2b916]
+photon sub[mass aequal 0] _20 wboson sub[mass aequal 2664c tol b>b100000]
 
-higgs sub[mass aequal 3bc62]
+gluon sub[mass aequal 0] _24 zboson sub[mass aequal 2b916 tol 5]
+
+higgs sub[mass aequal 3bc62 tol b>b1000000]

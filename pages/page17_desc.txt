@@ -1,7 +1,10 @@
 particles are defined by a chart of masses
 mass units are not universal... 
 ... But the ratios are
-UP quarks ≈ 4.3  electrons in mass*
+
+electron, muon, tau, proton, neutron, and W/Z boson can alone create a chart with more than enough precision to be a universal starting point
+
+a muon is 206.7... electrons in mass*
 So the chart as a whole is universal
 
 *many particles have some tolerances on mass certainty. electron mass is known to high order of precision and the mass units used IS electrons, everything is stated in terms of 'this ≈  x electrons of mass'.
@@ -47,6 +50,10 @@ This is NOT a full proper definition of antiparticles
 I just split it into the next page because this page info/ description is getting big due to the "massive symbol dump" of particles.
 
 *show*
+mass :: mass. just a symbol in the chart of numbers<br>can be seen as arbitrary for now<br>but it is a combination of "interaction" and "spacetime"<br>both those radicals are not yet defined<br>so for now its just an arbitrary symbol
+
+proton :: proton , neutron :: neutron 
+
 electron :: electron ,  muon :: muon , tau :: tau
 electronneu :: electron neutrino ,  muonneu :: muon neutrino , tauneu :: tau neutrino
 
@@ -73,6 +80,6 @@ qdown qstrange qbottom :: down strange bot, antiqdown antiqstrange antiqbottom :
 
 wboson :: w boson , antiwboson :: anti w boson
 
-antihspin :: anti fermion ,hspin :: fermion , _2 , fspin :: gauge boson ,  antifspin :: anti gauge boson
+antihspin :: anti fermion ,hspin :: fermion , _2 , fspin :: gauge boson ,  antifspin :: anti gauge boson 
 
 lepton :: lepton , antilepton :: anti lepton , _2 , quark :: quark , antiquark :: antiquark

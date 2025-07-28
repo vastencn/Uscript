@@ -121,8 +121,8 @@ function gen_uscript_number($num_str_in){
     $i++;
     if($str_ar[$i]=='+'){
       $i++;
-      }elseif($str_ar[$i]=='-'){
       $neg=1;
+      }elseif($str_ar[$i]=='-'){
       $i++;
       }
 

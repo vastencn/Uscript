@@ -1,3 +1,9 @@
-v1 <: 0
+ v1 <: ( _2 v_20 )
 #
-# while( loopcount lt 4 , v1 addleft 1 ) 
+# v1 s[1] <: 1
+#
+# v1 s[2] <: aequal 2
+#
+# v1 s[3] <: 3
+#
+# 

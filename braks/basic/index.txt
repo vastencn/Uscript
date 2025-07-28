@@ -80,6 +80,7 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 
 1,subarel,arel_opt_ sublen=5 : def=arel
 2,s,arel_opt_ sublen=5
+2,sid,arel_opt_ sublen=0
 2,all,arel_opt_ sublen=11 : all=1 : img=all : rshift=12 : irshift=6 : def=arall
 2,any,arel_opt_ sublen=11 : all=1 : img=any : rshift=12 : irshift=8 : def=arany
 2,none,arel_opt_ sublen=8 : all=1 : img=none : rshift=9 : irshift=8 : def=arnone
