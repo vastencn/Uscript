@@ -1,3 +1,9 @@
-fspin subcup( photon wboson zboson gluon)  
+ v1 <: ( _2 v_20 )
 #
-# higgs 
+# v1 s[1] <: 1
+#
+# v1 s[2] <: aequal 2
+#
+# v1 s[3] <: 3
+#
+# 

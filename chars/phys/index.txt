@@ -39,8 +39,13 @@ electronneu,electronneu,7
 muonneu,muonneu,10.3
 tauneu,tauneu,10
 
+chargedlepton,chargedlepton,18
+neutrino,neutrino,18.8
+
 //quarks
 quark,quark,17
+dtypequark,dtypequark,20.2
+utypequark,utypequark,17.7
 
 qup,qup,19.3
 qcharm,qcharm,18.5

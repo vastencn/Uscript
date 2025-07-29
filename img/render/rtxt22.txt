@@ -1,1 +1,1 @@
-[imgrender_rimg20][imgrender_rimg21]
+ true true true 

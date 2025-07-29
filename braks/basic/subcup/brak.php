@@ -53,6 +53,15 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
       switch($vname){
         case "yes":
                    $yesdot=1;
+                   break;                   
+        case "branchlen":
+                   $branch_length=$vval;
+                   break;                   
+        case "tax":
+                   $tax=1;
+                   break;
+        case "part":
+                   $part=1;
                    break;
         case "no":
                    $nodot=1;
@@ -72,7 +81,32 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
   $svg_str="";
 
   //draw open
-  $svg_str.=svg_hline(0,0,$branch_length,$stroke_width);
+  if($tax){
+    if($height<22)$height=22;
+    $top_hlen=8;
+    $bot_hlen=8;
+    $vert_h=13;
+    $indent=$top_hlen+$bot_hlen;
+    $chunk_x_offset=$indent+($stroke_width/2)+$hpad;
+    $branch_length=$indent;
+    $svg_str.=svg_hline(0,0-($top_hlen/2),$top_hlen,$stroke_width);
+    $svg_str.=svg_vline($top_hlen,3,0-$vert_h,$stroke_width);
+    $svg_str.=svg_hline($top_hlen-($stroke_width/2),3,$bot_hlen,$stroke_width);
+    }else if($part){
+    $circle_rad=8;
+    $branch_length=15;
+    $circle_center=$circle_rad+($stroke_width/2);
+    $svg_str.=svg_circle($circle_center,0,$circle_rad,2,"white");
+    $svg_str.=svg_dot($circle_center,0,3);
+    $svg_str.=svg_hline($circle_center,0,$branch_length,$stroke_width);
+    $branch_length+=$circle_center;
+    $chunk_x_offset=$branch_length+($stroke_width/2)+$hpad;
+    }else{
+    $svg_str.=svg_hline(0,0,$branch_length,$stroke_width);
+    }
+
+  $inner_space_end=$chunk_x_offset+@$inner_space_size;
+
   $svg_str.=svg_hcup($branch_length,0,$height,0-$inner_space_size,$stroke_width);
 
   //now embed the original chunk svg

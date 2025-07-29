@@ -12,6 +12,7 @@ $pages_words_dir="C:\\wamp64\\www\\uscript\\pages\\words\\";
 $dslash="\\";
 
 $http_base="http://127.0.0.1/uscript/";
+$http_presave_dir=$http_base."img/presave/";
 
 
 //load optional settings flags

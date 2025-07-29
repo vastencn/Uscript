@@ -1,3 +1,7 @@
+<todo>
+add sub symbols that don't encapsulate like x is-cat-of y as standalone symbol 'words'
+</todo>
+
 introduce more properties like charge and spin
 
 add some refinements to array descriptive and handling tools
@@ -12,5 +16,36 @@ to do this we use
 which is a structure already defined to translate into procedural code
 "{ foreach(quark) { last-result && (this-quark[mass] > 1); } return chained result; }
 
+Also, and more importantly the sub-[ expression has been as an ambiguous hierarchy symbol.  
+
+x subcup(y) means many things 
+"y is a category of x"
+"y is a component of x"
+"y is true under x conditions"
+
+We need to start explicitification(yes, that's, I was as surprised as you, it feels made up)
+
+now that we have physical things composed of each other, and categories to group them into, plus procedural for conditions, we can now create differentiated version of the sub() structure
+
+we will keep the ambiguous version. it can be handy. 
+
+so subcup() has 3 subtypes
+conditional (if)
+taxonomical (subtype)
+mereological (composition)
+
+
+
 *show*
 charge :: charge , spin :: spin
+_2 :: . <br>added sub-types of quarks and leptons<br>Did this to create good example of taxonomy 
+
+utypequark :: up typequark , dtypequark :: down type quark
+chargedlepton :: charged lepton , neutrino :: neutrino
+
+_2 ::  . <br>here the ambiguous sub() gets sub-types<br> the unspecified subcup() is ambiguous<br>.<br>these new 3 are explicit<br>taxonomy vs. composition vs. condition<br>conditional is done with procedural<br>particles have "composite objects" and "categories"<br>so now its easy to distinguish these ideas
+
+subcup( _33 v_20 ) :: ambiguous 'sub'
+subcat ( _33 v_20 ) ::  subcat 
+subpart ( _33 v_20 ) ::  subpart
+subif ( _33 v_20 ) ::  subif

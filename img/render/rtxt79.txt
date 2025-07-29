@@ -1,9 +1,7 @@
- v1 <: ( _2 v_20 )
+ mass aequal 4.4e28
 #
-# v1 s[1] <: 1
+# charge = b>b10/11
 #
-# v1 s[2] <: aequal 2
-#
-# v1 s[3] <: 3
+# spin = b>b1/10 
 #
 # 

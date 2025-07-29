@@ -1,7 +1,1 @@
- mass aequal 4.4e28
-#
-# charge = b>b10/11
-#
-# spin = b>b1/10 
-#
-# 
+ _3 . . . 

@@ -1,3 +1,7 @@
- lepton subcup(electron muon tau electronneu muonneu tauneu) 
+ v1 <: ( [1] )
 #
-# quark subcup(qup qcharm qtop qdown qstrange qbottom ) 
+# v1 s[3] <: 3
+#
+# v1 s[2] <: 2
+#
+# 
