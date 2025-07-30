@@ -27,6 +27,11 @@ hune,100e,24.4
 hunth,001,21.2
 hunthe,001e,24.4
 
+micro,micro,8.3
+mega,mega,8.3
+nano,nano,11.3
+giga,giga,11.3
+
 int,int,7
 inum,inum,7
 rnum,rnum,14

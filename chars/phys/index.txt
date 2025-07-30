@@ -100,6 +100,7 @@ charge2p,charge2p,18
 charge,charge,16.8
 mass,mass,15
 hspin,hspin,13
+fermion,hspin,13
 fspin,fspin,12.2
 rhspin,rhspin,13
 rfspin,rfspin,12.2

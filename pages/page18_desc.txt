@@ -34,6 +34,10 @@ conditional (if)
 taxonomical (subtype)
 mereological (composition)
 
+taxonomy :  "x subcat(y)", y is astronomically under x. doesnt matter how many layers, because you could always introduce new arbitrary category layers. 
+
+as for : asking "how many layers down?", is directly under/above?" "etc, these questions are for another day.
+
 
 
 *show*

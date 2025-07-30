@@ -10,7 +10,7 @@ right vs left = completely arbitrary
 up down has a bit of physical and abstract intuition. but you could easily find equally valid intuitions to argue for the opposite.
 
 
-show expand on the definition of 'reverse' gaps, which look at an interval backwards invertingthe x1,x2 sequence and thus inverting the sign
+should expand on the definition of 'reverse' gaps, which look at an interval backwards inverting the x1,x2 sequence and thus inverting the sign
 </todo>
 
 <todo>

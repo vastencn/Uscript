@@ -19,9 +19,9 @@ $markup_replace[]=array(":>"," vsetright ");
 $markup_prefix=array();
 $markup_prefix[]=array("ib","imgbasic_");
 $markup_prefix[]=array("ips_","imgpresave_");
-$markup_prefix[]=array("sci+","d>b1s");
+$markup_prefix[]=array("sci+","d>b1s+");
 $markup_prefix[]=array("sci-","d>b1s-");
-$markup_prefix[]=array("scih+","h>b1s");
+$markup_prefix[]=array("scih+","h>b1s+");
 $markup_prefix[]=array("scih-","h>b1s-");
 
 
