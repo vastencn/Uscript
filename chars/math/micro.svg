@@ -8,7 +8,7 @@
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
-   sodipodi:docname="micro.svg"
+   sodipodi:docname="mega.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -134,7 +134,8 @@
                                    transform="matrix(0.9998634,0,0,-1,0.00611664,131.9087)"
                                    style="stroke-width:1.82404">
                                 <g
-                                   id="g1567">
+                                   id="g1567"
+                                   transform="matrix(-1,0,0,1,84.881834,0)">
                                 <g
                                    id="g20830"
                                    transform="matrix(0.96264819,0,0,0.96263532,-8.6820489,0.70334542)"
