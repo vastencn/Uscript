@@ -57,7 +57,7 @@ addleftsubright :: sub left from right and add right to left. Simultaneous actio
 addleftsubsubright :: add R to L. subtract L from R twice. simultaneous
 addleftmultsubright :: L = L + R. R = R * L - L. All ops use the original var values
 expdivaddleftmultsubright :: L = L exp R divides R + R aka.L=(R/(L^R))+R.... R = R * L - L
-_1 :: ops are 'loaded with values then pushed into the vars' so they go from 'outside inwards' 
+_1 :: ops are 'loaded with values then pushed into the vars' so they execute 'outside inwards' 
 
 
 

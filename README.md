@@ -1,9 +1,9 @@
 # uscript
  Uscript language generator
 
- Still very rough, not anywhere near release ready
+Still a work in progress
 
-if you want to check it out...
+if you want to check it out... Start with the pages_index.php
 
 pages_index.php - the center for the current language buildout (only a small portion of the chars and structure that are already made have been added here so far, but it is growing steadily.. as steadily as I can considering lifes crazy nature hehe)
 

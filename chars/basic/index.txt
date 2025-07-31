@@ -98,6 +98,10 @@ infinity,infinity,21
 inf,inf,16.4
 divinf,divinf,21.7
 
+
+intn,intn,5.7
+inte,inte,12.4
+
 equal,equal,5
 notequal,notequal,6
 absequal,absequal,6
@@ -109,6 +113,20 @@ gt,gt,20
 lt,lt,20
 islt,islt,20
 isgt,isgt,20
+notlt,notlt,20
+notgt,notgt,20
+
+issubof,issubof,13.3
+isparentof,isparentof,13.3
+
+ismadeof,ismadeof,24
+ispartof,ispartof,24
+
+iscatof,iscatof,17.7
+istypeof,istypeof,17.7
+
+implies,implies,15.1
+impliedby,impliedby,15.1
 
 
 

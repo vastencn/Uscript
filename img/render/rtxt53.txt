@@ -1,1 +1,7 @@
- true true true 
+ 
+#
+# intn = a0
+#
+# inte = 1
+#
+# int = a * 1 

@@ -53,3 +53,12 @@ subcup( _33 v_20 ) :: ambiguous 'sub'
 subcat ( _33 v_20 ) ::  subcat 
 subpart ( _33 v_20 ) ::  subpart
 subif ( _33 v_20 ) ::  subif
+
+issubof :: is-sub-of , isparentof :: is-parent-of
+
+ismadeof :: is-made-of , ispartof :: is-part-of
+
+iscatof :: is-cat-of , istypeof :: is-type-of
+
+implies :: implies , impliedby :: implied-by
+

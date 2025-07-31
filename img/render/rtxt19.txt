@@ -1,1 +1,7 @@
- _5 false 
+
+#
+# intn = 5
+#
+# inte = sci-3
+#
+# int = 0.005 

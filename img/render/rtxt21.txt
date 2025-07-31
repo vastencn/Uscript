@@ -1,1 +1,7 @@
- true true true 
+
+#
+# intn = 5
+#
+# inte = 1
+#
+# int = 5 

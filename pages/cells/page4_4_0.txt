@@ -1,1 +1,43 @@
 eval(v1 != v2) = evalneg(v1 = v2) _10 2 != 1 _10 5 != a _10 true = true _10 true != false _10 5 + 2 = 7 _10 5 + 3 != 7
+
+
+5 sub( | intn = 5 
+ inte = 1
+ int = 5 * 1 | ) _20 a0 sub( | 
+ intn = a0
+ inte = 1
+ int = a * 1 | ) _20 3.42 sub( | 
+ intn = 342
+ inte = sci-2
+ int = 342 sci-2 
+ | ) _20 1.200 sub( | 
+ intn = 1200
+ inte = sci-3
+ int = 1200 sci-3
+ | )
+
+(5 sci+1) sub( |
+ intn = 5
+ inte = sci+1
+ int = 50| ) _20 (5 sci-1) sub( |
+ intn = 5
+ inte = sci-1
+ int = 0.5 | ) _20 (5 sci+2) sub( |
+ intn = 5
+ inte = sci+2
+ int = 500 | ) _20 (5 sci-3) sub( |
+ intn = 5
+ inte = sci-3
+ int = 0.005 | ) _20 
+
+(0.05 sci+3) sub( |
+ intn = 50
+ inte = 1
+ int = 50 | ) _20 (0.005 sci+3) sub( |
+ intn = 5
+ inte = 1
+ int = 5 | ) _20 
+
+5 inte = 1 _20 50 inte = 1 _20 5 sci+1 inte = sci+1 = 10 _20 0.5 inte = sci-1 = 0.1 _20 0.005 sci+1 inte = 0.01
+
+(v1 aequal v2) = (((v1 inte + v2 inte) / 2 ) islt abs (v1 - v2))

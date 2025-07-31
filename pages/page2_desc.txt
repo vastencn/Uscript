@@ -10,11 +10,9 @@ admittedly the hidden brackets in roots, powers, and division are visually elega
 
 Uscript sticks with sequential operations and brackets... we will find other ways to "hide brackets" (more visual and intuitive ones, akin to division, powers and roots in our current system), This will also provoke more divergence from our current systems, representation, and thinking.
 
-<todo>
-add more approx-equals exmaple
-I think the way the number is thirteen should imply tolerance and certainty. 1.23 means there is tolerance on the 0.3 but not on the 0.2.. otherwise use the range/tolerance symbol.
-As for large numbers like 1000 with a tolerance of hundreds, then write the number using sci-note so you dont actually draw the hundreds digit
 
+
+<todo>
 could add 2d drawing style like upper exp, division stacks, root sign, etc.. not getting into that stuff now.. strictly linear bracketed for now 
 
 will establish ints, rationals, and later irrationals.. probably stop there for 1d numbers to start, can use clauses to establish subsets of those when needed, or establish a symbol later on if actually necessary or needed for convenience
@@ -24,7 +22,10 @@ will establish ints, rationals, and later irrationals.. probably stop there for 
 
 *show*
 
+
+
 inv :: negative numbers
 floor mod round :: floor mod round
 ( ( _15 v_20 ) ( _15 v_20 )) :: braks and op order (left to right. no priority based on operations type)
-aequal :: approximately equal to.
+
+

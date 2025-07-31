@@ -1,3 +1,6 @@
 v1 gt v2 =  h>b1/2 * ( (v1 - v2) + abs(v2 - v1) )   _10 v1 lt v2 =  h>b1/2 * ( (v2 - v1) + abs(v1 - v2) )
 
 5 gt 2 = 3 _8 5 gt 7 = 0 _8 5 lt 3 = 0 _8 5 lt 7 = 2 _5 h>b5.3 gt h>b1.2 = h>b4.1 
+
+(v1 isgt v2) = eval( v1 gt v2 ) _15 (v1 islt v2) = eval( v1 lt v2 ) _15 5 isgt 1 = true _15 5 isgt 7 = false _15 5 islt 1 = false
+(v1 notlt v2) = evalneg( v1 isgt v2 ) _15  (v1 notgt v2) = evalneg(v1 is lt v2) _15 2 notgt 3 = true _15 2 notgt 2 = true

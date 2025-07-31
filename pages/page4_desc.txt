@@ -1,8 +1,22 @@
-next do approx equal to!
-
 introducing real numbers, fraction and variables as categories of "numbers"
 
 variables, or "wave-numbers" are like using a,b,c,...x,y,z as variables, except that that are wave-1, wave-2, wave-3, etc..
+
+our "integers" are now clarified to dyadic rationals
+We will operate under the premise that:
+  "all numbers are fundamentally a binary int plus a scinote."(basically a float)
+
+so "under the hood" there are 2 values in every number : an integer and an exponent
+
+*fraction we bee seen as "a formula, not a number"
+
+the integer number and exponent NEVER have a radix
+
+and this structure is how define  "approximately equals to"
+
+
+if you want to do a tolerance then use tolerance. approx is a SPECIFIC thing. it means rounded to the most precise digit given
+
 
 Micro/Mega Nano/Giga
 I don't use kilo or milli because they mean 1000
@@ -14,13 +28,12 @@ so it doesn't really matter i guess
 
 
 <todo>
+clean p the int/frac categorization. maybe move fracs to later, so we can specify that "not all fracs are ints" (right now expressive tools are a bit lacking for that)
+
 add definition of mega/micro/etc..
 
-refine approx to mean rounded to hex digit
+add approx examples
 
-if you want to do a tolerance then use tolerance. approx is a SPECIFIC thing. it means rounded to the most precise digit given
-
-clarify how to specific precision on the left side of radix
 </todo>
 
 *show*
@@ -30,12 +43,24 @@ wave :: wave/undefined/uncertain how vars work
 absolute :: absolute, absequal :: absolute equal, != :: !=
 gt lt :: > < gt/lt.by how much. not just bool
 
+isgt :: is-greater-than. bool.<br>regular gt can be used for bool logic already<br>this one is better for 'making statements'
+islt :: is-less-than
+
+notlt :: not-less-than. equivalent to >=
+notgt :: not-greater-than. equivalent to <=
+
+_2 :: Uscript "integers" are explcitily defined as dyadic rationals<br>defined as a whole number and a radix shift
+intn :: integer-number , inte :: integer-shift
+aequal :: approximately equal to.<br>specifically rounded number with overlapping ranges<br> a approx b = abs(a-b) is-less-than (precision-a + precision-b)/2
+
+
+
 _2 :: micro/mega/nano/giga<br>shift the radix in increments of 32 places<br>we already have nice scinote symbols for shifting.<br>these prevent the need for large exponent scinote<br>.<br>with scinote+ and scinote- the 4 bit range is 32 radix points<br>hex: 5 scinote+22 = 5 mega scinote+2<br>hex: 3 scinote+1e = 3 mega scinote-2
 
 mega = 1 _2 sci+32 :: mega = 1 scinote+32(1*16^32)
-giga = 1 _2 sci+64 :: mega = 1 scinote+64(1*16^64)
+giga = 1 _2 sci+64 :: giga = 1 scinote+64(1*16^64)
 
- _2 :: this gives easy number expressions to of scales<br>Particularly important for physical units<br>Think of it like this...<br>we use scinote to cover a big range<br> 0.0000 0000 0000 0000 1 -> 1 0000 0000 0000 0000<br><br>beyond that the scinote symbol gets long<br>and powers that large are hard to comprehend<br>so we use micro/mega/nano/giga to jump into the other ranges
+ _2 :: this gives easy number expressions to large scales<br>Particularly important for physical units<br>Think of it like this...<br>we use scinote to cover a big range<br> 0.0000 0000 0000 0000 1 -> 1 0000 0000 0000 0000<br><br>beyond that the scinote symbol gets long<br>and powers that large are hard to comprehend<br>so we use micro/mega/nano/giga to jump into the other ranges
 
 sci+1000 :: you can still use arbitrarily long scinote<br>if you insist
 
