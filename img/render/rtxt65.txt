@@ -1,9 +1,7 @@
- 
+ mass = ce.c59 
 #
-# intn = 1200
+# charge = 1
 #
-# inte = sci-3
+# spin = 1/2
 #
-# int = 1200 sci-3
-#
-# 
+#  

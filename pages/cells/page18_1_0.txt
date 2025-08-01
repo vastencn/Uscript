@@ -6,3 +6,32 @@ ibparticlecats _15 | chargedlepton subcat(electron) _20 lepton subcat(electron) 
  fermion subcat( electron muon tau electronneu muonneu tauneu qup qcharm qtop qdown qstrange qbottom )
   |
 
+electron istypeof fermion = true _20 fermion istypeof electron = false _20 fermion iscatof electron = false _20 electron istypeof quark = false _20 quark iscatof utypequark = true
+
+chargedlepton subprop( | charge = 1
+ hspin = 1 | ) _20 neutrino subprop( | charge = 0
+ hspin = 1 | ) _20  utypequark subprop( | charge = 2/3
+ hspin = 1 | ) _20   utypequark subprop( | charge = inv b>b01/11
+ hspin = 1 | ) 
+
+electron subprop ( | mass = 1 
+ charge = 1
+ spin = 1/2
+  | ) _20 muon subprop ( | mass = ce.c59 
+ charge = 1
+ spin = 1/2
+  | ) _20  electronneu subprop ( | mass = islt 2.0d5 h>b1s-5
+ charge = 0
+ spin = 1/2
+  | )
+(fermion hasprop spin 1/2) _5 = _5 (fermion hasprop (spin 1/2)) _5 = _5 eval(fermion subprop(spin = 1/2) )  _5 = _5 true
+neutrino hasprop charge 0 = true _20 neutrino hasprop spin 1 = false _20 charge 1 ispropof electron = true
+
+antielectron subprop( | mass = 1 
+ charge = -1
+ spin = 1/2
+ | ) _20 antiproton subprop ( | 
+ mass = proton s[mass] = 72C.26 
+ charge = inv proton s[charge] = -1
+ spin = proton s[spin] = 1/2
+ | )

@@ -1,7 +1,9 @@
-
+ 
 #
-# intn = 5
+# mass = proton s[mass] = 72C.26 
 #
-# inte = sci+2
+# charge = inv proton s[charge] = -1
 #
-# int = 500 
+# spin = proton s[spin] = 1/2
+#
+# 

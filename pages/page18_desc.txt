@@ -1,5 +1,18 @@
 <todo>
-add sub symbols that don't encapsulate like x is-cat-of y as standalone symbol 'words'
+clarify that some symbols violate linear sequence
+inv(-) or property name like charge/mass etc.. are prefix to a value, so they essentially create a bracket. this should be clarified explicitly
+
+I'm going to assume the array sub contains  has be retroactively added to previous pages
+need to do this later haha
+
+currently you can treat something as an array and use array ops on it 
+
+could add "array op types" based on the various subtypes. add the radical prefixes to tghe array ops like "sub-element-selector" could tag on the "taxonomy" or "part" radical. that would clarify context, not change function function. it would just make clear "we are treating a taxonomy or structure as an array to use the array handling tools for language".
+
+That could help clarify context
+and its easy to do in writing because I just tag on the radical symbol, like a prefix.
+
+but its a bit more cumbersome to add it here in the system, so ill wait for now. I think its ok to just tread something as an array and expect the context to be clear, obviously there is a fundamental difference between an array of number and an array of physical particle within a proton or atom. but at some pointing higher level language it will be needed. I'm just procrastinating for now cause i wanna play with other things.
 </todo>
 
 introduce more properties like charge and spin
@@ -29,10 +42,11 @@ now that we have physical things composed of each other, and categories to group
 
 we will keep the ambiguous version. it can be handy. 
 
-so subcup() has 3 subtypes
-conditional (if)
-taxonomical (subtype)
-mereological (composition)
+so subcup() has 4 subtypes now
+conditional (implies/causes)
+taxonomical (subtype of)
+mereological (composition of)
+qualitative (properties of) 
 
 taxonomy :  "x subcat(y)", y is astronomically under x. doesnt matter how many layers, because you could always introduce new arbitrary category layers. 
 
@@ -47,18 +61,21 @@ _2 :: . <br>added sub-types of quarks and leptons<br>Did this to create good exa
 utypequark :: up typequark , dtypequark :: down type quark
 chargedlepton :: charged lepton , neutrino :: neutrino
 
-_2 ::  . <br>here the ambiguous sub() gets sub-types<br> the unspecified subcup() is ambiguous<br>.<br>these new 3 are explicit<br>taxonomy vs. composition vs. condition<br>conditional is done with procedural<br>particles have "composite objects" and "categories"<br>so now its easy to distinguish these ideas
+_2 ::  . <br>here the ambiguous sub() gets sub-types<br> the unspecified subcup() is ambiguous<br>.<br>these new 3 are explicit<br>taxonomy vs. composition vs. condition<br>conditional is done with procedural<br>particles have "composite objects" and "categories"<br>so now its easy to distinguish these ideas<br><br>radicals use for these new sub types are not fully defined yet.<br>but thats not necesarry.<br>plus these use cases help establish their lexical scope.<br><br>"hierarchical" radical for taxonomy<br>"system" radical with "system particle" selected for composition<br>"conditional" uses the sub component of the procedural "IF bracket"<br>"property" uses "interaction" radical (how something interacts)
 
-subcup( _33 v_20 ) :: ambiguous 'sub'
-subcat ( _33 v_20 ) ::  subcat 
-subpart ( _33 v_20 ) ::  subpart
-subif ( _33 v_20 ) ::  subif
+issubof :: is-sub-of , isparentof :: is-parent-of , subcup( _33 v_20 ) :: ambiguous 'sub'
+iscatof :: is-cat-of , istypeof :: is-type-of, subcat ( _33 v_20 ) ::  subcat 
+ismadeof :: is-made-of , ispartof :: is-part-of , subpart ( _33 v_20 ) ::  subpart
+implies :: implies , impliedby :: implied-by , subif ( _33 v_20 ) ::  subif
+hasprop :: has-property, ispropof :: is-property-of  , subprop ( _33 v_20 ) ::  subprop
 
-issubof :: is-sub-of , isparentof :: is-parent-of
 
-ismadeof :: is-made-of , ispartof :: is-part-of
 
-iscatof :: is-cat-of , istypeof :: is-type-of
 
-implies :: implies , impliedby :: implied-by
+
+
+
+
+
+
 

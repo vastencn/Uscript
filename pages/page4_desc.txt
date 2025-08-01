@@ -20,7 +20,7 @@ if you want to do a tolerance then use tolerance. approx is a SPECIFIC thing. it
 
 Micro/Mega Nano/Giga
 I don't use kilo or milli because they mean 1000
-nano micro mega and giga are just words<
+nano micro mega and giga are just words
 They mean dwarf/small/great/giant
 But the name is only in the markup language
 these words are not part of Uscript
@@ -55,15 +55,15 @@ aequal :: approximately equal to.<br>specifically rounded number with overlappin
 
 
 
-_2 :: micro/mega/nano/giga<br>shift the radix in increments of 32 places<br>we already have nice scinote symbols for shifting.<br>these prevent the need for large exponent scinote<br>.<br>with scinote+ and scinote- the 4 bit range is 32 radix points<br>hex: 5 scinote+22 = 5 mega scinote+2<br>hex: 3 scinote+1e = 3 mega scinote-2
+_2 :: micro/mega/nano/giga<br>shift the radix in increments of 16 places<br>we already have nice scinote symbols for shifting.<br>these prevent the need for large exponent scinote<br>.<br>with a the 4 bit scinote symbol (the same size as our basic number digits) the range is 16 radix points<br>so these jump us into a new range before we need to use larger symbols<br>
 
-mega = 1 _2 sci+32 :: mega = 1 scinote+32(1*16^32)
-giga = 1 _2 sci+64 :: giga = 1 scinote+64(1*16^64)
+mega = 1 _2 sci+32 :: mega = 1 scinote+16(1*16^16)
+giga = 1 _2 sci+64 :: giga = 1 scinote+32(1*16^32)
 
- _2 :: this gives easy number expressions to large scales<br>Particularly important for physical units<br>Think of it like this...<br>we use scinote to cover a big range<br> 0.0000 0000 0000 0000 1 -> 1 0000 0000 0000 0000<br><br>beyond that the scinote symbol gets long<br>and powers that large are hard to comprehend<br>so we use micro/mega/nano/giga to jump into the other ranges
+ _2 :: this gives easy number expressions to large scales<br>Particularly important for physical units<br>Think of it like this...<br>we use scinote to cover a big range<br> 0.0000 0000 0000 0000 1 -> 1 0000 0000 0000 0000<br><br>beyond that the scinote symbol gets long<br>and powers that large are hard to comprehend<br>so we use micro/mega/nano/giga to jump into the other ranges<br>
 
 sci+1000 :: you can still use arbitrarily long scinote<br>if you insist
 
-micro :: micro (hex 10^-20) , mega :: mega(hex 10^20)
+micro :: micro (hex 10^-10) , mega :: mega(hex 10^10)
 
-nano :: nano(hex 10^-40) , giga :: giga(hex 10^40)
+nano :: nano(hex 10^-20) , giga :: giga(hex 10^20)

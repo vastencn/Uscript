@@ -20,6 +20,12 @@ apair,apair,11.6
 
 aflip,aflip,17.7
 
+acontains,acontains,22.1
+acontained,acontained,22.1
+
+acontainscount,acontainscount,34.1
+acontainedcount,acontainedcount,34.1
+
 sort,sort,35.8
 sortr,sortr,35.8
 

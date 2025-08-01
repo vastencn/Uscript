@@ -1,0 +1,18 @@
+temp place holder page
+
+*show*
+
+ _2 :: temp page <br> later will shuffle this stuff somewhere else i think<br>.<br>designing more types of sub<br>not sure when to add them.. <br>some.. like the array sub will probably go into earlier pages<br>some may be done later<br><br>i feel like i'm adding alot of them right now<br>.<br>
+
+ acontains :: acontains array a contains array b<br>bool return. all or none
+ acontained :: acontained array a contained within array b<br>bool return. all or none
+
+ acontainscount :: acontainscount array a contains array b<br>count. number of matches 
+ acontainedcount :: acontainedcount array a contained within array b<br>count. number of matches 
+
+_2 :: maybe a couple more<br>like "result as a ratio of a" and "as a ratio of b"<br>can do that with a formula (div by count)<br> but might be useful enough to justify to a symbol
+
+rangecontains :: rangecontains range a contains range b
+rangecontained :: rangecontained range a falls inside of range b
+
+_2 :: maybe some more range one <br>like "how much of the range it fill"<br> or "how much the ranges overlap"

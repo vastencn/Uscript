@@ -1,5 +1,7 @@
- intn = 5 
+ mass = 1 
 #
-# inte = 1
+# charge = -1
 #
-# int = 5 * 1 
+# spin = 1/2
+#
+# 

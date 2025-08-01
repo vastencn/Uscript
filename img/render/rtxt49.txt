@@ -1,7 +1,7 @@
-
+ mass = 1 
 #
-# intn = 5
+# charge = 1
 #
-# inte = sci-3
+# spin = 1/2
 #
-# int = 0.005 
+#  

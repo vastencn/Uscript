@@ -1,0 +1,3 @@
+proton subpart(qup qup qdown) _20 neutron subpart(qup qdown qdown) _20 proton s[ istypeof utypequark] = ([qup][qup])
+
+count(neutron s[istypeof quark]) = 3

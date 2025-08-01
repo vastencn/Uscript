@@ -1,7 +1,3 @@
-
+ charge = 0
 #
-# intn = 5
-#
-# inte = 1
-#
-# int = 5 
+# hspin = 1 

@@ -1,9 +1,13 @@
- 
+ chargedlepton subcat(electron) _20 lepton subcat(electron) _20 fermion subcat(electron)
 #
-# intn = 342
+# dtypequark subcat(qdown) _20 quark subcat(qdown) _20 fermion subcat(qdown)
 #
-# inte = sci-2
 #
-# int = 342 sci-2 
 #
-# 
+# quark subcat(utypequark dtypequark) _20 lepton subcat(chargedlepton neutrino) _20 fermion subcat(lepton quark)
+#
+#
+#
+# fermion subcat( electron muon tau electronneu muonneu tauneu qup qcharm qtop qdown qstrange qbottom )
+#
+#  

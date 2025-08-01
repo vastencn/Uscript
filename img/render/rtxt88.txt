@@ -1,1 +1,3 @@
- _20 v_25 
+ charge = inv b>b01/11
+#
+# hspin = 1 

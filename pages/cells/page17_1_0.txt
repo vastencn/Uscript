@@ -1,3 +1,4 @@
 hspin subcup ( | lepton subcup(electron muon tau electronneu muonneu tauneu) 
- quark subcup(qup qcharm qtop qdown qstrange qbottom ) | ) _20 boson subcup( |fspin subcup( photon wboson zboson gluon)  
+ quark subcup(qup qcharm qtop qdown qstrange qbottom ) 
+ proton neutron| ) _20 boson subcup( |fspin subcup( photon wboson zboson gluon)  
  higgs | )

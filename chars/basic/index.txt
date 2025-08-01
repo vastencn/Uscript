@@ -128,6 +128,9 @@ istypeof,istypeof,17.7
 implies,implies,15.1
 impliedby,impliedby,15.1
 
+hasprop,hasprop,27.5
+ispropof,ispropof,27.5
+
 
 
 

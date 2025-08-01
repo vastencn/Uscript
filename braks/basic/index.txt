@@ -45,6 +45,7 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,subcat,subcup_opt_ tax=1 : def=subtax
 1,subpart,subcup_opt_ part=1 : def=subpart
 1,subif,subcup_opt_ yes=1 : branchlen=13 : def=subif
+1,subprop,subcup_opt_ inter=1 : def=subprop
 
 1,sin,brak_opt_ img=sin : rshift=6 : irshift=6 : minh=30 : def=sin
 1,cos,brak_opt_ img=cos : rshift=6 : irshift=6 : minh=30 : def=cos

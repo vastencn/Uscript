@@ -1,1 +1,7 @@
- . . . 
+ mass = islt 2.0d5 h>b1s-5
+#
+# charge = 0
+#
+# spin = 1/2
+#
+#  

@@ -1,7 +1,7 @@
-
+ mass aequal 4.4e28
 #
-# intn = 5
+# charge = b>b10/11
 #
-# inte = sci+2
+# spin = b>b1/10 
 #
-# int = 500 
+# 

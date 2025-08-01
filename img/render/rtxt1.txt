@@ -1,1 +1,3 @@
- _5 false 
+ charge = 0
+#
+# hspin = 1 

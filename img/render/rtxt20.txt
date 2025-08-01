@@ -1,7 +1,7 @@
-
+ mass = ce.c59 
 #
-# intn = 50
+# charge = 1
 #
-# inte = 1
+# spin = 1/2
 #
-# int = 50 
+#  

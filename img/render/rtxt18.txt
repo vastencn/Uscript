@@ -1,7 +1,3 @@
-
+ charge = inv b>b01/11
 #
-# intn = 5
-#
-# inte = sci+2
-#
-# int = 500 
+# hspin = 1 

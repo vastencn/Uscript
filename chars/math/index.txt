@@ -12,6 +12,10 @@ round,round,16.3
 mod,mod,15.8
 
 
+rangecontains,rangecontains,19.8
+rangecontained,rangecontained,19.8
+
+
 
 2dround,2dround,15.8
 

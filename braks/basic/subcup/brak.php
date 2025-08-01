@@ -63,6 +63,9 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
         case "part":
                    $part=1;
                    break;
+        case "inter":
+                   $inter=1;
+                   break;
         case "no":
                    $nodot=1;
                    break;
@@ -99,6 +102,13 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
     $svg_str.=svg_circle($circle_center,0,$circle_rad,2,"white");
     $svg_str.=svg_dot($circle_center,0,3);
     $svg_str.=svg_hline($circle_center,0,$branch_length,$stroke_width);
+    $branch_length+=$circle_center;
+    $chunk_x_offset=$branch_length+($stroke_width/2)+$hpad;
+    }else if($inter){
+    $ziglen=8;
+    $branch_length=20;
+    $img=brak_load_opt_img("inter",$chunk['brak']);
+    $svg_str.=$img['svg'];
     $branch_length+=$circle_center;
     $chunk_x_offset=$branch_length+($stroke_width/2)+$hpad;
     }else{

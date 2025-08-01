@@ -1,1 +1,3 @@
-false 
+ charge = 2/3
+#
+# hspin = 1 

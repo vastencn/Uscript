@@ -1,1 +1,3 @@
-[imgrender_rimg13][imgrender_rimg14]
+ charge = 1
+#
+# hspin = 1 
