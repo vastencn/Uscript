@@ -77,6 +77,7 @@ antifermion,antifermion,13.2
 
 //hardons
 proton,proton,23.2
+negtron,proton,23.2
 neutron,neutron,23.2
 
 //atoms

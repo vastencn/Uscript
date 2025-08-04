@@ -1,3 +1,1 @@
- charge = 2/3
-#
-# hspin = 1 
+[imgrender_rimg60][imgrender_rimg61]

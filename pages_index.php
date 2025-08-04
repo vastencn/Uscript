@@ -45,7 +45,20 @@ General flow is
   <li><b>Plug-ins</b><br>
   Plug in other universal definition from visual example. Add other methods for defining from scratch.
 </ol>
+<pre>
+I have started trying to properly mentally adopt base 16 so I can use it more fluently in designing Uscript.
 
+I started using a new finger coutning system, simply make thumbs worth 4, so that I can count to 16 on my fingers
+(consider hwo many coders and engineers have worked with and learned hex, someone else must have already done this, its too obvious)
+
+I also find using decimanl numbers verbally like one,two,three are very confusing for hex
+so I designed a simple way to vocalize the binary glyphs
+I(eye) is a higher fequency than A(ahh) so I make the higher frequency the higher value (entropy/redshift/ low value association is consstent with the rest of  uscript)
+
+I also use a simple visualization tecnique for numbers, numbers are 4 square groups of 4 dot squares.
+The "full blocks of 4 points" are separated form the "unifished dot block" so it feels more like "14 is 3 blocks and 2 dots"
+I find this quite easy to visualize and use in working memory.</pre>
+<table border=0><tr><td><img src=img/nums_001.jpg></td><td><img src=img/nums_002.jpg></td></tr></table>
 <?php
 $istr=html_postget("istr");
 $istr=insert_pre_renders($istr);

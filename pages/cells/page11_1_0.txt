@@ -1,2 +1,6 @@
-v1 <: ([1][2][3]) _20 v2 <: 0 _20 popall( v1 , v2 addleft loopvar ) _20 v2 = 6 _20 count (v1) = 0
-v1 <: ([1][2]) _20 v2 <: c _20 ex1 <: exp( loopvar + 1 divsright v2 ) _20 popall( v1 , _2 ex1 ) _20 v2 = 2
+v1 <: ([2][3][5]) _20 aflip v1 = ([5][3][2])
+expo(v1) = 2 exp 3 exp 5  = 8000 _20 expo(aflip v1) = 4 exp 4 exp 2  = 3D09
+
+exe(v1 <: ([1][2][3]) _20 v2 <: 0 _20 popall( v1 , v2 addleft loopvar ) _20 return ([v2][count(1)])) = ([6][0])
+
+exe(v1 <: ([1][2]) _20 v2 <: c _20 ex1 <: exp( loopvar + 1 divsright v2 ) _20 popall( v1 , _2 ex1 ) _20 return v2) = 2

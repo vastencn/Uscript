@@ -2,6 +2,8 @@ tolerance
 array pop
 bool varsets
 
+<todo>
+add popping empty array and referencing non-existent array elemetnts. add it to later pages where undefined/wave has be estalished</todo>
 
 
 tolerance here means "deviation must be less than" not "deviation acceptable up to".

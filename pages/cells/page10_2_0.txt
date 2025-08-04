@@ -1,10 +1,10 @@
 v1 = ([2][3][4]) _20 v2 = ( [a] [b] ) _20 v3 = ([1][2][3])
 
 count (v1) = 4 _20 count (v2) = 2 _20 count (v3) = 3
-popa v1 = 2 _15 count (v1) = 3 _15 popa v1 = 3 _15 count(v1) = 1 _15 popa v1 = 4 _15 count(v1) = 0 _15 popa v1 = false
+popa v1 = 2 _15 count (v1) = 3 _15 popa v1 = 3 _15 count(v1) = 1 _15 popa v1 = 4 _15 count(v1) = 0
 
-(v2 = 4) = 0 _20 ( v1 <: 4 ) = 4 _20  v1 = 4 _20 (v1 addleft 1) = 5 _20 (v1 addleft 2) = 7
+(v2 = 4) = false = 0 _20 ( v1 <: 4 ) = 4 _20  (v1 = 4) = true _20 (v1 addleft 1) = 5 _20 (v1 addleft 2) = 7
 
-v1 = ([3][2][5])_20 v2 <: 0 _20 while ( apop , v2 leftadd 1 ) _20 v2 = 3 
+v1 = ([3][2][5])_20 v2 <: 0 _20 while ( apop , v2 addleft 1 ) _20 v2 = 3 
 
-v1 = ([3][2][5])_20 v2 <: 0 _20 while ( v1 <: apop , v2 leftadd 1 ) _20 v2 = a
+v1 = ([3][2][5])_20 v2 <: 0 _20 while ( v1 <: apop , v2 addleft v1 ) _20 v2 = a

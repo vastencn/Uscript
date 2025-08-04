@@ -10,8 +10,8 @@ electron istypeof fermion = true _20 fermion istypeof electron = false _20 fermi
 
 chargedlepton subprop( | charge = 1
  hspin = 1 | ) _20 neutrino subprop( | charge = 0
- hspin = 1 | ) _20  utypequark subprop( | charge = 2/3
- hspin = 1 | ) _20   utypequark subprop( | charge = inv b>b01/11
+ hspin = 1 | ) _20  utypequark subprop( | charge = inv 2/3
+ hspin = 1 | ) _20   utypequark subprop( | charge = 1/3
  hspin = 1 | ) 
 
 electron subprop ( | mass = 1 
@@ -28,10 +28,14 @@ electron subprop ( | mass = 1
 neutrino hasprop charge 0 = true _20 neutrino hasprop spin 1 = false _20 charge 1 ispropof electron = true
 
 antielectron subprop( | mass = 1 
- charge = -1
+ charge = inv electron s[charge] = inv 1
  spin = 1/2
- | ) _20 antiproton subprop ( | 
+ | ) _20 antinegtron subprop ( | 
  mass = proton s[mass] = 72C.26 
- charge = inv proton s[charge] = -1
+ charge = inv proton s[charge] = 1
  spin = proton s[spin] = 1/2
  | )
+
+fermion hasprop spin 1/2 _15 antifermion hasprop spin 1/2 _15 chargedlepton hasprop charge 1 _15 antichargedlepton hasprop charge inv 1 _15 neutrino .+ antineutrino all[ charge 0  ] = true
+
+utypequark hasprop charge inv _-8 2/3 _20 antiutypequark hasprop charge _-8 2/3 _20 dtypequark hasprop charge 1/3 _20 antidtypequark hasprop charge inv 1/3

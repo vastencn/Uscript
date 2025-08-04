@@ -45,7 +45,9 @@ _img roots.jpg img_
 *show*
 1dim 2dim 3dim 4dim :: dims , 0 1 2 :: ... numbers
 b>b11/101 b>b1/10 :: fractions, sci-5 sci+11 :: sci-note
-ten hun thou :: ten hun thou , = :: =
+
+= :: = 
+
 + - * / :: + - * /, exp2 root log :: exp root log , exp :: alt exp
 sub ( _14 v_20 ) :: sub()
 

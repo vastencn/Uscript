@@ -1,9 +1,1 @@
- 
-#
-# mass = proton s[mass] = 72C.26 
-#
-# charge = inv proton s[charge] = -1
-#
-# spin = proton s[spin] = 1/2
-#
-# 
+ . . . 

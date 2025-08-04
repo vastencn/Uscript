@@ -50,4 +50,11 @@ stepsa ( . . . .. _3 . . . ) :: stepsa. array steps last to first
 
 sort :: array sort. small -> large , sortr :: reverse sort. large -> small
 
+
+ acontains :: acontains array a contains array b<br>bool return. all contained or false
+ acontained :: acontained array a contained within array b<br>bool return. all contained or false
+
+ acontainscount :: acontainscount array a contains array b<br>count. number of matches 
+ acontainedcount :: acontainedcount array a contained within array b<br>count. number of matches 
+
 aflip :: array flip. flips order forward/backwards

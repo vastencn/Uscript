@@ -55,7 +55,10 @@ as for : asking "how many layers down?", is directly under/above?" "etc, these q
 
 
 *show*
-charge :: charge , spin :: spin
+charge :: charge<br>the electron is the uscript unit particle. mass and charge<br>giving it a negative charge was kind of 'historical mistake'<br>.<br>physical manifestations of electric discharge are asymmetric<br> and characterize by directional flow of electrons.<br>electrons are more mobile than protons so 'they are the fluid/movers'<br>When you see electric discharge. It's almost always electrons flowing<br>.<br>So uscript charge is 'inverted' compared to earths 'backwards legacy'.<br>I added 'negtron' as a synonym for 'proton' to help me with this.<br>I find 'proton' mnemonically triggers 'positive' for me
+
+spin :: spin<br>yes. it was proposed to be physical 3d spin<br>because it produces orientation in 3d space<br>it was NOT that<br>but weirdly it is still a value used in equations of rotation<br><br>it was called spin incorrectly<br>but turned out be a different kind of 'spin quality'. funny huh.
+
 _2 :: . <br>added sub-types of quarks and leptons<br>Did this to create good example of taxonomy 
 
 utypequark :: up typequark , dtypequark :: down type quark
