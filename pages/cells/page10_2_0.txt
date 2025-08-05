@@ -3,6 +3,31 @@ v1 = ([2][3][4]) _20 v2 = ( [a] [b] ) _20 v3 = ([1][2][3])
 count (v1) = 4 _20 count (v2) = 2 _20 count (v3) = 3
 popa v1 = 2 _15 count (v1) = 3 _15 popa v1 = 3 _15 count(v1) = 1 _15 popa v1 = 4 _15 count(v1) = 0
 
+exe( | v1 <: 0
+ v2 <: ([1][2][3]) 
+ v3 = count(v2)
+ while ( apop v2 , v1 addleft 1 )
+ v4 = count(v2)
+ return ([v1][v3][v4]) |  ) = exe( | v1 <: 0
+ v2 <: ([1][2][3]) 
+ v3 = count(([1][2][3]))
+ if (apop v2 , v1 addleft 1) 
+ if (apop v2 , v1 addleft 1) 
+ if (apop v2 , v1 addleft 1) 
+ v4 = count(( v_20 _10 ) )
+ return ([v1][v3][v4]
+| ) = exe( | v1 <: 0
+ v2 <: ([1][2][3]) 
+ v3 = count(([1][2][3]))
+ apop v2  _20 v1 addleft 1 
+ apop v2  _20 v1 addleft 1 
+ apop v2  
+ v4 = count( ( v_20 _10 ) )
+ return ([v1][v3][v4]
+| ) = ([2][3][0])
+
+v1=([1][2][3][4][5]) _20 popa v1 = 1 _20 apop v1 = 5 _20 apop v1 = 4  _20 popa v1 = 2  _20 apop v1 = 3 
+
 (v2 = 4) = false = 0 _20 ( v1 <: 4 ) = 4 _20  (v1 = 4) = true _20 (v1 addleft 1) = 5 _20 (v1 addleft 2) = 7
 
 v1 = ([3][2][5])_20 v2 <: 0 _20 while ( apop , v2 addleft 1 ) _20 v2 = 3 

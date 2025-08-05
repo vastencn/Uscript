@@ -28,6 +28,15 @@ so it doesn't really matter i guess
 
 
 <todo>
+mega/micro/nano/giga/etc.. scale by alot
+scinote scales by smaller amounts
+
+they are used in conjunction
+
+and they can be blended into compound symbols
+
+_img scales_001.jpg img_
+
 clean p the int/frac categorization. maybe move fracs to later, so we can specify that "not all fracs are ints" (right now expressive tools are a bit lacking for that)
 
 add definition of mega/micro/etc..

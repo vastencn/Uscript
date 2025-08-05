@@ -1,6 +1,0 @@
-all ( v1 ) = (v2 = v1 _20 v4 = 
-apop v2 _20 while( v3 <: apop , v4 = v4 and v3 )
-
-v1 = ([2][3][4][5])
-
-all ( v1 )

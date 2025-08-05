@@ -113,10 +113,10 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,func,if_opt_ func=1 : crshift=7 : cirshift=11 : def=func
 
 //has, doesnt have, is in, is not in
-1,has,if_opt_ has=1 : def=has
-1,isin,if_opt_ isin=1 : def=has
-1,nhas,if_opt_ nhas=1 : def=has
-1,nisin,if_opt_ nisin=1 : def=has
+1,has,if_opt_ has=1 : irshift=2 : def=has
+1,isin,if_opt_ isin=1 : irshift=2 : def=has
+1,nhas,if_opt_ nhas=1 : irshift=2 : def=has
+1,nisin,if_opt_ nisin=1 : irshift=2 : def=has
 
 //interaction
 1,interact,twostack_opt_ interact=1 : def=interact

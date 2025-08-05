@@ -1,8 +1,14 @@
+set symbols
+sub/superset
+overlap, no overlap
+
 tolerance
 array pop
 bool varsets
 
 <todo>
+add set symbols definitions
+
 add popping empty array and referencing non-existent array elemetnts. add it to later pages where undefined/wave has be estalished</todo>
 
 
@@ -36,6 +42,12 @@ Add defintion that declare "a larger number contains a smaller number" using has
 tol :: tolerance
 has( true true true  .. _5 false ) :: ... has o , isin (false .. true true true ) :: o is in ...
 nhas( true true true  .. _5 false ) :: ... doesn't have o , nisin (false .. true true true ) :: o is not in ...
+
+ _2 :: the has/isin search for elements in an array.<br>it means "array A has element B"<br>"array A has array B" checks if an element of A IS the array B<br>You can put comparator and formula in has/isnin braks<br>eg. A has > 5 <br>or A has [1] = 5 (any A[*][1] = 5)<br>.<br>Set theory operators compare 2 arrays to each other
+
+supersetof :: superset of , subsetof :: subset of , setoverlap :: set overlap , nosetoverlap :: no set overlap
+
 popa :: pop first array element, apop :: pop last array element
+
 
 andleft :: and left. L = L and R, orleft :: or left . L = L or R 

@@ -69,3 +69,9 @@ yarea,yarea,15.9
 
 integratex,integratex,16.5
 integratey,integratey,20.7
+
+
+subsetof,subsetof,13
+supersetof,supersetof,13
+setoverlap,setoverlap,16
+nosetoverlap,nosetoverlap,15.5

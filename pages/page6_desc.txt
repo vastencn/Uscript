@@ -1,5 +1,9 @@
 arrays
 <todo>
+Array * array = matrix
+
+matrix diagonal extraction
+
 Some of these definitions would be easier if I add array pop here first, instead of later
 
 add standard deviation brak

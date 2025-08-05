@@ -50,8 +50,7 @@ This is NOT a full proper definition of antiparticles
 I just split it into the next page because this page info/ description is getting big due to the "massive symbol dump" of particles.
 
 *show*
-mass :: mass. just a symbol in the chart of numbers<br>can be seen as arbitrary for now<br>but it is a combination of "interaction" and "spacetime"<br>both those radicals are not yet defined<br>so for now its just an arbitrary symbol
-
+mass :: mass. just a symbol in the chart of numbers<br>can be seen as arbitrary for now<br>but it is a combination of "interaction" and "spacetime"<br>both those radicals are not yet defined<br>so for now its just an arbitrary symbol<br>.<br>we give electron a unit of nano so that nano->giga + scinote <br>can easily cover the full range of scales we should ever need
 proton :: proton , neutron :: neutron 
 
 electron :: electron ,  muon :: muon , tau :: tau
