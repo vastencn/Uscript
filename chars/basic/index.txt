@@ -48,32 +48,32 @@ v15,v15,18
 
 loopvar,loopvar,15.6
 
-loopprev,loopprev,19.4
-loopprev2,loopprev2,25.9
-loopprev3,loopprev3,29.2
-loopprev4,loopprev4,26.4
-loopprev5,loopprev5,30.9
+loopnext,loopprev,19.4
+loopnext2,loopprev2,25.9
+loopnext3,loopprev3,29.2
+loopnext4,loopprev4,26.4
+loopnext5,loopprev5,30.9
 
-loopnext,loopnext,18.2
-loopnext2,loopnext2,28.4
-loopnext3,loopnext3,29.4
-loopnext4,loopnext4,33.6
-loopnext5,loopnext5,31.7
+loopprev,loopnext,18.2
+loopprev2,loopnext2,28.4
+loopprev3,loopnext3,29.4
+loopprev4,loopnext4,33.6
+loopprev5,loopnext5,31.7
 
 
 
 
 oloopvar,oloopvar,17.9
 
-oloopprev,oloopprev,19.4
-oloopprev2,oloopprev2,25.9
-oloopprev3,oloopprev3,29.2
-oloopprev4,oloopprev4,26.4
+oloopnext,oloopprev,19.4
+oloopnext2,oloopprev2,25.9
+oloopnext3,oloopprev3,29.2
+oloopnext4,oloopprev4,26.4
 
-oloopnext,oloopnext,21.6
-oloopnext2,oloopnext2,28.4
-oloopnext3,oloopnext3,29.4
-oloopnext4,oloopnext4,33.6
+oloopprev,oloopnext,21.6
+oloopprev2,oloopnext2,28.4
+oloopprev3,oloopnext3,29.4
+oloopprev4,oloopnext4,33.6
 
 
 //basic math/operations

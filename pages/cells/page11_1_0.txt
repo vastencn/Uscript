@@ -1,6 +1,39 @@
 v1 <: ([2][3][5]) _20 aflip v1 = ([5][3][2])
-expo(v1) = 2 exp 3 exp 5  = 8000 _20 expo(aflip v1) = 4 exp 4 exp 2  = 3D09
+expo(v1) = 2 exp 3 exp 5  = 8000 _20 expo(aflip v1) = 5 exp 3 exp 2  = 3D09
 
 exe(v1 <: ([1][2][3]) _20 v2 <: 0 _20 popall( v1 , v2 addleft loopvar ) _20 return ([v2][count(1)])) = ([6][0])
 
 exe(v1 <: ([1][2]) _20 v2 <: c _20 ex1 <: exp( loopvar + 1 divsright v2 ) _20 popall( v1 , _2 ex1 ) _20 return v2) = 2
+
+allpop( v1 , _3 ex1 ) = popall(aflip v1, _3 ex1)
+
+
+
+exe( |
+ v1 <: ( [5][6][7] )
+ v2 <: ( v_20 _12 ) _20 v3 <: ( v_20 _12 ) _20 v4 <: ( v_20 _12 ) _20 v5 <: 0
+ ex1 <: exp( v2 <: .+ loopvar _20 v2 <: .+ loopprev _20 v2 <: .+ loopnext _20 v5 addleft 1 )
+ (stepsa (v1 , ex1 )) = ( || v2 :< .+ wave _20 v3 <: .+ 5 _20 v4 <: .+ 6 _20 v5 addleft 1 
+ v2 :< .+ wave _20 v3 <: .+ 6 _20 v4 <: .+ 7 _20 v5 addleft 1 
+  || )
+ return ([v2][v3][v4][v5])
+
+ | ) = (  | [[wave][wave]]
+ [[5][6]]
+ [[6][7]]
+ [2]
+   |  )
+
+stepsa ( v1 , ex1 ) = ( | 
+ v1 <: 2
+ while ( v1 notgt count( v1 , ||
+  loopprev <: v1 s[v1 - 1]
+  loopnext <: v1 s[v1] 
+  ex1
+  ||) )
+ | )
+
+asteps ( v1 , ex1 ) = stepsa ( aflip v1 , ex1 )
+
+v1 <: ([4][1][8][2][9]) _20 sort v1 = ([1][2][4][8][9])
+sortr v1 = aflip sort v1 = ([9][8][4][2][1])

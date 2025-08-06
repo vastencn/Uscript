@@ -44,7 +44,7 @@ function load_presave($id){
 //but for now they will only last until erased from the presave buffer
 //  if($crown=img_search($royal_throne)){
 //    }else{   
-    $anna=insert_pre_renders($anna);
+    $anna=nested_pre_renders($anna);
     $crown['svg']=multi_line_render($anna);
     file_dump($royal_throne,$crown['svg']);
  //   }
@@ -78,7 +78,7 @@ function render_presave($id){
 
 
   //$anna=insert_pre_renders($anna);
-  $crown['svg']=multi_line_render($anna);
+  $crown['svg']=multi_line_render(nested_pre_renders($anna));
 
   file_dump($throne_room,$crown['svg']);
 

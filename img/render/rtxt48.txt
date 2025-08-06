@@ -1,1 +1,15 @@
-3
+
+#
+# v1 <: ( [5][6][7] )
+#
+# v2 <: ( v_20 _12 ) _20 v3 <: ( v_20 _12 ) _20 v4 <: ( v_20 _12 ) _20 v5 <: 0
+#
+# ex1 <: exp( v2 <: .+ loopvar _20 v2 <: .+ loopprev _20 v2 <: .+ loopnext _20 v5 addleft 1 )
+#
+# (stepsa (v1 , ex1 )) = (  imgrender_rimg44  )
+#
+# return ([v2][v3][v4][v5])
+#
+#
+#
+# 

@@ -3,7 +3,7 @@
 
 function  def_render_prep($arendelle){
   $anna=implode("#NL#",$arendelle);
-  $anna=insert_pre_renders($anna);
+  $anna=nested_pre_renders($anna);
   $arendelle=explode("#NL#",$anna);
   $arendelle=def_preparse($arendelle);
   return $arendelle;

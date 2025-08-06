@@ -1,5 +1,5 @@
 # uscript
- Uscript language generator
+Uscript language generator
 
 Still a work in progress
 

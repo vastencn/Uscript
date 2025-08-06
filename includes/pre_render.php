@@ -22,15 +22,23 @@ function render_id_to_mkup($id){
   return "imgrender_".$render_img_prefix.$id;;
   }
 
-function insert_pre_renders($str){
-  $sar=explode("|",$str);
+function nested_pre_renders($str,$depth=3){
+  for($i=$depth;$i>0;$i--){
+    $delim=str_repeat("|", $i);
+    $str=insert_pre_renders($str,$delim);
+    }
+  return $str;
+  }
+
+function insert_pre_renders($str,$delim="|"){
+  $sar=explode($delim,$str);
   if(count($sar)<2)return $str;
 
   $arc=count($sar);
   for($i=1;$i<$arc;$i+=2){
   	$sar[$i]=pre_render_into_mkup($sar[$i]);
     }
-  $rstr=implode("",$sar);
+  $rstr=implode(" ",$sar);
   return $rstr;
   }
 

@@ -1,1 +1,7 @@
-[imgrender_rimg83][imgrender_rimg84]
+ 
+#
+# v1 <: 2
+#
+# while ( v1 notgt count( v1 ,  imgrender_rimg78 ) )
+#
+# 

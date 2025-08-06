@@ -1,10 +1,10 @@
 electron sub[mass = nano 1] _148 electronneu sub[mass islt nano 2.0d5 h>b1s-5]
 
-muon sub[mass = nano ce.c59] _60 muonneu sub[mass islt nano 0.552aa]
+muon sub[mass aequal nano ce.c59] _60 muonneu sub[mass islt nano 0.552aa]
 
-tau sub[mass = nano d95.1e] _60 tauneu sub[mass islt nano 23.9dd]
+tau sub[mass aequal nano d95.1e] _60 tauneu sub[mass islt nano 23.9dd]
 
-proton sub[mass = nano 72C.26 ] _40 neutron sub[mass = nano 72E.AF]
+proton sub[mass aequal nano 72C.26 ] _40 neutron sub[mass aequal nano 72E.AF]
 
 qup sub[mass = nano 4.4e tol 1] _50 qdown sub[mass = nano 9.32 tol 1]
 

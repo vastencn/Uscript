@@ -21,20 +21,9 @@ later can add bracketing and nuance to sorting
 
 
 <todo>
-aflip def 
-array pair loop examples
 
-array sort exmaples
+array sort exmaple is just an example of an array unsorted and sorted. should add full algorithm description
 
-The varset arrow can connect to the bracket, can add that later
-
-then some cool 2D webs of expression building can be constructed. even skipping the expression variables ad just pointing to where the expressions should be inserted.
-
-add  inner-array-loop ... runs between all all the elements instead of on each element. loopvar will be empty but loopnext and loop prev will have values.
-
-eg 
-foreach ( (1,2,3)  as x ) { = x } == 3
-foreach ( (1,2,3)  as x ) { += x } == 6
 </todo>
 
 *show*
