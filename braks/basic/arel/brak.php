@@ -45,6 +45,7 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
   $minh=NULL;
   $closed=NULL;
   $subar=NULL;
+  $arglyph=NULL;
 
 
   $opts=@$chunk['brak']['opts'];
@@ -63,6 +64,9 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
         case "irshift":
                    $cstart=$vval;
                    break;
+        case "arglyph":
+                   $arglyph=$vval;
+                   break;
         case "sublen":
                    $svg_str.=svg_hline($xstart,0,$vval);
                    $xstart+=$vval;
@@ -72,6 +76,12 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
                    $minh=$vval;
                    break;
         case "subar":
+                   $subar=$vval;
+                   break;
+        case "sar":
+                   $subar=$vval;
+                   break;
+        case "sx":
                    $subar=$vval;
                    break;
         case "def":
@@ -137,9 +147,18 @@ function arel_brak($chunk,$cup_depth=6,$hpad=3,$vpad=2,$stroke_width=2){
 
   $svg_str.=svg_vcup($xstart,$height/2,$inner_space_width,$cup_depth,$stroke_width);
   $svg_str.=svg_vcup($xstart,0-$height/2,$inner_space_width,0-$cup_depth,$stroke_width);
+
+  if($arglyph){
+    $svg_str.=svg_vline($xstart+6,($height/2),$l=0-$height,$s=2);
+    $svg_str.=svg_hline($xstart,($height/6),$l=6,$s=2);
+    $svg_str.=svg_hline($xstart,(0-($height/6)),$l=6,$s=2);
+    }
+
   if($subar){
     $svg_str.=svg_vline($xstart+6,($height/2),$l=0-$height,$s=2);
     }
+
+
 
 
 

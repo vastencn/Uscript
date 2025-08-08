@@ -3,6 +3,16 @@ array append
 array subset
 
 <todo>
+update array conditional def to reflect the new updated version
+
+the simple glyph now only extracts a single element, and the array version returns all matches
+
+define array extract
+multi element matches returns array
+id reference return only the element (not encased as an array for one element)
+condition extracts all that match
+discard the return to just 'delete' from array
+
 **add clearer examples here of appending to loop return to give an array result from a loop
 
 **could do so many more array ops, but drawing the line for now 
@@ -13,6 +23,10 @@ array subset
 *show*
 .+ :: array append 
 .++ :: array combine (array of arrays)
-v5 s[ . . . ] :: ... = Condition to check elements. <br>Qualifying elements are included in output array
+v5 s[ . . . ] :: ... = Condition to find single elements. <br>first qualifying element is returned
+v5 sar[ . . . ] :: ... = Condition to find multiple elements. <br>Qualifying elements are included in output array
 
-v1 subar[ 1 ] :: extract sub-array . <br>pulls out a sub element as a standalone array
+v1 sx[ . . . ] :: extract elements(s) removes them from array<br>glyph shows bond/appended where one is extracted
+v1 sxar[ . . . ] :: extract elements(s) removes them from array
+
+v1 subar[ 1 ] :: extract sub-array . <br>pulls out a sub element as a standalone array<br>new array of array[*][x] with x bumped up to parent tier

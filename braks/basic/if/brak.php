@@ -42,6 +42,9 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
   $def="unnamed_brak";
   $cond_opts=array();
   $sub_opts=array();
+  $approx=false;
+  $noteq=false;
+  $dottype="eq";
   if(@count($opts)>0){
     foreach($opts as $opt){
       $vname=$opt[0];
@@ -92,6 +95,14 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
         case "nisin":
                    $btype="nisin";
                    $hastype=TRUE;
+                   break;
+        case "approx":
+                   $approx=1;
+                   $dottype="approx";
+                   break;
+        case "noteq":
+                   $noteq=1;
+                   $dottype="neq";
                    break;
         default:
                    $tbrak=substr($vname,0,1);
@@ -194,27 +205,33 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
   $chunks[0]['brak']["opts"]=array_merge($cond_opts,$chunks[0]['brak']["opts"]);
 
 
-  
+  $haseq=true;
   switch($btype){
     case "has":
             $cfunc="subofcup_brak";
-            $chunks[1]['brak']['opts']=array(array("yes","1"));
+            $chunks[1]['brak']['opts']=array(array($dottype,"1"));
             $chunks[0]['brak']['opts']=NULL;
+            $hastype=1;
+            $hascheck=1;
             break;
     case "isin":
             $cfunc="subofcup_brak";
             $chunks[1]['brak']['opts']=NULL;
-            $chunks[0]['brak']['opts']=array(array("yes","1"));
+            $hastype=1;
+            $hascheck=-1;
            break;
     case "nhas":
             $cfunc="subofcup_brak";
-            $chunks[1]['brak']['opts']=array(array("no","1"));
+            $chunks[1]['brak']['opts']=array(array($dottype,"1"));
             $chunks[0]['brak']['opts']=NULL;
+            $hastype=-1;
+            $hascheck=1;
             break;
     case "nisin":
             $cfunc="subofcup_brak";
             $chunks[1]['brak']['opts']=NULL;
-            $chunks[0]['brak']['opts']=array(array("no","1"));
+            $hastype=-1;
+            $hascheck=-1;
            break;
     default:$cfunc="brak_brak"; 
             break;
@@ -223,6 +240,45 @@ function if_brak($chunks,$dot_radius=5,$cup_depth=10,$hpad=3,$vpad=2,$stroke_wid
 
 //ar_dump($condition,"cond1");
 //ar_dump($chunks[0],"chunk1");
+
+
+  if($hastype){
+    if($hascheck>0){
+        if($hastype>0){
+          $chunks[0]['svg'].=svg_dot($chunks[0]['width']+6,0,4);
+          $chunks[0]['svg'].=svg_hline($chunks[0]['width']+6,0,12,2);
+          $chunks[0]['width']+=16;
+          }
+        if($hastype<0){
+          $chunks[0]['svg'].=svg_hline($chunks[0]['width']+6,0,12,2);
+          $chunks[0]['svg'].=svg_circle($chunks[0]['width']+6,0,4.2,2,"white");
+          $chunks[0]['width']+=16;
+          }
+      }else{
+        if($haseq==true){ 
+          if($noteq||$approx){
+            $chunks[0]['svg'].=svg_circle($chunks[0]['width']+9,6,4.2,2,"white");
+            }else{
+            $chunks[0]['svg'].=svg_dot($chunks[0]['width']+9,6,3);
+            }
+          if($approx){
+            $chunks[0]['svg'].=svg_circle($chunks[0]['width']+9,-6,4.2,2,"white");
+            }else{
+            $chunks[0]['svg'].=svg_dot($chunks[0]['width']+9,-6,3);                
+            }
+          }
+        if($hastype>0){
+          $chunks[0]['svg'].=svg_dot($chunks[0]['width']+18+14,0,4);
+          $chunks[0]['svg'].=svg_hline($chunks[0]['width']+18,0,14,2);
+          $chunks[1]['brak']['opts'][]=array("irshift",16);
+          }
+        if($hastype<0){
+          $chunks[0]['svg'].=svg_hline($chunks[0]['width']+18,0,14,2);
+          $chunks[0]['svg'].=svg_circle($chunks[0]['width']+18+14,0,4.2,2,"white");
+          $chunks[1]['brak']['opts'][]=array("irshift",16);
+          }
+      }
+    }
 
   $condition=$cfunc($chunks[0]); 
   $action=subcup_brak($chunks[1]);

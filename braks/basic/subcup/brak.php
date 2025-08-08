@@ -45,6 +45,7 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
 
   $yesdot=NULL;
   $nodot=NULL;
+  $cstart=0;
   $opts=@$chunk['brak']['opts'];
   if(@count($opts)>0){
     foreach($opts as $opt){
@@ -69,6 +70,18 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
         case "no":
                    $nodot=1;
                    break;
+        case "eq":
+                   $eqdots=1;
+                   break;
+        case "neq":
+                   $neqdots=1;
+                   break;
+        case "approx":
+                   $adots=1;
+                   break;
+        case "irshift":
+                   $cstart=$vval;
+                   break;
         }
       }
     }
@@ -78,9 +91,9 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
   $nchunk=create_chunk($ctxt);
 
   $height=@$chunk['height']+($vpad*2);
-  $chunk_x_offset=$branch_length+($stroke_width/2)+$hpad;  
+  $chunk_x_offset=$cstart+$branch_length+($stroke_width/2)+$hpad;  
   $inner_space_size=@$chunk['width']+$hpad*2;
-  $inner_space_end=$chunk_x_offset+@$inner_space_size;
+  $inner_space_end=$cstart+$chunk_x_offset+@$inner_space_size;
   $svg_str="";
 
   //draw open
@@ -117,7 +130,7 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
 
   $inner_space_end=$chunk_x_offset+@$inner_space_size;
 
-  $svg_str.=svg_hcup($branch_length,0,$height,0-$inner_space_size,$stroke_width);
+  $svg_str.=svg_hcup($branch_length,0,$height,0-($inner_space_size+$cstart),$stroke_width);
 
   //now embed the original chunk svg
   $svg_str.=draw_svg_symbol(@$chunk['svg'],0,$chunk_x_offset);
@@ -127,6 +140,20 @@ function subcup_brak($chunk,$branch_length=8,$cup_depth=10,$hpad=3,$vpad=2,$stro
     }
   if($nodot){
     $svg_str.=svg_circle($branch_length,0,4,2,"white");
+    }
+
+  if($eqdots){
+    $svg_str.=svg_dot($branch_length-6,6,3);
+    $svg_str.=svg_dot($branch_length-6,-6,3);
+    }
+    
+  if($neqdots){
+    $svg_str.=svg_dot($branch_length-6.5,-6,3);
+    $svg_str.=svg_circle($branch_length-6.5,6,4,2,"white");
+    }
+  if($adots){
+    $svg_str.=svg_circle($branch_length-6.5,-6,4,2,"white");
+    $svg_str.=svg_circle($branch_length-6.5,6,4,2,"white");
     }
 
   $nchunk['svg']=$svg_str;

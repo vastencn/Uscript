@@ -7,9 +7,13 @@ array pop
 bool varsets
 
 <todo>
+define all the new "has/isinetc.." and make 'mini single symbol boolean comparator symbols' for them
 add set symbols definitions
 
-add popping empty array and referencing non-existent array elemetnts. add it to later pages where undefined/wave has be estalished</todo>
+
+add default version that doesn't include the "equals dots" and make it default to the "equals dots version"
+
+add popping empty array and referencing non-existent array elements. add it to later pages where undefined/wave has be established</todo>
 
 
 tolerance here means "deviation must be less than" not "deviation acceptable up to".
@@ -41,7 +45,17 @@ Add defintion that declare "a larger number contains a smaller number" using has
 *show*
 tol :: tolerance
 has( true true true  .. _5 false ) :: ... has o , isin (false .. true true true ) :: o is in ...
-nhas( true true true  .. _5 false ) :: ... doesn't have o , nisin (false .. true true true ) :: o is not in ...
+doesnothave( true true true  .. _5 false ) :: ... doesn't have o , isnotin (false .. true true true ) :: o is not in ...
+
+hasapprox( true true true  .. _5 false ) :: ... has something approximately o , approxisin (false .. true true true ) :: something approximately o is in ...
+doesnothaveapprox( true true true  .. _5 false ) :: ... doesn't have something approximately o , approxisnotin(false .. true true true ) :: something approximately o is not in ...
+
+
+hasnot( true true true  .. _5 false ) :: ... has something that's not o , notthisisin(false .. true true true ) :: something not o is in ...
+doesnothavenot( true true true  .. _5 false ) :: ... doesn't have something that's not o , notthisisnotin(false .. true true true ) :: something not o is not in ...
+
+
+tol :: tolerance
 
  _2 :: the has/isin search for elements in an array.<br>it means "array A has element B"<br>"array A has array B" checks if an element of A IS the array B<br>You can put comparator and formula in has/isnin braks<br>eg. A has > 5 <br>or A has [1] = 5 (any A[*][1] = 5)<br>.<br>Set theory operators compare 2 arrays to each other
 

@@ -84,8 +84,11 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 
 
 1,subarel,arel_opt_ sublen=5 : def=arel
-2,s,arel_opt_ sublen=5
-2,sid,arel_opt_ sublen=0
+2,s,arel_opt_ sublen=5 : def=elementref
+2,sar,arel_opt_ sublen=5 : irshift=8 : sar=1 : arglyph=1 : def=conditionalarray
+2,sid,arel_opt_ sublen=0 : def=idbox
+2,sxar,arel_opt_ sublen=0 : all=1 : img=subextract : arglyph=1 : rshift=17 : irshift=14 : def=subextract
+2,sx,arel_opt_ sublen=0 : all=1 : img=subextract : rshift=17 : irshift=8 : def=subextract
 2,all,arel_opt_ sublen=11 : all=1 : img=all : rshift=12 : irshift=6 : def=arall
 2,any,arel_opt_ sublen=11 : all=1 : img=any : rshift=12 : irshift=8 : def=arany
 2,none,arel_opt_ sublen=8 : all=1 : img=none : rshift=9 : irshift=8 : def=arnone
@@ -113,10 +116,42 @@ the decision of wherther to build a new brak fresh or by adding features to an e
 1,func,if_opt_ func=1 : crshift=7 : cirshift=11 : def=func
 
 //has, doesnt have, is in, is not in
+
 1,has,if_opt_ has=1 : irshift=2 : def=has
-1,isin,if_opt_ isin=1 : irshift=2 : def=has
-1,nhas,if_opt_ nhas=1 : irshift=2 : def=has
-1,nisin,if_opt_ nisin=1 : irshift=2 : def=has
+1,isin,if_opt_ isin=1 : irshift=2 : def=isin
+
+1,doesnothave,if_opt_ nhas=1 : irshift=2 : def=nhas
+1,isnotin,if_opt_ nisin=1 : irshift=2 : def=nisin
+
+1,hasapprox,if_opt_ has=1 : irshift=2 : approx=1 : def=hasapprox
+1,doesnothaveapprox,if_opt_ nhas=1 : irshift=2 : approx=1 : def=nhasapprox
+
+1,approxisin,if_opt_ isin=1 : irshift=2 : approx=1 : def=approxisin
+1,approxisnotin,if_opt_ nisin=1 : irshift=2 : approx=1 : def=approxnisin
+
+
+1,hasnot,if_opt_ has=1 : irshift=2 : noteq=1 : def=hasnot
+1,doesnothavenot,if_opt_ nhas=1 : irshift=2 : noteq=1 : def=nhasnot
+
+
+1,notthisisin,if_opt_ nisin=1 : noteq=1 : irshift=2 : def=nisin
+1,notthisisnotin,if_opt_ nisin=1 : noteq=1 : irshift=2 : def=nisin
+
+
+
+1,nhas,if_opt_ nhas=1 : irshift=2 : def=nhas
+1,nisin,if_opt_ nisin=1 : irshift=2 : def=nisin
+
+1,hasapprox,if_opt_ has=1 : irshift=2 : approx=1 : def=hasapprox
+1,nhasapprox,if_opt_ nhas=1 : irshift=2 : approx=1 : def=nhasapprox
+
+1,approxisin,if_opt_ isin=1 : irshift=2 : approx=1 : def=approxisin
+1,approxnisin,if_opt_ nisin=1 : irshift=2 : approx=1 : def=approxnisin
+
+1,hasnot,if_opt_ has=1 : irshift=2 : noteq=1 : def=hasnot
+1,nhasnot,if_opt_ nhas=1 : irshift=2 : noteq=1 : def=nhasnot
+
+1,isin,if_opt_ isin=1 : irshift=2 : def=nisin
 
 //interaction
 1,interact,twostack_opt_ interact=1 : def=interact

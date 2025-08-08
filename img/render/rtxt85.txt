@@ -1,7 +1,1 @@
- 
-#
-# v1 <: 2
-#
-# while ( v1 notgt count( v1 ,  imgrender_rimg78 ) )
-#
-# 
+ _10 v_25  

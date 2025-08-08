@@ -1,0 +1,24 @@
+5 + true = 6 _20 5 + false = 5 _20 (v1 += has(v2 , v3)) = ( if(|has( v2 , v3 )| , v1 addleft 1) )
+
+v1 acontainscount v2 = exe( |
+  v9 <: 0
+  v3 <: v1
+  foreach( v2 as v4 , ||
+     v9 <: 0
+     if( ||| has(v3,v4) ||| , |||
+        v3 sx[ = v4] 
+        v9 addleft 1
+        ||| ) 
+     || )
+  return v9
+  | ) _20 v1 acontainscount v2 = v2 acontainedcount v1
+
+v1 acontains v2 = exe( v1 acontainscount v2 = | count(v2) | ) _20 v1 acontained v2 = v2 acontains v1
+
+v1 = ([1][2][3][4][5]) 
+
+v1 acontainscount ([2][4]) = 2 _20 v1 acountainscount ([5][6][7]) = 1 _20 v1 acontainscount ([9][a][b]) = 0
+
+v1 acontainscount ([4][4][4]) = 3 _20 ([3][4][3][3]) acontainedcount v1 = 4
+
+v1 acontains ([1][4][5]) = true _20 v1 acontains 

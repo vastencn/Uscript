@@ -144,7 +144,7 @@ function render_brak(&$elsa){
       //how long this version will last, is how long it takes until a full revamp is in order, and every cut cortner like this will hasten that 
       switch($elsa['brak']['opts'][0][0]){
         case "foreach":
-                       $args[0]="arel[".str_replace("as","] arel[",$args[0])."]";
+                       $args[0]="".str_replace("as"," loopas ",$args[0])."";
                        break;
         case "rinteract":
                        $nargs0=array();

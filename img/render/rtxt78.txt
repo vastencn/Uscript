@@ -1,9 +1,1 @@
-
-#
-#  loopprev <: v1 s[v1 - 1]
-#
-#  loopnext <: v1 s[v1] 
-#
-#  ex1
-#
-#  
+ v1 <: apop 

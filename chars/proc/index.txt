@@ -31,6 +31,7 @@ sortr,sortr,35.8
 
 loopcount,loopcount,15.8
 loopreturn,loopreturn,16.6
+loopas,loopas,20.9
 
 swap,swap,22.9
 addleft,addleft,27.6
@@ -71,6 +72,7 @@ ex2,ex2,16.8
 ex3,ex3,17.5
 ex4,ex4,21.3
 ex5,ex5,20.5
+
 
 EOF
 
