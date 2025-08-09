@@ -1,1 +1,1 @@
- gt 6 
+ true true true  

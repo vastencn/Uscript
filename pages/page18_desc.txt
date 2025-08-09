@@ -1,18 +1,6 @@
 <todo>
-clarify that some symbols violate linear sequence
+clarify that some symbols violate "linear operation sequence"
 inv(-) or property name like charge/mass etc.. are prefix to a value, so they essentially create a bracket. this should be clarified explicitly
-
-I'm going to assume the array sub contains  has be retroactively added to previous pages
-need to do this later haha
-
-currently you can treat something as an array and use array ops on it 
-
-could add "array op types" based on the various subtypes. add the radical prefixes to tghe array ops like "sub-element-selector" could tag on the "taxonomy" or "part" radical. that would clarify context, not change function function. it would just make clear "we are treating a taxonomy or structure as an array to use the array handling tools for language".
-
-That could help clarify context
-and its easy to do in writing because I just tag on the radical symbol, like a prefix.
-
-but its a bit more cumbersome to add it here in the system, so ill wait for now. I think its ok to just tread something as an array and expect the context to be clear, obviously there is a fundamental difference between an array of number and an array of physical particle within a proton or atom. but at some pointing higher level language it will be needed. I'm just procrastinating for now cause i wanna play with other things.
 </todo>
 
 introduce more properties like charge and spin
@@ -64,7 +52,7 @@ _2 :: . <br>added sub-types of quarks and leptons<br>Did this to create good exa
 utypequark :: up typequark , dtypequark :: down type quark
 chargedlepton :: charged lepton , neutrino :: neutrino
 
-_2 ::  . <br>here the ambiguous sub() gets sub-types<br> the unspecified subcup() is ambiguous<br>.<br>these new 3 are explicit<br>taxonomy vs. composition vs. condition<br>conditional is done with procedural<br>particles have "composite objects" and "categories"<br>so now its easy to distinguish these ideas<br><br>radicals use for these new sub types are not fully defined yet.<br>but thats not necesarry.<br>plus these use cases help establish their lexical scope.<br><br>"hierarchical" radical for taxonomy<br>"system" radical with "system particle" selected for composition<br>"conditional" uses the sub component of the procedural "IF bracket"<br>"property" uses "interaction" radical (how something interacts)
+_2 ::  . <br>here the ambiguous sub() gets important sub-types<br> the unspecified subcup() is ambiguous<br>.<br>these new 4 are explicit<br>taxonomy vs. composition vs. condition vs. property<br>conditional is done with procedural<br>particles have "composite objects" and "categories"<br>so now its easy to distinguish these ideas<br><br>radicals use for these new sub types are not fully defined yet.<br>but thats not necesarry.<br>plus these use cases help establish their lexical scope.<br><br>"hierarchical" radical for taxonomy<br>"system" radical with "system particle" selected for composition<br>"conditional" uses the sub component of the procedural "IF bracket"<br>"property" uses "interaction" radical (how something interacts)<br>.<br>This is just first introduction<br>they will become more clearly defined going forward<br>atoms/molecules/etc will all help clarify these defintions
 
 issubof :: is-sub-of , isparentof :: is-parent-of , subcup( _33 v_20 ) :: ambiguous 'sub'
 iscatof :: is-cat-of , istypeof :: is-type-of, subcat ( _33 v_20 ) ::  subcat 

@@ -214,7 +214,7 @@ function save_cell_desc($cell,$desc){
   return;
   }
 
-  function page_defs($pname){
+function page_defs($pname){
 
    if($pname)$page=load_page_struct($pname);
    if(!@$page['desc'])return NULL;
@@ -228,7 +228,8 @@ function save_cell_desc($cell,$desc){
           $ln_els=explode(",",$tln);
           echo "<table border=1 bordercolor=black bgcolor=black cellpadding=4s><tr>";
           foreach($ln_els as $tel){
-            $tel=trim($tel);
+            $tel=nested_pre_renders(trim($tel));
+            //echo ($tel);
             $elar=explode(" :: ",$tel);
             echo "<td bgcolor=white>".render_line(str_replace("..",",",$elar[0]))."  ".str_replace(" .. "," , ",@$elar[1])."</td>";
             }

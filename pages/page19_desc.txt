@@ -1,18 +1,33 @@
 temp place holder page
 
+<todo>
+third isotope notation?
+</todo>
+
 *show*
+ atom :: general atom symbol drawn by the word 'atom'
 
- _2 :: temp page <br> later will shuffle this stuff somewhere else i think<br>.<br>designing more types of sub<br>not sure when to add them.. <br>some.. like the array sub will probably go into earlier pages<br>some may be done later<br><br>i feel like i'm adding alot of them right now<br>.<br>
+atom (1) :: atom(1) hydrogen , atom(2) :: atom(2) helium , atom(3) :: atom(3) lithium
 
- acontains :: acontains array a contains array b<br>bool return. all or none
- acontained :: acontained array a contained within array b<br>bool return. all or none
+_2 :: yes. the number strokes lines are very thin.<br>right now it is just scaling the number vector. <br>It will need to be redone with a thicker line width later
 
- acontainscount :: acontainscount array a contains array b<br>count. number of matches 
- acontainedcount :: acontainedcount array a contained within array b<br>count. number of matches 
+_2 :: IONS
 
-_2 :: maybe a couple more<br>like "result as a ratio of a" and "as a ratio of b"<br>can do that with a formula (div by count)<br> but might be useful enough to justify to a symbol
+atom(1.1) :: atom(1.1)  hydrogen +1 electron anion, atom(6.-1) :: atom(6.-1)  carbon -1 electron cation
 
-rangecontains :: rangecontains range a contains range b
-rangecontained :: rangecontained range a falls inside of range b
+_2 :: ISOTOPES
 
-_2 :: maybe some more range one <br>like "how much of the range it fill"<br> or "how much the ranges overlap"
+atom(6 14) :: atom(6 14) carbon 14 , atom(8 17) :: atom(8 17)oxygen 17 
+
+atom(1 +1) :: atom(1 +1)  hydrogen +1 neutron isotope.<br>
+atom(7 -2) :: atom(7 -2)  nitrogen -2 neutron isotope. 7 proton 5 <br>secondary notation method.<br>the adjuster number specifics 'neutron count = proton_count +/- x'
+
+atom (82 208) = atom (82 +44) :: atom (82 208)  = atom (82 +44) Lead 208 (neutrons = protons + 44) 
+
+_2 :: might add third isotope notation based on beta-stability line deviation
+
+_2 :: ISOTOPES + IONS<br>don't use the '.' for the ion. just space it out as the third value
+
+atom(1 1 -1) :: atom (1 1 -1) hydrogen-1 -1 electron. aka a proton
+atom(8 16 2) :: atom (8 16 2) oxygen-16 +2 electrons
+atom(8 +1 +1) :: atom (8 +1 1) oxygen-17 +1 electrons

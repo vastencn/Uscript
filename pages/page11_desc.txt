@@ -22,7 +22,7 @@ later can add bracketing and nuance to sorting
 
 <todo>
 
-array sort exmaple is just an example of an array unsorted and sorted. should add full algorithm description
+array sort example is just an example of an array unsorted and sorted. should add full algorithm description
 
 </todo>
 

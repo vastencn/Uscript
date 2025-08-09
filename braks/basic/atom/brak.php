@@ -37,12 +37,16 @@ $brak_text_def = 	"the atom brak is not actually a brak\n".
 function atom_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
   $pstr=$chunk['content'];
 
-  $par=explode(" ",trim($pstr));
+
+  $par=explode(" ",trim(str_replace(".", "  ",$pstr)));
   if(!ctype_digit($par[0]))return NULL;  //should probably default to retur the un-annoted general symbol for atom
 
   $atom_num=$par[0];
   if($atom_num<1)return NULL;
   
+  $isoabs=FALSE;
+  if(strstr(@$par[1],'+')){$isoabs=TRUE;}
+
   $pc=count($par);
   $isotope=0;
   if($pc>1&&is_numeric($par[1])){
@@ -71,13 +75,15 @@ function atom_brak($chunk,$cup_depth=10,$hpad=3,$vpad=2,$stroke_width=2){
 
   $bot_text_start=$total_height-$bot_text_height;
 
-  if($isotope<0)$iso_str="inv ".$iso_str;
+  if($isotope<0){
+    $iso_str="- ".$iso_str;}else if($isoabs&&$isotope>0){
+    $iso_str="+ ".$iso_str;}
   if($ion<0)$ion_str="false ".$ion_str;
-
+  if($ion>0)$ion_str="true ".$ion_str;
 
   $elsa=NULL;
   if($iso_str||$ion||$iso_str==="0"||$ion_str==="0"){
-    if($isotope||$iso_str==="0"){$bot_str=$iso_str;}else{if($ion>0)$bot_str="dot ";}
+    if($isotope||$iso_str==="0"){$bot_str=$iso_str;}
     if($ion||$ion_str==="0")$bot_str.=" ".$ion_str;
     $elsa=scale_to_height(render_uscript_text($bot_str),$bot_text_height);
     }
