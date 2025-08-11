@@ -3,6 +3,15 @@ array append
 array subset
 
 <todo>
+
+finish updating subarray ops
+
+it was split into  single result and array result
+
+needs extra defs
+
+and need to go through other pages to update old defs that are now wrong
+
 update array conditional def to reflect the new updated version
 
 the simple glyph now only extracts a single element, and the array version returns all matches

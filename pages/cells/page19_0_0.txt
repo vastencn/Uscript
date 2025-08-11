@@ -1,0 +1,6 @@
+atom (1) subpart (proton) _20 atom (2) subpart (proton proton) _20 atom (3) subpart (proton proton proton)
+count ( | atom(1) sar[ = proton] | ) = count ( | atom(1) sar[ proton] | ) =  1 _20 count ( | atom(2) sar[proton] | ) = 2 _20 count ( | atom(6) sar[proton] | ) = 6 
+
+(atom(3) subpart (proton _5 proton _5 proton)) = (atom(3) subpart( 3 proton )) = (atom(3) ismadeof 3 proton )
+
+( (atom ismadeof 2 proton ) subif( _2 atom = | atom(2) | ) ) _5 = _5 ( atom ismadeof 2 proton subif(atom(2)) ) _5 = _5 (atom ismadeof 2 proton implies atom(2) )

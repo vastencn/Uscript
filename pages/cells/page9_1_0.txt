@@ -1,2 +1,93 @@
-ips_arraysubseteg1
-ips_arraysubseteg2
+v2 sar[ = v3 ] = exe( | 
+ v1 <: ( _15 v_20 )
+   foreach ( v2 as v5 , v_35 || 
+    if( |||
+        v5 = v3
+        ||| , |||
+        v1 .+ v5
+        ||| ) 
+    || )
+ return v1
+ | ) _20  v2 s[ = v3 ] = exe( | 
+   foreach ( v2 as v5 , v_35 || 
+    if( |||
+        v5 = v3 
+        ||| , |||
+        return v5
+        ||| ) 
+    || )
+ return wave
+ | )
+
+v2 sar[ v3 = v4 ] = exe( | 
+ v1 <: ( _15 v_20 )
+   foreach ( v2 as v5 , v_35 || 
+    if( |||
+        v5 s[ v3 ] = v4
+        ||| , |||
+        v1 .+ v5
+        ||| ) 
+    || )
+ return v1
+ | )  _20 v2 s[ v3 s = v4 ] = exe( | 
+   foreach ( v2 as v5 , v_35 || 
+    if( |||
+        v5 s[ v3 ] = v4
+        ||| , |||
+        return v5
+        ||| ) 
+    || )
+ return wave
+ | )
+
+
+v2 sar[ v3 s[ v6 ] = v4 ] = exe( | 
+ v1 <: ( _15 v_20 )
+   foreach ( v2 as v5 , v_35 || 
+    if( |||
+        v5 s[ v3 s[ v6 ] ] = v4
+        ||| , |||
+        v1 .+ v5
+        ||| ) 
+    || )
+ return v1
+ | ) _ 20 v2 s[ v3 s[ v6 ] = v4 ] = exe( | 
+   foreach ( v2 as v5 , v_35 || 
+    if( |||
+        v5 s[ v3 s[ v6 ] ] = v4
+        ||| , |||
+        return v5
+        ||| ) 
+    || )
+ return wave
+ | )
+
+
+
+ ( |
+
+ v1 = ([a][1][3][8][3])
+ v1 sar[ isgt 4] = ([a][8])
+ v1 sar[ islt 4] = ([1][3][3])
+ v1 sar[ = 3] = ([3][3])
+ v1 sar[ = 4] = ( _15 v_25 )
+ 
+ | ) _20  ( |
+
+ v1 = ([a][1][3][8][3])
+ v1 s[ isgt 4] = a
+ v1 s[ islt 4] = 1
+ v1 s[ = 3] = 3
+ v1 s[ = 4] = wave
+ 
+ | ) _20  _20  ( |
+
+ v1 = ([[a][3]][[3][8]][[3][a]])
+ v1 s[s[1] isgt 2] = ([a][b])
+ v1 s[s[2] isgt 4] = ([a][b])
+ v1 s[s[2] isgt 6] = ([3][8])
+ v1 s[s[1] = 3 ] = ([3][8])
+ v1 s[ (s[1] = 3) and (s[2] isgt 10) ] = ([3][a])
+ v1 s[ (s[1] = 3) and (s[2] isgt b) ] = wave
+ 
+ | ) _20 

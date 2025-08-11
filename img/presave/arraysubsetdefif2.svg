@@ -1,7 +1,7 @@
 <svg
-   width="175.3"
+   width="176.3"
    height="32"
-   viewBox="0 0 175.3 32"
+   viewBox="0 0 176.3 32"
    version="1.1"
    id="svg3807"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -125,7 +125,7 @@
         </g>
       </g>
     </g>
-  </g></g></g><polyline points="5,-12 5,12 30,12 30,-12 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="5,12 5,-12 30,-12 30,12 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(56,0)"><g transform="translate(0,0)"><g
+  </g></g></g><polyline points="5,-12 5,12 30,12 30,-12 " style="fill:none;stroke:black;stroke-width:2" /><polyline points="5,12 5,-12 30,-12 30,12 " style="fill:none;stroke:black;stroke-width:2" /></g><g transform="translate(57,0)"><g transform="translate(0,0)"><g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -286,7 +286,7 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></g></g></g></g></g></g><polyline points="82,-15 92,-15 92,15 82,15 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(93,0)"><line x1="0" y1="0" x2="8" y2="0" style="stroke:black;stroke-width:2" /><polyline points="70.3,-12 8,-12 8,12 70.3,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(12,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
+  </g></g></g></g></g></g></g></g></g></g><polyline points="83,-15 93,-15 93,15 83,15 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(94,0)"><line x1="0" y1="0" x2="8" y2="0" style="stroke:black;stroke-width:2" /><polyline points="70.3,-12 8,-12 8,12 70.3,12 " style="fill:none;stroke:black;stroke-width:2" /><g transform="translate(12,0)"><g transform="translate(0,0)"><g transform="translate(0,-10)"><g
      inkscape:label="Line 1"
      inkscape:groupmode="layer"
      id="layer L1"
@@ -563,4 +563,4 @@
         </g>
       </g>
     </g>
-  </g></g></g></g></g></g></g></g></g><circle cx="8" cy="0" r="4" stroke="black" stroke-width="0" fill="black" /></g></g><g transform="translate(175.3,0)"></g></g></svg>
+  </g></g></g></g></g></g></g></g></g><circle cx="8" cy="0" r="4" stroke="black" stroke-width="0" fill="black" /></g></g><g transform="translate(176.3,0)"></g></g></svg>

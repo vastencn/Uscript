@@ -1,1 +1,1 @@
- true true true 
+ atom(1) sar[ = proton] 

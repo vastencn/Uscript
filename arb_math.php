@@ -216,7 +216,7 @@ function dec_div($v1,$v2,$extra_prec=10){
 $num="0.00000111111";
 $nar=create_num($num);
 $nar=gen_scinote($nar);
-echo "$num ( ".$nar['num']." * 10^".$nar['pow'] .")";
+//echo "$num ( ".$nar['num']." * 10^".$nar['pow'] .")";
 
 function str_rad_shift($nstr,$shift){
   $num=create_num($nstr,16);
@@ -226,6 +226,8 @@ function str_rad_shift($nstr,$shift){
   }
 //dec_to_hex($nar);
 ?>
+*This whole page is based on 2018 CODATA electron mass of 9.10938356×10−28 g<br>
+Should be updated
 <form action=arb_math.php method=post>
 <table border=1>
 	<tr>
@@ -315,6 +317,18 @@ function uu_display($uuv,$uname="units"){
 				grams to Electrons<input type=text name=g2e value="<?php echo fetch_var('g2e');?>"> <input type=text name=gpre value="<?php echo fetch_var('gpre');?>" size=2>g<?php 
 
   $uu=uunits(fetch_var('g2e'),fetch_var('gpre'),"0.000000000000000000000000000910938356",3);
+  $utxt=uu_display($uu,"Elects");
+  echo "<hr>".$utxt;
+
+				?>
+				<input type=submit>
+		</td>
+	</tr>
+	<tr>
+		<td>
+				Daltons to Electrons<input type=text name=da2e value="<?php echo fetch_var('da2e');?>"> <input type=text name=dapre value="<?php echo fetch_var('dapre');?>" size=2>Da<?php 
+
+  $uu=uunits(fetch_var('da2e'),fetch_var('dapre'),"0.00054857990906761589923",3);
   $utxt=uu_display($uu,"Elects");
   echo "<hr>".$utxt;
 
@@ -505,4 +519,7 @@ function uu_display($uuv,$uname="units"){
 	</tr>
 </table>
 </form>
+<br>
+Should make a page that bases all units on the preceeding units<br>
+right now eevery unit conversion is its own fixed ratio
 

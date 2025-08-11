@@ -31,3 +31,7 @@ _2 :: ISOTOPES + IONS<br>don't use the '.' for the ion. just space it out as the
 atom(1 1 -1) :: atom (1 1 -1) hydrogen-1 -1 electron. aka a proton
 atom(8 16 2) :: atom (8 16 2) oxygen-16 +2 electrons
 atom(8 +1 +1) :: atom (8 +1 1) oxygen-17 +1 electrons
+
+_2 :: language style expression start coming together<br> some simplified sentence strictures start getting defined
+
+atom ismadeof 2 proton implies atom(2) :: "atom is-made-of 2 proton implies helium"<br>.<br>remember .. these markup words are not literal<br>These english words are just approximations for the markup language<br>the definitions are in uscript .. not english!<br>is-made-of does not reference english terms<br>it is just a markup version of a uscript self-defined term<br>.<br>The grammar structures defined in this page are some simple simplifications<br>this sentence simplifies from<br> "(atom subpart(proton proton)) if-that-is-true(atom = helium )

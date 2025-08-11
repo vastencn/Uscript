@@ -1,1 +1,1 @@
- true true true  
+ atom(2) sar[proton] 
