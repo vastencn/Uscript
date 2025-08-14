@@ -1,0 +1,7 @@
+v9 <: ( [v1] )
+v8 = 1
+v7= v3 - v1 / v2
+while(v8 < v2 , | v9 .= v2 * v7 + v1 
+v8 addleft 1 | )
+v9 .= v3
+return v9

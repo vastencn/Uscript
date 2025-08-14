@@ -1,1 +1,1 @@
- atom(6) sar[proton] 
+ func(1 , loopvar ) _-6 s[xarea] 

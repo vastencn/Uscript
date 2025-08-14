@@ -1,0 +1,3 @@
+v1 = wave
+v2 = wave
+v3 = 8

@@ -1,0 +1,2 @@
+photon sub[mass aequal 0]
+gluon sub[mass aequal 0]

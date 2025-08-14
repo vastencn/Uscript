@@ -1,1 +1,1 @@
- atom(2) 
+ atom(2) sar[proton] 

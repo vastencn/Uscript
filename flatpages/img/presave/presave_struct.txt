@@ -1,0 +1,52 @@
+defs
+ temporal
+  space time state
+   spacetimes 
+ math
+  variables
+   multivar
+  basicmath
+   fourops
+ geometry
+  vectors
+   2d vectors
+  2d
+   circles and pi
+   triangles and trig
+   cartesian
+ procedural
+  execution
+   exebrak
+    execlines
+   sequence
+    seq example 1
+   loops
+    loop example 1
+    foreach example 1
+    foreach example 2
+    foreach misc
+  variables
+  conditionals
+  arrays
+   array structure
+   array ops
+   array subsets
+   array combine
+   array has
+   array allnone
+   array generator
+ physics
+  processes
+   conversion
+  abstractions
+   spacial abstractions
+  particles
+   bosons
+   fermions
+    leptons
+    quarks
+ numsvars
+format
+premakes
+ calculus premakes
+deprecated examples

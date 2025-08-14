@@ -1,1 +1,9 @@
- atom(1) sar[ proton] 
+ 
+#
+# mass = proton s[mass] aequal 72C.26 
+#
+# charge = inv proton s[charge] = 1
+#
+# spin = proton s[spin] = 1/2
+#
+# 

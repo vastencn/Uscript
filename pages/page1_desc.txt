@@ -43,6 +43,8 @@ _img roots.jpg img_
 
 
 *show*
+_2 :: This page introduces the first step<br>numbers and simple equations<br>.<br>I toss in a couple extra visual examples for arrow .. time/entropy .. etc<br>DO NOT NIT PICK THEM<br>They aren't actually 'used' or necessary'<br>I like them because they add some general vibe to the first page<br>But they are not actually relied on going forward<br>if you want to complain about them<br>then just ignore them. pretend they aren't there<br>they are just superfluous window dressing tone setting<br>I only do this on the first page<br>You wont find this kind of 'fun unused dressing' after page 1<br>.<br>The only thing of import on page one is numbers and basic math
+
 1dim 2dim 3dim 4dim :: dims , 0 1 2 :: ... numbers
 b>b11/101 b>b1/10 :: fractions, sci-5 sci+11 :: sci-note
 

@@ -1,1 +1,7 @@
- _3 . . . 
+ mass aequal nano 4.4e28
+#
+# charge = inv _-8 b>b10/11
+#
+# spin = b>b1/10 
+#
+# 

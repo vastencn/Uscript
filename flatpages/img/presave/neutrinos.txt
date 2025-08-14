@@ -1,0 +1,3 @@
+electronneu sub[mass lt 2.0d5 h>b1s-5]
+muonneu sub[mass lt 0.552aa]
+tauneu sub[mass lt 23.9dd]

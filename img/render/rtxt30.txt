@@ -1,1 +1,3 @@
-2
+ charge = 0
+#
+# hspin = 1 

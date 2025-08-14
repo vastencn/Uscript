@@ -1,1 +1,13 @@
- . . . 
+ chargedlepton subcat(electron) _20 lepton subcat(electron) _20 fermion subcat(electron)
+#
+# dtypequark subcat(qdown) _20 quark subcat(qdown) _20 fermion subcat(qdown)
+#
+#
+#
+# quark subcat(utypequark dtypequark) _20 lepton subcat(chargedlepton neutrino) _20 fermion subcat(lepton quark)
+#
+#
+#
+# fermion subcat( electron muon tau electronneu muonneu tauneu qup qcharm qtop qdown qstrange qbottom )
+#
+#  

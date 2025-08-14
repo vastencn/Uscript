@@ -1,0 +1,3 @@
+qdown sub[mass aequal 9.329b]
+qstrange sub[mass aequal bb.de1]
+qbottom sub[mass aequal 1ff4.1]

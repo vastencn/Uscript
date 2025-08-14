@@ -1,0 +1,3 @@
+eval ( v1 ) = true
+eval ( v1 + v2 = 6 ) = true
+eval ( v2 + v3 = 5 ) = false

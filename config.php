@@ -9,6 +9,7 @@ $presave_dir="C:\\wamp64\\www\\uscript\\img\\presave\\";
 $pages_dir="C:\\wamp64\\www\\uscript\\pages\\";
 $pages_cells_dir="C:\\wamp64\\www\\uscript\\pages\\cells\\";
 $pages_words_dir="C:\\wamp64\\www\\uscript\\pages\\words\\";
+$pages_flat_dir="C:\\wamp64\\www\\uscript\\flatpages\\";
 $dslash="\\";
 
 $http_base="http://127.0.0.1/uscript/";

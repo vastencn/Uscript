@@ -1,0 +1,1 @@
+ (foreach(v1 as v2, v3 <: v3 + v2 \n v4 <: v4 * 2)) = (ips_foreachdef2) 

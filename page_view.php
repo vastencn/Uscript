@@ -4,6 +4,7 @@ require_once("config.php");
 update_def_from_post();
 
 
+
 $page_name=html_postget("page");
 $cell_edit=html_postget("cell_edit");
 

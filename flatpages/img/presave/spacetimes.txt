@@ -1,0 +1,16 @@
+ spacetimepoint
+ spacetimeperiod
+ timepoint
+ timerange
+ timeprobs
+ state
+ staterange
+ stateprobs
+ 
+
+aa | a
+ a
+ a
+ a || bb
+ a || a | cc
+

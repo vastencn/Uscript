@@ -1,1 +1,7 @@
-[imgrender_rimg31][imgrender_rimg32]
+ mass = nano 1 
+#
+# charge = 1
+#
+# spin = 1/2
+#
+#  

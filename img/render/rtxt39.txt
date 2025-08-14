@@ -1,1 +1,1 @@
- atom(6) sar[proton] 
+ atom(1) sar[ proton] 

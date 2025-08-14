@@ -6,7 +6,7 @@ will probably need to add a height param later
 
 //general vars
 //for anything at all, including things that can be other types of vars
-v1,v1,18
+v1,v1,19
 v2,v2,18
 v3,v3,18
 v4,v4,18
@@ -30,6 +30,13 @@ p1
 //for functions, system, processes, etc..
 sys1,s1,19.3
 sys2,s2,20.1
+
+//item(particle prefix) vars
+item1,item1,21
+item2,item2,21.6
+item3,item3,22
+
+//place/area/range/etc (0/space prefix) var
 
 //time point vars
 
