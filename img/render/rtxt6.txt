@@ -1,1 +1,1 @@
- 1 + divinf 
+ atom(6) sar[proton] 

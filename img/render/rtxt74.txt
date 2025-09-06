@@ -1,1 +1,5 @@
- func(1 , loopvar ) _-6 s[xarea] 
+ lepton subcup(electron muon tau electronneu muonneu tauneu) 
+#
+# quark subcup(qup qcharm qtop qdown qstrange qbottom ) 
+#
+# proton neutron

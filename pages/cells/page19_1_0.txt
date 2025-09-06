@@ -1,0 +1,8 @@
+item1 <: atom _20 item2 <: atom(3) _20 item3 <: atom(5)
+count(item1 sar[proton]) = wave _20 count(item2 sar[proton]) = 3 _20 count(item3 sar[proton]) = 5
+item1 ismadeof 2 proton implies atom(2) _20 item1 ismadeof 3 proton implies atom(3) _20 item1 ismadeof 5 proton implies atom(5)
+
+count(item1 sar[proton]) = wave _20 count(item2 sar[proton]) = 3 _20 count(item3 sar[proton]) = 5
+
+eval(item1 ismadeof 3 proton) = wave _20 eval(item2 ismadeof 3 proton) = true _20 eval(item3 ismadeof 3 proton) = false
+

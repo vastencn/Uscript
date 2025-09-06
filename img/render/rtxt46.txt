@@ -1,1 +1,1 @@
- _2 .+ loopprev and loopnext  
+ true true true  

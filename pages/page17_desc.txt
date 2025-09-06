@@ -50,6 +50,8 @@ This is NOT a full proper definition of antiparticles
 I just split it into the next page because this page info/ description is getting big due to the "massive symbol dump" of particles.
 
 *show*
+  _2 :: <br><br><b>FINE Hbar G and C=1</b><br>I was watching Sabine and I am finally convinced I should 'messy up' the particle mass definition chart.<br><br>electron and H21cm are observable units. chart of particles masses and then particles/properties can explain the 21cm line....<br><br>but Hbar requires first having units to discuss it(as far as I can tell).<br><br>I like introducing units with the unit standard.. It really irks me to introduce a particle mass chart without a 1 anywhere. I loved starting the chart with electron=1 and everything compared to that. and I like introducing the 21cm line and calling its time and length 1.<br><br>but...<br><br>I also REALLY liked having C=1... which it was and is.(derived from a photon so it was 1)<br><br>but it REALLY is awesome for hbar and G to also be 1.... soooo<br><br>I will either:<br><br>sacrifice the 1's in my unit establishing pages(cringe)<br><br>or<br><br>let electron mass and 21cm units be the pounds  feet and moments of uscript(cringe)<br>(a moment was 1/40th of an hour)<br><br>I do not yet know which idea makes me cringe less
+
 mass :: mass. just a symbol in the chart of numbers<br>can be seen as arbitrary for now<br>but it is a combination of "interaction" and "spacetime"<br>both those radicals are not yet defined<br>so for now its just an arbitrary symbol<br>.<br>we give electron a unit of nano so that nano->giga + scinote <br>can easily cover the full range of scales we should ever need
 proton :: proton , neutron :: neutron 
 

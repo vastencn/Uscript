@@ -1,1 +1,1 @@
- addleft yarea
+ atom(1) sar[ proton] 

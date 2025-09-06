@@ -1,1 +1,5 @@
- loopvar 
+ lepton subcup(electron muon tau electronneu muonneu tauneu) 
+#
+# quark subcup(qup qcharm qtop qdown qstrange qbottom ) 
+#
+# proton neutron

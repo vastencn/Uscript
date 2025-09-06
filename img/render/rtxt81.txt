@@ -1,1 +1,3 @@
-v1 
+fspin subcup( photon wboson zboson gluon)  
+#
+# higgs 

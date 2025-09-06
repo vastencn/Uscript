@@ -1,7 +1,1 @@
- mass = 1 
-#
-# charge = inv electron s[charge] = inv 1
-#
-# spin = 1/2
-#
-# 
+false 
